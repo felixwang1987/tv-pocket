@@ -1,0 +1,66 @@
+name: 更新影视口袋
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main, master]
+    paths:
+      - 'index.html'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'sources.config.json'
+      - '.github/workflows/update.yml'
+
+concurrency:
+  group: tv-pocket-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: 检查采集和打包逻辑
+        run: python -m unittest discover -s tests -v
+      - name: 发现并检查来源
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/collector.py
+      - name: 生成单文件网页与发布目录
+        run: python scripts/build.py --site
+      - name: 保存本轮快照
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update source catalog [skip ci]"
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
