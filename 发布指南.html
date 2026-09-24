@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>影视口袋 · 发布指南</title><style>
+*{box-sizing:border-box}body{margin:0;background:#EEF0F7;color:#1E2140;font:16px/1.85 "PingFang SC",system-ui,sans-serif}main{max-width:780px;margin:40px auto;padding:0 20px 50px}header{background:linear-gradient(125deg,#4C5BD4,#8061CA);border-radius:20px;padding:25px 30px;color:white}h1{margin:0;font-size:26px}header p{margin:4px 0 16px;color:#e9e9ff;font-size:14px}.button{display:inline-block;background:white;color:#4C5BD4;padding:8px 18px;border-radius:10px;text-decoration:none;font-size:14px}section{padding:24px 28px;background:white;border-radius:16px;margin-top:18px}h2{margin:0 0 12px;font-size:20px}li{padding:5px 0}ol{padding-left:22px}code{background:#F0F2FA;padding:2px 6px;border-radius:4px;font-size:13px;overflow-wrap:anywhere}.tip{border-left:3px solid #F2A03D;padding:10px 15px;background:#FFF7E7;font-size:14px}a{color:#4C5BD4}small{color:#5A6080;font-size:13px}strong{font-weight:650}</style></head><body><main>
+<header><h1>影视口袋，放到 GitHub 上。</h1><p>像发票口袋一样，先打开看看，再发布成自己的网址。</p><a class="button" href="index.html">打开影视口袋 →</a></header>
+<section><h2>推荐：开启自动更新</h2><ol>
+<li>在 GitHub 新建 <strong>Public</strong> 仓库，例如 <code>tv-pocket</code>。</li>
+<li>解压发布包，把文件夹<strong>里面的内容</strong>上传到仓库根目录。根目录应直接看到 <code>index.html</code>、<code>scripts</code>、<code>data</code>、<code>tests</code> 和 <code>sources.config.json</code>。</li>
+<li>检查 <code>.github/workflows/update.yml</code> 也已经上传。Mac 按 <strong>⌘ + Shift + .</strong> 可以显示隐藏的 <code>.github</code> 文件夹。或者在 GitHub 用 <strong>Add file → Create new file</strong> 创建同名路径，复制本包同名文件的内容。</li>
+<li>进入 <strong>Settings → Pages</strong>，把 <strong>Source</strong> 设置成 <strong>GitHub Actions</strong>。</li>
+<li>进入 <strong>Actions → 更新影视口袋 → Run workflow</strong>，再点一次 <strong>Run workflow</strong>。等待采集和部署都变绿。</li>
+<li>回到 <strong>Settings → Pages</strong> 打开生成的网站地址。以后大约每 6 小时更新一次。</li></ol>
+<p class="tip">不要直接上传 ZIP 当网页；不要漏掉隐藏的 .github 文件夹。HTML 单独能用，但自动更新需要配套文件。</p><small>无需填写 GitHub 令牌。工作流使用 GitHub 自动提供的凭据。网页地址是公开的，收藏只在本机浏览器保存。</small></section>
+<section><h2>只上传一个 HTML，也可以</h2><p>上传 <code>index.html</code> 到仓库根目录，在 <strong>Settings → Pages</strong> 选择 <strong>Deploy from a branch → main → / (root) → Save</strong>。</p><p>这样有搜索、复制和收藏功能，但使用的是随文件附带的链接快照。想后台自动发现新链接，再按上面的步骤补齐配套文件。</p></section>
+<section><h2>使用时记住这三件事</h2><ol><li>“格式检查通过”不代表每个频道都能播放，复制到影视仓后实际测试。</li><li>“读取最新”只读取已发布的数据。想立即采集，在 GitHub Actions 手动运行。</li><li>收藏保存在当前浏览器，不会自动同步到其他手机或电脑。</li></ol><p><a href="README.md">完整说明与常见问题 →</a></p></section>
+</main></body></html>
