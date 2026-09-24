@@ -1,0 +1,424 @@
+"""Discover and check public playlist/configuration documents. Never execute them."""
+import argparse
+import concurrent.futures
+import hashlib
+import http.client
+import ipaddress
+import json
+import os
+from pathlib import Path
+import re
+import socket
+import threading
+from datetime import datetime, timezone
+from urllib.parse import urlsplit, urlunsplit, urljoin, quote, urlencode
+from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandler, HTTPSHandler, ProxyHandler
+
+ROOT = Path(__file__).resolve().parents[1]
+MAX_BYTES = 3_000_000
+GITHUB_HOSTS = {'api.github.com', 'raw.githubusercontent.com', 'iptv-org.github.io', 'mcp2016.github.io'}
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat(timespec='seconds')
+
+
+def normalize_url(value):
+    if not isinstance(value, str):
+        return None
+    try:
+        p = urlsplit(value.strip())
+        host = (p.hostname or '').lower()
+        if p.scheme not in ('http', 'https') or not host or p.username or p.password:
+            return None
+        if host == 'localhost' or host.endswith(('.localhost', '.local', '.internal')):
+            return None
+        try:
+            ip = ipaddress.ip_address(host)
+            if not ip.is_global or ip.is_multicast:
+                return None
+        except ValueError:
+            pass
+        if p.port not in (None, 80, 443):
+            return None
+        path = p.path or '/'
+        if host == 'github.com':
+            bits = path.split('/')
+            if len(bits) >= 6 and bits[3] in ('blob', 'raw'):
+                host = 'raw.githubusercontent.com'
+                path = '/' + '/'.join(bits[1:3] + bits[4:])
+        netloc = '[' + host + ']' if ':' in host else host.encode('idna').decode()
+        if p.port:
+            netloc += ':' + str(p.port)
+        return urlunsplit((p.scheme, netloc, quote(path, safe='/%:@!$&\'()*+,;=-._~'),
+                           quote(p.query, safe='=&%+/:@,;?'), ''))
+    except (ValueError, UnicodeError):
+        return None
+
+
+def check_public_url(url, resolver=socket.getaddrinfo):
+    clean = normalize_url(url)
+    if not clean:
+        raise ValueError('只允许公共 HTTP(S) 地址')
+    p = urlsplit(clean)
+    addresses = resolver(p.hostname, p.port or (443 if p.scheme == 'https' else 80), type=socket.SOCK_STREAM)
+    if not addresses:
+        raise ValueError('地址无法解析')
+    for result in addresses:
+        ip = ipaddress.ip_address(result[4][0])
+        if not ip.is_global or ip.is_multicast:
+            raise ValueError('拒绝内网或特殊网络地址')
+    return clean
+
+
+def open_public_socket(host, port, timeout):
+    addresses = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+    if not addresses:
+        raise ValueError('地址无法解析')
+    for family, kind, protocol, _, address in addresses:
+        ip = ipaddress.ip_address(address[0])
+        if not ip.is_global or ip.is_multicast:
+            raise ValueError('拒绝内网或特殊网络地址')
+    error = None
+    for family, kind, protocol, _, address in addresses:
+        sock = socket.socket(family, kind, protocol)
+        try:
+            sock.settimeout(timeout)
+            sock.connect(address)  # Numeric, already checked; never resolve twice.
+            return sock
+        except OSError as caught:
+            error = caught
+            sock.close()
+    raise error or OSError('无法连接')
+
+
+class PublicHTTPConnection(http.client.HTTPConnection):
+    def connect(self):
+        self.sock = open_public_socket(self.host, self.port, self.timeout)
+
+
+class PublicHTTPSConnection(http.client.HTTPSConnection):
+    def connect(self):
+        sock = open_public_socket(self.host, self.port, self.timeout)
+        try:
+            self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+        except Exception:
+            sock.close()
+            raise
+
+
+class PublicHTTPHandler(HTTPHandler):
+    def http_open(self, req):
+        return self.do_open(PublicHTTPConnection, req)
+
+
+class PublicHTTPSHandler(HTTPSHandler):
+    def https_open(self, req):
+        return self.do_open(PublicHTTPSConnection, req, context=self._context)
+
+
+class SafeRedirect(HTTPRedirectHandler):
+    def __init__(self, validator=check_public_url):
+        super().__init__()
+        self.validator = validator
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        target = self.validator(newurl)
+        redirected = super().redirect_request(req, fp, code, msg, headers, target)
+        if redirected:
+            redirected.remove_header('Authorization')
+        return redirected
+
+
+class Network:
+    def __init__(self, budget=260, github_only=False):
+        self.remaining = budget
+        self.lock = threading.Lock()
+        self.github_only = github_only
+
+    def validate(self, url):
+        clean = normalize_url(url)
+        if self.github_only:
+            # Local proxy DNS may return RFC 2544 benchmark addresses. In this
+            # explicit mode, requests are restricted to four fixed public hosts.
+            if not clean or urlsplit(clean).hostname not in GITHUB_HOSTS or not clean.startswith('https://'):
+                raise ValueError('本地检查仅限 GitHub 官方文件域名')
+            return clean
+        return check_public_url(url)
+
+    def fetch(self, url, api=False):
+        with self.lock:
+            if self.remaining <= 0:
+                raise ValueError('本轮请求数量已达上限')
+            self.remaining -= 1
+        clean = self.validate(url)
+        headers = {'User-Agent': 'TV-Pocket/1.0', 'Accept': 'application/json,text/plain,*/*'}
+        if api and urlsplit(clean).netloc == 'api.github.com' and clean.startswith('https://'):
+            token = os.environ.get('GITHUB_TOKEN')
+            if token:
+                headers['Authorization'] = 'Bearer ' + token
+        handlers = [SafeRedirect(self.validate), ProxyHandler({})]
+        if not self.github_only:
+            handlers += [PublicHTTPHandler(), PublicHTTPSHandler()]
+        with build_opener(*handlers).open(Request(clean, headers=headers), timeout=12) as response:
+            body = response.read(MAX_BYTES + 1)
+            if len(body) > MAX_BYTES:
+                raise ValueError('文件超过 3 MB 检查上限')
+            return body.decode('utf-8-sig', errors='replace')
+
+    def api(self, path):
+        return json.loads(self.fetch('https://api.github.com' + path, api=True))
+
+
+def parse_jsonc(text):
+    # Lex the comments/trailing commas, preserving every character inside strings.
+    out, i, quoted = [], 0, False
+    while i < len(text):
+        c = text[i]
+        if quoted:
+            out.append(c)
+            if c == '\\' and i + 1 < len(text):
+                i += 1
+                out.append(text[i])
+            elif c == '"':
+                quoted = False
+        elif c == '"':
+            quoted = True
+            out.append(c)
+        elif text[i:i+2] == '//':
+            end = text.find('\n', i)
+            i = len(text) if end < 0 else end
+            out.append('\n')
+            continue
+        elif text[i:i+2] == '/*':
+            end = text.find('*/', i + 2)
+            if end < 0:
+                raise ValueError('未闭合注释')
+            i = end + 2
+            out.append(' ')
+            continue
+        else:
+            out.append(c)
+        i += 1
+    text = ''.join(out)
+    out, quoted, i = [], False, 0
+    while i < len(text):
+        c = text[i]
+        if quoted:
+            out.append(c)
+            if c == '\\' and i + 1 < len(text):
+                i += 1
+                out.append(text[i])
+            elif c == '"':
+                quoted = False
+        elif c == '"':
+            quoted = True
+            out.append(c)
+        elif c == ',' and text[i+1:].lstrip().startswith(('}', ']')):
+            pass
+        else:
+            out.append(c)
+        i += 1
+    return json.loads(''.join(out))
+
+
+def classify(text, url):
+    text = text.lstrip('\ufeff \r\n\t')
+    if text.startswith('#EXTM3U'):
+        if '#EXT-X-TARGETDURATION:' in text or '#EXT-X-STREAM-INF:' in text:
+            return {'kind': 'stream', 'format': 'HLS', 'count': 1}
+        count = text.count('#EXTINF:')
+        if count and re.search(r'^https?://', text, re.M):
+            return {'kind': 'live', 'format': 'M3U', 'count': count}
+    if text.startswith(('{', '//', '/*')):
+        try:
+            obj = parse_jsonc(text)
+            for field, kind in [('storeHouse', 'multi'), ('urls', 'collection'), ('sites', 'config')]:
+                rows = obj.get(field)
+                required = {'storeHouse':'sourceUrl', 'urls':'url', 'sites':'api'}[field]
+                if isinstance(rows, list):
+                    count = sum(isinstance(x, dict) and bool(x.get(required)) for x in rows)
+                    if count:
+                        return {'kind': kind, 'format': 'JSON', 'count': count}
+        except (ValueError, AttributeError, RecursionError):
+            pass
+    count = len(re.findall(r'^[^\n,<>{}]+,https?://\S+', text, re.M))
+    if count:
+        return {'kind': 'live', 'format': 'TXT', 'count': count}
+    return None
+
+
+def extract_links(text, base):
+    found = []
+    def add(name, value):
+        if not isinstance(value, str):
+            return
+        url = normalize_url(urljoin(base, value))
+        if url:
+            found.append({'name': str(name or urlsplit(url).path.rsplit('/',1)[-1])[:160], 'url': url})
+    try:
+        obj = parse_jsonc(text)
+    except (ValueError, RecursionError):
+        obj = None
+    if isinstance(obj, dict):
+        for key in ('storeHouse', 'urls', 'lives'):
+            rows = obj.get(key, [])
+            if not isinstance(rows, list):
+                continue
+            for item in rows:
+                if isinstance(item, dict):
+                    add(item.get('sourceName') or item.get('name'), item.get('sourceUrl') or item.get('url'))
+        return found
+    # Only README-style candidate URLs, never video segments or plug-in binaries.
+    if text.lstrip().startswith(('#EXTM3U', '{')) or isinstance(obj, list):
+        return []
+    for line in text.splitlines():
+        for match in re.finditer(r'https?://[^\s<>"`\]\)]+', line):
+            value = match.group().rstrip('。,;|')
+            p = urlsplit(value)
+            if re.search(r'\.(?:png|jpg|svg|gif|jar|js|apk|zip|exe)(?:$|\?)', value, re.I):
+                continue
+            relevant = re.search(r'\.(?:json|m3u8?|txt)(?:$|\?)', value, re.I)
+            contextual = re.search(r'多仓|单仓|接口|直播|配置', line)
+            if relevant or (contextual and p.hostname not in ('github.com','www.github.com')):
+                label = re.sub(r'https?://\S+', '', line).strip(' >*|-[]():：')[:60]
+                add(label or p.path.rsplit('/',1)[-1], value)
+    return found
+
+
+def merge_records(old, new):
+    result = {}
+    for item in old + new:
+        url = normalize_url(item.get('url'))
+        if not url:
+            continue
+        previous = result.get(url, {})
+        merged = {**previous, **item, 'url': url}
+        merged['sources'] = sorted(set(previous.get('sources', []) + item.get('sources', [])))
+        merged['id'] = hashlib.sha256(url.encode()).hexdigest()[:16]
+        result[url] = merged
+    return list(result.values())
+
+
+def choose_candidates(seeds, old, found, limit):
+    sources = {row['url']: row.get('sources', []) for row in merge_records(old, found + seeds)}
+    selected = merge_records([], seeds)[:limit]
+    seen = {r['url'] for r in selected}
+    remaining = max(0, limit - len(selected))
+    older = [r for r in sorted(old, key=lambda r:r.get('checked_at','')) if r['url'] not in seen]
+    old_quota = min(len(older), max(1, int(remaining * .7))) if remaining else 0
+    known = {r['url'] for r in old}
+    fresh = [r for r in found if r['url'] not in known and r['url'] not in seen]
+    for row in older[:old_quota] + fresh + older[old_quota:]:
+        url = normalize_url(row.get('url'))
+        if url and url not in seen and len(selected) < limit:
+            # Candidate metadata must not carry yesterday's status into today.
+            selected.append({'name':row['name'], 'url':url, 'sources':row.get('sources',[])})
+            seen.add(url)
+    return [{**row, 'sources':sources.get(row['url'], [])} for row in selected]
+
+
+def discover_candidates(net, config):
+    repos = {r: {'full_name':r} for r in config['repositories']}
+    errors, candidates = [], []
+    for query in config['queries']:
+        try:
+            payload = net.api('/search/repositories?' + urlencode({'q':query, 'sort':'updated', 'per_page':4}))
+            for repo in payload.get('items', []):
+                if not repo.get('private') and not repo.get('archived') and len(repos) < config['max_repositories']:
+                    repos.setdefault(repo['full_name'], repo)
+            if payload.get('incomplete_results'):
+                errors.append('GitHub 搜索只返回部分结果')
+        except Exception as error:
+            errors.append('GitHub 搜索失败：' + str(error)[:120])
+    for name, repo in repos.items():
+        try:
+            if 'default_branch' not in repo:
+                repo = net.api('/repos/' + name)
+            branch = quote(repo['default_branch'], safe='')
+            base = 'https://raw.githubusercontent.com/' + name + '/' + branch + '/'
+            provenance = 'https://github.com/' + name
+            tree = net.api('/repos/' + name + '/git/trees/' + branch + '?recursive=1')
+            paths = [row['path'] for row in tree.get('tree', [])
+                     if row.get('type') == 'blob' and row.get('size', 0) <= MAX_BYTES]
+            readmes = sorted(p for p in paths if p.lower() == 'readme.md')
+            for path in readmes:
+                text = net.fetch(base + quote(path, safe='/'))
+                for candidate in extract_links(text, base + path)[:30]:
+                    candidates.append({**candidate, 'sources':[provenance]})
+            paths = [p for p in paths if re.search(r'\.(json|m3u8?|txt)$', p, re.I)
+                     and not re.search(r'(^|/)(node_modules|\.git|package|tsconfig|test|vendor|api|epg)', p, re.I)]
+            paths.sort(key=lambda p: (not bool(re.search(r'duocang|多仓|urls|store|^tv|index|live|直播|config', p, re.I)), p.count('/'), p))
+            for path in paths[:config['files_per_repository']]:
+                candidates.append({'name':name.split('/')[0] + ' · ' + path,
+                                   'url':base + quote(path, safe='/'), 'sources':[provenance]})
+        except Exception as error:
+            errors.append(name + '：' + str(error)[:120])
+    return candidates, errors, len(repos)
+
+
+def collect(root=ROOT, discover=True, github_only=False):
+    config = json.loads((root / 'sources.config.json').read_text())
+    target = root / 'data/sources.json'
+    old = json.loads(target.read_text()) if target.exists() else {'entries': []}
+    net = Network(config.get('request_budget', 260), github_only=github_only)
+    checked_at = now()
+    seeds = config['seeds']
+    found = []
+    issues, repos_count = [], 0
+    if discover:
+        found, issues, repos_count = discover_candidates(net, config)
+    candidates = choose_candidates(seeds, old['entries'], found, config['max_candidates'])
+    previous = {r['url']:r for r in old['entries']}
+    results, children = [], []
+    def check(item):
+        row = {**item, 'checked_at':now()}
+        try:
+            text = net.fetch(item['url'])
+            info = classify(text, item['url'])
+            if not info:
+                raise ValueError('内容不是可识别的配置或播放列表')
+            row.update(info, status='ok', last_ok=row['checked_at'], error='')
+            child = []
+            if info['kind'] in ('multi', 'collection', 'config'):
+                child = [{**x, 'sources':item['sources']} for x in extract_links(text, item['url'])[:20]]
+            return row, child
+        except Exception as error:
+            row.update(status='error', error=str(error)[:180])
+            return row, []
+    def check_batch(batch):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+            for row, child in pool.map(check, batch):
+                results.append(row)
+                children.extend(child)
+    check_batch(candidates)
+    checked_urls = {r['url'] for r in results}
+    extra = [c for c in merge_records([], children) if c['url'] not in checked_urls]
+    extra = extra[:max(0, config['max_candidates'] - len(candidates))]
+    check_batch(extra)
+    accepted = [r for r in results if r['status'] == 'ok' or r['url'] in previous]
+    records = merge_records(old['entries'], accepted)
+    records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
+    records = records[:500]
+    success = sum(r['status'] == 'ok' for r in results)
+    document = {
+        'schema_version':1, 'generated_at':now(), 'checked_at':checked_at,
+        'last_success_at': now() if success else old.get('last_success_at'),
+        'discovery': {'enabled':discover, 'repositories':repos_count, 'issues':issues, 'github_only':github_only},
+        'summary': {'checked':len(results), 'recognized':success, 'rejected_or_failed':len(results)-success},
+        'entries':records,
+    }
+    target.parent.mkdir(exist_ok=True)
+    temp = target.with_suffix('.tmp')
+    temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')
+    temp.replace(target)
+    print(json.dumps({'entries':len(records), **document['summary'], 'discovery_issues':len(issues)}, ensure_ascii=False))
+    return document
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--no-discover', action='store_true', help='Only check seeds and previous records')
+    parser.add_argument('--github-only', action='store_true', help='For local proxy DNS: check four fixed GitHub hosts only')
+    args = parser.parse_args()
+    collect(discover=not args.no_discover, github_only=args.github_only)
