@@ -27,6 +27,8 @@ def build(site=False):
         (out / 'data').mkdir(parents=True, exist_ok=True)
         shutil.copy2(html_path, out / 'index.html')
         shutil.copy2(ROOT / 'data/sources.json', out / 'data/sources.json')
+        for asset in ('apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon.svg', 'site.webmanifest'):
+            shutil.copy2(ROOT / asset, out / asset)
         (out / '.nojekyll').touch()
     print('已内嵌 %s 条来源%s' % (len(data['entries']), '，发布目录 _site/' if site else ''))
 
