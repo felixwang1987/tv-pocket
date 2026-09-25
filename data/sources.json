@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T11:59:58+00:00",
-  "checked_at": "2026-09-25T11:59:29+00:00",
-  "last_success_at": "2026-09-25T11:59:58+00:00",
+  "generated_at": "2026-09-25T17:20:43+00:00",
+  "checked_at": "2026-09-25T17:20:13+00:00",
+  "last_success_at": "2026-09-25T17:20:43+00:00",
   "discovery": {
     "enabled": true,
     "repositories": 14,
@@ -11,8 +11,8 @@
   },
   "summary": {
     "checked": 120,
-    "recognized": 84,
-    "rejected_or_failed": 36
+    "recognized": 83,
+    "rejected_or_failed": 37
   },
   "entries": [
     {
@@ -22,12 +22,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "04afa941a30e3a22",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 22,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -37,12 +37,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "2d483a0f07eb3339",
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": ""
     },
     {
@@ -52,12 +52,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "e81f9b01198bc595",
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2998,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -67,12 +67,12 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "a2d03be7aed8e6b9",
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -81,12 +81,12 @@
       "sources": [
         "https://github.com/wxrjck/-YSC-"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "7f834c163d66d435"
     },
@@ -96,12 +96,12 @@
       "sources": [
         "https://github.com/wxrjck/-YSC-"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "9133b064ea25c2c7"
     },
@@ -112,12 +112,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "36d74efc9130cf55",
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 4726,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": ""
     },
     {
@@ -127,12 +127,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "34fc7e680d26719b",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 58,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -141,12 +141,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 4,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "e408fcb9da61f05e"
     },
@@ -156,12 +156,12 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 18,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "e59cf9d3907ae670"
     },
@@ -172,12 +172,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "0526697806d8a517",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -187,12 +187,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "2446394c52e1670c",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -202,12 +202,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "a467332b41170d75",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 56,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -216,12 +216,12 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 32,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "84be2cf8ea0579c1"
     },
@@ -232,12 +232,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "9b096386c49b35c8",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 13,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -247,12 +247,12 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "3761b364727ae51e",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -263,12 +263,12 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "9b0af6d3cbf4f1e2",
-      "checked_at": "2026-09-25T11:59:41+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:41+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -279,12 +279,12 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "c1c412ff26bae7e6",
-      "checked_at": "2026-09-25T11:59:41+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:41+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -293,12 +293,12 @@
       "sources": [
         "https://github.com/youhunwl/TVAPP"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 27,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "c6dbba9e167dc8ad"
     },
@@ -308,12 +308,12 @@
       "sources": [
         "https://github.com/youhunwl/TVAPP"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 96,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "11d02210ce4f2bed"
     },
@@ -444,12 +444,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "25d947818e01463b",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 73,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -458,12 +458,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 28,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "344457f892489066"
     },
@@ -473,12 +473,12 @@
       "sources": [
         "https://github.com/gclgg/box"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 161,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "7e4a5eabbc2b9915"
     },
@@ -503,12 +503,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 38,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "b8728b8ff13adc52"
     },
@@ -533,12 +533,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 17,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "6626ac500043af0f"
     },
@@ -548,12 +548,12 @@
       "sources": [
         "https://github.com/yagami-hue/Win-box"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 4,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "fbf2074ae8721f0f"
     },
@@ -563,12 +563,12 @@
       "sources": [
         "https://github.com/yangclaw2026-png/tvbox-aggregator"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 1,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "77e8e65bdf2bdff7"
     },
@@ -578,12 +578,12 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 168,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "a0d849a74516f909"
     },
@@ -593,12 +593,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 53,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "967b6b2257a78c79"
     },
@@ -608,12 +608,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 63,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "2e21fc30f01abadc"
     },
@@ -623,12 +623,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 39,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "aa9e15287a28b5bc"
     },
@@ -638,12 +638,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 12,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "e467cfb7f27dbe7b"
     },
@@ -653,12 +653,12 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 167,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "2651a7041e6d9d3a"
     },
@@ -669,12 +669,12 @@
         "https://github.com/laoma2053/awesome-zhuiju-free",
         "https://github.com/youhunwl/TVAPP"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "ae45f1d9138c11af"
     },
@@ -684,12 +684,12 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 62,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "0e02e701fd835cf3"
     },
@@ -699,12 +699,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 40,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "f62eaf5898b8841a"
     },
@@ -715,12 +715,12 @@
         "https://github.com/Lightconer/tvbox-ysc-config",
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 63,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "5d18e8987b27f541"
     },
@@ -730,12 +730,12 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 234,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "6dbfd70803ba3e33"
     },
@@ -746,12 +746,12 @@
         "https://github.com/laoma2053/awesome-zhuiju-free",
         "https://github.com/xiongjian83/TvBox"
       ],
-      "checked_at": "2026-09-25T11:59:39+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 234,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:39+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": "",
       "id": "aa1e72ea5e47340d"
     },
@@ -761,12 +761,12 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 48,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": "",
       "id": "331f8bfac357ff38"
     },
@@ -792,12 +792,12 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "fa3abd0f97c3f3b6",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 47,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -807,12 +807,12 @@
         "https://github.com/Mrbotrx/BDXI_KB"
       ],
       "id": "de79527c171b02fc",
-      "checked_at": "2026-09-25T11:59:40+00:00",
+      "checked_at": "2026-09-25T17:20:29+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 717,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:40+00:00",
+      "last_ok": "2026-09-25T17:20:29+00:00",
       "error": ""
     },
     {
@@ -836,12 +836,12 @@
       "sources": [
         "https://github.com/sammy0101/hk-iptv-auto"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 31,
+      "count": 33,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "8472ffd1c5d148db"
     },
@@ -866,12 +866,12 @@
       "sources": [
         "https://github.com/Kinghuchao/tvbox-live"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 21,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "f38756d9d8b79bac"
     },
@@ -911,12 +911,12 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 138,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "02ac54c69c7adac2"
     },
@@ -926,12 +926,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 398,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "b4fc6dfae71ab94d"
     },
@@ -941,12 +941,12 @@
       "sources": [
         "https://github.com/hengge345666/tvbox-subs"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 27,
+      "count": 61,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "001a3c686d788a64"
     },
@@ -956,12 +956,12 @@
       "sources": [
         "https://github.com/hengge345666/tvbox-subs"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "live",
       "format": "TXT",
-      "count": 27,
+      "count": 61,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "faa986ea8e08766b"
     },
@@ -971,12 +971,12 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 60,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "ea591b0ed459b34d"
     },
@@ -986,12 +986,12 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 12,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "c203c117dd72a2f6"
     },
@@ -1001,12 +1001,12 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "e1da610078744ed0"
     },
@@ -1016,12 +1016,12 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 8,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "3f7ee4be63fae741"
     },
@@ -1031,12 +1031,12 @@
       "sources": [
         "https://github.com/sammy0101/hk-iptv-auto"
       ],
-      "checked_at": "2026-09-25T05:06:57+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 30,
+      "count": 33,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:57+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "d48c7b3c92b0e38c"
     },
@@ -1046,12 +1046,12 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 141,
+      "count": 126,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": "",
       "id": "4bb55dbc92ee11ac"
     },
@@ -1061,12 +1061,12 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-25T05:06:57+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "TXT",
-      "count": 140,
+      "count": 126,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:57+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "e9ff54b5c2de2d7e"
     },
@@ -1076,12 +1076,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 42,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "c9ee79dd518126f7"
     },
@@ -1091,12 +1091,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 216,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "26e997fdd5e4293a"
     },
@@ -1106,12 +1106,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 398,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "53536ff9826d0aae"
     },
@@ -1121,12 +1121,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 376,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "5286947b1ddcd2fe"
     },
@@ -1137,12 +1137,12 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "68ed72d7c9ecb7c0",
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 158,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:56+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1155,12 +1155,12 @@
         "https://github.com/tyxthl/iptv-api"
       ],
       "id": "31947687200536aa",
-      "checked_at": "2026-09-25T05:06:57+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 1619,
       "status": "ok",
-      "last_ok": "2026-09-25T05:06:57+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -1173,12 +1173,12 @@
         "https://github.com/tyxthl/iptv-api"
       ],
       "id": "7d306e42946b539a",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 1303,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -1191,12 +1191,12 @@
         "https://github.com/tyxthl/iptv-api"
       ],
       "id": "4bb867b7ce43d3af",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 473,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -1205,12 +1205,12 @@
       "sources": [
         "https://github.com/sammy0101/hk-iptv-auto"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 31,
+      "count": 33,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "8188566bd6b63a08"
     },
@@ -1220,12 +1220,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 3730,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "717d1845b27785ff"
     },
@@ -1235,12 +1235,12 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 4150,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "5054ff4746de2140"
     },
@@ -1250,12 +1250,12 @@
       "sources": [
         "https://github.com/xiongjian83/TvBox"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 752,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "97e55300f511dbd0"
     },
@@ -1265,12 +1265,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:27+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 42,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:27+00:00",
       "error": "",
       "id": "de46c5de8a60d2fd"
     },
@@ -1280,12 +1280,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 216,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "bd7dc3d5f1626928"
     },
@@ -1295,12 +1295,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 398,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "dd37852f5b33dc90"
     },
@@ -1310,12 +1310,12 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T11:59:38+00:00",
+      "checked_at": "2026-09-25T17:20:28+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 376,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:38+00:00",
+      "last_ok": "2026-09-25T17:20:28+00:00",
       "error": "",
       "id": "cdcc1b6b982f6303"
     },
@@ -1325,12 +1325,12 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "M3U",
-      "count": 121,
+      "count": 126,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "d28d7dd012558bab"
     },
@@ -1340,12 +1340,12 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "live",
       "format": "TXT",
-      "count": 121,
+      "count": 126,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "0e4fbb3e701f932d"
     },
@@ -1356,12 +1356,12 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "ca0f947bd15873fc",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 144,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1371,12 +1371,12 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "10ef0a8bb52deb09",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 213,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1386,12 +1386,12 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "8b4da8b50a8d9c6f",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 10919,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1400,12 +1400,12 @@
       "sources": [
         "https://github.com/Supprise0901/TVBox_live"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "live",
       "format": "TXT",
-      "count": 311,
+      "count": 313,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "49cbf7073b47c71b"
     },
@@ -1415,12 +1415,12 @@
       "sources": [
         "https://github.com/xiongjian83/TvBox"
       ],
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": "",
       "id": "0efdde7aaff8e774"
     },
@@ -1431,12 +1431,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "6cee50910784b3ca",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 3,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": ""
     },
     {
@@ -1446,12 +1446,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "5519341bebbd287d",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 1356,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1461,12 +1461,12 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "71542d796d5d6ce9",
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 3,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:24+00:00",
       "error": ""
     },
     {
@@ -1475,12 +1475,12 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T11:59:36+00:00",
+      "checked_at": "2026-09-25T17:20:25+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 3,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:36+00:00",
+      "last_ok": "2026-09-25T17:20:25+00:00",
       "error": "",
       "id": "a0329ae845eafcb6"
     },
@@ -1491,12 +1491,12 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "6ef12f9a2bb2f49d",
-      "checked_at": "2026-09-25T11:59:37+00:00",
+      "checked_at": "2026-09-25T17:20:26+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 5,
       "status": "ok",
-      "last_ok": "2026-09-25T11:59:37+00:00",
+      "last_ok": "2026-09-25T17:20:26+00:00",
       "error": ""
     },
     {
@@ -1520,7 +1520,7 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 186,
@@ -1535,7 +1535,7 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-25T05:06:56+00:00",
+      "checked_at": "2026-09-25T17:20:24+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 376,
