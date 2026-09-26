@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=1">
 <link rel="manifest" href="./site.webmanifest?v=1">
 <meta name="description" content="自己的影视仓链接口袋。搜索多仓配置和直播列表，收藏好用的源，一键复制。">
+<meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234C5BD4'/%3E%3Crect x='13' y='18' width='38' height='27' rx='5' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='m28 25 12 7-12 7z' fill='white'/%3E%3C/svg%3E">
 <title>影视口袋</title>
 <style>
@@ -20,9 +21,11 @@
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 .verified-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 18px;margin-bottom:18px;display:flex;gap:14px;align-items:center;justify-content:space-between}.verified-box h3{margin:0 0 4px;font-size:16px}.verified-box p{margin:0;color:var(--ink2);font-size:12px}.verified-box button{background:var(--blue);color:#fff;padding:10px 16px;border-radius:11px;flex-shrink:0}.badge.passed{background:#e4f5ef;color:#13715c}.badge.partial{background:#fff2d5;color:#875900}.badge.config_only,.badge.unverified{background:#eff0f8;color:#626887}.probe-details{font-size:12px;margin:5px 0 13px;color:var(--ink2)}.probe-details summary{cursor:pointer;min-height:32px;line-height:1.6}.probe-item{padding:9px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.probe-item b{display:block;color:var(--ink);font-weight:550}.probe-item button{color:var(--blue);min-height:32px;padding:3px 0}.health-note{font-size:12px;color:var(--ink2);margin:8px 0}.footer-note{line-height:1.8}@media(max-width:560px){.verified-box{align-items:stretch;flex-direction:column}.verified-box button{width:100%}}
 .routes-details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:11px 16px;margin:-8px 0 18px;font-size:12px;color:var(--ink2)}.routes-details summary{cursor:pointer;min-height:32px;padding-top:4px}.route-row{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line)}.route-row p{margin:0}.route-row strong{color:var(--ink)}.route-row button{color:var(--blue);flex-shrink:0}
+body.locked>:not(#access-gate):not(script){display:none!important}.access-gate[hidden]{display:none}.access-gate{min-height:100dvh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 20% 10%,#DCE2FF,transparent 40%),var(--paper)}.access-card{width:min(100%,390px);background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 15px 50px #20296415}.access-card img{width:58px;height:58px;border-radius:16px}.access-card h1{font-size:25px;line-height:1.3;margin:20px 0 8px}.access-card p{font-size:13px;color:var(--ink2);margin:0 0 20px}.access-card label{display:block;font-size:13px;font-weight:600;margin-bottom:7px}.access-card input{width:100%;height:48px;border:1px solid #C8CDE0;border-radius:11px;padding:0 13px;letter-spacing:1px}.access-card button{width:100%;margin-top:14px;border-radius:11px;background:var(--blue);color:#fff;font-weight:600}.access-card .access-error{color:#B2433C;min-height:22px;margin:10px 0 0}.access-card .access-note{font-size:11px;line-height:1.6;margin:12px 0 0}
 </style>
 </head>
-<body>
+<body class="locked">
+<div id="access-gate" class="access-gate"><form id="access-form" class="access-card"><img src="./apple-touch-icon.png?v=1" alt=""><h1>打开影视口袋</h1><p>输入访问码，查看你收藏的影视仓线路。</p><label for="access-code">访问码</label><input id="access-code" type="password" autocomplete="off" autocapitalize="characters" spellcheck="false" required><button type="submit">进入口袋</button><p id="access-error" class="access-error" role="alert" aria-live="polite"></p><p class="access-note">访问码保护网页入口；已公开的线路直链仍可直接访问。</p></form></div>
 <svg aria-hidden="true" style="display:none"><defs>
 <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="3"/><path d="M8 22h8M12 18v4m-2-12 6 3.5-6 3.5z"/></symbol>
 <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
@@ -65,6 +68,10 @@
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id), TYPES={multi:'多仓',collection:'线路合集',config:'单配置',live:'直播列表',stream:'直播流'}, STALE=18*3600000;
+const ACCESS_HASH='f384d3d5b4b34a0e9273b2e50da8072b19497e22278ecd36eb45e7ce60eed42b', ACCESS_KEY='tv-pocket-access-v1';
+function unlock(){document.body.classList.remove('locked');$('access-gate').hidden=true;$('access-code').value='';}
+try{if(sessionStorage.getItem(ACCESS_KEY)===ACCESS_HASH)unlock();}catch{}
+$('access-form').onsubmit=async event=>{event.preventDefault();const input=$('access-code'),error=$('access-error');error.textContent='';const value=input.value.trim().toUpperCase();if(!crypto.subtle){error.textContent='当前浏览器无法校验访问码，请用最新版 Safari 或 Chrome 打开。';return;}try{const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');if(hash!==ACCESS_HASH){error.textContent='访问码不对，请再试一次。';input.select();return;}try{sessionStorage.setItem(ACCESS_KEY,ACCESS_HASH);}catch{}unlock();}catch{error.textContent='暂时无法校验访问码，请刷新后重试。';}};
 let catalog=JSON.parse($('catalog-data').textContent), kind='all', favoritesOnly=false, visible=[], toastTimer;
 let favorites=new Set();try{const saved=JSON.parse(localStorage.getItem('tv-pocket-favorites-v1')||'[]');if(Array.isArray(saved))favorites=new Set(saved.filter(x=>typeof x==='string'));}catch{}
 function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}
