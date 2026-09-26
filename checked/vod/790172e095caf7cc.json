@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_790172e095caf7cc",
+      "name": "🎥┃红牛┃资源",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

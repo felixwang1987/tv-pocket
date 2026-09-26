@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_77be1653869536c7",
+      "name": "光速资源",
+      "type": 1,
+      "api": "http://api.guangsuapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

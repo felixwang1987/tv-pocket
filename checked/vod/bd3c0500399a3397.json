@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🎥┃豪华┃资源",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

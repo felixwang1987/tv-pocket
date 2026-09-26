@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_af8e085c7f2740c4",
+      "name": "红牛资源",
+      "type": 1,
+      "api": "https://hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
