@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_f0ca5356c3d6e280",
+      "name": "[193ms|apple] 茅台资源",
+      "type": 1,
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ]
+}

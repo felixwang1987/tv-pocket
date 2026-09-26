@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_d0a1c8a72fabe8c5",
+      "name": "雷蒙影视 | ️🚀茅台",
+      "type": 1,
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ]
+}

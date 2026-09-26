@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_63d28ec1f8e7b9b2",
+      "name": "[137ms|zy] 🍏茅台",
+      "type": 1,
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ]
+}

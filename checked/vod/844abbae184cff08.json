@@ -5,8 +5,8 @@
       "name": "电影天堂",
       "type": 1,
       "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0
     }
   ]
