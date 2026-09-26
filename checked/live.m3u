@@ -1,0 +1,54 @@
+#EXTM3U
+# 仅含最近 18 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。
+#EXTINF:-1,Aadinath TV KB
+https://mumt01.tangotv.in/O5aw8Zn3AADINATHTV/index.m3u8
+#EXTINF:-1,DD Tripura KB
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index.m3u8
+#EXTINF:-1,Shubh TV KB
+https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
+#EXTINF:-1,ATN Bangla KB
+http://tvsen5.aynascope.net/atnbangla/index.m3u8
+#EXTINF:-1,Nexus TV KB
+https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
+#EXTINF:-1,ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1,有線新聞台
+http://61.10.2.140/live_freedirect/freehd209_h.live/chunklist_w135209556.m3u8
+#EXTINF:-1,NH BollyFlix KB
+https://jmp2.uk/stvp-IN46000140Q
+#EXTINF:-1,Ultimate TV KB
+https://stream.ottlive.co.in/utvtamil/index.m3u8
+#EXTINF:-1,DD Kisan KB
+https://mumbai-edge.smartplaytv.in/DDKisan/index.m3u8
+#EXTINF:-1,CCTV-1 综合 (1305ms)
+https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
+#EXTINF:-1,Good
+https://live.streamingfast.net/osmflivech1.m3u8
+#EXTINF:-1,新沂新闻
+http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
+#EXTINF:-1,RT News
+https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
+#EXTINF:-1,Pet Club TV
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
+#EXTINF:-1,翡翠台
+http://r.jdshipin.com/thuYX
+#EXTINF:-1,TVB Plus
+http://r.jdshipin.com/Nr5jq
+#EXTINF:-1,延边卫视
+https://srs.iyb983.cn:443/video/CYS/index.m3u8
+#EXTINF:-1,浙江钱江都市 ·高清
+https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1,福建海峡卫视 ·高清
+http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
+#EXTINF:-1,浙江卫视
+http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
+#EXTINF:-1,台视新闻
+http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
+#EXTINF:-1,浙江民生
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1,CGTN英语
+https://0472.org/hls/cgtn.m3u8
+#EXTINF:-1,Zhejiang International Channel
+https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
+#EXTINF:-1,PBS Antiques Roadshow (1080p)
+https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8
