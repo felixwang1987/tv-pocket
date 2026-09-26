@@ -1,10 +1,19 @@
 import unittest
 from unittest.mock import patch, MagicMock
 import scripts.collector as collector
+from urllib.request import Request
 from scripts.collector import classify, extract_links, normalize_url, merge_records, check_public_url
 
 
 class ParsingTests(unittest.TestCase):
+    def test_redirects_consume_the_same_request_budget(self):
+        net = collector.Network(budget=1)
+        handler = collector.SafeRedirect(lambda u:u, on_redirect=net.take_request)
+        req = Request('https://example.com/a')
+        handler.redirect_request(req, None, 302, '', {}, 'https://example.com/b')
+        with self.assertRaises(ValueError):
+            handler.redirect_request(req, None, 302, '', {}, 'https://example.com/c')
+
     def test_header_comments_are_valid_jsonc(self):
         for prefix in ['// heading\n', '/* heading */\n']:
             result = classify(prefix + '{"urls":[{"url":"https://a.example/a"}]}', 'https://a.example/a')
