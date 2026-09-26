@@ -628,7 +628,8 @@ def collect(root=ROOT, discover=True, github_only=False):
     child_slots=min(max(0,int(config.get('child_slots',0))),max(0,max_candidates-1))
     candidates = choose_candidates(seeds, old['entries'], found, max_candidates-child_slots)
     previous = {r['url']:r for r in old['entries']}
-    results, children, documents = [], [], {}
+    pinned = {normalize_url(row.get('url')) for row in seeds}
+    results, child_groups, documents = [], [], {}
     def check(item):
         row = {**item, 'checked_at':now()}
         try:
@@ -653,11 +654,34 @@ def collect(root=ROOT, discover=True, github_only=False):
         with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
             for row, child in pool.map(check, batch):
                 results.append(row)
-                children.extend(child)
+                if child:
+                    child_groups.append((row['url'], child))
     check_batch(candidates)
     checked_urls = {r['url'] for r in results}
-    extra = [c for c in merge_records([], children) if c['url'] not in checked_urls]
-    extra = extra[:max(0, max_candidates - len(candidates))]
+    child_metadata = {c['url']: c for c in merge_records([], [c for _, group in child_groups for c in group])}
+    child_limit = max(0, max_candidates - len(candidates))
+    extra, seen_children = [], set(checked_urls)
+    # Share reserved checks across added collections instead of letting the
+    # first large collection consume every child slot.
+    for groups in ([group for parent, group in child_groups if parent in pinned],
+                   [group for parent, group in child_groups if parent not in pinned]):
+        active = [iter(group) for group in groups]
+        while active and len(extra) < child_limit:
+            next_active = []
+            for group in active:
+                try:
+                    child = next(group)
+                except StopIteration:
+                    continue
+                next_active.append(group)
+                if child['url'] not in seen_children:
+                    extra.append(child_metadata[child['url']])
+                    seen_children.add(child['url'])
+                if len(extra) >= child_limit:
+                    break
+            active = next_active
+        if len(extra) >= child_limit:
+            break
     check_batch(extra)
     # Unused child capacity goes back to ordinary discovery candidates.
     if len(results) < max_candidates:
@@ -665,7 +689,6 @@ def collect(root=ROOT, discover=True, github_only=False):
         fallback = [r for r in choose_candidates(seeds, old['entries'], found, max_candidates)
                     if r['url'] not in checked_urls]
         check_batch(fallback[:max_candidates-len(results)])
-    pinned = {normalize_url(row.get('url')) for row in seeds}
     accepted = [r for r in results if r['status'] == 'ok' or r['url'] in previous or r['url'] in pinned]
     records = merge_records(old['entries'], accepted)
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))

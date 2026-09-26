@@ -116,6 +116,29 @@ class ParsingTests(unittest.TestCase):
             self.assertIn('https://example.com/child.json',
                           {r['url'] for r in result['entries'] if r['status']=='ok'})
 
+    def test_child_slots_are_shared_across_pinned_collections(self):
+        prefix = 'https://example.com/'
+        docs = {
+            prefix + 'first.json': {'urls': [{'name':str(i),'url':f'a{i}.json'} for i in range(3)]},
+            prefix + 'second.json': {'urls': [{'name':'新来源','url':'new.json'}]},
+        }
+        for name in ('a0', 'a1', 'a2', 'new'):
+            docs[prefix + name + '.json'] = {'sites':[{'name':name,'api':'https://api.example/vod'}]}
+        class Network:
+            def __init__(self,*args,**kwargs): pass
+            def fetch_bytes(self,url,**kwargs): return json.dumps(docs[url]).encode(),url
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root/'sources.config.json').write_text(json.dumps({
+                'seeds':[{'name':'先加的','url':prefix+'first.json','sources':[]},
+                         {'name':'后加的','url':prefix+'second.json','sources':[]}],
+                'max_candidates':4,'child_slots':2,'request_budget':10}))
+            with patch.object(collector,'Network',Network), patch('builtins.print'):
+                result = collector.collect(root,discover=False,github_only=True)
+            checked = {r['url'] for r in result['entries'] if r['status']=='ok'}
+            self.assertIn(prefix+'a0.json',checked)
+            self.assertIn(prefix+'new.json',checked)
+
     def test_unused_child_slots_return_to_primary_candidates(self):
         class Network:
             def __init__(self,*args,**kwargs):pass
