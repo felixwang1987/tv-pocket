@@ -6,32 +6,138 @@
     "影视仓 多仓 in:name,description fork:false archived:false",
     "IPTV 直播源 in:name,description fork:false archived:false"
   ],
-  "repositories": ["wxrjck/-YSC-", "mcp2016/TVBox", "hd9211/Tvbox1", "wuxierj/TVBox", "scovis/TVBox", "iptvjs/iptv"],
+  "repositories": [
+    "wxrjck/-YSC-",
+    "mcp2016/TVBox",
+    "hd9211/Tvbox1",
+    "wuxierj/TVBox",
+    "scovis/TVBox",
+    "iptvjs/iptv"
+  ],
   "search_results_per_query": 12,
   "max_repositories": 40,
   "files_per_repository": 8,
   "max_candidates": 360,
   "child_slots": 40,
   "request_budget": 750,
-  "playback": {"max_lists":80, "samples_per_list":6, "adult_samples_per_list":24, "max_seconds":720, "request_budget":1400},
-  "routes": {"base_url":"https://felixwang1987.github.io/tv-pocket/", "max_apis":100, "max_documents":180,
-             "max_depth":3, "max_children_per_config":16, "discovery_seconds":240,
-             "max_seconds":720, "request_budget":1800},
+  "playback": {
+    "max_lists": 80,
+    "samples_per_list": 6,
+    "adult_samples_per_list": 24,
+    "max_seconds": 720,
+    "request_budget": 1400
+  },
+  "routes": {
+    "base_url": "https://felixwang1987.github.io/tv-pocket/",
+    "max_apis": 100,
+    "max_documents": 180,
+    "max_depth": 3,
+    "max_children_per_config": 16,
+    "discovery_seconds": 240,
+    "max_seconds": 720,
+    "request_budget": 1800
+  },
   "source_pages": [
-    {"url":"https://bbs.qiqiv.cn/thread-5210-1-1.html", "post_id_prefix":"postmessage_", "max_links":50}
+    {
+      "url": "https://bbs.qiqiv.cn/thread-5210-1-1.html",
+      "post_id_prefix": "postmessage_",
+      "max_links": 50
+    }
   ],
   "seeds": [
-    {"name":"GYCK 线路合集", "url":"https://ztha.top/TVBox/GYCK.json", "sources":["https://ztha.top/TVBox/GYCK.json"]},
-    {"name":"论坛 · 王二小单仓", "url":"https://9280.kstore.vip/newwex.json", "sources":["https://bbs.qiqiv.cn/thread-5210-1-1.html"]},
-    {"name":"论坛 · 嗷呜单仓", "url":"https://9763.kstore.vip/aowu.json", "sources":["https://bbs.qiqiv.cn/thread-5210-1-1.html"]},
-    {"name":"论坛 · 匿名多仓", "url":"https://12586.kstore.space/123.json", "sources":["https://bbs.qiqiv.cn/thread-5210-1-1.html"]},
-    {"name":"无邪多仓", "url":"https://raw.githubusercontent.com/wxrjck/-YSC-/main/wx.json", "sources":["https://github.com/wxrjck/-YSC-"]},
-    {"name":"鹏九线路合集", "url":"https://mcp2016.github.io/TVBox/urls.json", "sources":["https://github.com/mcp2016/TVBox"]},
-    {"name":"多仓收集 · hd9211", "url":"https://raw.githubusercontent.com/hd9211/Tvbox1/main/duocang1.json", "sources":["https://github.com/hd9211/Tvbox1"]},
-    {"name":"成人点播配置 · R18", "url":"https://raw.githubusercontent.com/scovis/TVBox/main/R18.json", "category":"adult", "sources":["https://github.com/scovis/TVBox"]},
-    {"name":"成人直播列表", "url":"https://raw.githubusercontent.com/iptvjs/iptv/main/adultiptv_all.m3u", "category":"adult", "sources":["https://github.com/iptvjs/iptv"]},
-    {"name":"中文频道", "url":"https://iptv-org.github.io/iptv/languages/zho.m3u", "sources":["https://github.com/iptv-org/iptv"]},
-    {"name":"中国地区频道", "url":"https://iptv-org.github.io/iptv/countries/cn.m3u", "sources":["https://github.com/iptv-org/iptv"]},
-    {"name":"全球频道", "url":"https://iptv-org.github.io/iptv/index.m3u", "sources":["https://github.com/iptv-org/iptv"]}
+    {
+      "name": "GYCK 线路合集",
+      "url": "https://ztha.top/TVBox/GYCK.json",
+      "sources": [
+        "https://ztha.top/TVBox/GYCK.json"
+      ]
+    },
+    {
+      "name": "论坛 · 王二小单仓",
+      "url": "https://9280.kstore.vip/newwex.json",
+      "sources": [
+        "https://bbs.qiqiv.cn/thread-5210-1-1.html"
+      ]
+    },
+    {
+      "name": "论坛 · 嗷呜单仓",
+      "url": "https://9763.kstore.vip/aowu.json",
+      "sources": [
+        "https://bbs.qiqiv.cn/thread-5210-1-1.html"
+      ]
+    },
+    {
+      "name": "论坛 · 匿名多仓",
+      "url": "https://12586.kstore.space/123.json",
+      "sources": [
+        "https://bbs.qiqiv.cn/thread-5210-1-1.html"
+      ]
+    },
+    {
+      "name": "无邪多仓",
+      "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/main/wx.json",
+      "sources": [
+        "https://github.com/wxrjck/-YSC-"
+      ]
+    },
+    {
+      "name": "鹏九线路合集",
+      "url": "https://mcp2016.github.io/TVBox/urls.json",
+      "sources": [
+        "https://github.com/mcp2016/TVBox"
+      ]
+    },
+    {
+      "name": "多仓收集 · hd9211",
+      "url": "https://raw.githubusercontent.com/hd9211/Tvbox1/main/duocang1.json",
+      "sources": [
+        "https://github.com/hd9211/Tvbox1"
+      ]
+    },
+    {
+      "name": "成人点播配置 · R18",
+      "url": "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
+      "category": "adult",
+      "sources": [
+        "https://github.com/scovis/TVBox"
+      ]
+    },
+    {
+      "name": "成人直播列表",
+      "url": "https://raw.githubusercontent.com/iptvjs/iptv/main/adultiptv_all.m3u",
+      "category": "adult",
+      "sources": [
+        "https://github.com/iptvjs/iptv"
+      ]
+    },
+    {
+      "name": "中文频道",
+      "url": "https://iptv-org.github.io/iptv/languages/zho.m3u",
+      "sources": [
+        "https://github.com/iptv-org/iptv"
+      ]
+    },
+    {
+      "name": "中国地区频道",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "sources": [
+        "https://github.com/iptv-org/iptv"
+      ]
+    },
+    {
+      "name": "全球频道",
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "sources": [
+        "https://github.com/iptv-org/iptv"
+      ]
+    },
+    {
+      "name": "新闻直播补充",
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u",
+      "category": "ordinary",
+      "sources": [
+        "https://iptv-org.github.io/iptv/categories/news.m3u"
+      ]
+    }
   ]
 }

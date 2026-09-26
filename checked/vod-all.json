@@ -28,6 +28,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_790172e095caf7cc",
+      "name": "✅红牛┃资源",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_9a8a6fa39c3f2d4c",
       "name": "❤光速资源",
       "type": 1,
@@ -46,10 +55,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_af8e085c7f2740c4",
-      "name": "红牛资源",
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "猫眼",
       "type": 1,
-      "api": "https://hongniuzy2.com/api.php/provide/vod",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -59,6 +68,15 @@
       "name": "雷蒙影视 | ️🚀爱坤",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_5ffb6e9a093b753f",
+      "name": "魔都",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -91,26 +109,8 @@
       "filterable": 0
     },
     {
-      "key": "pocket_d6abf09efcd48c6d",
-      "name": "🔶老张丨猫眼[短]",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🥬红牛资源",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_bd3c0500399a3397",
-      "name": "🥬豪华资源",
+      "name": "🔥️火狐┃秒播",
       "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod",
       "searchable": 1,
@@ -118,10 +118,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_5ffb6e9a093b753f",
-      "name": "🥬魔都资源",
+      "key": "pocket_844abbae184cff08",
+      "name": "77-电影天堂*",
       "type": 1,
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -131,6 +131,15 @@
       "name": "影视 • 电影天堂",
       "type": 1,
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_af8e085c7f2740c4",
+      "name": "红牛资源",
+      "type": 1,
+      "api": "https://hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0

@@ -12,6 +12,8 @@ https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
 http://stream.mcquack.net/229/index.m3u8
 #EXTINF:-1 group-title="普通直播",TKR (1080p) [Not 24/7]
 http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",City Eden KinoMistika [Not 24/7]
+https://cityeden.catcast.tv/content/40783/index.m3u8
 #EXTINF:-1 group-title="普通直播",Kino TV HD (1080p)
 http://176.118.197.101/KinoTvHD/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",Aakaash Aath KB
@@ -48,6 +50,8 @@ https://d39chvnxm26pgp.cloudfront.net/v1/master/72588bff830dec7b26d7cbbf5f3c2492
 https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index_8.m3u8
 #EXTINF:-1 group-title="普通直播",Outdoor Channel
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Sci-Fi
+https://sci-fi-rakuten-tv-uk.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6241/master.m3u8?ads.app_bundle=[APP_BUNDLE]&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=[APP_STOREURL]&ads.app_version=[APP_VERSION]&ads.brand_name=[DEVICE_MAKE]&ads.content_livestream=0&ads.device_lmt=[LMT]&ads.device_model=[DEVICE_MODEL]&ads.did=[IFA]&ads.fck=[FCK]&ads.gdpr_consent=[GDPR_CONSENT]&ads.ifa_type=[IFA_TYPE]&ads.market=uk&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=sci-fi-rakuten-tv_uk&ads.rtv_content_id=6241&ads.rtv_language=en&ads.viewsize=[VIEWSIZE]&channel_id=6241&disable_subtitles=true&publishing_platform_id=2
 #EXTINF:-1 group-title="普通直播",SBS Drama
 https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=sbsk-drama&channel_id=newid_008&mpf=c064f5f4-39af1962-7c36be2c&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=474ab4cb-5d47aa0a-84d0cbca-2a3730a6&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
 #EXTINF:-1 group-title="普通直播",Discovery Bangla
@@ -81,17 +85,17 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/in
 #EXTINF:-1 group-title="普通直播",Knock Bhakti KB
 https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
 #EXTINF:-1 group-title="普通直播",Max Sport 2 HD
-https://cdn11.glebul.com/hlsfhd/hd-max-sport-2-hd.m3u8?e=1790417886&hash=J8Biu7VMbzZQ8cyOHHddUQ
+https://mx86.glebul.com/hlsfhd/hd-max-sport-2-hd.m3u8?e=1790422290&hash=YHl4HXyKyh80OwyE3QQ8Fg
 #EXTINF:-1 group-title="普通直播",Kanal 3
-https://cdn11.glebul.com/hls/kanal-3/index.m3u8?e=1790418034&hash=rey6zRqECiHSLTZDtEs_Cg
+https://cdn3.glebul.com/hls/kanal-3/index.m3u8?e=1790422437&hash=4x1MVN148_oeymdEvYO2yA
 #EXTINF:-1 group-title="普通直播",Disney Channel
-https://cdn3.glebul.com/hls/disney-channel/index.m3u8?e=1790418169&hash=YmkVdmlp4qOxe-vMm0Aw-g
+https://cdn3.glebul.com/hls/disney-channel/index.m3u8?e=1790422573&hash=VgIDw0ZTMW6gd0KTZauYRA
 #EXTINF:-1 group-title="普通直播",Planeta Folk
-https://cdn3.glebul.com/hls/planeta-folk/index.m3u8?e=1790418304&hash=6VFWbEX9TKH7NVGigwhpmA
+https://cdn11.glebul.com/hls/planeta-folk/index.m3u8?e=1790422708&hash=FTitWRLq1t8ve6JZy5oS1g
 #EXTINF:-1 group-title="普通直播",Discovery Channel HD
-https://cdn11.glebul.com/hls/hd-discovery-channel-hd/index.m3u8?e=1790418438&hash=l8Ndn-PQTQ4PAQc-f-ZuTg
+https://cdn3.glebul.com/hls/hd-discovery-channel-hd/index.m3u8?e=1790422844&hash=9HXEasXuWJAqFWi3e-GkKw
 #EXTINF:-1 group-title="普通直播",BTV Comedy HD
-https://cdn11.glebul.com/hls/hd-btv-comedy-hd/index.m3u8?e=1790417739&hash=wDXV4IP4CkO3ZiDJb2pMBw
+https://cdn11.glebul.com/hls/hd-btv-comedy-hd/index.m3u8?e=1790422142&hash=OOAWK9wyJPENKNGGFtMF9Q
 #EXTINF:-1 group-title="普通直播",靖宇
 http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild
 #EXTINF:-1 group-title="普通直播",龙井
@@ -140,8 +144,6 @@ https://live.ottiptv.cc/yy/1354933529
 https://live.ottiptv.cc/yy/1354932433
 #EXTINF:-1 group-title="普通直播",电影黑豹
 https://live.ottiptv.cc/yy/1382736816
-#EXTINF:-1 group-title="普通直播",止戈电影「解说」
-https://cdn.ttvb.eu.org/huya/19863777
 #EXTINF:-1 group-title="普通直播",「B站」JJ斗地主
 https://cdn.ttvb.eu.org/bilibili/22021983
 #EXTINF:-1 group-title="普通直播",新沂新闻频道
@@ -186,8 +188,8 @@ https://vod.mycamtv.net/2359.m3u8
 http://stream8.jlntv.cn/dhtv/playlist.m3u8?zjild
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Hardcore
 http://cdn.adultiptv.net/hardcore.m3u8
-#EXTINF:-1 group-title="普通直播",City Eden KinoMistika [Not 24/7]
-https://cityeden.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 group-title="普通直播",Kanal 3
+https://cdn11.glebul.com/hls/kanal-3/index.m3u8?e=1790418034&hash=rey6zRqECiHSLTZDtEs_Cg
 #EXTINF:-1 group-title="成人直播",Vod551
 https://vod.mycamtv.net/551.m3u8
 #EXTINF:-1 group-title="成人直播",Vod1786
@@ -236,8 +238,6 @@ https://vod.mycamtv.net/2047.m3u8
 https://vod.mycamtv.net/2766.m3u8
 #EXTINF:-1 group-title="普通直播",CCTV
 https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
-#EXTINF:-1 group-title="普通直播",湖南卫视
-http://t.061899.xyz/tl/tl.php?id=hunws
 #EXTINF:-1 group-title="普通直播",优漫卡通
 http://t.061899.xyz/tl/tl.php?id=ymkt
 #EXTINF:-1 group-title="普通直播",CCTV6
@@ -410,6 +410,12 @@ http://cdn.adultiptv.net/asian.m3u8
 https://live.ottiptv.cc/douyu/9280384
 #EXTINF:-1 group-title="普通直播",火龙果讲电影本人
 https://live.ottiptv.cc/douyu/2039501
+#EXTINF:-1 group-title="普通直播",Canal 33 Tijuana (720p)
+https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",France 24 (1080p)
+https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 group-title="普通直播",ticker News (1080p)
+https://live-hls-7agy.livepush.io/live_abr_cdn/nsitWAl1pTZtwca/emnmZbKZcO8RfwJR/index.m3u8
 #EXTINF:-1 group-title="普通直播",张医生
 https://live.ottiptv.cc/huya/11342415
 #EXTINF:-1 group-title="普通直播",SMG开怀时刻
