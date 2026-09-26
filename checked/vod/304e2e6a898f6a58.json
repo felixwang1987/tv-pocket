@@ -5,8 +5,8 @@
       "name": "[590ms|5] 猫眼影视",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "filterable": 0
     }
   ]
