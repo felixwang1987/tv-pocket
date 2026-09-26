@@ -3,8 +3,9 @@ import shutil
 import subprocess
 import unittest
 from datetime import datetime, timezone, timedelta
+from unittest.mock import patch
 
-from scripts.playback import parse_channels, probe_stream, check_live, verified_playlist, decode_video
+from scripts.playback import parse_channels, probe_stream, check_live, verified_playlist, verify_catalog, decode_video
 
 
 class FakeNetwork:
@@ -41,6 +42,28 @@ class PlaybackTests(unittest.TestCase):
         self.assertEqual(count,2)
         self.assertIn('group-title="成人直播",成人频道',playlist)
         self.assertIn('group-title="普通直播",普通频道',playlist)
+
+    def test_explicit_ordinary_group_overrides_ambiguous_channel_name(self):
+        text='#EXTM3U\n#EXTINF:-1 group-title="动画",Adult Swim\nhttps://example.com/cartoon.m3u8'
+        channels=parse_channels(text,'https://example.com/list.m3u')
+        self.assertEqual(channels[0]['category'],'ordinary')
+
+    def test_adult_seed_keeps_a_daily_sampling_slot(self):
+        old=(datetime.now(timezone.utc)-timedelta(hours=20)).isoformat()
+        records=[{'url':'https://example.com/ordinary','kind':'live','status':'ok',
+                  'playback':{'checked_at':old}},
+                 {'url':'https://example.com/adult','kind':'live','status':'ok','category':'adult',
+                  'playback':{'checked_at':datetime.now(timezone.utc).isoformat()}}]
+        docs={r['url']:('#EXTM3U',r['url']) for r in records}
+        called=[]
+        def fake_check(net,text,url,kind,limit,offset,deadline):
+            called.append((url,limit))
+            return {'status':'unverified','checked_at':datetime.now(timezone.utc).isoformat(),
+                    'sampled':0,'passed':0,'samples':[]}
+        with patch('scripts.playback.check_live',side_effect=fake_check):
+            verify_catalog(records,docs,None,None,None,{'max_lists':1,'samples_per_list':6,
+                                                         'adult_samples_per_list':24})
+        self.assertEqual(called,[('https://example.com/adult',24)])
 
     def test_http_200_html_is_not_a_playable_stream(self):
         net = FakeNetwork({'https://example.com/live': '<html>login</html>'})

@@ -12,7 +12,7 @@
   "files_per_repository": 8,
   "max_candidates": 320,
   "request_budget": 650,
-  "playback": {"max_lists":80, "samples_per_list":6, "max_seconds":720, "request_budget":1400},
+  "playback": {"max_lists":80, "samples_per_list":6, "adult_samples_per_list":24, "max_seconds":720, "request_budget":1400},
   "routes": {"base_url":"https://felixwang1987.github.io/tv-pocket/", "max_apis":100, "max_documents":180,
              "max_depth":3, "discovery_seconds":240, "max_seconds":720, "request_budget":1800},
   "seeds": [

@@ -52,7 +52,7 @@ def parse_channels(text, base):
                 if not MINOR_RISK.search(name+' '+group):
                     seen.add(url)
                     channels.append({'name':name[:120] or '未命名频道', 'url':url, 'unsupported':unsupported,
-                                     'category':'adult' if ADULT_LABEL.search(group) or ADULT_LABEL.search(name) else 'ordinary'})
+                                     'category':'adult' if ADULT_LABEL.search(group) or not group and ADULT_LABEL.search(name) else 'ordinary'})
             name, unsupported, group = '', '', ''
     return channels
 
@@ -223,7 +223,10 @@ def verify_catalog(records, documents, net, classify, extract_links, settings):
     eligible = [r for r in records if r.get('status') == 'ok' and r['url'] in documents]
     live = sorted((r for r in eligible if r.get('kind') in ('live', 'stream')),
                   key=lambda r:r.get('playback', {}).get('checked_at', ''))
-    chosen = live[:settings.get('max_lists', 48)]
+    max_lists=settings.get('max_lists',48)
+    adult=[r for r in live if r.get('category')=='adult'][:min(4,max_lists)]
+    reserved={r['url'] for r in adult}
+    chosen=adult+[r for r in live if r['url'] not in reserved][:max_lists-len(adult)]
     configs = [r for r in eligible if r.get('kind') not in ('live', 'stream')]
     # Config checks cannot emulate a TVBox plugin or a signed-in client.
     for row in configs:
@@ -247,7 +250,9 @@ def verify_catalog(records, documents, net, classify, extract_links, settings):
 
     def check(row):
         text, base = documents[row['url']]
-        row['playback'] = {**check_live(net, text, base, row['kind'], settings.get('samples_per_list', 3), offset, deadline),
+        limit=(settings.get('adult_samples_per_list',24) if row.get('category')=='adult'
+               else settings.get('samples_per_list',3))
+        row['playback'] = {**check_live(net, text, base, row['kind'], limit, offset, deadline),
                            'environment':environment}
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:

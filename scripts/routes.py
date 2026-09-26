@@ -26,7 +26,7 @@ APPROVED_API_HOSTS = {
     'jszyapi.com','caiji.kuaichezy.org','ikunzyapi.com','hhzyapi.com',
     'suoniapi.com','www.mdzyapi.com','caiji.dyttzyapi.com',
 }
-# These hosts are explicitly listed in public adult-only configurations.
+# These hosts are listed in https://github.com/scovis/TVBox/blob/main/R18.json.
 # Never reclassify an arbitrary host merely because a site name says "adult".
 ADULT_API_HOSTS = {
     'apiyutu.com', 'api.yirenziyuan.com', 'api.huasezy.xyz',

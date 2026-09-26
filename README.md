@@ -76,7 +76,7 @@ python3 scripts/build.py --site
 
 ## 验证范围
 
-交付前验证解析、去重、失败保留、私有地址拒绝、HTML 安全内嵌，并检查页面主要操作与响应布局。GitHub Actions 的真实定时和 Pages 部署需要在上传启用后验证。每轮最多抽检 80 份直播列表、每份 6 个频道，样本每天轮换。HTTP 成功还必须下载视频数据并解码出一帧才计入通过；总抽检时限约 12 分钟、最多 1400 次请求。加密、特殊请求头、分段字节范围、非 HTTP(S) 和非 80/443 端口目前归为需客户端验证。多仓/线路合集最多抽查 24 份、每份 3 个下级文件，单配置不执行 JAR/JS，不验证网盘登录或会员权限。
+交付前验证解析、去重、失败保留、私有地址拒绝、HTML 安全内嵌，并检查页面主要操作与响应布局。GitHub Actions 的真实定时和 Pages 部署需要在上传启用后验证。每轮最多抽检 80 份直播列表，普通列表每份 6 个频道，明确标为成人的列表最多 24 个频道，样本每天轮换。HTTP 成功还必须下载视频数据并解码出一帧才计入通过；总抽检时限约 12 分钟、最多 1400 次请求。加密、特殊请求头、分段字节范围、非 HTTP(S) 和非 80/443 端口目前归为需客户端验证。多仓/线路合集最多抽查 24 份、每份 3 个下级文件，单配置不执行 JAR/JS，不验证网盘登录或会员权限。
 
 官方参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[GitHub 定时任务](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)、[GitHub 仓库搜索 API](https://docs.github.com/en/rest/search/search#search-repositories)。
 
