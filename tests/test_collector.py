@@ -1,4 +1,7 @@
 import unittest
+from pathlib import Path
+import json
+import tempfile
 from unittest.mock import patch, MagicMock
 import scripts.collector as collector
 from urllib.request import Request
@@ -8,6 +11,42 @@ from scripts.collector import (classify, extract_links, normalize_url, merge_rec
 
 
 class ParsingTests(unittest.TestCase):
+    def test_collection_children_receive_reserved_checks(self):
+        urls={
+            'https://example.com/parent.json':{'urls':[{'name':'下级单仓','url':'child.json'}]},
+            'https://example.com/other.json':{'sites':[{'name':'普通','api':'https://api.example/vod'}]},
+            'https://example.com/third.json':{'sites':[{'name':'其他','api':'https://api.example/other'}]},
+            'https://example.com/child.json':{'sites':[{'name':'子配置','api':'https://api.example/child'}]},
+        }
+        class Network:
+            def __init__(self,*args,**kwargs):pass
+            def fetch_bytes(self,url,**kwargs):return json.dumps(urls[url]).encode(),url
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            (root/'sources.config.json').write_text(json.dumps({
+                'seeds':[{'name':name,'url':url,'sources':[]} for name,url in
+                         [('合集','https://example.com/parent.json'),('其他','https://example.com/other.json'),
+                          ('第三','https://example.com/third.json')]],
+                'max_candidates':3,'child_slots':1,'request_budget':10}))
+            with patch.object(collector,'Network',Network), patch('builtins.print'):
+                result=collector.collect(root,discover=False,github_only=True)
+            self.assertIn('https://example.com/child.json',
+                          {r['url'] for r in result['entries'] if r['status']=='ok'})
+
+    def test_unused_child_slots_return_to_primary_candidates(self):
+        class Network:
+            def __init__(self,*args,**kwargs):pass
+            def fetch_bytes(self,url,**kwargs):
+                return json.dumps({'sites':[{'name':'普通','api':'https://api.example/vod'}]}).encode(),url
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            seeds=[{'name':str(i),'url':f'https://example.com/{i}.json','sources':[]} for i in range(3)]
+            (root/'sources.config.json').write_text(json.dumps({'seeds':seeds,'max_candidates':3,
+                                                                 'child_slots':1,'request_budget':10}))
+            with patch.object(collector,'Network',Network), patch('builtins.print'):
+                result=collector.collect(root,discover=False,github_only=True)
+            self.assertEqual(len([r for r in result['entries'] if r['status']=='ok']),3)
+
     def test_discuz_post_extracts_non_github_sources_without_page_chrome(self):
         html='''<a href="https://outside.example/nav.json">导航</a>
         <td class="t_f" id="postmessage_1">★饭太硬<br>http://www.饭太硬.net/tv<br>

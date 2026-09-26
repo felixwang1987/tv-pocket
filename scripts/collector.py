@@ -505,7 +505,9 @@ def collect(root=ROOT, discover=True, github_only=False):
         github_found, github_issues, repos_count = discover_candidates(net, config)
         found = page_found + github_found
         issues = page_issues + github_issues
-    candidates = choose_candidates(seeds, old['entries'], found, config['max_candidates'])
+    max_candidates=config['max_candidates']
+    child_slots=min(max(0,int(config.get('child_slots',0))),max(0,max_candidates-1))
+    candidates = choose_candidates(seeds, old['entries'], found, max_candidates-child_slots)
     previous = {r['url']:r for r in old['entries']}
     results, children, documents = [], [], {}
     def check(item):
@@ -533,8 +535,14 @@ def collect(root=ROOT, discover=True, github_only=False):
     check_batch(candidates)
     checked_urls = {r['url'] for r in results}
     extra = [c for c in merge_records([], children) if c['url'] not in checked_urls]
-    extra = extra[:max(0, config['max_candidates'] - len(candidates))]
+    extra = extra[:max(0, max_candidates - len(candidates))]
     check_batch(extra)
+    # Unused child capacity goes back to ordinary discovery candidates.
+    if len(results) < max_candidates:
+        checked_urls = {r['url'] for r in results}
+        fallback = [r for r in choose_candidates(seeds, old['entries'], found, max_candidates)
+                    if r['url'] not in checked_urls]
+        check_batch(fallback[:max_candidates-len(results)])
     accepted = [r for r in results if r['status'] == 'ok' or r['url'] in previous]
     records = merge_records(old['entries'], accepted)
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
