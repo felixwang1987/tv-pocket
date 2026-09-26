@@ -6,7 +6,7 @@ import unittest
 from urllib.parse import urlsplit, parse_qs
 
 from scripts.collector import normalize_url, parse_jsonc
-from scripts.routes import discover_routes, check_route, publish_routes, api_request_url
+from scripts.routes import discover_routes, check_route, publish_routes, api_request_url, program_rows
 
 
 class Network:
@@ -33,7 +33,7 @@ class RouteTests(unittest.TestCase):
                          {'key':'a','name':'甲','type':1,'api':'./api?ac=list'},
                          {'key':'b','name':'重复','type':1,'api':'./api?ac=videolist'},
                          {'key':'c','name':'插件','type':3,'api':'csp_Test'}]}})
-        routes, summary=discover_routes(documents, net, parse_jsonc, normalize_url, {'max_documents':10})
+        routes, summary=discover_routes(documents, net, parse_jsonc, normalize_url, {'max_documents':10,'approved_api_hosts':['example.com']})
         self.assertEqual(len(routes),1)
         self.assertEqual(routes[0]['api'],'https://example.com/api')
         self.assertNotIn('https://example.com/code.jar',net.calls)
@@ -47,8 +47,8 @@ class RouteTests(unittest.TestCase):
         def respond(url):
             q=parse_qs(urlsplit(url).query)
             if 'ids' in q:
-                return {'list':[{'vod_id':'1','vod_name':'示例影片','vod_play_url':'正片$https://example.com/video.m3u8'}]}
-            return {'list':[{'vod_id':'1','vod_name':'示例影片'}]}
+                return {'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'示例影片','vod_play_url':'正片$https://example.com/video.m3u8'}]}
+            return {'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'示例影片'}]}
         row={'id':'abc','name':'示例','api':'https://example.com/api','sources':[]}
         failed=check_route(row,Network(respond),probe=lambda n,u:{'status':'failed','reason':'无法解码'})
         passed=check_route(row,Network(respond),probe=lambda n,u:{'status':'passed','reason':'出画面'})
@@ -66,7 +66,7 @@ class RouteTests(unittest.TestCase):
         self.assertEqual(rows,[])
 
     def test_video_page_does_not_reach_decoder_as_a_stream(self):
-        net=Network(lambda url:{'list':[{'vod_id':'1','vod_name':'示例影片','vod_play_url':'正片$https://example.com/watch/1.html'}]})
+        net=Network(lambda url:{'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'示例影片','vod_play_url':'正片$https://example.com/watch/1.html'}]})
         result=check_route({'id':'a','name':'a','api':'https://example.com/api'},net,
                            probe=lambda n,u:self.fail('HTML page submitted to playback'))
         self.assertEqual(result['status'],'unverified')
@@ -77,32 +77,45 @@ class RouteTests(unittest.TestCase):
             if q.get('ids')==['2']:
                 raise OSError('详情暂时不可达')
             if 'ids' in q:
-                return {'list':[{'vod_id':'1','vod_name':'甲','vod_play_url':'正片$https://example.com/video.m3u8'}]}
-            return {'list':[{'vod_id':'1','vod_name':'甲'},{'vod_id':'2','vod_name':'乙'}]}
+                return {'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'甲','vod_play_url':'正片$https://example.com/video.m3u8'}]}
+            return {'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'甲'},{'vod_id':'2','type_name':'国产剧','vod_name':'乙'}]}
         result=check_route({'id':'a','name':'a','api':'https://example.com/api'},Network(respond),
                            probe=lambda n,u:{'status':'passed','reason':'出画面'})
         self.assertEqual((result['status'],result['sampled'],result['passed']),('partial',2,1))
 
     def test_ignored_search_query_is_not_marked_searchable(self):
-        net=Network(lambda url:{'list':[{'vod_id':'1','vod_name':'甲','vod_play_url':'正片$https://example.com/video.m3u8'}]})
+        net=Network(lambda url:{'list':[{'vod_id':'1','type_name':'国产剧','vod_name':'甲','vod_play_url':'正片$https://example.com/video.m3u8'}]})
         result=check_route({'id':'a','name':'a','api':'https://example.com/api'},net,
                            probe=lambda n,u:{'status':'passed','reason':'出画面'})
         self.assertEqual(result['searchable'],0)
 
+    def test_unknown_api_and_unclassified_programs_are_excluded(self):
+        root='https://example.com/config'
+        sites=[{'name':'普通名称','type':1,'api':'https://unreviewed.example/api'}]
+        rows,_=discover_routes({root:(json.dumps({'sites':sites}),root)},Network({}),parse_jsonc,normalize_url,{})
+        self.assertEqual(rows,[])
+        programs=[{'vod_id':'1','type_name':'国产剧','vod_name':'节目','type_name':'国产剧'},
+                  {'vod_id':'2','vod_name':'节目'},
+                  {'vod_id':'3','type_name':'国产剧','vod_name':'节目','type_name':'伦理剧'}]
+        self.assertEqual([r['vod_id'] for r in program_rows({'list':programs})],['1'])
+
     def test_collection_contains_only_fresh_successful_site_configs(self):
         stamp=datetime.now(timezone.utc)
         def row(key,status,age=0):
-            return {'id':key,'name':key,'api':'https://example.com/'+key,'status':status,'passed':1,
+            return {'id':key,'name':key,'api':'https://cj.lziapi.com/'+key,'status':status,'passed':1,
                     'checked_at':(stamp-timedelta(hours=age)).isoformat(),'samples':[]}
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)
             document={'generated_at':stamp.isoformat(),'routes':[row('good','passed'),row('bad','failed'),row('old','passed',19)]}
+            unknown=row('unknown','passed')
+            unknown['api']='https://unknown.example/api'
+            document['routes'].append(unknown)
             count=publish_routes(root,document,'https://user.github.io/project/')
             collection=json.loads((root/'checked/routes.json').read_text())
             merged=json.loads((root/'checked/vod-all.json').read_text())
             self.assertEqual(count,1)
             self.assertEqual(len(merged['sites']),1)
-            self.assertEqual(merged['sites'][0]['api'],'https://example.com/good')
+            self.assertEqual(merged['sites'][0]['api'],'https://cj.lziapi.com/good')
             self.assertEqual(collection['urls'][1]['url'],'https://user.github.io/project/checked/vod/good.json')
             self.assertNotIn('spider',merged)
             document['routes'][0]['status']='failed'
