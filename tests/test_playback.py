@@ -64,14 +64,48 @@ class PlaybackTests(unittest.TestCase):
                            'https://example.com/a.m4s': b'segmentA', 'https://example.com/b.m4s': b'segmentB'})
         self.assertEqual(probe_stream(net, 'https://example.com/live', decoder=lambda b: b == b'initAsegmentA')['status'], 'passed')
 
-    def test_encrypted_or_cyclic_hls_is_never_marked_passed(self):
-        encrypted = '#EXTM3U\n#EXT-X-KEY:METHOD=AES-128,URI="secret.key"\n#EXTINF:5,\nv.ts'
+    def test_public_aes128_hls_segment_is_decrypted_before_video_check(self):
+        key = bytes.fromhex('00112233445566778899aabbccddeeff')
+        iv = bytes.fromhex('00000000000000000000000000000007')
+        clear = b'video frame sample'
+        encrypted = subprocess.run(['openssl', 'enc', '-aes-128-cbc', '-K', key.hex(), '-iv', iv.hex()],
+                                   input=clear, capture_output=True, check=True).stdout
+        net = FakeNetwork({'https://example.com/live': '#EXTM3U\n#EXT-X-MEDIA-SEQUENCE:7\n'
+                           '#EXT-X-KEY:METHOD=AES-128,URI="key.bin"\n#EXTINF:5,\npart.ts',
+                           'https://example.com/key.bin': key,
+                           'https://example.com/part.ts': encrypted})
+        result = probe_stream(net, 'https://example.com/live', decoder=lambda b: b == clear)
+        self.assertEqual(result['status'], 'passed')
+
+    def test_aes128_explicit_iv_overrides_media_sequence(self):
+        key = bytes.fromhex('00112233445566778899aabbccddeeff')
+        iv = bytes.fromhex('00000000000000000000000000000007')
+        clear = b'another video frame'
+        encrypted = subprocess.run(['openssl', 'enc', '-aes-128-cbc', '-K', key.hex(), '-iv', iv.hex()],
+                                   input=clear, capture_output=True, check=True).stdout
+        net = FakeNetwork({'https://example.com/live': '#EXTM3U\n#EXT-X-MEDIA-SEQUENCE:99\n'
+                           '#EXT-X-KEY:METHOD=AES-128,URI="key.bin",IV=0x00000000000000000000000000000007,KEYFORMAT="identity"\n'
+                           '#EXTINF:5,\npart.ts',
+                           'https://example.com/key.bin': key,
+                           'https://example.com/part.ts': encrypted})
+        self.assertEqual(probe_stream(net, 'https://example.com/live', decoder=lambda b: b == clear)['status'], 'passed')
+
+    def test_unsupported_encryption_or_cyclic_hls_is_never_marked_passed(self):
+        encrypted = '#EXTM3U\n#EXT-X-KEY:METHOD=SAMPLE-AES,URI="secret.key"\n#EXTINF:5,\nv.ts'
         cycle = '#EXTM3U\n#EXT-X-STREAM-INF:BANDWIDTH=100\nlive'
         for text in (encrypted, cycle):
             net = FakeNetwork({'https://example.com/live': text})
             result = probe_stream(net, 'https://example.com/live', decoder=lambda b: True)
             self.assertEqual(result['status'], 'unverified')
             self.assertNotIn('https://example.com/secret.key', net.calls)
+
+    def test_live_sampling_does_not_spend_budget_on_encrypted_segments(self):
+        net = FakeNetwork({'https://example.com/live': '#EXTM3U\n#EXT-X-KEY:METHOD=AES-128,URI="key.bin"\n'
+                           '#EXTINF:5,\npart.ts', 'https://example.com/key.bin': b'0' * 16,
+                           'https://example.com/part.ts': b'not a video'})
+        result = check_live(net, '', 'https://example.com/live', kind='stream', decoder=lambda b: True)
+        self.assertEqual(result['status'], 'unverified')
+        self.assertEqual(net.calls, ['https://example.com/live'])
 
     def test_one_good_channel_does_not_mark_all_samples_passed(self):
         text = '#EXTM3U\n#EXTINF:-1,好\nhttps://example.com/good\n#EXTINF:-1,坏\nhttps://example.com/bad'

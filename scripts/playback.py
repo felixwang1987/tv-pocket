@@ -83,7 +83,32 @@ def decode_video(body):
         return False
 
 
-def probe_stream(net, url, decoder=decode_video):
+def decrypt_hls_segment(net, body, key_info, sequence, base):
+    key_url, iv_text = key_info
+    key, _ = net.fetch_bytes(urljoin(base, key_url), limit=64, timeout=6)
+    if len(key) != 16:
+        raise ValueError('HLS 密钥不是标准 16 字节，需客户端验证')
+    if iv_text is None:
+        iv = sequence.to_bytes(16, 'big')
+    elif re.fullmatch(r'0[xX][0-9a-fA-F]{1,32}', iv_text):
+        iv = int(iv_text, 16).to_bytes(16, 'big')
+    else:
+        raise ValueError('HLS 初始向量格式无效，需客户端验证')
+    executable = shutil.which('openssl')
+    if not executable:
+        raise ValueError('检测机器未安装 HLS 解密工具')
+    try:
+        result = subprocess.run([executable, 'enc', '-d', '-aes-128-cbc', '-K', key.hex(), '-iv', iv.hex()],
+                                input=body, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                                timeout=10, check=False)
+    except subprocess.TimeoutExpired:
+        raise ValueError('HLS 分段解密超时，需客户端验证') from None
+    if result.returncode or not result.stdout:
+        raise ValueError('HLS 分段未能用公开密钥解密，需客户端验证')
+    return result.stdout
+
+
+def probe_stream(net, url, decoder=decode_video, allow_public_aes=True):
     visited = set()
 
     def fetch(target, depth=0):
@@ -93,8 +118,6 @@ def probe_stream(net, url, decoder=decode_video):
         body, final_url = net.fetch_bytes(target, limit=4_000_000, partial=True, timeout=6)
         if body.lstrip(b'\xef\xbb\xbf\r\n ').startswith(b'#EXTM3U'):
             text = body.decode('utf-8-sig', errors='replace')
-            if re.search(r'#EXT-X-KEY:(?!METHOD=NONE(?:,|\s|$))', text):
-                raise ValueError('加密直播，需支持它的客户端验证')
             if '#EXT-X-BYTERANGE:' in text or re.search(r'#EXT-X-MAP:.*BYTERANGE=', text):
                 raise ValueError('分段字节范围直播，需客户端验证')
             lines = [line.strip() for line in text.splitlines() if line.strip()]
@@ -112,17 +135,35 @@ def probe_stream(net, url, decoder=decode_video):
                 return fetch(min(variants)[1], depth + 1)
             if '#EXT-X-STREAM-INF:' in text:
                 raise ValueError('主播放列表未找到视频变体，可能只有音频')
-            segments, current_map = [], None
+            segments, current_map, current_key = [], None, None
+            sequence_match = re.search(r'^#EXT-X-MEDIA-SEQUENCE:(\d+)\s*$', text, re.M)
+            media_sequence = int(sequence_match[1]) if sequence_match else 0
             for line in lines:
-                if line.startswith('#EXT-X-MAP:'):
+                if line.startswith('#EXT-X-KEY:'):
+                    attrs = {match[1]:match[2].strip('"') for match in re.finditer(
+                        r'([A-Z0-9-]+)=("[^"]*"|[^,]*)', line.split(':', 1)[1])}
+                    method = attrs.get('METHOD')
+                    if method == 'NONE':
+                        current_key = None
+                    elif (method == 'AES-128' and allow_public_aes
+                          and attrs.get('KEYFORMAT', 'identity') == 'identity' and attrs.get('URI')):
+                        current_key = (attrs['URI'], attrs.get('IV'))
+                    else:
+                        raise ValueError('不支持的 HLS 加密方式，需客户端验证')
+                elif line.startswith('#EXT-X-MAP:'):
                     match = re.search(r'URI="([^"]+)"', line)
                     current_map = urljoin(final_url, match[1]) if match else None
                 elif not line.startswith('#'):
-                    segments.append((urljoin(final_url, line), current_map))
+                    segments.append((urljoin(final_url, line), current_map, current_key,
+                                     media_sequence + len(segments)))
             if not segments or '#EXTINF:' not in text:
                 raise ValueError('未找到可抽检的视频分段')
-            segment_url, map_url = segments[-2] if len(segments) > 1 else segments[0]
+            segment_url, map_url, key_info, sequence = segments[-2] if len(segments) > 1 else segments[0]
+            if map_url and key_info:
+                raise ValueError('加密的初始化分段需客户端验证')
             segment = fetch(segment_url, depth + 1)
+            if key_info:
+                segment = decrypt_hls_segment(net, segment, key_info, sequence, final_url)
             if map_url:
                 init, _ = net.fetch_bytes(map_url, limit=1_000_000, timeout=6)
                 segment = init + segment
@@ -157,7 +198,7 @@ def check_live(net, text, url, kind='live', limit=3, offset=0, deadline=None, de
         elif urlsplit(channel['url']).scheme not in ('http', 'https'):
             result = {'status':'unverified', 'reason':'非 HTTP(S) 直播，需客户端或运营商网络验证'}
         else:
-            result = probe_stream(net, channel['url'], decoder)
+            result = probe_stream(net, channel['url'], decoder, allow_public_aes=False)
         samples.append({**channel, **result, 'checked_at':timestamp()})
     passed = sum(s['status'] == 'passed' for s in samples)
     failed = sum(s['status'] == 'failed' for s in samples)
