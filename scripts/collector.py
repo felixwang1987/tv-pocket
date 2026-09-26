@@ -71,6 +71,18 @@ def normalize_url(value, extra_ports=None):
         return None
 
 
+def has_secret_query(url):
+    """Reject source URLs with credential-like query field names."""
+    exact = {'key', 'pass', 'pwd', 'auth', 'authorization', 'sign', 'session', 'cookie'}
+    endings = ('token', 'secret', 'password', 'sessionid', 'sessionkey',
+               'apikey', 'authkey', 'signature')
+    for key, _ in parse_qsl(urlsplit(url).query, keep_blank_values=True):
+        plain = re.sub(r'[^a-z0-9]', '', unquote(key).lower())
+        if plain in exact or plain.endswith(endings):
+            return True
+    return False
+
+
 def check_public_url(url, resolver=None, extra_ports=None):
     clean = normalize_url(url, extra_ports)
     if not clean:
@@ -299,7 +311,7 @@ def extract_links(text, base):
         if not isinstance(value, str):
             return
         url = normalize_url(urljoin(base, value))
-        if url:
+        if url and not has_secret_query(url):
             found.append({'name': str(name or urlsplit(url).path.rsplit('/',1)[-1])[:160], 'url': url})
     try:
         obj = parse_jsonc(text)
@@ -386,16 +398,15 @@ def extract_source_page_links(html, base, post_id_prefix='postmessage_'):
             continue
         for match in re.finditer(r'https?://[^\s<>"`]+', line, re.I):
             url = normalize_url(match.group().rstrip('。,;:，)]}'))
-            if url and url not in seen:
+            if url and url not in seen and not has_secret_query(url):
                 seen.add(url)
                 rows.append({'name':label, 'url':url, 'sources':[base]})
     return rows
 
 
 SOURCE_FILE = re.compile(r'\.(?:json|m3u8?|txt)$', re.I)
-NON_SOURCE_FILE = re.compile(r'\.(?:html?|php|png|jpe?g|gif|svg|webp|css|js|jar|apk|zip|exe|pdf)$', re.I)
+NON_SOURCE_FILE = re.compile(r'\.(?:html?|php|png|jpe?g|gif|svg|webp|css|js|jar|apk|zip|exe|pdf|mp4|mkv|mov|avi|ts|flv|webm|mp3|aac|wav)$', re.I)
 SOURCE_CONTEXT = re.compile(r'多仓|单仓|接口|直播|线路|配置|影视仓|TVBox', re.I)
-SECRET_QUERY_KEY = re.compile(r'(^|[_-])(token|key|secret|pass|password|pwd|auth|authorization|sign|signature|session|cookie)($|[_-])', re.I)
 
 
 def extract_generic_page_links(html: str, base: str) -> list:
@@ -403,6 +414,7 @@ def extract_generic_page_links(html: str, base: str) -> list:
     class VisibleLinks(HTMLParser):
         SKIP = {'script', 'style', 'nav', 'header', 'footer', 'aside', 'template'}
         BLOCK = {'p', 'div', 'li', 'br', 'article', 'section', 'main', 'h1', 'h2', 'h3'}
+        VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
 
         def __init__(self):
             super().__init__(convert_charrefs=True)
@@ -412,9 +424,19 @@ def extract_generic_page_links(html: str, base: str) -> list:
             self.links = []
 
         def handle_starttag(self, tag, attrs):
-            if tag in self.SKIP:
-                self.ignored.append(tag)
+            attributes = dict(attrs)
             if self.ignored:
+                if tag not in self.VOID:
+                    self.ignored.append(tag)
+                return
+            style = attributes.get('style') or ''
+            hidden = (tag in self.SKIP or 'hidden' in attributes or 'inert' in attributes or
+                      (attributes.get('aria-hidden') or '').lower() == 'true' or
+                      (attributes.get('role') or '').lower() == 'navigation' or
+                      bool(re.search(r'(?:display\s*:\s*none|visibility\s*:\s*hidden)', style, re.I)))
+            if hidden:
+                if tag not in self.VOID:
+                    self.ignored.append(tag)
                 return
             if tag in self.BLOCK:
                 self.parts.append('\n')
@@ -423,8 +445,9 @@ def extract_generic_page_links(html: str, base: str) -> list:
 
         def handle_endtag(self, tag):
             if self.ignored:
-                if tag == self.ignored[-1]:
-                    self.ignored.pop()
+                if tag in self.ignored:
+                    while self.ignored and self.ignored.pop() != tag:
+                        pass
                 return
             if tag == 'a' and self.anchor:
                 self.links.append(self.anchor)
@@ -450,7 +473,7 @@ def extract_generic_page_links(html: str, base: str) -> list:
         if not url or url in seen:
             return
         parts = urlsplit(url)
-        if any(SECRET_QUERY_KEY.search(unquote(key)) for key, _ in parse_qsl(parts.query, keep_blank_values=True)):
+        if has_secret_query(url):
             return
         if NON_SOURCE_FILE.search(parts.path):
             return
@@ -482,7 +505,8 @@ def discover_source_pages(net, config):
             body, final_url = net.fetch_bytes(url, limit=500_000, timeout=10)
             html = decode_source_page(body)
             if page.get('parser') == 'links':
-                rows = extract_generic_page_links(html, url)
+                rows = extract_generic_page_links(html, final_url)
+                rows = [{**row, 'sources':[url]} for row in rows]
                 limit = min(30, max(0, int(page.get('max_links', 30))))
             else:
                 rows = extract_source_page_links(html, url, page.get('post_id_prefix', 'postmessage_'))

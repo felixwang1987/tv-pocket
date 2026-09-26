@@ -31,6 +31,11 @@ params:Object.fromEntries(u.searchParams),error:els['source-error'].textContent}
 fields.source_url.value='https://example.com/a.json?ToKeN=member-secret';
 navigated='';els['source-form'].onsubmit({preventDefault(){}});
 result.rejectedSecret=!navigated&&!!els['source-error'].textContent;
+result.rejectedAliases=['apiKey','accessToken','authToken','sessionid'].every(key=>{
+ fields.source_url.value='https://example.com/a.json?'+key+'=secret';
+ navigated='';els['source-form'].onsubmit({preventDefault(){}});
+ return !navigated&&!!els['source-error'].textContent;
+});
 process.stdout.write(JSON.stringify(result));
 '''
         run = subprocess.run([node, '-e', harness, json.dumps(match.group(1))],
@@ -45,6 +50,7 @@ process.stdout.write(JSON.stringify(result));
         self.assertTrue(result['opened'])
         self.assertEqual(result['error'], '')
         self.assertTrue(result['rejectedSecret'])
+        self.assertTrue(result['rejectedAliases'])
 
     def test_embedded_data_cannot_close_script_or_insert_markup(self):
         template = '<script id="catalog-data" type="application/json">{}</script><p>keep</p>'

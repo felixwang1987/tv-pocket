@@ -51,7 +51,11 @@ class IntakeTests(unittest.TestCase):
                     'https://example.local/a.json',
                     'https://example.com/a.json?ToKeN=abc',
                     'https://example.com/a.json?api_%6bey=abc',
-                    'https://example.com/a.json?session=xyz'):
+                    'https://example.com/a.json?session=xyz',
+                    'https://example.com/a.json?apiKey=abc',
+                    'https://example.com/a.json?accessToken=abc',
+                    'https://example.com/a.json?authToken=abc',
+                    'https://example.com/a.json?sessionid=abc'):
             with self.subTest(url=url), self.assertRaises(ValueError):
                 self.parse(issue(url=url))
 
@@ -108,6 +112,8 @@ class WorkflowContractTests(unittest.TestCase):
         workflow = Path('.github/workflows/update.yml').read_text()
         self.assertIn('issues:', workflow)
         self.assertIn('types: [opened]', workflow)
+        self.assertIn('queue: max', workflow)
+        self.assertIn('ref: ${{ github.event.repository.default_branch }}', workflow)
         self.assertIn("cron: '23 10 * * *'", workflow)
         self.assertLess(workflow.index('id: intake'), workflow.index('python scripts/collector.py'))
         self.assertIn('python scripts/source_intake.py', workflow)

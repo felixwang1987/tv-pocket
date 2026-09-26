@@ -5,17 +5,16 @@ import json
 import os
 from pathlib import Path
 import re
-from urllib.parse import parse_qsl, unquote, urlsplit
+from urllib.parse import unquote, urlsplit
 
 try:
-    from .collector import check_public_url, normalize_url
+    from .collector import check_public_url, normalize_url, has_secret_query
 except ImportError:
-    from collector import check_public_url, normalize_url
+    from collector import check_public_url, normalize_url, has_secret_query
 
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {'来源名称': 'name', '来源链接': 'url', '来源类型': 'type', '分类': 'category'}
-SECRET_KEY = re.compile(r'(^|[_-])(token|key|secret|pass|password|pwd|auth|authorization|sign|signature|session|cookie)($|[_-])', re.I)
 
 
 def issue_fields(body):
@@ -47,9 +46,8 @@ def parse_submission(event: dict, owner: str) -> dict | None:
     raw_url = values['url']
     if not raw_url or len(raw_url) > 2048:
         raise ValueError('链接为空或过长')
-    for key, _ in parse_qsl(urlsplit(raw_url).query, keep_blank_values=True):
-        if SECRET_KEY.search(unquote(key)):
-            raise ValueError('链接包含账号或令牌参数')
+    if has_secret_query(raw_url):
+        raise ValueError('链接包含账号或令牌参数')
     url = check_public_url(raw_url)
     kind = {'直链': 'direct', '收集网页': 'page'}.get(values['type'])
     category = {'普通': 'ordinary', '成人': 'adult'}.get(values['category'])

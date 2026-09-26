@@ -134,7 +134,7 @@ const value=name=>form.elements.namedItem(name).value.trim();
 const raw=value('source_url'),name=value('source_name');let url;
 try{url=new URL(raw);}catch{error.textContent='请填写完整的公开网址。';return;}
 if(!['http:','https:'].includes(url.protocol)||url.username||url.password||!url.hostname||raw.length>2048||name.length>100||/^(?:localhost|127\.|10\.|192\.168\.)/i.test(url.hostname)){error.textContent='只接受不含账号信息的公开 HTTP(S) 网址。';return;}
-if([...url.searchParams.keys()].some(key=>/(^|[_-])(token|key|secret|pass|password|pwd|auth|authorization|sign|signature|session|cookie)($|[_-])/i.test(key))){error.textContent='网址包含疑似账号或令牌参数，请勿公开提交。';return;}
+if([...url.searchParams.keys()].some(key=>{const plain=key.replace(/[^a-z0-9]/gi,'').toLowerCase();return /^(key|pass|pwd|auth|authorization|sign|session|cookie)$/.test(plain)||/(token|secret|password|sessionid|sessionkey|apikey|authkey|signature)$/.test(plain);})){error.textContent='网址包含疑似账号或令牌参数，请勿公开提交。';return;}
 const type=value('source_type'),category=value('source_category');
 if(!['direct','page'].includes(type)||!['ordinary','adult'].includes(category)){error.textContent='请选择有效的来源类型和分类。';return;}
 const target=new URL('https://github.com/felixwang1987/tv-pocket/issues/new');

@@ -17,6 +17,7 @@ on:
 
 concurrency:
   group: tv-pocket-pages
+  queue: max
   cancel-in-progress: false
 
 permissions:
@@ -34,6 +35,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -111,7 +114,7 @@ jobs:
               if [ "$DEPLOY_RESULT" = 'success' ]; then
                 BODY="已加入每日检查并更新网页。是否进入点播或直播合集，以实播抽检结果为准。查看：$RUN_URL"
               else
-                BODY="来源已通过提交校验，但本轮采集或发布未完成。请查看：$RUN_URL"
+                BODY="来源已通过提交校验，但本轮采集或发布未完成；配置可能尚未保存，请重新提交该链接。查看：$RUN_URL"
               fi
               ;;
             duplicate) BODY="这个链接已在每日检查配置中，无需重复添加。" ;;

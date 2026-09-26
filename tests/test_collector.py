@@ -18,7 +18,13 @@ class ParsingTests(unittest.TestCase):
         <a href="https://cdn.example/poster.png">封面</a>
         <a href="https://cdn.example/config.png">配置图片</a>
         <a href="/other-page.html">配置讨论</a>
+        <a href="https://cdn.example/movie.mp4">直播视频</a>
+        <main hidden><a href="/hidden.json">隐藏配置</a></main>
+        <div role="navigation"><a href="/side.json">侧栏配置</a></div>
+        <div aria-hidden="true"><a href="/aria.json">隐藏配置</a></div>
+        <div style="display:none"><a href="/style-hidden.json">隐藏配置</a></div>
         <a href="https://cdn.example/private.json?api_%6bey=secret">私密</a>
+        <a href="https://cdn.example/private2.json?accessToken=secret">私密</a>
         <a href="https://cdn.example/source.json?version=2">普通配置</a></main>
         <script>var x='https://cdn.example/script.json'</script>
         <style>.a{background:url(https://cdn.example/style.json)}</style>'''
@@ -60,6 +66,16 @@ class ParsingTests(unittest.TestCase):
         pages = [{'url':f'https://example.com/{i}.html','parser':'links'} for i in range(35)]
         discover_source_pages(net, {'source_pages':pages})
         self.assertEqual(net.calls, 30)
+
+    def test_redirected_page_resolves_relative_links_at_final_url_and_keeps_original_source(self):
+        class Network:
+            def fetch_bytes(self, target, **kwargs):
+                return b'<main><a href="live.m3u">Live</a></main>', 'https://example.com/list/'
+        rows, issues = discover_source_pages(Network(), {'source_pages': [
+            {'url':'https://example.com/list','parser':'links'}]})
+        self.assertEqual(issues, [])
+        self.assertEqual(rows[0]['url'], 'https://example.com/list/live.m3u')
+        self.assertEqual(rows[0]['sources'], ['https://example.com/list'])
 
     def test_first_check_failure_of_pinned_source_remains_visible(self):
         class Network:
