@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_304e2e6a898f6a58",
+      "name": "[590ms|5] 猫眼影视",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
