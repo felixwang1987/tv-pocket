@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_6124d4709cbefc30",
+      "name": "金鹰资源",
+      "type": 1,
+      "api": "http://jyzyapi.com/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
