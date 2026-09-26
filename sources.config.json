@@ -9,6 +9,7 @@
   "files_per_repository": 4,
   "max_candidates": 120,
   "request_budget": 230,
+  "playback": {"max_lists":48, "samples_per_list":3, "max_seconds":360, "request_budget":500},
   "seeds": [
     {"name":"无邪多仓", "url":"https://raw.githubusercontent.com/wxrjck/-YSC-/main/wx.json", "sources":["https://github.com/wxrjck/-YSC-"]},
     {"name":"鹏九线路合集", "url":"https://mcp2016.github.io/TVBox/urls.json", "sources":["https://github.com/mcp2016/TVBox"]},

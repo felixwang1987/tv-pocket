@@ -8,7 +8,7 @@
 
 双击 **index.html**。页面已内嵌一份真实采集快照，不依赖服务器或安装软件。
 
-「格式检查通过」仅代表文件可下载、内容可识别，不代表每个频道、子仓或站点都能播放。检查的网络环境也会影响结果。
+直播列表会抽检视频画面；多仓、线路合集和单配置标记为「配置可读 · 需实播」。抽检出画面不代表整份列表都能播放，也不保证不同地区或运营商网络可以访问。
 
 ## 推荐：发布后每 6 小时自动找新链接
 
@@ -31,6 +31,8 @@
 
 ## 日常使用
 
+- **复制已实测直播**：首页按钮会复制 `checked/live.m3u` 的线上地址，直接放入影视仓「直播配置」。只收录近 18 小时成功解码画面的抽检频道，按地址去重。未出画面的频道不会进入这份清单。
+- **检测明细**：展开卡片可看每个抽检频道的结果、原因和检测时间。多仓显示下级配置的可读情况，不假定点播可用。
 - **复制地址**：到影视仓对应的多仓、配置或直播入口粘贴；入口名称依软件版本不同。
 - **收藏**：点卡片右上角星星，底部「我的收藏」集中显示。同一浏览器刷新仍保留，不跨设备同步。
 - **读取最新**：读取已经发布的检查结果。它不会触发 GitHub 采集；想立即采集，到 Actions 手动运行。
@@ -59,7 +61,7 @@
 
 ## 本地维护（可选）
 
-只需 Python 3.9 或更高版本，无第三方依赖：
+需要 Python 3.9 或更高版本，以及 FFmpeg。Python 无第三方依赖；GitHub Actions 会检查并安装 FFmpeg：
 
 ```sh
 python3 -m unittest discover -s tests -v
@@ -67,12 +69,12 @@ python3 scripts/collector.py
 python3 scripts/build.py --site
 ```
 
-本机若使用代理的 Fake-IP DNS，可加 `--github-only`，此模式只允许四个固定 GitHub HTTPS 域名，不检查第三方域名。Actions 不需要这个参数。普通模式拒绝私有/本地地址，并在重定向时重新检查目标；请在 GitHub 托管 runner 或隔离环境运行第三方来源采集。
+本机若使用代理的 Fake-IP DNS，可加 `--github-only`，此模式只允许四个固定 GitHub HTTPS 域名，不检查第三方域名，也不运行实播抽检。Actions 不需要这个参数。普通模式拒绝私有/本地地址，并在重定向时重新检查目标；请在 GitHub 托管 runner 或隔离环境运行第三方来源采集。
 
-`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
+`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`checked/live.m3u` 是实播抽检通过的频道列表；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
 
 ## 验证范围
 
-交付前验证解析、去重、失败保留、私有地址拒绝、HTML 安全内嵌，并检查页面主要操作与响应布局。GitHub Actions 的真实定时和 Pages 部署需要在上传启用后验证。未逐个实播频道。
+交付前验证解析、去重、失败保留、私有地址拒绝、HTML 安全内嵌，并检查页面主要操作与响应布局。GitHub Actions 的真实定时和 Pages 部署需要在上传启用后验证。每轮最多抽检 48 份直播列表、每份 3 个频道，样本每 6 小时轮换。HTTP 成功还必须下载视频数据并解码出一帧才计入通过；总抽检时限约 6 分钟、最多 500 次请求。加密、特殊请求头、分段字节范围、非 HTTP(S) 和非 80/443 端口目前归为需客户端验证。多仓/线路合集最多抽查 24 份、每份 3 个下级文件，单配置不执行 JAR/JS，不验证网盘登录或会员权限。
 
 官方参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[GitHub 定时任务](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)、[GitHub 仓库搜索 API](https://docs.github.com/en/rest/search/search#search-repositories)。
