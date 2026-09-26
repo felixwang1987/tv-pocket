@@ -2,7 +2,7 @@
   "sites": [
     {
       "key": "pocket_dd3e59bd879f1515",
-      "name": "💝分享猫眼",
+      "name": "影视 • 猫眼[直连]",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
       "searchable": 1,

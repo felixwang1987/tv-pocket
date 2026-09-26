@@ -2,7 +2,7 @@
   "sites": [
     {
       "key": "pocket_fc4bc5d92b095f5a",
-      "name": "🎥┃光速┃资源",
+      "name": "TV-光速资源",
       "type": 1,
       "api": "https://api.guangsuapi.com/api.php/provide/vod",
       "searchable": 1,

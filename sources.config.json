@@ -138,6 +138,14 @@
       "sources": [
         "https://iptv-org.github.io/iptv/categories/news.m3u"
       ]
+    },
+    {
+      "name": "TVBox",
+      "url": "http://ztha.top/TVBox/GYCK.json",
+      "category": "ordinary",
+      "sources": [
+        "http://ztha.top/TVBox/GYCK.json"
+      ]
     }
   ]
 }
