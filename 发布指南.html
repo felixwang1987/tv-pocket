@@ -7,7 +7,7 @@
 <li>检查 <code>.github/workflows/update.yml</code> 也已经上传。Mac 按 <strong>⌘ + Shift + .</strong> 可以显示隐藏的 <code>.github</code> 文件夹。或者在 GitHub 用 <strong>Add file → Create new file</strong> 创建同名路径，复制本包同名文件的内容。</li>
 <li>进入 <strong>Settings → Pages</strong>，把 <strong>Source</strong> 设置成 <strong>GitHub Actions</strong>。</li>
 <li>进入 <strong>Actions → 更新影视口袋 → Run workflow</strong>，再点一次 <strong>Run workflow</strong>。等待采集和部署都变绿。</li>
-<li>回到 <strong>Settings → Pages</strong> 打开生成的网站地址。以后大约每 6 小时更新一次。</li></ol>
+<li>回到 <strong>Settings → Pages</strong> 打开生成的网站地址。以后每天约在 10:23 UTC 更新一次，也可以在 Actions 手动运行。</li></ol>
 <p class="tip">不要直接上传 ZIP 当网页；不要漏掉隐藏的 .github 文件夹。HTML 单独能用，但自动更新需要配套文件。</p><small>无需填写 GitHub 令牌。工作流使用 GitHub 自动提供的凭据。网页地址是公开的，收藏只在本机浏览器保存。</small></section>
 <section><h2>只上传一个 HTML，也可以</h2><p>上传 <code>index.html</code> 到仓库根目录，在 <strong>Settings → Pages</strong> 选择 <strong>Deploy from a branch → main → / (root) → Save</strong>。</p><p>这样有搜索、复制和收藏功能，但使用的是随文件附带的链接快照。想后台自动发现新链接，再按上面的步骤补齐配套文件。</p></section>
 <section><h2>使用时记住这三件事</h2><ol><li>“格式检查通过”不代表每个频道都能播放，复制到影视仓后实际测试。</li><li>“读取最新”只读取已发布的数据。想立即采集，在 GitHub Actions 手动运行。</li><li>收藏保存在当前浏览器，不会自动同步到其他手机或电脑。</li></ol><p><a href="README.md">完整说明与常见问题 →</a></p></section>
