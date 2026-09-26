@@ -15,7 +15,17 @@ try:
 except ImportError:
     from playback import probe_stream, timestamp, sample_items, FRESH_SECONDS
 
-ADULT = re.compile(r'成人|色情|伦理|福利|无码|有码|里番|萝莉|丝袜|性感|情色|淫|女优|av资源|18禁|18\+', re.I)
+ADULT = re.compile(r'成人|色情|伦理|倫理|福利|无码|無碼|有码|有碼|里番|萝莉|蘿莉|丝袜|性感|情色|淫|女优|女優|麻豆|91md|jav|av资源|18禁|18\+|🔞', re.I)
+# Unreviewed feeds stay outside the exported collection. A generic site name
+# alone cannot establish that a third-party catalog contains ordinary films.
+APPROVED_API_HOSTS = {
+    'hongniuzy2.com','www.hongniuzy2.com','cj.lziapi.com','360zyzz.com',
+    'jyzyapi.com','api.guangsuapi.com','api.maoyanapi.top','apiyutu.com',
+    'sdzyapi.com','bfzyapi.com','tyyszy.com','caiji.maotaizy.cc','ffzy5.tv',
+    'jszyapi.com','caiji.kuaichezy.org','ikunzyapi.com','hhzyapi.com',
+    'suoniapi.com','www.mdzyapi.com','caiji.dyttzyapi.com',
+}
+NORMAL_CATEGORY = re.compile(r'^[\u4e00-\u9fff /·-]{0,12}(?:电影|剧|动漫|综艺|动画片|纪录片|动作片|喜剧片|爱情片|科幻片|恐怖片|惊悚片|战争片|剧情片|悬疑片|犯罪片|奇幻片|冒险片|音乐片|歌舞片|体育片|记录片|预告片)$')
 TRANSIENT = {'ac', 'pg', 'page', 'wd', 'ids', 'h', 't', 'limit'}
 SECRET = {'token', 'access_token', 'password', 'passwd', 'cookie', 'auth', 'key', 'apikey', 'api_key'}
 
@@ -48,6 +58,7 @@ def discover_routes(documents, net, parse, normalize, settings):
     checked_configs = unsupported = fetched = 0
     deadline = time.monotonic() + settings.get('discovery_seconds',90)
     offset = int(time.time() // (6*3600))
+    approved_hosts=set(settings.get('approved_api_hosts',APPROVED_API_HOSTS))
     # Cached documents cost no extra network calls. Additional nested documents
     # have their own depth, count and time bounds, including cyclic stores.
     while queue:
@@ -84,7 +95,7 @@ def discover_routes(documents, net, parse, normalize, settings):
                     unsupported += 1
                     continue
                 api = canonical_api(site.get('api'),base,normalize)
-                if not api:
+                if not api or urlsplit(api).hostname not in approved_hosts:
                     unsupported += 1
                     continue
                 if api not in routes:
@@ -118,6 +129,7 @@ def program_rows(payload):
     return [r for r in payload['list'] if isinstance(r,dict)
             and isinstance(r.get('vod_id'),(str,int)) and str(r['vod_id'])
             and isinstance(r.get('vod_name'),str) and r['vod_name'].strip()
+            and NORMAL_CATEGORY.fullmatch(str(r.get('type_name','')).strip())
             and not ADULT.search(str(r.get('type_name',''))+' '+r['vod_name'])]
 
 
@@ -205,6 +217,8 @@ def fresh_routes(document):
                 continue
             p=urlsplit(row['api'])
             if p.scheme not in ('http','https') or not p.hostname or p.username or p.password:
+                continue
+            if p.hostname not in APPROVED_API_HOSTS or ADULT.search(row.get('name','')):
                 continue
             result.append(row)
         except (KeyError,TypeError,ValueError):
