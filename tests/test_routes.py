@@ -106,22 +106,25 @@ class RouteTests(unittest.TestCase):
                     'checked_at':(stamp-timedelta(hours=age)).isoformat(),'samples':[]}
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)
-            document={'generated_at':stamp.isoformat(),'routes':[row('good','passed'),row('bad','failed'),row('old','passed',19)]}
+            document={'generated_at':stamp.isoformat(),'routes':[row('good','passed'),row('bad','failed'),
+                                                                 row('yesterday','passed',26),row('old','passed',37)]}
             unknown=row('unknown','passed')
             unknown['api']='https://unknown.example/api'
             document['routes'].append(unknown)
             count=publish_routes(root,document,'https://user.github.io/project/')
             collection=json.loads((root/'checked/routes.json').read_text())
             merged=json.loads((root/'checked/vod-all.json').read_text())
-            self.assertEqual(count,1)
-            self.assertEqual(len(merged['sites']),1)
-            self.assertEqual(merged['sites'][0]['api'],'https://cj.lziapi.com/good')
-            self.assertEqual(collection['urls'][1]['url'],'https://user.github.io/project/checked/vod/good.json')
+            self.assertEqual(count,2)
+            self.assertEqual({site['api'] for site in merged['sites']},
+                             {'https://cj.lziapi.com/good','https://cj.lziapi.com/yesterday'})
+            self.assertEqual({entry['url'] for entry in collection['urls'][1:]},
+                             {'https://user.github.io/project/checked/vod/good.json',
+                              'https://user.github.io/project/checked/vod/yesterday.json'})
             self.assertNotIn('spider',merged)
             document['routes'][0]['status']='failed'
             publish_routes(root,document,'https://user.github.io/project/')
             self.assertFalse((root/'checked/vod/good.json').exists())
-            self.assertEqual(json.loads((root/'checked/routes.json').read_text())['urls'],[])
+            self.assertEqual(len(json.loads((root/'checked/routes.json').read_text())['urls']),2)
 
 
 if __name__=='__main__':

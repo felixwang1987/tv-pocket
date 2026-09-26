@@ -2,10 +2,45 @@ import unittest
 from unittest.mock import patch, MagicMock
 import scripts.collector as collector
 from urllib.request import Request
+from urllib.parse import parse_qs, urlsplit
 from scripts.collector import classify, extract_links, normalize_url, merge_records, check_public_url
 
 
 class ParsingTests(unittest.TestCase):
+    def test_search_can_fill_a_larger_repository_budget(self):
+        class API:
+            def api(self, path):
+                if path.startswith('/search/repositories?'):
+                    query = parse_qs(urlsplit(path).query)
+                    kind = query['q'][0]
+                    size = min(int(query['per_page'][0]), 8)
+                    return {'items':[{'full_name':f'{kind}/repo{i}', 'private':False,
+                                      'archived':False, 'default_branch':'main'} for i in range(size)]}
+                if '/git/trees/' in path:
+                    return {'tree':[{'path':'config.json', 'type':'blob', 'size':100}]}
+                raise AssertionError(path)
+        rows, errors, count = collector.discover_candidates(API(), {
+            'repositories':[], 'queries':['vod','live'], 'max_repositories':12,
+            'files_per_repository':1})
+        self.assertEqual((count, len(rows), errors), (12, 12, []))
+
+    def test_search_keeps_both_vod_and_live_repositories_when_slots_are_scarce(self):
+        class API:
+            def api(self, path):
+                if path.startswith('/search/repositories?'):
+                    query = parse_qs(urlsplit(path).query)
+                    kind = query['q'][0]
+                    return {'items':[{'full_name':f'{kind}/repo{i}', 'private':False,
+                                      'archived':False, 'default_branch':'main'} for i in range(8)]}
+                if '/git/trees/' in path:
+                    return {'tree':[{'path':'config.json', 'type':'blob', 'size':100}]}
+                raise AssertionError(path)
+        rows, errors, count = collector.discover_candidates(API(), {
+            'repositories':[], 'queries':['vod','live'], 'max_repositories':4,
+            'files_per_repository':1})
+        self.assertEqual((count, errors), (4, []))
+        self.assertEqual({row['name'].split(' · ')[0] for row in rows}, {'vod','live'})
+
     def test_redirects_consume_the_same_request_budget(self):
         net = collector.Network(budget=1)
         handler = collector.SafeRedirect(lambda u:u, on_redirect=net.take_request)

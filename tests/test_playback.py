@@ -86,15 +86,18 @@ class PlaybackTests(unittest.TestCase):
 
     def test_export_excludes_stale_failed_and_unchecked_streams(self):
         fresh = datetime.now(timezone.utc).isoformat()
-        stale = (datetime.now(timezone.utc) - timedelta(hours=19)).isoformat()
+        yesterday = (datetime.now(timezone.utc) - timedelta(hours=26)).isoformat()
+        stale = (datetime.now(timezone.utc) - timedelta(hours=37)).isoformat()
         def row(url, stamp=fresh, source='ok', status='passed'):
             return {'kind':'live', 'status':source, 'playback':{'checked_at':stamp, 'samples':[
                 {'name':'频道\n#INJECT', 'url':url, 'status':status, 'checked_at':stamp}]}}
-        rows = [row('https://example.com/ok'), row('https://example.com/ok'), row('https://example.com/old', stale),
+        rows = [row('https://example.com/ok'), row('https://example.com/ok'),
+                row('https://example.com/yesterday', yesterday), row('https://example.com/old', stale),
                 row('https://example.com/bad', source='error'), row('https://example.com/unknown', status='unverified')]
         content, count = verified_playlist(rows)
-        self.assertEqual(count, 1)
+        self.assertEqual(count, 2)
         self.assertEqual(content.count('https://example.com/ok'), 1)
+        self.assertIn('https://example.com/yesterday', content)
         self.assertNotIn('\n#INJECT', content)
         self.assertNotIn('/old', content)
 
