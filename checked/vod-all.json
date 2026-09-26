@@ -10,6 +10,24 @@
       "filterable": 0
     },
     {
+      "key": "pocket_8d82ffa7f9899260",
+      "name": "TV-金鹰资源",
+      "type": 1,
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_159d37437573275f",
+      "name": "[137ms|zy] 🍏火狐",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_304e2e6a898f6a58",
       "name": "[590ms|5] 猫眼影视",
       "type": 1,
@@ -46,19 +64,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_af8e085c7f2740c4",
-      "name": "红牛资源",
+      "key": "pocket_6124d4709cbefc30",
+      "name": "金鹰资源",
       "type": 1,
-      "api": "https://hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_5ffb6e9a093b753f",
-      "name": "魔都",
-      "type": 1,
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "api": "http://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -73,19 +82,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🎥┃红牛┃资源",
+      "key": "pocket_10ee9009c31aca81",
+      "name": "🐓┃爱坤┃资源",
       "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_10ee9009c31aca81",
-      "name": "🐓┃爱坤┃资源",
+      "key": "pocket_ffb12753653057e9",
+      "name": "💖分享金鹰",
       "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -100,10 +109,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_159d37437573275f",
-      "name": "[137ms|zy] 🍏火狐",
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🥬豪华资源",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
+      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_5ffb6e9a093b753f",
+      "name": "🥬魔都资源",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -122,6 +140,15 @@
       "name": "电影天堂",
       "type": 1,
       "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_af8e085c7f2740c4",
+      "name": "红牛资源",
+      "type": 1,
+      "api": "https://hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -154,19 +181,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "🎥┃豪华┃资源",
+      "key": "pocket_9e0145bd863328a1",
+      "name": "📱天堂网ᶜʲ┃采集",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_9e0145bd863328a1",
-      "name": "📱天堂网ᶜʲ┃采集",
+      "key": "pocket_790172e095caf7cc",
+      "name": "🥬红牛资源",
       "type": 1,
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
