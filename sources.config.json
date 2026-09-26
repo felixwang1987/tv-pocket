@@ -146,6 +146,14 @@
       "sources": [
         "http://ztha.top/TVBox/GYCK.json"
       ]
+    },
+    {
+      "name": "小虎斑在线",
+      "url": "http://xmbjm.fh4u.org/dc.txt",
+      "category": "ordinary",
+      "sources": [
+        "http://xmbjm.fh4u.org/dc.txt"
+      ]
     }
   ]
 }
