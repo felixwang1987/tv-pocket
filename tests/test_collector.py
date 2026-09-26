@@ -123,6 +123,21 @@ class ParsingTests(unittest.TestCase):
         def resolver(*args, **kwargs): return [(2, 1, 6, '', ('10.0.0.1', 443))]
         with self.assertRaises(ValueError): check_public_url('https://a.example/x', resolver=resolver)
 
+    def test_only_reviewed_vod_media_host_can_use_its_extra_port(self):
+        public = [(2, 1, 6, '', ('93.184.216.34', 65))]
+        private = [(2, 1, 6, '', ('10.0.0.1', 65))]
+        url = 'https://p.hhwenjian.com:65/video.ts'
+        with patch.object(collector.socket, 'getaddrinfo', return_value=public):
+            with self.assertRaises(ValueError): collector.Network().validate(url)
+            try:
+                route_net = collector.Network(extra_ports={'p.hhwenjian.com': {65}})
+            except TypeError:
+                self.fail('点播检查器尚不能限定主机开放媒体端口')
+            self.assertEqual(route_net.validate(url), url)
+            with self.assertRaises(ValueError): route_net.validate('https://other.example:65/video.ts')
+        with patch.object(collector.socket, 'getaddrinfo', return_value=private):
+            with self.assertRaises(ValueError): route_net.validate(url)
+
     def test_failure_keeps_previous_kind_and_last_success(self):
         old = [{'id':'a', 'url':'https://a.example/x', 'kind':'multi', 'count':3, 'last_ok':'yesterday', 'sources':['https://github.com/a/b'], 'status':'ok'}]
         new = [{'id':'a', 'url':'https://a.example/x', 'status':'error', 'checked_at':'today', 'sources':['https://github.com/c/d']}]

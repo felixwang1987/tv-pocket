@@ -25,13 +25,19 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
 GITHUB_HOSTS = {'api.github.com', 'raw.githubusercontent.com', 'iptv-org.github.io', 'mcp2016.github.io'}
+VOD_MEDIA_PORTS = {
+    'p.hhwenjian.com': {65},
+    'hnts.ymuuy.com': {65},
+    'gs.gszyi.com': {999},
+    'c.baisiweiting.com': {18443},
+}
 
 
 def now():
     return datetime.now(timezone.utc).isoformat(timespec='seconds')
 
 
-def normalize_url(value):
+def normalize_url(value, extra_ports=None):
     if not isinstance(value, str):
         return None
     try:
@@ -47,7 +53,7 @@ def normalize_url(value):
                 return None
         except ValueError:
             pass
-        if p.port not in (None, 80, 443):
+        if p.port not in (None, 80, 443) and p.port not in (extra_ports or {}).get(host, ()):
             return None
         path = p.path or '/'
         if host == 'github.com':
@@ -64,11 +70,12 @@ def normalize_url(value):
         return None
 
 
-def check_public_url(url, resolver=socket.getaddrinfo):
-    clean = normalize_url(url)
+def check_public_url(url, resolver=None, extra_ports=None):
+    clean = normalize_url(url, extra_ports)
     if not clean:
         raise ValueError('只允许公共 HTTP(S) 地址')
     p = urlsplit(clean)
+    resolver = resolver or socket.getaddrinfo
     addresses = resolver(p.hostname, p.port or (443 if p.scheme == 'https' else 80), type=socket.SOCK_STREAM)
     if not addresses:
         raise ValueError('地址无法解析')
@@ -142,20 +149,21 @@ class SafeRedirect(HTTPRedirectHandler):
 
 
 class Network:
-    def __init__(self, budget=260, github_only=False):
+    def __init__(self, budget=260, github_only=False, extra_ports=None):
         self.remaining = budget
         self.lock = threading.Lock()
         self.github_only = github_only
+        self.extra_ports = extra_ports or {}
 
     def validate(self, url):
-        clean = normalize_url(url)
+        clean = normalize_url(url, self.extra_ports)
         if self.github_only:
             # Local proxy DNS may return RFC 2544 benchmark addresses. In this
             # explicit mode, requests are restricted to four fixed public hosts.
             if not clean or urlsplit(clean).hostname not in GITHUB_HOSTS or not clean.startswith('https://'):
                 raise ValueError('本地检查仅限 GitHub 官方文件域名')
             return clean
-        return check_public_url(url)
+        return check_public_url(url, extra_ports=self.extra_ports)
 
     def fetch(self, url, api=False):
         body, _ = self.fetch_bytes(url, api=api)
@@ -457,7 +465,8 @@ def collect(root=ROOT, discover=True, github_only=False):
         if route_settings.get('base_url'):
             config_urls = {r['url'] for r in records if r.get('status') == 'ok' and r.get('kind') in ('multi','collection','config')}
             route_documents = {u:d for u,d in documents.items() if u in config_urls}
-            routes_document = collect_routes(root, route_documents, Network(route_settings.get('request_budget',800)),
+            routes_document = collect_routes(root, route_documents,
+                                             Network(route_settings.get('request_budget',800), extra_ports=VOD_MEDIA_PORTS),
                                              parse_jsonc, normalize_url, route_settings)
     playlist, verified_count = verified_playlist(records)
     playback_summary['verified_streams'] = verified_count
