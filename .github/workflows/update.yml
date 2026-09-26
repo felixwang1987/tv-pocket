@@ -3,7 +3,7 @@ name: 更新影视口袋
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 */6 * * *'
+    - cron: '23 10 * * *'
   push:
     branches: [main, master]
     paths:
@@ -23,7 +23,7 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     permissions:
       contents: write
     steps:
