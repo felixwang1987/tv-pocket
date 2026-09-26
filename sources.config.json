@@ -10,12 +10,17 @@
   "search_results_per_query": 12,
   "max_repositories": 40,
   "files_per_repository": 8,
-  "max_candidates": 320,
-  "request_budget": 650,
+  "max_candidates": 360,
+  "request_budget": 750,
   "playback": {"max_lists":80, "samples_per_list":6, "adult_samples_per_list":24, "max_seconds":720, "request_budget":1400},
   "routes": {"base_url":"https://felixwang1987.github.io/tv-pocket/", "max_apis":100, "max_documents":180,
-             "max_depth":3, "discovery_seconds":240, "max_seconds":720, "request_budget":1800},
+             "max_depth":3, "max_children_per_config":16, "discovery_seconds":240,
+             "max_seconds":720, "request_budget":1800},
+  "source_pages": [
+    {"url":"https://bbs.qiqiv.cn/thread-5210-1-1.html", "post_id_prefix":"postmessage_", "max_links":50}
+  ],
   "seeds": [
+    {"name":"GYCK 线路合集", "url":"https://ztha.top/TVBox/GYCK.json", "sources":["https://ztha.top/TVBox/GYCK.json"]},
     {"name":"无邪多仓", "url":"https://raw.githubusercontent.com/wxrjck/-YSC-/main/wx.json", "sources":["https://github.com/wxrjck/-YSC-"]},
     {"name":"鹏九线路合集", "url":"https://mcp2016.github.io/TVBox/urls.json", "sources":["https://github.com/mcp2016/TVBox"]},
     {"name":"多仓收集 · hd9211", "url":"https://raw.githubusercontent.com/hd9211/Tvbox1/main/duocang1.json", "sources":["https://github.com/hd9211/Tvbox1"]},

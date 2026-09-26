@@ -3,10 +3,35 @@ from unittest.mock import patch, MagicMock
 import scripts.collector as collector
 from urllib.request import Request
 from urllib.parse import parse_qs, urlsplit
-from scripts.collector import classify, extract_links, normalize_url, merge_records, check_public_url
+from scripts.collector import (classify, extract_links, normalize_url, merge_records, check_public_url,
+                               extract_source_page_links, discover_source_pages)
 
 
 class ParsingTests(unittest.TestCase):
+    def test_discuz_post_extracts_non_github_sources_without_page_chrome(self):
+        html='''<a href="https://outside.example/nav.json">导航</a>
+        <td class="t_f" id="postmessage_1">★饭太硬<br>http://www.饭太硬.net/tv<br>
+        ★外部单仓<br>https://store.example/one.json<br>
+        ★无效<br>http://127.0.0.1/private<br>javascript:alert(1)</td>'''
+        rows=extract_source_page_links(html,'https://bbs.example/thread.html')
+        self.assertEqual([r['name'] for r in rows],['饭太硬','外部单仓'])
+        self.assertEqual(rows[0]['url'],'http://www.xn--sss604efuw.net/tv')
+        self.assertEqual(rows[1]['url'],'https://store.example/one.json')
+        self.assertEqual(rows[1]['sources'],['https://bbs.example/thread.html'])
+
+    def test_source_page_uses_declared_gbk_and_keeps_other_pages_after_failure(self):
+        url='https://bbs.example/thread.html'
+        html='<meta charset="gbk"><td id="postmessage_1">★外部配置<br>https://store.example/a.json</td>'
+        class Network:
+            def fetch_bytes(self,target,**kwargs):
+                if target==url:return html.encode('gbk'),target
+                raise OSError('页面暂时不可达')
+        found,issues=discover_source_pages(Network(),{'source_pages':[
+            {'url':'https://bad.example/forum'},{'url':url}]})
+        self.assertEqual([r['url'] for r in found],['https://store.example/a.json'])
+        self.assertEqual(len(issues),1)
+        self.assertEqual(found[0]['name'],'外部配置')
+
     def test_search_can_fill_a_larger_repository_budget(self):
         class API:
             def api(self, path):

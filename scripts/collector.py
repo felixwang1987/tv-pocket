@@ -2,6 +2,7 @@
 import argparse
 import concurrent.futures
 import hashlib
+from html.parser import HTMLParser
 import http.client
 import ipaddress
 import json
@@ -330,6 +331,85 @@ def extract_links(text, base):
     return found
 
 
+class ForumPosts(HTMLParser):
+    """Read visible Discuz post text, excluding navigation and page scripts."""
+    def __init__(self, post_id_prefix):
+        super().__init__(convert_charrefs=True)
+        self.post_id_prefix = post_id_prefix
+        self.depth = 0
+        self.ignored = 0
+        self.parts = []
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == 'td' and str(attributes.get('id') or '').startswith(self.post_id_prefix):
+            self.depth = 1
+        elif self.depth and tag == 'td':
+            self.depth += 1
+        elif self.depth and tag in ('script', 'style'):
+            self.ignored += 1
+        elif self.depth and tag in ('br', 'p', 'div', 'li'):
+            self.parts.append('\n')
+
+    def handle_endtag(self, tag):
+        if self.depth and tag == 'td':
+            self.depth -= 1
+            if not self.depth:
+                self.parts.append('\n')
+        elif self.ignored and tag in ('script', 'style'):
+            self.ignored -= 1
+        elif self.depth and tag in ('p', 'div', 'li'):
+            self.parts.append('\n')
+
+    def handle_data(self, data):
+        if self.depth and not self.ignored:
+            self.parts.append(data)
+
+
+def decode_source_page(body):
+    header = body[:4096].decode('ascii', errors='ignore')
+    match = re.search(r'charset\s*=\s*["\']?([a-zA-Z0-9_-]+)', header, re.I)
+    declared = match[1].lower() if match else ''
+    encoding = 'gb18030' if declared in ('gbk', 'gb2312', 'gb18030') else 'utf-8-sig'
+    return body.decode(encoding, errors='replace')
+
+
+def extract_source_page_links(html, base, post_id_prefix='postmessage_'):
+    parser = ForumPosts(post_id_prefix)
+    parser.feed(html)
+    rows, seen, label = [], set(), ''
+    for line in ''.join(parser.parts).splitlines():
+        line = line.strip()
+        if line.startswith('★'):
+            label = line.lstrip('★').strip(' ：:')[:100]
+        if not label:
+            continue
+        for match in re.finditer(r'https?://[^\s<>"`]+', line, re.I):
+            url = normalize_url(match.group().rstrip('。,;:，)]}'))
+            if url and url not in seen:
+                seen.add(url)
+                rows.append({'name':label, 'url':url, 'sources':[base]})
+    return rows
+
+
+def discover_source_pages(net, config):
+    found, issues = [], []
+    for page in config.get('source_pages', [])[:8]:
+        if not isinstance(page, dict):
+            continue
+        url = normalize_url(page.get('url'))
+        if not url:
+            continue
+        try:
+            body, final_url = net.fetch_bytes(url, limit=500_000, timeout=10)
+            rows = extract_source_page_links(decode_source_page(body), url,
+                                             page.get('post_id_prefix', 'postmessage_'))
+            found.extend(rows[:page.get('max_links', 50)])
+        except Exception as error:
+            issues.append(url + '：' + str(error)[:120])
+    return found, issues
+
+
 def merge_records(old, new):
     result = {}
     for item in old + new:
@@ -419,8 +499,12 @@ def collect(root=ROOT, discover=True, github_only=False):
     seeds = config['seeds']
     found = []
     issues, repos_count = [], 0
+    page_found = []
     if discover:
-        found, issues, repos_count = discover_candidates(net, config)
+        page_found, page_issues = discover_source_pages(net, config) if not github_only else ([], [])
+        github_found, github_issues, repos_count = discover_candidates(net, config)
+        found = page_found + github_found
+        issues = page_issues + github_issues
     candidates = choose_candidates(seeds, old['entries'], found, config['max_candidates'])
     previous = {r['url']:r for r in old['entries']}
     results, children, documents = [], [], {}
@@ -436,7 +520,7 @@ def collect(root=ROOT, discover=True, github_only=False):
             documents[item['url']] = (text, final_url)
             child = []
             if info['kind'] in ('multi', 'collection', 'config'):
-                child = [{**x, 'sources':item['sources']} for x in extract_links(text, final_url)[:20]]
+                child = [{**x, 'sources':item['sources']} for x in extract_links(text, final_url)[:40]]
             return row, child
         except Exception as error:
             row.update(status='error', error=str(error)[:180])
@@ -476,7 +560,10 @@ def collect(root=ROOT, discover=True, github_only=False):
     document = {
         'schema_version':1, 'generated_at':now(), 'checked_at':checked_at,
         'last_success_at': now() if success else old.get('last_success_at'),
-        'discovery': {'enabled':discover, 'repositories':repos_count, 'issues':issues, 'github_only':github_only},
+        'discovery': {'enabled':discover, 'repositories':repos_count,
+                      'source_pages_checked':len(config.get('source_pages',[])) if discover and not github_only else 0,
+                      'source_page_candidates':len(page_found),
+                      'issues':issues, 'github_only':github_only},
         'summary': {'checked':len(results), 'recognized':success, 'rejected_or_failed':len(results)-success},
         'playback_summary':playback_summary,
         'routes_summary':{**routes_document['summary'], 'checked_at':routes_document.get('generated_at'),

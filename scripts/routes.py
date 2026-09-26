@@ -126,7 +126,7 @@ def discover_routes(documents, net, parse, normalize, settings):
                     target=normalize(urljoin(base,child[key]))
                     if target and target not in seen:
                         children.append(target)
-        for child in sample_items(children,8,offset):
+        for child in sample_items(children,max(1,settings.get('max_children_per_config',8)),offset):
             if child not in seen:
                 seen.add(child)
                 queue.append((child,None,child,depth+1))
