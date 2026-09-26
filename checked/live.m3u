@@ -1,62 +1,258 @@
 #EXTM3U
-# 仅含最近 18 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。
-#EXTINF:-1,Aadinath TV KB
-https://mumt01.tangotv.in/O5aw8Zn3AADINATHTV/index.m3u8
-#EXTINF:-1,DD Tripura KB
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index.m3u8
-#EXTINF:-1,Shubh TV KB
-https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
-#EXTINF:-1,ATN Bangla KB
-http://tvsen5.aynascope.net/atnbangla/index.m3u8
-#EXTINF:-1,ViuTV
-http://r.jdshipin.com/vSJvl
-#EXTINF:-1,有線新聞台
-http://61.10.2.140/live_freedirect/freehd209_h.live/chunklist_w135209556.m3u8
-#EXTINF:-1,NH BollyFlix KB
-https://jmp2.uk/stvp-IN46000140Q
-#EXTINF:-1,Ultimate TV KB
-https://stream.ottlive.co.in/utvtamil/index.m3u8
-#EXTINF:-1,DD Kisan KB
-https://mumbai-edge.smartplaytv.in/DDKisan/index.m3u8
-#EXTINF:-1,CCTV-1 综合 (1035ms)
-https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
-#EXTINF:-1,Beautiful Life TV
-https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
-#EXTINF:-1,浙江卫视
-http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
-#EXTINF:-1,新沂新闻
-http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
-#EXTINF:-1,10
-https://zo392.cdnedge.live/file/avple-images/hls/60ba6f55ecb87a1b5b8fa848/playlist.m3u8
-#EXTINF:-1,193
-https://zo392.cdnedge.live/file/avple-images/hls/626bd19420859323fc450d6b/playlist.m3u8
-#EXTINF:-1,亮剑之第20集
-https://vip.dytt-play.com/20250119/20_98f13708/index.m3u8
-#EXTINF:-1,经典Dj嗨歌07
-https://sns-video-default.xhscdn.com/stream/79/110/258/01e8c64721bd88e84f037001994687eb6c_258.mp4
-#EXTINF:-1,Zhejiang International Channel
-https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
-#EXTINF:-1,RT News
-https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
-#EXTINF:-1,Pet Club TV
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
-#EXTINF:-1,翡翠台
-http://r.jdshipin.com/thuYX
+# 仅含最近 36 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。
+#EXTINF:-1,Nepal 1 KB
+https://mumt05.tangotv.in/87NeALx2NEPAL1/index.m3u8
+#EXTINF:-1,Aastha Kannada KB
+https://aasthaott.akamaized.net/110923/smil:aasthakannada.smil/playlist.m3u8
+#EXTINF:-1,INews KB
+https://cdn.pishow.tv/ott/live/411/master.m3u8
+#EXTINF:-1,Green TV KB
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/playlist.m3u8
+#EXTINF:-1,Matribhumi TV KB
+http://live.playmax.live/matribhumi/index.m3u8
+#EXTINF:-1,Movie Bangla KB
+http://alvetv.com/moviebanglatv/8080/index.m3u8
 #EXTINF:-1,TVB Plus
 http://r.jdshipin.com/Nr5jq
-#EXTINF:-1,延边卫视
-https://srs.iyb983.cn:443/video/CYS/index.m3u8
-#EXTINF:-1,浙江钱江都市 ·高清
-https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-#EXTINF:-1,福建海峡卫视 ·高清
-http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
-#EXTINF:-1,台视新闻
-http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
-#EXTINF:-1,双辽综合
-http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
-#EXTINF:-1,浙江民生
-https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
-#EXTINF:-1,CGTN英语
-https://0472.org/hls/cgtn.m3u8
+#EXTINF:-1,有線新聞台
+http://cm61-10-2-143.hkcable.com.hk/live_freedirect/hd110_h.live/playlist.m3u8
+#EXTINF:-1,翡翠台
+http://r.jdshipin.com/thuYX
+#EXTINF:-1,Sky News
+https://d39chvnxm26pgp.cloudfront.net/v1/master/72588bff830dec7b26d7cbbf5f3c24928aec5c03/cc-sthen6ms4vxgv-stage/WNSFO/ABR.m3u8
+#EXTINF:-1,Newsy
+https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index_8.m3u8
+#EXTINF:-1,Outdoor Channel
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
+#EXTINF:-1,SBS Drama
+https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=sbsk-drama&channel_id=newid_008&mpf=c064f5f4-39af1962-7c36be2c&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=474ab4cb-5d47aa0a-84d0cbca-2a3730a6&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
+#EXTINF:-1,Reality
+https://reality-rakuten-tv-uk.fast.rakuten.tv/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6233/228208ef-d17f-4825-a278-eccf505de378/4.m3u8
+#EXTINF:-1,Discovery Bangla
+http://line.umetop.pro:80/play/live.php?mac=00:1A:79:8F:BA:8A&stream=1531199&extension=m3u8
+#EXTINF:-1,History TV18 HD Hindi........59
+https://n18syndication.akamaized.net/bpk-tv/History_TV18_Hindi_NW18_MOB/output01/master.m3u8
+#EXTINF:-1,Independent TV
+http://premiumtvs.space/live/YqXTywueEV/damp2purchase/423.ts
+#EXTINF:-1,Sony Television HD
+http://38.96.178.205/SONYHD/index.m3u8
+#EXTINF:-1,CARTOON NETWORK
+https://s3.ideationtec.live/Cartoon_Network/Cartoon_Network.m3u8
+#EXTINF:-1,Sangeet Bangla
+http://flowutc.com:80/live/34FQ94W/64CW3PG/34727.ts
+#EXTINF:-1,NDTV Hindi
+https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
+#EXTINF:-1,Wild Flix Hindi
+https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
+#EXTINF:-1,Ekushe TV
+http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+#EXTINF:-1,NH BollyGold KB
+https://0dc330e6408b4c3b9ac31fd37b121368.mediatailor.ap-south-1.amazonaws.com/v1/master/d367f9b863a7a04827f71ecab4cbeeb11f78a827/nh-bollygold-airtel/playlist.m3u8
+#EXTINF:-1,UTV Palakkad KB
+https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/playlist.m3u8
+#EXTINF:-1,DD National KB
+http://107.167.16.138/ddnational/index.m3u8?token=test
+#EXTINF:-1,DD Tamil HD KB
+https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
+#EXTINF:-1,Knock Bhakti KB
+https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
+#EXTINF:-1,靖宇
+http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild
+#EXTINF:-1,龙井
+http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild
+#EXTINF:-1,柳河
+http://stream5.jlntv.cn/lh/sd/live.m3u8?zjild
+#EXTINF:-1,汪清
+http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild
+#EXTINF:-1,白山公共
+http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild
+#EXTINF:-1,辉南新闻
+http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild
+#EXTINF:-1,CCTV-10 科教 (2011ms)
+https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
+#EXTINF:-1,Supreme Master TV
+https://lbs-us1.suprememastertv.com/720p.m3u8
+#EXTINF:-1,CCTV-4 中文国际
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790456400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c69061223601bc71479d43184246364b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+#EXTINF:-1,Tennis Channel (1080p)
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
+#EXTINF:-1,Redbull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+#EXTINF:-1,FIFA+ Hispanic America (720p)
+https://6c849fb3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctbXhfRklGQVBsdXNTcGFuaXNoLTFfSExT/playlist.m3u8
+#EXTINF:-1,凤凰卫视
+http://122.152.202.33/s/81a8a44f/index.m3u8?id=15
+#EXTINF:-1,新沂新闻频道
+http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd
+#EXTINF:-1,[MLB] Los Angeles Dodgers at San Francisco Giants (SPRTSPASS)
+https://digitalbroadcastingnetwork.s3.us-east-2.amazonaws.com/dodgers.m3u8
+#EXTINF:-1,Channel S
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/live-orgin/channels.stream/playlist.m3u8
+#EXTINF:-1,Pardesi TV
+http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1,Weather SPY
+https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1,11
+https://e2fa6.cdnedge.live/file/avple-images/hls/6157416d9dda0e2db22a7f11/playlist.m3u8
+#EXTINF:-1,20
+https://d862cp.cdnedge.live/file/avple-images/hls/62bbed25ea3d425e0a93b79d/playlist.m3u8
+#EXTINF:-1,194
+https://q2cyl7.cdnedge.live/file/avple-images/hls/626bd15b20859323fc450d6a/playlist.m3u8
+#EXTINF:-1,56
+https://d862cp.cdnedge.live/file/avple-images/hls/624bef3d528c292827c459d7/playlist.m3u8
+#EXTINF:-1,02
+https://je40u.cdnedge.live/file/avple-images/hls/6206efa6c6e4cd6e597c7184/playlist.m3u8
+#EXTINF:-1,142
+https://d862cp.cdnedge.live/file/avple-images/hls/61bad13dd56b7626e975d4e8/playlist.m3u8
+#EXTINF:-1,亮剑之第21集
+https://vip.dytt-play.com/20250119/21_3c59dc04/index.m3u8
+#EXTINF:-1,经典Dj嗨歌08
+https://sns-video-default.xhscdn.com/stream/1/110/258/01e8e215ade7dc860103700199b330ed3a_258.mp4
+#EXTINF:-1,野生白狮(下)
+http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1e405a3890d3497d80df5351ad30f169/1200.m3u8
+#EXTINF:-1,浙江卫视
+http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1,南美野生世界2
+http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/9c743ea1e41f4bf585fb1470c9575c0d/1200.m3u8
+#EXTINF:-1,浙江新闻
+https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1,PBS Antiques Roadshow (1080p)
 https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8
+#EXTINF:-1,ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1,CCTV-1 综合 (1035ms)
+https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
+#EXTINF:-1,193
+https://zo392.cdnedge.live/file/avple-images/hls/626bd19420859323fc450d6b/playlist.m3u8
+#EXTINF:-1,Pet Club TV
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
+#EXTINF:-1,福建海峡卫视 ·高清
+http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
+#EXTINF:-1,Vod551
+https://vod.mycamtv.net/551.m3u8
+#EXTINF:-1,Vod1786
+https://vod.mycamtv.net/1786.m3u8
+#EXTINF:-1,Vod2880
+https://vod.mycamtv.net/2880.m3u8
+#EXTINF:-1,Vod972
+https://vod.mycamtv.net/972.m3u8
+#EXTINF:-1,🍋8传媒12
+https://q2cyl7.cdnedge.live/file/avple-images/hls/630e286cf6f3c02fb8209509/playlist.m3u8
+#EXTINF:-1,Vod538
+https://vod.mycamtv.net/538.m3u8
+#EXTINF:-1,Vod1082
+https://vod.mycamtv.net/1082.m3u8
+#EXTINF:-1,Vod2555
+https://vod.mycamtv.net/2555.m3u8
+#EXTINF:-1,🌹12传媒29
+https://d862cp1.cdnedge.live/file/avple-asserts/hls/6399702d2c279c7a7cd4bf41/playlist.m3u8
+#EXTINF:-1,Vod2203
+https://vod.mycamtv.net/2203.m3u8
+#EXTINF:-1,Vod2456
+https://vod.mycamtv.net/2456.m3u8
+#EXTINF:-1,探花系列-约个高档外围打一炮
+https://vip2.slbfsl.com/20230407/JFICSrAn/index.m3u8
+#EXTINF:-1,🦈8传媒54
+https://zo392.cdnedge.live/file/avple-images/hls/62ea88e91a22462b0d2693cb/playlist.m3u8
+#EXTINF:-1,🦈8传媒19
+https://zo392.cdnedge.live/file/avple-images/hls/62ec14fd5049f024f6e44968/playlist.m3u8
+#EXTINF:-1,🦈8传媒44
+https://10j99.cdnedge.live/file/avple-images/hls/62ebffe65049f024f6e44966/playlist.m3u8
+#EXTINF:-1,🦈8传媒08
+https://zo392.cdnedge.live/file/avple-images/hls/62ede980afca094a62fd4d4a/playlist.m3u8
+#EXTINF:-1,🦈8传媒23
+https://u89ey.cdnedge.live/file/avple-images/hls/62ec0a821eba2a19acd4b27c/playlist.m3u8
+#EXTINF:-1,🦈8传媒05
+https://8bb88.cdnedge.live/file/avple-images/hls/62ede980afca094a62fd4d4b/playlist.m3u8
+#EXTINF:-1,Vod482
+https://vod.mycamtv.net/482.m3u8
+#EXTINF:-1,Vod94
+https://vod.mycamtv.net/94.m3u8
+#EXTINF:-1,Vod2359
+https://vod.mycamtv.net/2359.m3u8
+#EXTINF:-1,Vod1665
+https://vod.mycamtv.net/1665.m3u8
+#EXTINF:-1,Vod2047
+https://vod.mycamtv.net/2047.m3u8
+#EXTINF:-1,Vod2766
+https://vod.mycamtv.net/2766.m3u8
+#EXTINF:-1,CCTV
+https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
+#EXTINF:-1,优漫卡通
+http://t.061899.xyz/tl/tl.php?id=ymkt
+#EXTINF:-1,CCTV6
+http://t.061899.xyz/tl/tl.php?id=cctv6
+#EXTINF:-1,Wild Earth
+https://wildearth-plex.amagi.tv/masterR1080p.m3u8
+#EXTINF:-1,Shop Channel
+https://stream3.shopch.jp/HLS/master.m3u8
+#EXTINF:-1,Zee Punjab Haryana Himachal (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8
+#EXTINF:-1,Cao Bang TV (720p)
+https://stream.thingnet.vn/live/smil:CRTV.smil/chunklist.m3u8
+#EXTINF:-1,Iran National Revolution TV
+https://hls.irannrtv.live/hls/stream.m3u8
+#EXTINF:-1,NTC TV (720p)
+https://galaxyott.live/hls/ntv.m3u8
+#EXTINF:-1,RTV Canal 57 (720p)
+https://stream.giostreaming.app/rtvcanal57/rtvcanal57.m3u8
+#EXTINF:-1,Subin TV (1080p)
+https://stream.galaxyott.live/live/subintv/index.m3u8
+#EXTINF:-1,TVBS-Asia ·高清
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1,浙江少儿 ·高清
+https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+#EXTINF:-1,CGTN ·高清
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1,湖南卫视
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1,凤凰资讯
+http://43.152.224.209/qctv.fengshows.cn/live/0701pin72.flv
+#EXTINF:-1,有线新闻
+http://61.10.2.140:80/live_freedirect/freehd209_h.live/chunklist_w135209556.m3u8
+#EXTINF:-1,CGTN法语
+http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8
+#EXTINF:-1,敦化一套
+http://stream8.jlntv.cn/dhtv/playlist.m3u8?zjild
+#EXTINF:-1,音乐台长
+https://www.goodiptv.club/douyu/9629943
+#EXTINF:-1,山东教育
+https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
+#EXTINF:-1,#9778
+https://vod.mycamtv.net/9778.m3u8
+#EXTINF:-1,#12251
+https://vod.mycamtv.net/12251.m3u8
+#EXTINF:-1,#14739
+https://vod.mycamtv.net/14739.m3u8
+#EXTINF:-1,#2341
+https://vod.mycamtv.net/2341.m3u8
+#EXTINF:-1,#4820
+https://vod.mycamtv.net/4820.m3u8
+#EXTINF:-1,#7303
+https://vod.mycamtv.net/7303.m3u8
+#EXTINF:-1,山东-南天门
+https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1,《女人的心声》
+https://vd3.bdstatic.com/mda-ncmgnz6479fenq1w/hd/cae_h264_delogo/1647950253700208169/mda-ncmgnz6479fenq1w.mp4
+#EXTINF:-1,陕北民间
+https://vd4.bdstatic.com/mda-ncfk4vpkpbuhnu0s/720p_frame30/h264_cae_delogo/1647440102957240321/mda-ncfk4vpkpbuhnu0s.mp4
+#EXTINF:-1,翡翠台
+https://cdn3.indevs.in/stream/tvb/fct/
+#EXTINF:-1,双辽综合
+http://stream5.jlntv.cn/sl/sd/live.m3u8?_upt=73404dd11699197122
+#EXTINF:-1,庆元综合
+http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
+#EXTINF:-1,海宁新闻综合
+https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8
+#EXTINF:-1,❌云南保山隆阳区拦河坝水库
+https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
+#EXTINF:-1,浙江经济
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1,内蒙古卫视
+http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
+#EXTINF:-1,Zhejiang International Channel
+https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
+#EXTINF:-1,PBS Kids (720p)
+https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
+#EXTINF:-1,KSCE 38.1 (360p)
+https://2-fss-2.streamhoster.com/pl_138/200226-1359204-1/playlist.m3u8
