@@ -1,5 +1,12 @@
 # 交付验证记录
 
+## 自助添加来源上线验收（2026-09-26，Codex）
+
+- 用户批准从网页填写公开链接、跳转 GitHub 确认、再由每日工作流检查。已在网页加入「添加来源」表单；直链、收集网页及普通/成人分类都能带入 GitHub Issue。Safari 实测普通直链和成人收集网页四个字段均正确预填。GitHub 不预填下拉框，因此将 Issue 模板的类型和分类改为可预填的文本字段；工作流仍严格校验允许值。
+- 代码发布工作流 [36234071208](https://github.com/felixwang1987/tv-pocket/actions/runs/36234071208) 的测试、采集、快照保存和 Pages 部署均成功。实测由仓库所有者创建 [测试 Issue #1](https://github.com/felixwang1987/tv-pocket/issues/1)，提交公开新闻直播列表 `https://iptv-org.github.io/iptv/categories/news.m3u`。Issue 工作流 [36234795905](https://github.com/felixwang1987/tv-pocket/actions/runs/36234795905) 的接收、采集、部署、自动回告均成功；配置写入该来源，目录显示其直播列表检查通过、部分频道实播通过。
+- 最终线上快照生成于 2026-09-26 10:16:02 UTC：来源目录 276 条；实测点播 29 条，其中成人 4 条；实测直播 220 个频道，其中成人 30 个。线上 `index.html`、`data/sources.json`、`checked/routes.json`、`checked/live.m3u` 均与仓库快照逐字一致，固定导入地址保持不变。
+- 本地 71 项测试通过（1 项因本机没有 FFmpeg 跳过），发布构建成功。Actions 环境有 FFmpeg，完整测试步骤通过。动态、登录后才显示链接的网站仍需单独适配；添加来源只代表进入检查，进入实测合集仍取决于点播/直播抽检。
+
 ## 最新线上复核（2026-09-26，外部来源）
 
 - GitHub Actions 运行 `36231285229`：51 项单元测试、来源发现与实播、站点构建、快照保存、Pages 部署全部成功；快照提交 `29381e4`，生成于 2026-09-26 09:11 UTC。
