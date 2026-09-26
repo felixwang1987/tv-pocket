@@ -26,6 +26,14 @@ https://live.streamingfast.net/osmflivech1.m3u8
 http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
 #EXTINF:-1,新沂新闻
 http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
+#EXTINF:-1,10
+https://zo392.cdnedge.live/file/avple-images/hls/60ba6f55ecb87a1b5b8fa848/playlist.m3u8
+#EXTINF:-1,193
+https://zo392.cdnedge.live/file/avple-images/hls/626bd19420859323fc450d6b/playlist.m3u8
+#EXTINF:-1,亮剑之第20集
+https://vip.dytt-play.com/20250119/20_98f13708/index.m3u8
+#EXTINF:-1,经典Dj嗨歌07
+https://sns-video-default.xhscdn.com/stream/79/110/258/01e8c64721bd88e84f037001994687eb6c_258.mp4
 #EXTINF:-1,延边卫视
 https://srs.iyb983.cn:443/video/CYS/index.m3u8
 #EXTINF:-1,RT News

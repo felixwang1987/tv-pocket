@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_10ee9009c31aca81",
+      "name": "🐓┃爱坤┃资源",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

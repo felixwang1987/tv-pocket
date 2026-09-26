@@ -1,28 +1,10 @@
 {
   "sites": [
     {
-      "key": "pocket_a98673317527368e",
-      "name": "91md",
+      "key": "pocket_cc855a82f44a962d",
+      "name": "影视 | 电影天堂",
       "type": 1,
-      "api": "https://91md.me/api.php/provide/vod/from/mdm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_6b2a67e88178fe2e",
-      "name": "91麻豆",
-      "type": 1,
-      "api": "https://91md.me/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_1bc7528c68a3c6ca",
-      "name": "巨量",
-      "type": 1,
-      "api": "https://api.juliang.live/api/provide/vod",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -37,6 +19,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_d0d25fc89f6477bd",
+      "name": "️天堂┃采集",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_9e0145bd863328a1",
       "name": "📱天堂网ᶜʲ┃采集",
       "type": 1,
@@ -46,28 +37,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_48ce51e9c9e37dd1",
-      "name": "155资源",
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "猫眼",
       "type": 1,
-      "api": "https://155api.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_39e2baa3abfd47da",
-      "name": "麻豆視頻",
+      "key": "pocket_10ee9009c31aca81",
+      "name": "🐓┃爱坤┃资源",
       "type": 1,
-      "api": "http://madouse.la/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_aa147e8fef44397f",
-      "name": "量子资源(切)",
-      "type": 1,
-      "api": "http://cj.lziapi.com/api.php/provide/vod",
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
