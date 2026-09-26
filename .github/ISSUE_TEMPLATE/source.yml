@@ -18,21 +18,19 @@ body:
       placeholder: https://example.com/playlist.m3u
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: source_type
     attributes:
       label: 来源类型
-      options:
-        - 直链
-        - 收集网页
+      description: 只能填写「直链」或「收集网页」
+      placeholder: 直链
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: source_category
     attributes:
       label: 分类
-      options:
-        - 普通
-        - 成人
+      description: 只能填写「普通」或「成人」
+      placeholder: 普通
     validations:
       required: true

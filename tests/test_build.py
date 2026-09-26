@@ -4,6 +4,12 @@ from scripts.build import embed
 
 
 class BuildTests(unittest.TestCase):
+    def test_issue_template_fields_can_all_be_prefilled_from_page(self):
+        template = Path('.github/ISSUE_TEMPLATE/source.yml').read_text()
+        fields = re.findall(r'  - type: input\n    id: ([^\n]+)', template)
+        self.assertEqual(fields, [
+            'source_name', 'source_url', 'source_type', 'source_category'])
+
     def test_source_form_prefills_github_issue_without_sending_credentials(self):
         html = Path('index.html').read_text()
         match = re.search(r'<script id="source-form-logic">(.*?)</script>', html, re.S)
