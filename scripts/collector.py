@@ -13,7 +13,7 @@ import socket
 import threading
 import time
 from datetime import datetime, timezone
-from urllib.parse import urlsplit, urlunsplit, urljoin, quote, urlencode
+from urllib.parse import urlsplit, urlunsplit, urljoin, quote, urlencode, parse_qsl, unquote
 from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandler, HTTPSHandler, ProxyHandler
 
 try:
@@ -392,9 +392,87 @@ def extract_source_page_links(html, base, post_id_prefix='postmessage_'):
     return rows
 
 
+SOURCE_FILE = re.compile(r'\.(?:json|m3u8?|txt)$', re.I)
+NON_SOURCE_FILE = re.compile(r'\.(?:html?|php|png|jpe?g|gif|svg|webp|css|js|jar|apk|zip|exe|pdf)$', re.I)
+SOURCE_CONTEXT = re.compile(r'多仓|单仓|接口|直播|线路|配置|影视仓|TVBox', re.I)
+SECRET_QUERY_KEY = re.compile(r'(^|[_-])(token|key|secret|pass|password|pwd|auth|authorization|sign|signature|session|cookie)($|[_-])', re.I)
+
+
+def extract_generic_page_links(html: str, base: str) -> list:
+    """Extract likely public source links from static visible page content."""
+    class VisibleLinks(HTMLParser):
+        SKIP = {'script', 'style', 'nav', 'header', 'footer', 'aside', 'template'}
+        BLOCK = {'p', 'div', 'li', 'br', 'article', 'section', 'main', 'h1', 'h2', 'h3'}
+
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.ignored = []
+            self.anchor = None
+            self.parts = []
+            self.links = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag in self.SKIP:
+                self.ignored.append(tag)
+            if self.ignored:
+                return
+            if tag in self.BLOCK:
+                self.parts.append('\n')
+            if tag == 'a':
+                self.anchor = {'url': dict(attrs).get('href'), 'name': ''}
+
+        def handle_endtag(self, tag):
+            if self.ignored:
+                if tag == self.ignored[-1]:
+                    self.ignored.pop()
+                return
+            if tag == 'a' and self.anchor:
+                self.links.append(self.anchor)
+                self.anchor = None
+            if tag in self.BLOCK:
+                self.parts.append('\n')
+
+        def handle_data(self, data):
+            if self.ignored:
+                return
+            self.parts.append(data)
+            if self.anchor:
+                self.anchor['name'] += data
+
+    parser = VisibleLinks()
+    parser.feed(html)
+    rows, seen = [], set()
+
+    def add(value, label):
+        if not isinstance(value, str):
+            return
+        url = normalize_url(urljoin(base, value.strip()))
+        if not url or url in seen:
+            return
+        parts = urlsplit(url)
+        if any(SECRET_QUERY_KEY.search(unquote(key)) for key, _ in parse_qsl(parts.query, keep_blank_values=True)):
+            return
+        if NON_SOURCE_FILE.search(parts.path):
+            return
+        if not SOURCE_FILE.search(parts.path) and not SOURCE_CONTEXT.search(label or ''):
+            return
+        seen.add(url)
+        name = re.sub(r'\s+', ' ', label or '').strip()[:100]
+        rows.append({'name': name or unquote(parts.path.rsplit('/', 1)[-1]) or parts.hostname,
+                     'url': url, 'sources': [base]})
+
+    for anchor in parser.links:
+        add(anchor['url'], anchor['name'])
+    for line in ''.join(parser.parts).splitlines():
+        for match in re.finditer(r'https?://[^\s<>"`]+', line, re.I):
+            value = match.group().rstrip('。,;:，)]}')
+            add(value, line.replace(match.group(), ''))
+    return rows
+
+
 def discover_source_pages(net, config):
     found, issues = [], []
-    for page in config.get('source_pages', [])[:8]:
+    for page in config.get('source_pages', [])[:30]:
         if not isinstance(page, dict):
             continue
         url = normalize_url(page.get('url'))
@@ -402,9 +480,16 @@ def discover_source_pages(net, config):
             continue
         try:
             body, final_url = net.fetch_bytes(url, limit=500_000, timeout=10)
-            rows = extract_source_page_links(decode_source_page(body), url,
-                                             page.get('post_id_prefix', 'postmessage_'))
-            found.extend(rows[:page.get('max_links', 50)])
+            html = decode_source_page(body)
+            if page.get('parser') == 'links':
+                rows = extract_generic_page_links(html, url)
+                limit = min(30, max(0, int(page.get('max_links', 30))))
+            else:
+                rows = extract_source_page_links(html, url, page.get('post_id_prefix', 'postmessage_'))
+                limit = min(50, max(0, int(page.get('max_links', 50))))
+            category = page.get('category')
+            found.extend([{**row, **({'category': category} if category in ('ordinary', 'adult') else {})}
+                          for row in rows[:limit]])
         except Exception as error:
             issues.append(url + '：' + str(error)[:120])
     return found, issues
@@ -425,7 +510,7 @@ def merge_records(old, new):
 
 
 def choose_candidates(seeds, old, found, limit):
-    sources = {row['url']: row.get('sources', []) for row in merge_records(old, found + seeds)}
+    metadata = {row['url']: row for row in merge_records(old, found + seeds)}
     selected = merge_records([], seeds)[:limit]
     seen = {r['url'] for r in selected}
     remaining = max(0, limit - len(selected))
@@ -439,7 +524,10 @@ def choose_candidates(seeds, old, found, limit):
             # Candidate metadata must not carry yesterday's status into today.
             selected.append({'name':row['name'], 'url':url, 'sources':row.get('sources',[])})
             seen.add(url)
-    return [{**row, 'sources':sources.get(row['url'], [])} for row in selected]
+    return [{**row, 'sources':metadata[row['url']].get('sources', []),
+             **({'category':metadata[row['url']]['category']}
+                if metadata[row['url']].get('category') in ('ordinary', 'adult') else {})}
+            for row in selected]
 
 
 def discover_candidates(net, config):
@@ -522,7 +610,9 @@ def collect(root=ROOT, discover=True, github_only=False):
             documents[item['url']] = (text, final_url)
             child = []
             if info['kind'] in ('multi', 'collection', 'config'):
-                child = [{**x, 'sources':item['sources']} for x in extract_links(text, final_url)[:40]]
+                child = [{**x, 'sources':item['sources'],
+                          **({'category':'adult'} if item.get('category') == 'adult' else {})}
+                         for x in extract_links(text, final_url)[:40]]
             return row, child
         except Exception as error:
             row.update(status='error', error=str(error)[:180])
@@ -543,7 +633,8 @@ def collect(root=ROOT, discover=True, github_only=False):
         fallback = [r for r in choose_candidates(seeds, old['entries'], found, max_candidates)
                     if r['url'] not in checked_urls]
         check_batch(fallback[:max_candidates-len(results)])
-    accepted = [r for r in results if r['status'] == 'ok' or r['url'] in previous]
+    pinned = {normalize_url(row.get('url')) for row in seeds}
+    accepted = [r for r in results if r['status'] == 'ok' or r['url'] in previous or r['url'] in pinned]
     records = merge_records(old['entries'], accepted)
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
     records = records[:500]
@@ -569,7 +660,7 @@ def collect(root=ROOT, discover=True, github_only=False):
         'schema_version':1, 'generated_at':now(), 'checked_at':checked_at,
         'last_success_at': now() if success else old.get('last_success_at'),
         'discovery': {'enabled':discover, 'repositories':repos_count,
-                      'source_pages_checked':len(config.get('source_pages',[])) if discover and not github_only else 0,
+                      'source_pages_checked':min(30,len(config.get('source_pages',[]))) if discover and not github_only else 0,
                       'source_page_candidates':len(page_found),
                       'issues':issues, 'github_only':github_only},
         'summary': {'checked':len(results), 'recognized':success, 'rejected_or_failed':len(results)-success},

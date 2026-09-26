@@ -7,10 +7,76 @@ import scripts.collector as collector
 from urllib.request import Request
 from urllib.parse import parse_qs, urlsplit
 from scripts.collector import (classify, extract_links, normalize_url, merge_records, check_public_url,
-                               extract_source_page_links, discover_source_pages)
+                               extract_source_page_links, extract_generic_page_links, discover_source_pages)
 
 
 class ParsingTests(unittest.TestCase):
+    def test_generic_page_extracts_public_static_sources_only(self):
+        html = '''<nav><a href="/menu.json">导航</a></nav>
+        <main><a href="/tv/pack.json">多仓配置</a>
+        <p>直播 https://cdn.example/live.m3u</p>
+        <a href="https://cdn.example/poster.png">封面</a>
+        <a href="https://cdn.example/config.png">配置图片</a>
+        <a href="/other-page.html">配置讨论</a>
+        <a href="https://cdn.example/private.json?api_%6bey=secret">私密</a>
+        <a href="https://cdn.example/source.json?version=2">普通配置</a></main>
+        <script>var x='https://cdn.example/script.json'</script>
+        <style>.a{background:url(https://cdn.example/style.json)}</style>'''
+        rows = extract_generic_page_links(html, 'https://www.example/page.html')
+        self.assertEqual({r['url'] for r in rows}, {
+            'https://www.example/tv/pack.json', 'https://cdn.example/live.m3u',
+            'https://cdn.example/source.json?version=2'})
+        self.assertTrue(all(r['sources'] == ['https://www.example/page.html'] for r in rows))
+
+    def test_generic_page_keeps_adult_category_and_enforces_30_links(self):
+        url = 'https://www.example/links.html'
+        html = '<main>' + ''.join(f'<a href="/{i}.json">配置{i}</a>' for i in range(35)) + '</main>'
+        class Network:
+            def fetch_bytes(self, target, **kwargs):
+                self.kwargs = kwargs
+                return html.encode(), target
+        net = Network()
+        rows, issues = discover_source_pages(net, {'source_pages': [
+            {'url': url, 'parser': 'links', 'category': 'adult', 'max_links': 80}]})
+        self.assertEqual(issues, [])
+        self.assertEqual(len(rows), 30)
+        self.assertTrue(all(r['category'] == 'adult' for r in rows))
+        self.assertEqual(net.kwargs['limit'], 500_000)
+        self.assertEqual(net.kwargs['timeout'], 10)
+
+    def test_candidate_selection_preserves_adult_page_classification(self):
+        found = [{'name':'成人直播','url':'https://example.com/adult.m3u',
+                  'sources':['https://example.com/links.html'],'category':'adult'}]
+        selected = collector.choose_candidates([], [], found, 1)
+        self.assertEqual(selected[0]['category'], 'adult')
+
+    def test_generic_page_scan_is_capped_at_30_pages(self):
+        class Network:
+            def __init__(self): self.calls = 0
+            def fetch_bytes(self, target, **kwargs):
+                self.calls += 1
+                return b'<main><a href="/source.json">\xe9\x85\x8d\xe7\xbd\xae</a></main>', target
+        net = Network()
+        pages = [{'url':f'https://example.com/{i}.html','parser':'links'} for i in range(35)]
+        discover_source_pages(net, {'source_pages':pages})
+        self.assertEqual(net.calls, 30)
+
+    def test_first_check_failure_of_pinned_source_remains_visible(self):
+        class Network:
+            def __init__(self, *args, **kwargs): pass
+            def fetch_bytes(self, url, **kwargs): raise OSError('暂时无法访问')
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root/'sources.config.json').write_text(json.dumps({
+                'seeds':[{'name':'我的直播','url':'https://example.com/live.m3u',
+                          'category':'adult','sources':[]}],
+                'max_candidates':1,'request_budget':1}))
+            with patch.object(collector, 'Network', Network), patch('builtins.print'):
+                result = collector.collect(root, discover=False, github_only=True)
+            self.assertEqual(len(result['entries']), 1)
+            self.assertEqual(result['entries'][0]['status'], 'error')
+            self.assertEqual(result['entries'][0]['category'], 'adult')
+
     def test_collection_children_receive_reserved_checks(self):
         urls={
             'https://example.com/parent.json':{'urls':[{'name':'下级单仓','url':'child.json'}]},
