@@ -1,0 +1,38 @@
+name: 添加公开来源
+description: 将公开配置、直播列表或来源网页加入影视口袋的每日检查
+title: "[添加来源] "
+body:
+  - type: markdown
+    attributes:
+      value: "提交内容会公开显示在 GitHub。请勿填写账号、会员凭证、网盘 token 或私密链接。提交后只表示纳入检查，能否进入合集以实播结果为准。"
+  - type: input
+    id: source_name
+    attributes:
+      label: 来源名称
+      description: 可留空，系统会从网址生成名称
+      placeholder: 例如：我的直播列表
+  - type: input
+    id: source_url
+    attributes:
+      label: 来源链接
+      placeholder: https://example.com/playlist.m3u
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: 来源类型
+      options:
+        - 直链
+        - 收集网页
+    validations:
+      required: true
+  - type: dropdown
+    id: source_category
+    attributes:
+      label: 分类
+      options:
+        - 普通
+        - 成人
+    validations:
+      required: true
