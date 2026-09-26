@@ -240,6 +240,16 @@ class ParsingTests(unittest.TestCase):
         self.assertEqual(classify(text, 'https://a.example/a')['kind'], 'multi')
         self.assertEqual(extract_links(text, 'https://a.example/a')[0]['url'], 'https://a.example/x//y')
 
+    def test_host_div_footer_after_json_does_not_hide_collection(self):
+        text = ('{"urls":[{"name":"甲","url":"https://a.example/a.json"}]}'
+                '<div style="text-align:center"><div style="position:relative">\n'
+                '</div></div>')
+        self.assertEqual(classify(text, 'https://a.example/dc.txt')['kind'], 'collection')
+        self.assertEqual(extract_links(text, 'https://a.example/dc.txt'),
+                         [{'name':'甲','url':'https://a.example/a.json'}])
+        with self.assertRaises(ValueError):
+            collector.parse_jsonc('{"urls":[]} {"sites":[]}')
+
     def test_types_are_not_guessed_from_extension(self):
         cases = [('oops', None), ('<html>error</html>', None), ('{"sites":[]}', None),
                  ('{"urls":[{"name":"one","url":"https://a.example/a"}]}', 'collection'),

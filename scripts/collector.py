@@ -276,7 +276,14 @@ def parse_jsonc(text):
         else:
             out.append(c)
         i += 1
-    return json.loads(''.join(out))
+    cleaned = ''.join(out).lstrip()
+    obj, end = json.JSONDecoder().raw_decode(cleaned)
+    footer = cleaned[end:]
+    # Some public hosts append an empty div badge after an otherwise valid
+    # config. Accept only that markup, never a second document or page text.
+    if footer.strip() and (len(footer) > 4096 or not re.fullmatch(r'(?:\s|</?div\b[^<>]*>)*', footer, re.I)):
+        raise ValueError('配置 JSON 后包含额外内容')
+    return obj
 
 
 def classify(text, url):
