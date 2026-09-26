@@ -10,9 +10,15 @@ from pathlib import Path
 import re
 import socket
 import threading
+import time
 from datetime import datetime, timezone
 from urllib.parse import urlsplit, urlunsplit, urljoin, quote, urlencode
 from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandler, HTTPSHandler, ProxyHandler
+
+try:
+    from .playback import verify_catalog, verified_playlist
+except ImportError:
+    from playback import verify_catalog, verified_playlist
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
@@ -118,15 +124,18 @@ class PublicHTTPSHandler(HTTPSHandler):
 
 
 class SafeRedirect(HTTPRedirectHandler):
-    def __init__(self, validator=check_public_url):
+    def __init__(self, validator=check_public_url, on_redirect=None):
         super().__init__()
         self.validator = validator
+        self.on_redirect = on_redirect
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         target = self.validator(newurl)
         redirected = super().redirect_request(req, fp, code, msg, headers, target)
         if redirected:
             redirected.remove_header('Authorization')
+            if self.on_redirect:
+                self.on_redirect()
         return redirected
 
 
@@ -147,24 +156,49 @@ class Network:
         return check_public_url(url)
 
     def fetch(self, url, api=False):
+        body, _ = self.fetch_bytes(url, api=api)
+        return body.decode('utf-8-sig', errors='replace')
+
+    def fetch_bytes(self, url, api=False, limit=MAX_BYTES, partial=False, timeout=12):
+        self.take_request()
+        return self._fetch_bytes(url, api, limit, partial, timeout)
+
+    def take_request(self):
         with self.lock:
             if self.remaining <= 0:
                 raise ValueError('本轮请求数量已达上限')
             self.remaining -= 1
+
+    def _fetch_bytes(self, url, api, limit, partial, timeout):
         clean = self.validate(url)
         headers = {'User-Agent': 'TV-Pocket/1.0', 'Accept': 'application/json,text/plain,*/*'}
         if api and urlsplit(clean).netloc == 'api.github.com' and clean.startswith('https://'):
             token = os.environ.get('GITHUB_TOKEN')
             if token:
                 headers['Authorization'] = 'Bearer ' + token
-        handlers = [SafeRedirect(self.validate), ProxyHandler({})]
+        handlers = [SafeRedirect(self.validate, on_redirect=self.take_request), ProxyHandler({})]
         if not self.github_only:
             handlers += [PublicHTTPHandler(), PublicHTTPSHandler()]
-        with build_opener(*handlers).open(Request(clean, headers=headers), timeout=12) as response:
-            body = response.read(MAX_BYTES + 1)
-            if len(body) > MAX_BYTES:
-                raise ValueError('文件超过 3 MB 检查上限')
-            return body.decode('utf-8-sig', errors='replace')
+        end = time.monotonic() + timeout
+        with build_opener(*handlers).open(Request(clean, headers=headers), timeout=timeout) as response:
+            body = bytearray()
+            while len(body) < limit + (not partial):
+                if time.monotonic() >= end:
+                    if partial and body:
+                        break
+                    raise TimeoutError('读取超过本次检查时限')
+                try:
+                    chunk = response.read1(min(65536, limit + (not partial) - len(body)))
+                except TimeoutError:
+                    if partial and body:
+                        break
+                    raise
+                if not chunk:
+                    break
+                body.extend(chunk)
+            if not partial and len(body) > limit:
+                raise ValueError('文件超过检查大小上限')
+            return bytes(body), response.geturl()
 
     def api(self, path):
         return json.loads(self.fetch('https://api.github.com' + path, api=True))
@@ -370,18 +404,20 @@ def collect(root=ROOT, discover=True, github_only=False):
         found, issues, repos_count = discover_candidates(net, config)
     candidates = choose_candidates(seeds, old['entries'], found, config['max_candidates'])
     previous = {r['url']:r for r in old['entries']}
-    results, children = [], []
+    results, children, documents = [], [], {}
     def check(item):
         row = {**item, 'checked_at':now()}
         try:
-            text = net.fetch(item['url'])
-            info = classify(text, item['url'])
+            body, final_url = net.fetch_bytes(item['url'])
+            text = body.decode('utf-8-sig', errors='replace')
+            info = classify(text, final_url)
             if not info:
                 raise ValueError('内容不是可识别的配置或播放列表')
             row.update(info, status='ok', last_ok=row['checked_at'], error='')
+            documents[item['url']] = (text, final_url)
             child = []
             if info['kind'] in ('multi', 'collection', 'config'):
-                child = [{**x, 'sources':item['sources']} for x in extract_links(text, item['url'])[:20]]
+                child = [{**x, 'sources':item['sources']} for x in extract_links(text, final_url)[:20]]
             return row, child
         except Exception as error:
             row.update(status='error', error=str(error)[:180])
@@ -400,19 +436,29 @@ def collect(root=ROOT, discover=True, github_only=False):
     records = merge_records(old['entries'], accepted)
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
     records = records[:500]
+    playback_summary = {}
+    if not github_only:
+        settings = config.get('playback', {})
+        health_net = Network(settings.get('request_budget', 500))
+        playback_summary = verify_catalog(records, documents, health_net, classify, extract_links, settings)
+    playlist, verified_count = verified_playlist(records)
+    playback_summary['verified_streams'] = verified_count
+    (root / 'checked').mkdir(exist_ok=True)
+    (root / 'checked/live.m3u').write_text(playlist)
     success = sum(r['status'] == 'ok' for r in results)
     document = {
         'schema_version':1, 'generated_at':now(), 'checked_at':checked_at,
         'last_success_at': now() if success else old.get('last_success_at'),
         'discovery': {'enabled':discover, 'repositories':repos_count, 'issues':issues, 'github_only':github_only},
         'summary': {'checked':len(results), 'recognized':success, 'rejected_or_failed':len(results)-success},
+        'playback_summary':playback_summary,
         'entries':records,
     }
     target.parent.mkdir(exist_ok=True)
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')
     temp.replace(target)
-    print(json.dumps({'entries':len(records), **document['summary'], 'discovery_issues':len(issues)}, ensure_ascii=False))
+    print(json.dumps({'entries':len(records), **document['summary'], 'playback':playback_summary, 'discovery_issues':len(issues)}, ensure_ascii=False))
     return document
 
 
