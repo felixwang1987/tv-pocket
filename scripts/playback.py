@@ -10,6 +10,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
 
 FRESH_SECONDS = 36 * 3600
+ADULT_LABEL = re.compile(r'成人|情色|色情|18\+|18禁|xxx|nsfw|adult|🔞', re.I)
+MINOR_RISK = re.compile(r'未成年|未滿十八|未满十八|幼女|幼童|萝莉|蘿莉|小学生|小學生|初中生|高中生', re.I)
 
 
 def timestamp():
@@ -19,7 +21,7 @@ def timestamp():
 def parse_channels(text, base):
     channels, seen = [], set()
     m3u = text.lstrip('\ufeff\r\n ').startswith('#EXTM3U')
-    name, unsupported = '', ''
+    name, unsupported, group = '', '', ''
     for raw in text.splitlines():
         line = raw.strip()
         if not line:
@@ -27,6 +29,8 @@ def parse_channels(text, base):
         if line.startswith('#EXTINF:'):
             name = line.split(',', 1)[-1].strip()
             unsupported = ''
+            match = re.search(r'\bgroup-title\s*=\s*"([^"]*)"',line,re.I)
+            group = match[1] if match else ''
         elif line.startswith(('#EXTVLCOPT:', '#KODIPROP:', '#EXTHTTP:')):
             unsupported = '需要播放器专用请求头或选项，未自动验证'
         elif not line.startswith('#'):
@@ -35,6 +39,8 @@ def parse_channels(text, base):
             elif ',' in line:
                 name, value = line.split(',', 1)
                 unsupported = ''
+                if value.strip() == '#genre#':
+                    group=name.strip()
             else:
                 continue
             if value == '#genre#':
@@ -43,9 +49,11 @@ def parse_channels(text, base):
                 unsupported = '地址含播放器专用参数，未自动验证'
             url = urljoin(base, value.strip())
             if url not in seen:
-                seen.add(url)
-                channels.append({'name':name[:120] or '未命名频道', 'url':url, 'unsupported':unsupported})
-            name, unsupported = '', ''
+                if not MINOR_RISK.search(name+' '+group):
+                    seen.add(url)
+                    channels.append({'name':name[:120] or '未命名频道', 'url':url, 'unsupported':unsupported,
+                                     'category':'adult' if ADULT_LABEL.search(group) or ADULT_LABEL.search(name) else 'ordinary'})
+            name, unsupported, group = '', '', ''
     return channels
 
 
@@ -267,7 +275,10 @@ def verified_playlist(records):
                 continue
             if sample['url'] in seen or any(c in sample['url'] for c in '\r\n'):
                 continue
-            seen.add(sample['url'])
             name = re.sub(r'[\r\n\x00-\x1f]+', ' ', sample.get('name', '直播')).strip()
-            output.extend(['#EXTINF:-1,' + name, sample['url']])
+            if MINOR_RISK.search(name):
+                continue
+            seen.add(sample['url'])
+            category='成人直播' if sample.get('category')=='adult' else '普通直播'
+            output.extend(['#EXTINF:-1 group-title="' + category + '",' + name, sample['url']])
     return '\n'.join(output) + '\n', len(seen)

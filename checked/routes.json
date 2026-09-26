@@ -1,83 +1,83 @@
 {
   "urls": [
     {
-      "name": "影视口袋 · 全部实测线路",
+      "name": "普通点播",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json"
     },
     {
-      "name": "IK",
+      "name": "普通 · IK",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/3c1204193dd947c7.json"
     },
     {
-      "name": "[590ms|5] 猫眼影视",
+      "name": "普通 · [590ms|5] 猫眼影视",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/304e2e6a898f6a58.json"
     },
     {
-      "name": "❤光速资源",
+      "name": "普通 · ❤光速资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/9a8a6fa39c3f2d4c.json"
     },
     {
-      "name": "光速资源",
+      "name": "普通 · 光速资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/77be1653869536c7.json"
     },
     {
-      "name": "猫眼",
+      "name": "普通 · 猫眼",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/d6abf09efcd48c6d.json"
     },
     {
-      "name": "红牛资源",
+      "name": "普通 · 红牛资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/af8e085c7f2740c4.json"
     },
     {
-      "name": "魔都",
+      "name": "普通 · 魔都",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/5ffb6e9a093b753f.json"
     },
     {
-      "name": "🎥┃光速┃资源",
+      "name": "普通 · 🎥┃光速┃资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/fc4bc5d92b095f5a.json"
     },
     {
-      "name": "🎥┃红牛┃资源",
+      "name": "普通 · 🎥┃红牛┃资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/790172e095caf7cc.json"
     },
     {
-      "name": "🐓┃爱坤┃资源",
+      "name": "普通 · 🐓┃爱坤┃资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/10ee9009c31aca81.json"
     },
     {
-      "name": "💝分享猫眼",
+      "name": "普通 · 💝分享猫眼",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/dd3e59bd879f1515.json"
     },
     {
-      "name": "[137ms|zy] 🍏火狐",
+      "name": "普通 · [137ms|zy] 🍏火狐",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/159d37437573275f.json"
     },
     {
-      "name": "影视 | 电影天堂",
+      "name": "普通 · 影视 | 电影天堂",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/cc855a82f44a962d.json"
     },
     {
-      "name": "电影天堂",
+      "name": "普通 · 电影天堂",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/844abbae184cff08.json"
     },
     {
-      "name": "非凡影视",
+      "name": "普通 · 非凡影视",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/827db570d348ff49.json"
     },
     {
-      "name": "非凡资源",
+      "name": "普通 · 非凡资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/060324185727f0c8.json"
     },
     {
-      "name": "️天堂┃采集",
+      "name": "普通 · ️天堂┃采集",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/d0d25fc89f6477bd.json"
     },
     {
-      "name": "🎥┃豪华┃资源",
+      "name": "普通 · 🎥┃豪华┃资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/bd3c0500399a3397.json"
     },
     {
-      "name": "📱天堂网ᶜʲ┃采集",
+      "name": "普通 · 📱天堂网ᶜʲ┃采集",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/9e0145bd863328a1.json"
     }
   ]

@@ -481,7 +481,7 @@ def collect(root=ROOT, discover=True, github_only=False):
         'playback_summary':playback_summary,
         'routes_summary':{**routes_document['summary'], 'checked_at':routes_document.get('generated_at'),
                           'environment':routes_document.get('environment')},
-        'verified_routes':[{k:r.get(k) for k in ('id','name','checked_at','status','sampled','passed','searchable','sources')}
+        'verified_routes':[{k:r.get(k) for k in ('id','name','category','checked_at','status','sampled','passed','searchable','sources')}
                            for r in fresh_routes(routes_document)],
         'entries':records,
     }

@@ -99,6 +99,24 @@ class RouteTests(unittest.TestCase):
                   {'vod_id':'3','type_name':'国产剧','vod_name':'节目','type_name':'伦理剧'}]
         self.assertEqual([r['vod_id'] for r in program_rows({'list':programs})],['1'])
 
+    def test_adult_seed_is_separate_and_requires_adult_sample(self):
+        root='https://example.com/adult.json'
+        sites=[{'name':'玉兔资源','type':1,'api':'https://apiyutu.com/api.php/provide/vod'},
+               {'name':'成人标记但未审核','type':1,'api':'https://unreviewed.example/api'}]
+        rows,_=discover_routes({root:(json.dumps({'sites':sites}),root)},Network({}),parse_jsonc,normalize_url,{})
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]['category'],'adult')
+        def respond(url):
+            q=parse_qs(urlsplit(url).query)
+            if 'ids' in q:
+                return {'list':[{'vod_id':'1','type_name':'成人影片','vod_name':'成年演员影片',
+                                 'vod_play_url':'正片$https://example.com/video.m3u8'}]}
+            return {'list':[{'vod_id':'1','type_name':'成人影片','vod_name':'成年演员影片'},
+                            {'vod_id':'2','type_name':'未成年影片','vod_name':'未成年演员影片'}]}
+        result=check_route(rows[0],Network(respond),probe=lambda n,u:{'status':'passed','reason':'出画面'})
+        self.assertEqual(result['passed'],1)
+        self.assertEqual(result['category'],'adult')
+
     def test_collection_contains_only_fresh_successful_site_configs(self):
         stamp=datetime.now(timezone.utc)
         def row(key,status,age=0):
@@ -125,6 +143,23 @@ class RouteTests(unittest.TestCase):
             publish_routes(root,document,'https://user.github.io/project/')
             self.assertFalse((root/'checked/vod/good.json').exists())
             self.assertEqual(len(json.loads((root/'checked/routes.json').read_text())['urls']),2)
+
+    def test_adult_routes_have_their_own_collection_in_same_import(self):
+        stamp=datetime.now(timezone.utc).isoformat()
+        routes=[{'id':'normal','name':'普通','api':'https://cj.lziapi.com/api','status':'passed',
+                 'passed':1,'checked_at':stamp},
+                {'id':'adult','name':'玉兔资源','api':'https://apiyutu.com/api.php/provide/vod',
+                 'category':'adult','status':'passed','passed':1,'checked_at':stamp}]
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            publish_routes(root,{'routes':routes},'https://user.github.io/project/')
+            urls=json.loads((root/'checked/routes.json').read_text())['urls']
+            self.assertEqual(urls[0]['name'],'普通点播')
+            self.assertEqual(urls[1]['name'],'成人点播')
+            ordinary=json.loads((root/'checked/vod-all.json').read_text())['sites']
+            adult=json.loads((root/'checked/vod-adult.json').read_text())['sites']
+            self.assertEqual([s['name'] for s in ordinary],['普通'])
+            self.assertEqual([s['name'] for s in adult],['玉兔资源'])
 
 
 if __name__=='__main__':

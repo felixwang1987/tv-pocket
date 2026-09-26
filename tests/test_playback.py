@@ -30,6 +30,18 @@ class PlaybackTests(unittest.TestCase):
         self.assertEqual(channels[0]['url'], 'https://example.com/a.m3u8')
         self.assertTrue(channels[1]['unsupported'])
 
+    def test_explicit_adult_group_survives_verified_export(self):
+        text='#EXTM3U\n#EXTINF:-1 group-title="XXX",成人频道\nhttps://example.com/a.m3u8\n#EXTINF:-1 group-title="新闻",普通频道\nhttps://example.com/b.m3u8'
+        channels=parse_channels(text,'https://example.com/list.m3u')
+        self.assertEqual([r['category'] for r in channels],['adult','ordinary'])
+        now=datetime.now(timezone.utc).isoformat()
+        records=[{'kind':'live','status':'ok','playback':{'samples':[
+            {**channel,'status':'passed','checked_at':now} for channel in channels]}}]
+        playlist,count=verified_playlist(records)
+        self.assertEqual(count,2)
+        self.assertIn('group-title="成人直播",成人频道',playlist)
+        self.assertIn('group-title="普通直播",普通频道',playlist)
+
     def test_http_200_html_is_not_a_playable_stream(self):
         net = FakeNetwork({'https://example.com/live': '<html>login</html>'})
         result = probe_stream(net, 'https://example.com/live', decoder=lambda b: self.fail('HTML reached decoder'))
