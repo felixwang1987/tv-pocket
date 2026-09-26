@@ -9,7 +9,7 @@ import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
 
-FRESH_SECONDS = 18 * 3600
+FRESH_SECONDS = 36 * 3600
 
 
 def timestamp():
@@ -212,7 +212,7 @@ def verify_catalog(records, documents, net, classify, extract_links, settings):
 
 def verified_playlist(records):
     current = datetime.now(timezone.utc)
-    output, seen = ['#EXTM3U', '# 仅含最近 18 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。'], set()
+    output, seen = ['#EXTM3U', f'# 仅含最近 {FRESH_SECONDS // 3600} 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。'], set()
     for row in records:
         if row.get('status') != 'ok' or row.get('kind') not in ('live', 'stream'):
             continue

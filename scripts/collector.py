@@ -357,16 +357,25 @@ def choose_candidates(seeds, old, found, limit):
 def discover_candidates(net, config):
     repos = {r: {'full_name':r} for r in config['repositories']}
     errors, candidates = [], []
+    search_groups = []
     for query in config['queries']:
         try:
-            payload = net.api('/search/repositories?' + urlencode({'q':query, 'sort':'updated', 'per_page':4}))
-            for repo in payload.get('items', []):
-                if not repo.get('private') and not repo.get('archived') and len(repos) < config['max_repositories']:
-                    repos.setdefault(repo['full_name'], repo)
+            payload = net.api('/search/repositories?' + urlencode({
+                'q':query, 'sort':'updated', 'per_page':config.get('search_results_per_query',12)}))
+            search_groups.append([repo for repo in payload.get('items', [])
+                                  if not repo.get('private') and not repo.get('archived')])
             if payload.get('incomplete_results'):
                 errors.append('GitHub 搜索只返回部分结果')
         except Exception as error:
             errors.append('GitHub 搜索失败：' + str(error)[:120])
+    # Rotate through queries so one large result set cannot use every slot.
+    for index in range(max((len(group) for group in search_groups), default=0)):
+        for group in search_groups:
+            if len(repos) >= config['max_repositories']:
+                break
+            if index < len(group):
+                repo = group[index]
+                repos.setdefault(repo['full_name'], repo)
     for name, repo in repos.items():
         try:
             if 'default_branch' not in repo:
