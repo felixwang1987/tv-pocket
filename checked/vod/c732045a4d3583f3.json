@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_c732045a4d3583f3",
+      "name": "雷蒙影视 | ️🚀爱坤",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

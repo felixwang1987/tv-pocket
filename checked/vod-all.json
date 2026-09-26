@@ -10,19 +10,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_8d82ffa7f9899260",
-      "name": "TV-金鹰资源",
+      "key": "pocket_304e2e6a898f6a58",
+      "name": "[590ms|5] 猫眼影视",
       "type": 1,
-      "api": "https://jyzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_159d37437573275f",
-      "name": "[137ms|zy] 🍏火狐",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -46,6 +37,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "猫眼",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_af8e085c7f2740c4",
       "name": "红牛资源",
       "type": 1,
@@ -55,10 +55,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_6124d4709cbefc30",
-      "name": "金鹰资源",
+      "key": "pocket_c732045a4d3583f3",
+      "name": "雷蒙影视 | ️🚀爱坤",
       "type": 1,
-      "api": "http://jyzyapi.com/provide/vod",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -82,10 +82,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_ffb12753653057e9",
-      "name": "💖分享金鹰",
+      "key": "pocket_dd3e59bd879f1515",
+      "name": "💝分享猫眼",
       "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -100,15 +100,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "🥬豪华资源",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_5ffb6e9a093b753f",
       "name": "🥬魔都资源",
       "type": 1,
@@ -118,37 +109,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_304e2e6a898f6a58",
-      "name": "[590ms|5] 猫眼影视",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_d6abf09efcd48c6d",
-      "name": "猫眼",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
       "key": "pocket_cc855a82f44a962d",
       "name": "影视 • 电影天堂",
       "type": 1,
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_844abbae184cff08",
-      "name": "电影天堂",
-      "type": 1,
-      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -172,21 +136,21 @@
       "filterable": 0
     },
     {
-      "key": "pocket_d0d25fc89f6477bd",
-      "name": "️天堂┃采集",
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🥬豪华资源",
       "type": 1,
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
+      "api": "https://hhzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_9e0145bd863328a1",
-      "name": "📱天堂网ᶜʲ┃采集",
+      "key": "pocket_844abbae184cff08",
+      "name": "电影天堂",
       "type": 1,
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
+      "searchable": 0,
+      "quickSearch": 0,
       "filterable": 0
     }
   ]

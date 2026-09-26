@@ -1,5 +1,21 @@
 #EXTM3U
 # 仅含最近 36 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。
+#EXTINF:-1 group-title="普通直播",Ника ТВ (576p)
+https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Россия 1
+https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8
+#EXTINF:-1 group-title="普通直播",Тамыр (Уфа) (576p)
+https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Три Ангела
+https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Russia-K (576p)
+http://stream.mcquack.net/229/index.m3u8
+#EXTINF:-1 group-title="普通直播",TKR (1080p) [Not 24/7]
+http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",City Eden KinoMistika [Not 24/7]
+https://cityeden.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 group-title="普通直播",Kino TV HD (1080p)
+http://176.118.197.101/KinoTvHD/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",Aakaash Aath KB
 http://tvsen5.aynascope.net/Wm9Lv2RjZGT6/index.m3u8
 #EXTINF:-1 group-title="普通直播",Nepal 1 KB
@@ -46,12 +62,14 @@ http://premiumtvs.space/live/YqXTywueEV/damp2purchase/423.ts
 http://38.96.178.205/SONYHD/index.m3u8
 #EXTINF:-1 group-title="普通直播",CARTOON NETWORK
 https://s3.ideationtec.live/Cartoon_Network/Cartoon_Network.m3u8
+#EXTINF:-1 group-title="普通直播",Sangeet Bangla
+http://flowutc.com:80/live/34FQ94W/64CW3PG/34727.ts
 #EXTINF:-1 group-title="普通直播",DBC News
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 group-title="普通直播",Ekushe TV
-http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #EXTINF:-1 group-title="普通直播",NDTV Hindi
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
+#EXTINF:-1 group-title="普通直播",Ekushe TV
+http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #EXTINF:-1 group-title="普通直播",Wild Flix Hindi
 https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
 #EXTINF:-1 group-title="普通直播",NH BollyGold KB
@@ -65,17 +83,17 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/in
 #EXTINF:-1 group-title="普通直播",Knock Bhakti KB
 https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
 #EXTINF:-1 group-title="普通直播",Max Sport 2 HD
-https://cdn3.glebul.com/hlsfhd/hd-max-sport-2-hd.m3u8?e=1790413483&hash=6iejCWcYwsdCtriccb9VCg
+https://cdn11.glebul.com/hlsfhd/hd-max-sport-2-hd.m3u8?e=1790417886&hash=J8Biu7VMbzZQ8cyOHHddUQ
 #EXTINF:-1 group-title="普通直播",Kanal 3
-https://cdn3.glebul.com/hls/kanal-3/index.m3u8?e=1790413631&hash=DlQWY1W-lJYKmShRiawdOA
+https://cdn11.glebul.com/hls/kanal-3/index.m3u8?e=1790418034&hash=rey6zRqECiHSLTZDtEs_Cg
 #EXTINF:-1 group-title="普通直播",Disney Channel
-https://cdn3.glebul.com/hls/disney-channel/index.m3u8?e=1790413766&hash=Z400Qx355hg2vyJi9PO6Bw
+https://cdn3.glebul.com/hls/disney-channel/index.m3u8?e=1790418169&hash=YmkVdmlp4qOxe-vMm0Aw-g
 #EXTINF:-1 group-title="普通直播",Planeta Folk
-https://cdn11.glebul.com/hls/planeta-folk/index.m3u8?e=1790413900&hash=fUfQlHDBmZ2Z4DwySIUFZw
+https://cdn3.glebul.com/hls/planeta-folk/index.m3u8?e=1790418304&hash=6VFWbEX9TKH7NVGigwhpmA
 #EXTINF:-1 group-title="普通直播",Discovery Channel HD
-https://cdn11.glebul.com/hls/hd-discovery-channel-hd/index.m3u8?e=1790414035&hash=YL0xgNpGTAbAloPU4iA1Lw
+https://cdn11.glebul.com/hls/hd-discovery-channel-hd/index.m3u8?e=1790418438&hash=l8Ndn-PQTQ4PAQc-f-ZuTg
 #EXTINF:-1 group-title="普通直播",BTV Comedy HD
-https://cdn3.glebul.com/hls/hd-btv-comedy-hd/index.m3u8?e=1790413336&hash=BUAdKYZBgdw1mAByZcsrVQ
+https://cdn11.glebul.com/hls/hd-btv-comedy-hd/index.m3u8?e=1790417739&hash=wDXV4IP4CkO3ZiDJb2pMBw
 #EXTINF:-1 group-title="普通直播",靖宇
 http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild
 #EXTINF:-1 group-title="普通直播",龙井
@@ -280,6 +298,8 @@ https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8?contentid=2820180516001
 https://vd3.bdstatic.com/mda-ncmgnz6479fenq1w/hd/cae_h264_delogo/1647950253700208169/mda-ncmgnz6479fenq1w.mp4
 #EXTINF:-1 group-title="普通直播",陕北民间
 https://vd4.bdstatic.com/mda-ncfk4vpkpbuhnu0s/720p_frame30/h264_cae_delogo/1647440102957240321/mda-ncfk4vpkpbuhnu0s.mp4
+#EXTINF:-1 group-title="普通直播",嘉峪关综合
+http://play.kankanlive.com/live/1720583434627241.m3u8
 #EXTINF:-1 group-title="普通直播",翡翠台
 https://cdn3.indevs.in/stream/tvb/fct/
 #EXTINF:-1 group-title="普通直播",双辽综合
@@ -326,6 +346,8 @@ http://cdn.adultiptv.net/bigass.m3u8
 http://cdn.adultiptv.net/interracial.m3u8
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Latina
 http://cdn.adultiptv.net/latina.m3u8
+#EXTINF:-1 group-title="成人直播",AdultIPTV.net POV
+http://cdn.adultiptv.net/pov.m3u8
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Blowjob
 http://cdn.adultiptv.net/blowjob.m3u8
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Hardcore

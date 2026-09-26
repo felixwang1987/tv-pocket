@@ -5,8 +5,8 @@
       "name": "猫眼",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0
     }
   ]
