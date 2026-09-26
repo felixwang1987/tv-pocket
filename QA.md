@@ -1,5 +1,11 @@
 # 交付验证记录
 
+## 图标和检查时机复核（2026-09-26，Codex）
+
+- 用户反馈打开后图标未显示。线上原有 180/192/512 像素 PNG 图标和 SVG 均返回 HTTP 200，Safari 桌面标签页可见图标；未能在用户手机上复现旧快捷方式的状态。原网页只使用内嵌 data SVG 作为浏览器图标，因此补充站内 PNG/SVG 图标引用，并将 Apple touch icon 和 Web App Manifest 的图标 URL 版本更新为 v2。
+- [图标修复工作流 36255173059](https://github.com/felixwang1987/tv-pocket/actions/runs/36255173059) 的采集、测试和 Pages 部署成功。线上 HTML 与仓库文件一致；`apple-touch-icon.png?v=2`、`icon-192.png?v=2`、`icon.svg?v=2`、`site.webmanifest?v=2` 及 manifest 中的 192/512 图标均返回 HTTP 200。Safari 刷新后标签页图标仍显示。若旧手机桌面快捷方式仍未更新，需从 Safari 删除旧快捷方式并重新添加，以排除本机缓存。
+- 仓库所有者提交“添加来源” Issue 后立即触发工作流排队，接受的来源在同一轮检查与部署，不等每日 10:23 UTC 定时任务；GitHub Actions 也支持手动 Run workflow。网页「读取最新」不会启动采集。
+
 ## 自助添加来源上线验收（2026-09-26，Codex）
 
 - 用户批准从网页填写公开链接、跳转 GitHub 确认、再由每日工作流检查。已在网页加入「添加来源」表单；直链、收集网页及普通/成人分类都能带入 GitHub Issue。Safari 实测普通直链和成人收集网页四个字段均正确预填。GitHub 不预填下拉框，因此将 Issue 模板的类型和分类改为可预填的文本字段；工作流仍严格校验允许值。
