@@ -31,7 +31,8 @@
 
 ## 日常使用
 
-- **复制已实测直播**：首页按钮会复制 `checked/live.m3u` 的线上地址，直接放入影视仓「直播配置」。只收录近 18 小时成功解码画面的抽检频道，按地址去重。未出画面的频道不会进入这份清单。
+- **复制点播合集**：复制 `checked/routes.json`，放入影视仓的线路合集入口。第一项「影视口袋 · 全部实测线路」合并了通过抽检的独立站点，其余条目可逐个切换。只检查文件可读的配置不会进入。
+- **复制直播合集**：首页按钮会复制 `checked/live.m3u` 的线上地址，直接放入影视仓「直播配置」。只收录近 18 小时成功解码画面的抽检频道，按地址去重。未出画面的频道不会进入这份清单。
 - **检测明细**：展开卡片可看每个抽检频道的结果、原因和检测时间。多仓显示下级配置的可读情况，不假定点播可用。
 - **复制地址**：到影视仓对应的多仓、配置或直播入口粘贴；入口名称依软件版本不同。
 - **收藏**：点卡片右上角星星，底部「我的收藏」集中显示。同一浏览器刷新仍保留，不跨设备同步。
@@ -71,10 +72,16 @@ python3 scripts/build.py --site
 
 本机若使用代理的 Fake-IP DNS，可加 `--github-only`，此模式只允许四个固定 GitHub HTTPS 域名，不检查第三方域名，也不运行实播抽检。Actions 不需要这个参数。普通模式拒绝私有/本地地址，并在重定向时重新检查目标；请在 GitHub 托管 runner 或隔离环境运行第三方来源采集。
 
-`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`checked/live.m3u` 是实播抽检通过的频道列表；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
+`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`checked/live.m3u` 是实播抽检通过的频道列表；`checked/routes.json` 是统一点播线路合集，引用 `checked/vod-all.json` 和 `checked/vod/*.json`；`data/routes.json` 保存点播检查明细；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
 
 ## 验证范围
 
 交付前验证解析、去重、失败保留、私有地址拒绝、HTML 安全内嵌，并检查页面主要操作与响应布局。GitHub Actions 的真实定时和 Pages 部署需要在上传启用后验证。每轮最多抽检 48 份直播列表、每份 3 个频道，样本每 6 小时轮换。HTTP 成功还必须下载视频数据并解码出一帧才计入通过；总抽检时限约 6 分钟、最多 500 次请求。加密、特殊请求头、分段字节范围、非 HTTP(S) 和非 80/443 端口目前归为需客户端验证。多仓/线路合集最多抽查 24 份、每份 3 个下级文件，单配置不执行 JAR/JS，不验证网盘登录或会员权限。
 
 官方参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[GitHub 定时任务](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)、[GitHub 仓库搜索 API](https://docs.github.com/en/rest/search/search#search-repositories)。
+
+## 点播合集检查范围
+
+从当前成功读取的单配置、多仓和线路合集递归展开，最多 3 层、额外读取 60 个配置。抽取不依赖外部插件、解析器、特殊请求头或账号参数的标准 JSON 点播接口，按 API 去重。每轮最多检测 48 个接口，每接口抽检至多 2 部节目的详情和直连视频画面；至少一部解码成功才发布。搜索单独测试，未确认搜索支持的站点仍可浏览。JAR/JS、网盘和其他特殊接口继续留在原目录，需影视仓实播，不混入已实测点播合集。
+
+两条合集地址保持固定，每 6 小时随后台检查更新内容。实测不代表整个片库都可用，GitHub 网络和家庭网络可能不同。修改部署仓库时，同步修改 sources.config.json 中 routes.base_url。只上传 HTML 时不包含在线合集文件，两个合集入口需要完整发布包。
