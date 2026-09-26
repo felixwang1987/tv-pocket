@@ -5,28 +5,32 @@
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json"
     },
     {
-      "name": "影视 | 电影天堂",
+      "name": "影视 • 电影天堂",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/cc855a82f44a962d.json"
+    },
+    {
+      "name": "电影天堂",
+      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/844abbae184cff08.json"
     },
     {
       "name": "魔都",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/5ffb6e9a093b753f.json"
     },
     {
-      "name": "️天堂┃采集",
-      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/d0d25fc89f6477bd.json"
-    },
-    {
       "name": "📱天堂网ᶜʲ┃采集",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/9e0145bd863328a1.json"
     },
     {
-      "name": "猫眼",
-      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/d6abf09efcd48c6d.json"
+      "name": "非凡资源",
+      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/060324185727f0c8.json"
     },
     {
       "name": "🐓┃爱坤┃资源",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/10ee9009c31aca81.json"
+    },
+    {
+      "name": "茅台资源",
+      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod/361de0f46352c47d.json"
     }
   ]
 }
