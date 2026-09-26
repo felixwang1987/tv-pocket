@@ -273,6 +273,17 @@ class ParsingTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             collector.parse_jsonc('{"urls":[]} {"sites":[]}')
 
+    def test_unescaped_newline_in_config_string_keeps_sites_and_lives(self):
+        text = ('{"sites":[{"name":"甲\n乙","api":"https://api.example/vod"}],'
+                '"lives":[{"name":"直播","url":"https://a.example/live.m3u"}]}')
+        self.assertEqual(classify(text, 'https://a.example/svip.json')['kind'], 'config')
+        self.assertEqual(extract_links(text, 'https://a.example/svip.json'),
+                         [{'name':'直播','url':'https://a.example/live.m3u'}])
+
+    def test_broken_json_with_embedded_urls_is_not_a_live_txt_list(self):
+        text = '{"sites":[{"name":"x","api":"https://api.example/vod"}],"bad":oops\n"site",https://video.example/page}'
+        self.assertIsNone(classify(text, 'https://a.example/svip.json'))
+
     def test_types_are_not_guessed_from_extension(self):
         cases = [('oops', None), ('<html>error</html>', None), ('{"sites":[]}', None),
                  ('{"urls":[{"name":"one","url":"https://a.example/a"}]}', 'collection'),

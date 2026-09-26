@@ -277,7 +277,9 @@ def parse_jsonc(text):
             out.append(c)
         i += 1
     cleaned = ''.join(out).lstrip()
-    obj, end = json.JSONDecoder().raw_decode(cleaned)
+    # Public TVBox configs sometimes contain literal newlines in quoted
+    # descriptions. They are data, so tolerate them without executing code.
+    obj, end = json.JSONDecoder(strict=False).raw_decode(cleaned)
     footer = cleaned[end:]
     # Some public hosts append an empty div badge after an otherwise valid
     # config. Accept only that markup, never a second document or page text.
@@ -306,6 +308,8 @@ def classify(text, url):
                         return {'kind': kind, 'format': 'JSON', 'count': count}
         except (ValueError, AttributeError, RecursionError):
             pass
+    if text.startswith(('{', '[', '//', '/*')):
+        return None
     count = len(re.findall(r'^[^\n,<>{}]+,https?://\S+', text, re.M))
     if count:
         return {'kind': 'live', 'format': 'TXT', 'count': count}
