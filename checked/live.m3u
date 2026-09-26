@@ -8,8 +8,6 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/in
 https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 #EXTINF:-1,ATN Bangla KB
 http://tvsen5.aynascope.net/atnbangla/index.m3u8
-#EXTINF:-1,Nexus TV KB
-https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
 #EXTINF:-1,ViuTV
 http://r.jdshipin.com/vSJvl
 #EXTINF:-1,有線新聞台
@@ -24,8 +22,12 @@ https://mumbai-edge.smartplaytv.in/DDKisan/index.m3u8
 https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
 #EXTINF:-1,Good
 https://live.streamingfast.net/osmflivech1.m3u8
+#EXTINF:-1,浙江卫视
+http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
 #EXTINF:-1,新沂新闻
 http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
+#EXTINF:-1,延边卫视
+https://srs.iyb983.cn:443/video/CYS/index.m3u8
 #EXTINF:-1,RT News
 https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 #EXTINF:-1,Pet Club TV
@@ -34,16 +36,14 @@ https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-sam
 http://r.jdshipin.com/thuYX
 #EXTINF:-1,TVB Plus
 http://r.jdshipin.com/Nr5jq
-#EXTINF:-1,延边卫视
-https://srs.iyb983.cn:443/video/CYS/index.m3u8
 #EXTINF:-1,浙江钱江都市 ·高清
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1,福建海峡卫视 ·高清
 http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
-#EXTINF:-1,浙江卫视
-http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
 #EXTINF:-1,台视新闻
 http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
+#EXTINF:-1,双辽综合
+http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
 #EXTINF:-1,浙江民生
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1,CGTN英语

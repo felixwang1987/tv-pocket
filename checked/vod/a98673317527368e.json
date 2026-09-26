@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_a98673317527368e",
+      "name": "91md",
+      "type": 1,
+      "api": "https://91md.me/api.php/provide/vod/from/mdm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

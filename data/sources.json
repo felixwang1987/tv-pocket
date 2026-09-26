@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-26T04:15:53+00:00",
-  "checked_at": "2026-09-26T04:14:20+00:00",
-  "last_success_at": "2026-09-26T04:15:53+00:00",
+  "generated_at": "2026-09-26T04:49:35+00:00",
+  "checked_at": "2026-09-26T04:45:56+00:00",
+  "last_success_at": "2026-09-26T04:49:35+00:00",
   "discovery": {
     "enabled": true,
     "repositories": 14,
@@ -11,18 +11,135 @@
   },
   "summary": {
     "checked": 120,
-    "recognized": 99,
-    "rejected_or_failed": 21
+    "recognized": 85,
+    "rejected_or_failed": 35
   },
   "playback_summary": {
-    "checked_at": "2026-09-26T04:15:53+00:00",
+    "checked_at": "2026-09-26T04:47:25+00:00",
     "environment": "GitHub Actions 公网",
-    "checked_lists": 35,
-    "sampled_channels": 105,
-    "passed_channels": 35,
-    "elapsed_seconds": 58,
+    "checked_lists": 32,
+    "sampled_channels": 96,
+    "passed_channels": 31,
+    "elapsed_seconds": 56,
     "verified_streams": 26
   },
+  "routes_summary": {
+    "discovered_apis": 154,
+    "checked_apis": 48,
+    "verified_routes": 8,
+    "sampled_programs": 30,
+    "passed_programs": 15,
+    "elapsed_seconds": 129,
+    "checked_at": "2026-09-26T04:49:35+00:00",
+    "environment": "GitHub Actions 公网"
+  },
+  "verified_routes": [
+    {
+      "id": "a98673317527368e",
+      "name": "91md",
+      "checked_at": "2026-09-26T04:49:15+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 1,
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ]
+    },
+    {
+      "id": "6b2a67e88178fe2e",
+      "name": "91麻豆",
+      "checked_at": "2026-09-26T04:49:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 1,
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ]
+    },
+    {
+      "id": "1bc7528c68a3c6ca",
+      "name": "巨量",
+      "checked_at": "2026-09-26T04:49:35+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 1,
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ]
+    },
+    {
+      "id": "5ffb6e9a093b753f",
+      "name": "魔都",
+      "checked_at": "2026-09-26T04:49:24+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 1,
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ]
+    },
+    {
+      "id": "9e0145bd863328a1",
+      "name": "📱天堂网ᶜʲ┃采集",
+      "checked_at": "2026-09-26T04:49:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 1,
+      "sources": [
+        "https://raw.githubusercontent.com/gclgg/box/main/ys.json"
+      ]
+    },
+    {
+      "id": "48ce51e9c9e37dd1",
+      "name": "155资源",
+      "checked_at": "2026-09-26T04:49:17+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 0,
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ]
+    },
+    {
+      "id": "39e2baa3abfd47da",
+      "name": "麻豆視頻",
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "searchable": 0,
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ]
+    },
+    {
+      "id": "aa147e8fef44397f",
+      "name": "量子资源(切)",
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "partial",
+      "sampled": 2,
+      "passed": 1,
+      "searchable": 1,
+      "sources": [
+        "https://szyyds.cn/tv/x.json"
+      ]
+    }
+  ],
   "entries": [
     {
       "name": "Dong-learn9_tvbox",
@@ -31,16 +148,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "04afa941a30e3a22",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 22,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -160,16 +277,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "2d483a0f07eb3339",
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -177,7 +294,7 @@
             "name": "小米小爆脾气",
             "url": "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/XBPQ.json",
             "status": "failed",
-            "reason": "HTTP Error 404: Not Found"
+            "reason": "The read operation timed out"
           },
           {
             "name": "极简配置",
@@ -203,16 +320,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "e81f9b01198bc595",
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2998,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -232,7 +349,7 @@
             "name": "你懂2",
             "url": "https://fastly.jsdelivr.net/gh/tv-player/tvbox-line@main/tv/q73m.json",
             "status": "failed",
-            "reason": "HTTP Error 404: Not Found"
+            "reason": "The read operation timed out"
           }
         ],
         "sampled": 3,
@@ -246,16 +363,16 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "a2d03be7aed8e6b9",
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -282,17 +399,17 @@
       "sources": [
         "https://github.com/wxrjck/-YSC-"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "7f834c163d66d435",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -325,17 +442,17 @@
       "sources": [
         "https://github.com/wxrjck/-YSC-"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "9133b064ea25c2c7",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -348,8 +465,8 @@
           {
             "name": "🚀无邪┃肥猫线路",
             "url": "http://xn--z7x900a.net/tv",
-            "status": "readable",
-            "reason": "下级文件可识别，尚未实播"
+            "status": "failed",
+            "reason": "读取超过本次检查时限"
           },
           {
             "name": "🚀无邪┃短剧专线",
@@ -359,7 +476,7 @@
           }
         ],
         "sampled": 3,
-        "readable": 1
+        "readable": 0
       }
     },
     {
@@ -369,16 +486,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "36d74efc9130cf55",
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 4726,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -498,16 +615,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "34fc7e680d26719b",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 58,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -540,17 +657,17 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 4,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "e408fcb9da61f05e",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -583,17 +700,17 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 18,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "e59cf9d3907ae670",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -627,16 +744,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "0526697806d8a517",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -670,16 +787,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "2446394c52e1670c",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -713,16 +830,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "a467332b41170d75",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 56,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -755,17 +872,17 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 32,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "84be2cf8ea0579c1",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -799,16 +916,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "9b096386c49b35c8",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 13,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -842,16 +959,16 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "3761b364727ae51e",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 2,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -880,16 +997,16 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "9b0af6d3cbf4f1e2",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -924,16 +1041,16 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "c1c412ff26bae7e6",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "collection",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -966,17 +1083,17 @@
       "sources": [
         "https://github.com/youhunwl/TVAPP"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 27,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "c6dbba9e167dc8ad",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1012,16 +1129,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "368fecd0c4146818",
-      "checked_at": "2026-09-26T04:14:35+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 1,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:35+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1034,16 +1151,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "0235e15e2a424363",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 77,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1056,16 +1173,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "33261eb352bd90bd",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 66,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1078,16 +1195,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "0bbbe78f98005277",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 193,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1100,16 +1217,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "ec3fadd546d8954f",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 73,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1232,16 +1349,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "f96f394f991c91dc",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 141,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1254,16 +1371,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "065334a40f171a80",
-      "checked_at": "2026-09-26T04:14:34+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 257,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:34+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1276,16 +1393,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "1d7c29d7a609b17d",
-      "checked_at": "2026-09-26T04:14:35+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 205,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:35+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1298,16 +1415,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "bef1e06f19efb1f1",
-      "checked_at": "2026-09-26T04:14:35+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 256,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:35+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1320,16 +1437,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "25d947818e01463b",
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 73,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1363,17 +1480,17 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 28,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "344457f892489066",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1385,14 +1502,21 @@
       "sources": [
         "https://github.com/gclgg/box"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 161,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
-      "id": "7e4a5eabbc2b9915"
+      "id": "7e4a5eabbc2b9915",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "jessic01_18",
@@ -1401,16 +1525,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "7d6f90eba07f181b",
-      "checked_at": "2026-09-26T04:14:36+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 140,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:36+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1422,17 +1546,17 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 38,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "b8728b8ff13adc52",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1445,16 +1569,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "f8bd414a5cbb7d91",
-      "checked_at": "2026-09-26T04:14:36+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 40,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:36+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1488,17 +1612,17 @@
       "sources": [
         "https://github.com/yagami-hue/Win-box"
       ],
-      "checked_at": "2026-09-26T04:14:36+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 4,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:36+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "fbf2074ae8721f0f",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1510,17 +1634,17 @@
       "sources": [
         "https://github.com/yangclaw2026-png/tvbox-aggregator"
       ],
-      "checked_at": "2026-09-26T04:14:36+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 1,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:36+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "77e8e65bdf2bdff7",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1598,14 +1722,21 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 53,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "967b6b2257a78c79"
+      "id": "967b6b2257a78c79",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "单仓 · 王二小 | `",
@@ -1613,14 +1744,21 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 63,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "2e21fc30f01abadc"
+      "id": "2e21fc30f01abadc",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "单仓 · 肥猫 | ` | 单独使用某一个源",
@@ -1628,14 +1766,21 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 39,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "aa9e15287a28b5bc"
+      "id": "aa9e15287a28b5bc",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "单仓 · 讴歌 | `",
@@ -1643,14 +1788,21 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 12,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "e467cfb7f27dbe7b"
+      "id": "e467cfb7f27dbe7b",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "单仓聚合** | ` | 所有源站点合并成一个，无需切换",
@@ -1658,14 +1810,21 @@
       "sources": [
         "https://github.com/Lightconer/tvbox-ysc-config"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 167,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "2651a7041e6d9d3a"
+      "id": "2651a7041e6d9d3a",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "国内镜像：`",
@@ -1718,14 +1877,21 @@
         "https://github.com/laoma2053/awesome-zhuiju-free",
         "https://github.com/youhunwl/TVAPP"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 54,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "ae45f1d9138c11af"
+      "id": "ae45f1d9138c11af",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "小马 | ` | 🌟&#8288;🌟&#8288;🌟&#8288;🌟 | <!-- availability:xiao-",
@@ -1733,14 +1899,21 @@
       "sources": [
         "https://github.com/laoma2053/awesome-zhuiju-free"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 62,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "0e02e701fd835cf3"
+      "id": "0e02e701fd835cf3",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "接口在原来的基础上增加几个接口即福利接口,之前忘记云盘共享现在重新上传方便下载，其实内置tvbox黑盒网上有教程，白盒内",
@@ -1771,14 +1944,21 @@
         "https://github.com/Lightconer/tvbox-ysc-config",
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 63,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "5d18e8987b27f541"
+      "id": "5d18e8987b27f541",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": []
+      }
     },
     {
       "name": "直连：`",
@@ -1830,17 +2010,17 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 234,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "6dbfd70803ba3e33",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1854,17 +2034,17 @@
         "https://github.com/xiaohuya520/tvbox-dc",
         "https://github.com/xiongjian83/TvBox"
       ],
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 234,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "aa1e72ea5e47340d",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1876,17 +2056,17 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 48,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "331f8bfac357ff38",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1898,17 +2078,17 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ],
-      "checked_at": "2026-09-26T04:14:34+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 298,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:34+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "fdefa874f4e13399",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1921,16 +2101,16 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "fa3abd0f97c3f3b6",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 47,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
@@ -1942,14 +2122,48 @@
       "sources": [
         "https://github.com/liujiawei-zuopin/apple-tvbox"
       ],
-      "checked_at": "2026-09-25T21:41:30+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 1,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:30+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "62166cda63b1f7cc"
+      "id": "62166cda63b1f7cc",
+      "playback": {
+        "status": "failed",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "passed": 0,
+        "sampled": 3,
+        "total": 11,
+        "samples": [
+          {
+            "name": "{ <span class=\"code-key\">&quot;name&quot;:</span> <span class=\"code-string\">&quot;遠端配置&quot;</span>",
+            "url": "https://fongmi.github.io/TV/config/<span class=\"code-key\">&quot;url&quot;:</span> <span class=\"code-string\">&quot;https:/example.com/vod.json&quot;</span> }",
+            "unsupported": "",
+            "status": "failed",
+            "reason": "HTTP 404",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "範例一台",
+            "url": "https://example.com/live/main.m3u8$主線#https://example.com/live/backup.m3u8$備線</code></pre></div><p><code>#genre#</code> 建立分組；同一頻道的多個位置使用<!-- --> <code>#</code> 分隔。</p></article></div><div class=\"callout\"><b>TXT / M3U 設定行</b><code>ua= · parse= · click= · header= · format= · origin= · referer= · forceKey=</code></div></section><section id=\"core\"><h2>特殊播放核心欄位</h2><p><code>Live.core</code> <!-- -->只在對應播放核心初始化時使用；一般直播配置不需要填寫。以下示範它在 Live 物件中的位置；<code>option</code> <!-- -->的名稱與值由該核心實作定義，不是通用配置參數。</p><div class=\"field-box\"><label class=\"field-search\"><svg class=\"search-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"10.75\" cy=\"10.75\" r=\"7.25\"></circle><path d=\"m16 16 4.5 4.5\"></path></svg><input aria-label=\"搜尋 Core 欄位\" placeholder=\"搜尋 Core 欄位…\" value=\"\"/><b aria-live=\"polite\">13<!-- --> 欄位</b></label><div class=\"table-scroll\"><table class=\"field-table\" aria-label=\"Core 欄位說明\"><thead><tr><th scope=\"col\">欄位</th><th scope=\"col\">類型</th><th scope=\"col\">用途</th><th scope=\"col\">預設</th></tr></thead><tbody><tr><td><code>auth</code></td><td>string</td><td>核心授權端點；resp 取得非空內容時，App 會改用本機 /tvbus 端點。</td><td>—</td></tr><tr><td><code>name</code></td><td>string</td><td>傳給播放核心的名稱；值也可以是回傳文字的網址。</td><td>—</td></tr><tr><td><code>pass</code></td><td>string</td><td>傳給播放核心的密碼；值也可以是回傳文字的網址。</td><td>—</td></tr><tr><td><code>broker</code></td><td>string</td><td>傳給播放核心的 broker 位置。</td><td>—</td></tr><tr><td><code>domain</code></td><td>string</td><td>傳給播放核心的 domain；值也可以是回傳文字的網址。</td><td>—</td></tr><tr><td><code>resp</code></td><td>string</td><td>本機 /tvbus 端點要回傳的內容，也可填回傳文字的網址；取得非空內容時取代 auth 的對外位置。</td><td>—</td></tr><tr><td><code>sign</code></td><td>string</td><td>與 pkg 一起建立執行期 Hook；值也可以由網址取得。</td><td>—</td></tr><tr><td><code>pkg</code></td><td>string</td><td>與 sign 一起建立執行期 Hook；值也可以由網址取得。</td><td>—</td></tr><tr><td><code>so</code></td><td>string</td><td>核心原生函式庫位置；App 會下載到本機後載入。</td><td>—</td></tr><tr><td><code>key</code></td><td>string</td><td>目前保留於 Core 配置中的識別值；現行 Core 流程沒有公開讀取方法。</td><td>—</td></tr><tr><td><code>option</code></td><td>Core.Option[]</td><td>初始化核心前逐筆套用的額外選項。</td><td>—</td></tr><tr><td><code>option[].key</code></td><td>string</td><td>選項名稱。</td><td>—</td></tr><tr><td><code>option[].values</code></td><td>string[]</td><td>傳給該選項的值清單。</td><td>—</td></tr></tbody></table></div></div><div class=\"code-card\" role=\"region\" aria-label=\"JSON / Live.core · lives[] 物件片段 範例\"><div class=\"code-card-head\"><span>JSON / Live.core</span><code>lives[] 物件片段</code><span class=\"copy-control\"><button type=\"button\" class=\"copy-button\" aria-label=\"複製 JSON / Live.core · lives[] 物件片段 範例\" aria-busy=\"false\">複製</button><span class=\"sr-only\" role=\"status\" aria-atomic=\"true\"></span></span></div><pre tabindex=\"0\" aria-label=\"JSON / Live.core · lives[] 物件片段 範例\"><code>{",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "}</code></pre></div><p><code>${(b)yyyyMMddHHmmss}</code> 與<!-- --> <code>${(e)yyyyMMddHHmmss}</code> <!-- -->會分別替換為節目開始與",
+            "url": "https://fongmi.github.io/TV/config/\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"default\\\"]\\n3:I[37457,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"default\\\"]\\n4:I[22016,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\"],\\\"\\\"]\\n5:I[5500,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\"],\\\"Image\\\"]\\n6:I[21831,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\"],\\\"SiteNav\\\"]\\n7:I[1046,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\"],\\\"CodeBlock\\\"]\\n18:I[68027,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"default\\\",1]\\n:HL[\\\"/TV/_next/static/chunks/2k292u2kjp11s.css\\\",\\\"style\\\"]\\n:HL[\\\"/TV/_next/static/media/03fc1b4a8d284b5e-s.p.0wiir8udbzjvx.woff2\\\",\\\"font\\\",{\\\"crossOrigin\\\":\\\"\\\",\\\"type\\\":\\\"font/woff2\\\"}]\\n:HL[\\\"/TV/_next/static/media/70bc3e132a0a741e-s.p.3t6q91iet4nsy.woff2\\\",\\\"font\\\",{\\\"crossOrigin\\\":\\\"\\\",\\\"type\\\":\\\"font/woff2\\\"}]\\n16:X\\n0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"config\\\",\\\"\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"config\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},\\\"$undefined\\\",\\\"$undefined\\\",4608]},\\\"$undefined\\\",\\\"$undefined\\\",4608]},\\\"$undefined\\\",\\\"$undefined\\\",4624],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/TV/_next/static/chunks/2k292u2kjp11s.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"zh-Hant\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"className\\\":\\\"ibm_plex_sans_660a49b1-module__iBdcIa__variable jetbrains_mono_2c330a35-module__w3uxYa__variable\\\",\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"site-shell\\\",\\\"id\\\":\\\"top\\\",\\\"children\\\":[[[\\\"$\\\",\\\"a\\\",null,{\\\"className\\\":\\\"skip-link\\\",\\\"href\\\":\\\"#main-content\\\",\\\"children\\\":\\\"跳到主要內容\\\"}],[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"wrap header-inner\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"aria-label\\\":\\\"影視TV 首頁\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/TV/logo.svg\\\",\\\"alt\\\":\\\"\\\",\\\"width\\\":32,\\\"height\\\":32,\\\"priority\\\":true}],[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"影視TV\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"brand-caption\\\",\\\"children\\\":\\\"使用與開發指南\\\"}]]}],[\\\"$\\\",\\\"$L6\\\",null,{}]]}]}]],[\\\"$\\\",\\\"main\\\",null,{\\\"id\\\":\\\"main-content\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"docs-hero wrap\\\",\\\"children\\\":[[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"配置指南與欄位字典\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"配置載入由 BaseConfig 統一處理；VodConfig 管理站點與解析器，LiveConfig 管理直播清單與頻道。以下依目前本地程式碼整理，並區分完整配置與物件片段。\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"docs-layout wrap\\\",\\\"children\\\":[[\\\"$\\\",\\\"aside\\\",null,{\\\"className\\\":\\\"docs-nav\\\",\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"本頁導覽\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#examples\\\",\\\"children\\\":\\\"完整範例\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#vod\\\",\\\"children\\\":\\\"Vod 頂層\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#site\\\",\\\"children\\\":\\\"Site\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#parse\\\",\\\"children\\\":\\\"Parse\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#live\\\",\\\"children\\\":\\\"Live\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#channel\\\",\\\"children\\\":\\\"Group / Channel\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#formats\\\",\\\"children\\\":\\\"直播格式\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#core\\\",\\\"children\\\":\\\"Core\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#common\\\",\\\"children\\\":\\\"共用物件\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"docs-content\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"examples\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"先從可直接修改的配置開始\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"先選擇點播或直播的完整配置，再替換名稱、路徑與需要的欄位。後續各節另有標明層級的物件片段，需放入對應欄位。\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"callout\\\",\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"範例位置說明\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":[\\\"主配置中的 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"./\\\"}],\\\" 與 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"../\\\"}],\\\" \\\",\\\"會以該配置檔的位置展開；外部陣列檔或直播列表內的路徑不會再次展開，請使用完整網址。\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"example.com\\\"}],\\\" 與保留測試 IP 只用來展示結構，並不是可用來源。\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"schema-grid\\\",\\\"children\\\":[[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"點播配置：Java、JS、Python\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / VodConfig\\\",\\\"path\\\":\\\"vod.json\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"spider\\\\\\\": \\\\\\\"./spider.jar\\\\\\\",\\\\n  \\\\\\\"sites\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"key\\\\\\\": \\\\\\\"java_demo\\\\\\\",\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"Java Demo\\\\\\\",\\\\n      \\\\\\\"type\\\\\\\": 3,\\\\n      \\\\\\\"api\\\\\\\": \\\\\\\"csp_Demo\\\\\\\"\\\\n    },\\\\n    {\\\\n      \\\\\\\"key\\\\\\\": \\\\\\\"js_demo\\\\\\\",\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"JavaScript Demo\\\\\\\",\\\\n      \\\\\\\"type\\\\\\\": 3,\\\\n      \\\\\\\"api\\\\\\\": \\\\\\\"./demo.js\\\\\\\",\\\\n      \\\\\\\"ext\\\\\\\": { \\\\\\\"region\\\\\\\": \\\\\\\"tw\\\\\\\" }\\\\n    },\\\\n    {\\\\n      \\\\\\\"key\\\\\\\": \\\\\\\"py_demo\\\\\\\",\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"Python Demo\\\\\\\",\\\\n      \\\\\\\"type\\\\\\\": 3,\\\\n      \\\\\\\"api\\\\\\\": \\\\\\\"./demo.py\\\\\\\"\\\\n    }\\\\n  ],\\\\n  \\\\\\\"parses\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"JSON 解析範例\\\\\\\",\\\\n      \\\\\\\"type\\\\\\\": 1,\\\\n      \\\\\\\"url\\\\\\\": \\\\\\\"https://example.com/parse?url=\\\\\\\",\\\\n      \\\\\\\"ext\\\\\\\": {\\\\n        \\\\\\\"flag\\\\\\\": [\\\\\\\"demo\\\\\\\"],\\\\n        \\\\\\\"header\\\\\\\": { \\\\\\\"User-Agent\\\\\\\": \\\\\\\"ExampleClient/1.0\\\\\\\" }\\\\n      }\\\\n    }\\\\n  ]\\\\n}\\\"}],\\\"$L8\\\"]}],\\\"$L9\\\"]}]]}],\\\"$La\\\",\\\"$Lb\\\",\\\"$Lc\\\",\\\"$Ld\\\",\\\"$Le\\\",\\\"$Lf\\\",\\\"$L10\\\",\\\"$L11\\\"]}]]}]]}],\\\"$L12\\\"]}],[\\\"$L13\\\",\\\"$L14\\\"],\\\"$L15\\\"]}],{},null,false,null]},null,false,\\\"$16\\\"]},null,false,null],\\\"$L17\\\",false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$18\\\",[\\\"$L19\\\"]],\\\"S\\\":true,\\\"h\\\":null,\\\"r\\\":\\\"$undefined\\\",\\\"s\\\":\\\"$undefined\\\",\\\"a\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\",\\\"b\\\":\\\"k9z3_6r6dJaAj41YbFIOq\\\"}\\n1a:I[64399,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\",\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\"],\\\"FieldTable\\\"]\\n1b:I[97367,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"OutletBoundary\\\"]\\n1c:\\\"$Sreact.suspense\\\"\\n1e:I[97367,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"ViewportBoundary\\\"]\\n20:I[97367,[\\\"/TV/_next/static/chunks/3fntmmi971322.js\\\"],\\\"MetadataBoundary\\\"]\\n8:[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"Java 使用 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"csp_\\\"}],\\\" 類別名稱；JS 與 Python 檔案使用\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"./\\\"}],\\\" 相對路徑。\\\"]}]\\n9:[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"直播配置：外部 M3U\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / LiveConfig\\\",\\\"path\\\":\\\"live-config.json\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"lives\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"M3U 範例\\\\\\\",\\\\n      \\\\\\\"url\\\\\\\": \\\\\\\"./live.m3u\\\\\\\",\\\\n      \\\\\\\"epg\\\\\\\": \\\\\\\"https://example.com/epg.xml\\\\\\\",\\\\n      \\\\\\\"logo\\\\\\\": \\\\\\\"https://example.com/logo/{id}.png\\\\\\\",\\\\n      \\\\\\\"ua\\\\\\\": \\\\\\\"ExampleClient/1.0\\\\\\\",\\\\n      \\\\\\\"timeZone\\\\\\\": \\\\\\\"Asia/Taipei\\\\\\\",\\\\n      \\\\\\\"boot\\\\\\\": false\\\\n    }\\\\n  ]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"url\\\"}],\\\" 也可改成 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"./live.txt\\\"}],\\\" 或\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"./live.json\\\"}],\\\"；內容格式會由 LiveParser 判斷。\\\"]}]]}]\\na:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"vod\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"VodConfig 頂層欄位\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"主要配置入口。只有 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"headers\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"proxy\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"rules\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"doh\\\"}],\\\" 等經過 fetchArray 的欄位，才支援物件陣列、外部位置或兩者混用。\\\"]}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"urls\\\",\\\"type\\\":\\\"Depot[]\\\",\\\"description\\\":\\\"配置倉庫清單；登記各項配置後載入第一項，清單不可為空。\\\"},{\\\"name\\\":\\\"msg\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"配置回傳的錯誤訊息；存在時停止載入，普通配置與倉庫都適用。\\\"},{\\\"name\\\":\\\"spider\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"全域 Spider JAR 路徑或 URL；Site 未指定 jar 時使用。\\\"},{\\\"name\\\":\\\"wallpaper\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"桌布圖片、GIF 或影片位置。\\\"},{\\\"name\\\":\\\"logo\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"App Logo 圖片位置。\\\"},{\\\"name\\\":\\\"notice\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"啟動後顯示的公告文字。\\\"},{\\\"name\\\":\\\"sites\\\",\\\"type\\\":\\\"Site[]\\\",\\\"required\\\":true,\\\"description\\\":\\\"點播站點清單。\\\"},{\\\"name\\\":\\\"parses\\\",\\\"type\\\":\\\"Parse[]\\\",\\\"description\\\":\\\"需要進一步處理 URL 時使用的解析規則。\\\"},{\\\"name\\\":\\\"lives\\\",\\\"type\\\":\\\"Live[]\\\",\\\"description\\\":\\\"內嵌直播配置清單；也可以另外載入獨立 LiveConfig。\\\"},{\\\"name\\\":\\\"doh\\\",\\\"type\\\":\\\"Doh[]\\\",\\\"description\\\":\\\"DNS over HTTPS 端點。\\\"},{\\\"name\\\":\\\"proxy\\\",\\\"type\\\":\\\"Proxy[]\\\",\\\"description\\\":\\\"依 host 套用的代理伺服器。\\\"},{\\\"name\\\":\\\"rules\\\",\\\"type\\\":\\\"Rule[]\\\",\\\"description\\\":\\\"WebView 網路擷取與腳本規則。\\\"},{\\\"name\\\":\\\"headers\\\",\\\"type\\\":\\\"Header[]\\\",\\\"description\\\":\\\"依 host 注入或覆寫 HTTP 請求標頭。\\\"},{\\\"name\\\":\\\"hosts\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"原主機=目標主機或 IP 的 DNS 覆蓋。\\\"},{\\\"name\\\":\\\"flags\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"提供給 playerContent 的全域平台旗標。\\\"},{\\\"name\\\":\\\"ads\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"要攔截的主機名稱清單。\\\"},{\\\"name\\\":\\\"danmaku\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"彈幕搜尋 API；可使用 {name} 與 {episode}。\\\"},{\\\"name\\\":\\\"assrt\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"字幕搜尋服務使用的存取字串。\\\"}],\\\"label\\\":\\\"VodConfig\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"schema-grid\\\",\\\"children\\\":[[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"配置倉庫 Depot\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Depot\\\",\\\"path\\\":\\\"depot.json\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"urls\\\\\\\": [\\\\n    { \\\\\\\"name\\\\\\\": \\\\\\\"同目錄配置\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"./vod.json\\\\\\\" },\\\\n    { \\\\\\\"name\\\\\\\": \\\\\\\"遠端配置\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://example.com/vod.json\\\\\\\" }\\\\n  ]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"頂層出現 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"urls\\\"}],\\\" 時，App 登記清單後會載入第一項配置，清單不可為空；每一項包含\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"name\\\"}],\\\" 與 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"url\\\"}],\\\"。\\\"]}]]}],[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"可引用外部陣列的欄位\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / arrays\\\",\\\"path\\\":\\\"VodConfig 頂層欄位片段\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"doh\\\\\\\": \\\\\\\"./doh.json\\\\\\\",\\\\n  \\\\\\\"headers\\\\\\\": [\\\\n    \\\\\\\"./headers.json\\\\\\\",\\\\n    {\\\\n      \\\\\\\"host\\\\\\\": \\\\\\\"media.example.com\\\\\\\",\\\\n      \\\\\\\"header\\\\\\\": { \\\\\\\"Referer\\\\\\\": \\\\\\\"https://example.com/\\\\\\\" }\\\\n    }\\\\n  ],\\\\n  \\\\\\\"proxy\\\\\\\": \\\\\\\"./proxy.json\\\\\\\",\\\\n  \\\\\\\"rules\\\\\\\": [\\\\n    \\\\\\\"./rules.json\\\\\\\",\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"媒體請求範例\\\\\\\",\\\\n      \\\\\\\"hosts\\\\\\\": [\\\\\\\"player.example.com\\\\\\\"],\\\\n      \\\\\\\"regex\\\\\\\": [\\\\\\\".*m3u8.*\\\\\\\"],\\\\n      \\\\\\\"exclude\\\\\\\": [\\\\\\\".*preview.*\\\\\\\"]\\\\n    }\\\\n  ]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"整個欄位可以是一個位置，也可以在陣列中混用外部 JSON 位置與內嵌物件。外部檔案本身必須回傳 JSON 陣列。\\\"}]]}]]}]]}]\\nb:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"site\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Site 點播站點\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"type-strip\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"0\\\"}],\\\"XML HTTP\\\"]}],[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"1\\\"}],\\\"JSON HTTP\\\"]}],[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"3\\\"}],\\\"JAR / JS / PY\\\"]}],[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"4\\\"}],\\\"HTTP 擴充\\\"]}]]}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"key\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"站點唯一識別碼，不可重複。\\\"},{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"顯示名稱。\\\"},{\\\"name\\\":\\\"type\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0=XML HTTP、1=JSON HTTP、3=Spider；4=擴充 HTTP JSON，分類篩選以 Base64 ext 傳送，站點 ext 另以 extend 傳送。\\\",\\\"default\\\":\\\"0\\\"},{\\\"name\\\":\\\"api\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"HTTP 端點、csp_ 類別，或以 ./、../ 表示的 .js／.py 相對路徑；也可使用完整網址。\\\"},{\\\"name\\\":\\\"ext\\\",\\\"type\\\":\\\"string | object | array\\\",\\\"description\\\":\\\"type 3 傳給 Spider.init；HTTP 站點以 extend 傳送。物件與陣列先序列化為字串；主配置可填 URL 或相對路徑。\\\"},{\\\"name\\\":\\\"jar\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋全域 spider 的 JAR 位置。\\\"},{\\\"name\\\":\\\"click\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"在 WebView 執行的 JavaScript 點擊程式。\\\"},{\\\"name\\\":\\\"playUrl\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"type 0/1 的解析 URL 前綴；支援 json: 端點或 parse: 解析器名稱。type 3/4 由播放 Result.playUrl 提供。\\\"},{\\\"name\\\":\\\"hide\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"1 時從站點清單隱藏。\\\",\\\"default\\\":\\\"0\\\"},{\\\"name\\\":\\\"indexs\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"1 時作為索引站點。\\\",\\\"default\\\":\\\"0\\\"},{\\\"name\\\":\\\"timeout\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"播放逾時秒數，最小 1。\\\",\\\"default\\\":\\\"15\\\"},{\\\"name\\\":\\\"searchable\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0=永久停用、1=啟用；執行期間也可能保存為 2。\\\",\\\"default\\\":\\\"1\\\"},{\\\"name\\\":\\\"changeable\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0=禁止切換、1=可切換；執行期間也可能保存為 2。\\\",\\\"default\\\":\\\"1\\\"},{\\\"name\\\":\\\"lang\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"搜尋關鍵字轉換語系，支援繁簡中文標籤；非空的其他值保留原文，空值使用既有轉換。\\\"},{\\\"name\\\":\\\"danmaku\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0 停用此站點透過全域彈幕 API 自動搜尋，不影響 Spider 自帶彈幕。\\\",\\\"default\\\":\\\"1\\\"},{\\\"name\\\":\\\"quickSearch\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0 跳過快速搜尋，1 啟用。\\\",\\\"default\\\":\\\"1\\\"},{\\\"name\\\":\\\"categories\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"有匹配名稱時只保留匹配分類並依清單排序；完全無匹配時保留原分類。\\\"},{\\\"name\\\":\\\"header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"HTTP API 請求標頭；播放 Result.header 全空時也作為預設。type 3 不會自動套用到 Spider 自行發出的請求。\\\"},{\\\"name\\\":\\\"style\\\",\\\"type\\\":\\\"Style\\\",\\\"description\\\":\\\"站點預設卡片樣式。\\\"}],\\\"label\\\":\\\"Site\\\"}],[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"Type 3 站點範例\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Site\\\",\\\"path\\\":\\\"sites[] 物件片段\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"key\\\\\\\": \\\\\\\"js_demo\\\\\\\",\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"JavaScript Demo\\\\\\\",\\\\n  \\\\\\\"type\\\\\\\": 3,\\\\n  \\\\\\\"api\\\\\\\": \\\\\\\"./demo.js\\\\\\\",\\\\n  \\\\\\\"ext\\\\\\\": { \\\\\\\"region\\\\\\\": \\\\\\\"tw\\\\\\\" },\\\\n  \\\\\\\"searchable\\\\\\\": 1,\\\\n  \\\\\\\"changeable\\\\\\\": 1,\\\\n  \\\\\\\"categories\\\\\\\": [\\\\\\\"電影\\\\\\\", \\\\\\\"戲劇\\\\\\\"],\\\\n  \\\\\\\"header\\\\\\\": { \\\\\\\"User-Agent\\\\\\\": \\\\\\\"ExampleClient/1.0\\\\\\\" },\\\\n  \\\\\\\"style\\\\\\\": { \\\\\\\"type\\\\\\\": \\\\\\\"rect\\\\\\\", \\\\\\\"ratio\\\\\\\": 1.33 }\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"改用 Python 時只需把 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"api\\\"}],\\\" 換成 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"./demo.py\\\"}],\\\"；Java 類別則填 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"csp_Demo\\\"}],\\\"。相對路徑也適用於\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"ext\\\"}],\\\" 與 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"jar\\\"}],\\\"。\\\"]}]]}]\\nc:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"parse\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Parse URL 處理規則\\\"}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"解析器顯示名稱，也是具名選取依據。\\\"},{\\\"name\\\":\\\"type\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0=WebView、1=JSON API、2=JAR JSON、3=JAR 混合、4=並行嘗試。\\\",\\\"default\\\":\\\"0\\\"},{\\\"name\\\":\\\"url\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"解析 API 端點或前綴。\\\"},{\\\"name\\\":\\\"ext.flag\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"type 4 並行解析時，優先選取同類型且匹配旗標的解析器；沒有匹配時回退該類型全部解析器。\\\"},{\\\"name\\\":\\\"ext.header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"附加於解析請求；JSON 解析結果未提供標頭時，也作為播放請求的預設標頭。\\\"}],\\\"label\\\":\\\"Parse\\\"}],[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"WebView 與 JSON API 範例\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Parse\\\",\\\"path\\\":\\\"parses 欄位值\\\",\\\"children\\\":\\\"[\\\\n  {\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"WebView 解析範例\\\\\\\",\\\\n    \\\\\\\"type\\\\\\\": 0,\\\\n    \\\\\\\"url\\\\\\\": \\\\\\\"https://example.com/web?url=\\\\\\\"\\\\n  },\\\\n  {\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"JSON API 解析範例\\\\\\\",\\\\n    \\\\\\\"type\\\\\\\": 1,\\\\n    \\\\\\\"url\\\\\\\": \\\\\\\"https://example.com/api?url=\\\\\\\",\\\\n    \\\\\\\"ext\\\\\\\": {\\\\n      \\\\\\\"flag\\\\\\\": [\\\\\\\"demo\\\\\\\"],\\\\n      \\\\\\\"header\\\\\\\": { \\\\\\\"Referer\\\\\\\": \\\\\\\"https://example.com/\\\\\\\" }\\\\n    }\\\\n  }\\\\n]\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"parses\\\"}],\\\" 的值是陣列；\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"ext.flag\\\"}],\\\" 是 type 4 並行解析的優先比對條件，不是全域白名單。\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"ext.header\\\"}],\\\" \\\",\\\"也可能作為解析結果的預設播放標頭，詳見上表。\\\"]}]]}]\\nd:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"live\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"LiveConfig 與直播來源\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"獨立 LiveConfig 的 JSON 頂層使用 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"lives\\\"}],\\\"，並支援\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"spider\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"headers\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"proxy\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"rules\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"hosts\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"ads\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"urls\\\"}],\\\" 與 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"msg\\\"}],\\\"；不讀取獨立的\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"doh\\\"}],\\\"。下表說明 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"lives[]\\\"}],\\\" 中的 Live 來源物件。\\\"]}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"url\\\"}],\\\" 與 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"groups\\\"}],\\\" 通常擇一；\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"groups\\\"}],\\\" 為空且提供 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"api\\\"}],\\\" 時，會先呼叫 Spider 的 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"liveContent(url)\\\"}],\\\" 取得文字，再交由 LiveParser 判斷格式。\\\"]}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"同名配置已保存的 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"boot\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"pass\\\"}],\\\" 與\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"keep\\\"}],\\\" 可能覆蓋配置值；請同時檢查 App 內的已保存設定。\\\"]}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"直播配置唯一名稱。\\\"},{\\\"name\\\":\\\"url\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"外部 TXT、M3U 或 JSON 列表位置；與 groups 擇一。\\\"},{\\\"name\\\":\\\"api\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"groups 為空時，用此 Spider 的 liveContent(url) 取得外部列表文字。\\\"},{\\\"name\\\":\\\"ext\\\",\\\"type\\\":\\\"string | object | array\\\",\\\"description\\\":\\\"傳給直播 Spider 的初始化資料；物件與陣列會先序列化為字串。\\\"},{\\\"name\\\":\\\"jar\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"此直播配置專用 JAR。\\\"},{\\\"name\\\":\\\"click\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"預設在 WebView 執行的 JavaScript 點擊程式。\\\"},{\\\"name\\\":\\\"logo\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"預設 Logo 範本，可用 {id}、{name}、{logo}。\\\"},{\\\"name\\\":\\\"epg\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"節目表位置，逗號分隔；支援 XMLTV 與 API 範本。\\\"},{\\\"name\\\":\\\"ua\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"預設 User-Agent。\\\"},{\\\"name\\\":\\\"origin\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"預設 Origin 標頭。\\\"},{\\\"name\\\":\\\"referer\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"預設 Referer 標頭。\\\"},{\\\"name\\\":\\\"timeZone\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"節目表時區，例如 Asia/Taipei。\\\",\\\"default\\\":\\\"系統時區\\\"},{\\\"name\\\":\\\"keep\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"已保存頻道定位資訊；通常由 App 自行維護。\\\"},{\\\"name\\\":\\\"timeout\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"播放逾時秒數，最小 1。\\\",\\\"default\\\":\\\"15\\\"},{\\\"name\\\":\\\"header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"直播請求附加 HTTP 標頭。\\\"},{\\\"name\\\":\\\"catchup\\\",\\\"type\\\":\\\"Catchup\\\",\\\"description\\\":\\\"外部列表頻道的預設追看／時移設定；內嵌 groups 需在頻道自行提供。\\\"},{\\\"name\\\":\\\"core\\\",\\\"type\\\":\\\"Core\\\",\\\"description\\\":\\\"特殊播放核心的進階初始化設定。\\\"},{\\\"name\\\":\\\"groups\\\",\\\"type\\\":\\\"Group[]\\\",\\\"description\\\":\\\"內嵌頻道分組。\\\"},{\\\"name\\\":\\\"boot\\\",\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"目前選中的直播配置為 true 時，載入完成後觸發自動進入直播。\\\",\\\"default\\\":\\\"false\\\"},{\\\"name\\\":\\\"pass\\\",\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"true 時不把 TXT／M3U 分組名稱中的 _後綴 解析成密碼；JSON 內明確設定的 Group.pass 不受影響。\\\",\\\"default\\\":\\\"false\\\"}],\\\"label\\\":\\\"Live\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"schema-grid\\\",\\\"children\\\":[[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"載入外部列表\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / LiveConfig\\\",\\\"path\\\":\\\"live-config.json\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"lives\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"M3U 範例\\\\\\\",\\\\n      \\\\\\\"url\\\\\\\": \\\\\\\"./live.m3u\\\\\\\",\\\\n      \\\\\\\"epg\\\\\\\": \\\\\\\"https://example.com/epg.xml\\\\\\\",\\\\n      \\\\\\\"logo\\\\\\\": \\\\\\\"https://example.com/logo/{id}.png\\\\\\\",\\\\n      \\\\\\\"ua\\\\\\\": \\\\\\\"ExampleClient/1.0\\\\\\\",\\\\n      \\\\\\\"timeZone\\\\\\\": \\\\\\\"Asia/Taipei\\\\\\\",\\\\n      \\\\\\\"boot\\\\\\\": false\\\\n    }\\\\n  ]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"這是含 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"lives\\\"}],\\\" 陣列的完整 LiveConfig；\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"url\\\"}],\\\" 指向可獨立維護的 M3U、TXT 或 JSON 檔案。\\\"]}]]}],[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"直接內嵌 Group / Channel\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / LiveConfig\\\",\\\"path\\\":\\\"live-config.json\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"lives\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"內嵌 JSON 範例\\\\\\\",\\\\n      \\\\\\\"groups\\\\\\\": [\\\\n        {\\\\n          \\\\\\\"name\\\\\\\": \\\\\\\"新聞\\\\\\\",\\\\n          \\\\\\\"channel\\\\\\\": [\\\\n            {\\\\n              \\\\\\\"name\\\\\\\": \\\\\\\"範例一台\\\\\\\",\\\\n              \\\\\\\"number\\\\\\\": \\\\\\\"1\\\\\\\",\\\\n              \\\\\\\"tvgId\\\\\\\": \\\\\\\"demo-1\\\\\\\",\\\\n              \\\\\\\"urls\\\\\\\": [\\\\n                \\\\\\\"https://example.com/live/main.m3u8$主線\\\\\\\",\\\\n                \\\\\\\"https://example.com/live/backup.m3u8$備線\\\\\\\"\\\\n              ],\\\\n              \\\\\\\"header\\\\\\\": { \\\\\\\"Referer\\\\\\\": \\\\\\\"https://example.com/\\\\\\\" }\\\\n            }\\\\n          ]\\\\n        }\\\\n      ]\\\\n    }\\\\n  ]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"$$主線\\\"}],\\\"、\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"$$備線\\\"}],\\\" \\\",\\\"是線路標籤；同一頻道可以提供多個位置。直接內嵌 groups 不經外部列表的自動編號與預設值繼承，請在 Channel 明確設定需要的欄位。\\\"]}]]}]]}]]}]\\ne:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"channel\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"分組與頻道欄位\\\"}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"Group.name\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"分組顯示名稱。\\\"},{\\\"name\\\":\\\"Group.pass\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"分組密碼；未通過前視為隱藏。\\\"},{\\\"name\\\":\\\"Group.channel\\\",\\\"type\\\":\\\"Channel[]\\\",\\\"required\\\":true,\\\"description\\\":\\\"分組內頻道清單。\\\"},{\\\"name\\\":\\\"Channel.name\\\",\\\"type\\\":\\\"string\\\",\\\"required\\\":true,\\\"description\\\":\\\"頻道顯示名稱。\\\"},{\\\"name\\\":\\\"Channel.urls\\\",\\\"type\\\":\\\"string[]\\\",\\\"required\\\":true,\\\"description\\\":\\\"播放位置清單；未設定 drm 時可用 $線路名稱 指定標籤。設定 drm 時 URL 原樣使用，請勿附加標籤。\\\"},{\\\"name\\\":\\\"Channel.number\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"顯示用頻道號碼。\\\"},{\\\"name\\\":\\\"Channel.logo\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋配置預設 Logo。\\\"},{\\\"name\\\":\\\"Channel.epg\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋配置預設 EPG。\\\"},{\\\"name\\\":\\\"Channel.ua\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋配置預設 User-Agent。\\\"},{\\\"name\\\":\\\"Channel.click\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋配置的 JavaScript 點擊程式。\\\"},{\\\"name\\\":\\\"Channel.format\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"直接指定媒體 MIME type。\\\"},{\\\"name\\\":\\\"Channel.origin\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋 Origin。\\\"},{\\\"name\\\":\\\"Channel.referer\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"覆蓋 Referer。\\\"},{\\\"name\\\":\\\"Channel.tvgId\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"EPG 頻道 ID。\\\"},{\\\"name\\\":\\\"Channel.tvgName\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"EPG 頻道名稱。\\\"},{\\\"name\\\":\\\"Channel.header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"頻道 HTTP 標頭；外部列表僅在整份 header 為空時繼承 Live.header，不逐鍵合併。\\\"},{\\\"name\\\":\\\"Channel.drm\\\",\\\"type\\\":\\\"Drm\\\",\\\"description\\\":\\\"媒體 DRM 參數，子欄位見共用物件。\\\"},{\\\"name\\\":\\\"Channel.parse\\\",\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"0=不解析、1=解析。\\\",\\\"default\\\":\\\"0\\\"},{\\\"name\\\":\\\"Channel.catchup\\\",\\\"type\\\":\\\"Catchup\\\",\\\"description\\\":\\\"覆蓋配置的追看／時移設定。\\\"}],\\\"label\\\":\\\"Group / Channel\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"若 JSON 是由 \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"Live.url\\\"}],\\\" 載入，檔案最外層直接放 Group 陣列，如下一節的 JSON 範例；若寫在主配置內，則放進\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"lives[].groups\\\"}],\\\"。\\\"]}]]}]\\nf:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"formats\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"直播列表的三種完整輸入\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"schema-grid\\\",\\\"children\\\":[[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"JSON\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Group[]\\\",\\\"path\\\":\\\"live.json\\\",\\\"children\\\":\\\"[\\\\n  {\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"新聞\\\\\\\",\\\\n    \\\\\\\"channel\\\\\\\": [\\\\n      {\\\\n        \\\\\\\"name\\\\\\\": \\\\\\\"範例一台\\\\\\\",\\\\n        \\\\\\\"number\\\\\\\": \\\\\\\"1\\\\\\\",\\\\n        \\\\\\\"tvgId\\\\\\\": \\\\\\\"demo-1\\\\\\\",\\\\n        \\\\\\\"urls\\\\\\\": [\\\\n          \\\\\\\"https://example.com/live/main.m3u8$主線\\\\\\\",\\\\n          \\\\\\\"https://example.com/live/backup.m3u8$備線\\\\\\\"\\\\n        ]\\\\n      }\\\\n    ]\\\\n  }\\\\n]\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"最外層是 Group 陣列，適合完整保存頻道欄位與多線路。\\\"}]]}],[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"M3U\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"M3U\\\",\\\"path\\\":\\\"live.m3u\\\",\\\"children\\\":\\\"#EXTM3U url-tvg=\\\\\\\"https://example.com/epg.xml\\\\\\\"\\\\n#EXTINF:-1 tvg-id=\\\\\\\"demo-1\\\\\\\" tvg-name=\\\\\\\"範例一台\\\\\\\" tvg-chno=\\\\\\\"1\\\\\\\" tvg-logo=\\\\\\\"https://example.com/logo/demo-1.png\\\\\\\" group-title=\\\\\\\"新聞\\\\\\\",範例一台\\\\n#EXTVLCOPT:http-user-agent=ExampleClient/1.0\\\\n#EXTVLCOPT:http-referrer=https://example.com/\\\\nhttps://example.com/live/demo.m3u8\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"支援節目表、分組、頻道 ID、號碼、Logo、User-Agent 與 Referer。\\\"}]]}],[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"TXT\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"TXT\\\",\\\"path\\\":\\\"live.txt\\\",\\\"children\\\":\\\"新聞,#genre#\\\\nua=ExampleClient/1.0\\\\nreferer=https://example.com/\\\\nformat=hls\\\\n範例一台,https://example.com/live/main.m3u8$主線#https://example.com/live/backup.m3u8$備線\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"#genre#\\\"}],\\\" 建立分組；同一頻道的多個位置使用\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"#\\\"}],\\\" 分隔。\\\"]}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"callout\\\",\\\"children\\\":[[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"TXT / M3U 設定行\\\"}],[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"ua= · parse= · click= · header= · format= · origin= · referer= · forceKey=\\\"}]]}]]}]\\n10:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"core\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"特殊播放核心欄位\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"Live.core\\\"}],\\\" \\\",\\\"只在對應播放核心初始化時使用；一般直播配置不需要填寫。以下示範它在 Live 物件中的位置；\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"option\\\"}],\\\" \\\",\\\"的名稱與值由該核心實作定義，不是通用配置參數。\\\"]}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"auth\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"核心授權端點；resp 取得非空內容時，App 會改用本機 /tvbus 端點。\\\"},{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"傳給播放核心的名稱；值也可以是回傳文字的網址。\\\"},{\\\"name\\\":\\\"pass\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"傳給播放核心的密碼；值也可以是回傳文字的網址。\\\"},{\\\"name\\\":\\\"broker\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"傳給播放核心的 broker 位置。\\\"},{\\\"name\\\":\\\"domain\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"傳給播放核心的 domain；值也可以是回傳文字的網址。\\\"},{\\\"name\\\":\\\"resp\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"本機 /tvbus 端點要回傳的內容，也可填回傳文字的網址；取得非空內容時取代 auth 的對外位置。\\\"},{\\\"name\\\":\\\"sign\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"與 pkg 一起建立執行期 Hook；值也可以由網址取得。\\\"},{\\\"name\\\":\\\"pkg\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"與 sign 一起建立執行期 Hook；值也可以由網址取得。\\\"},{\\\"name\\\":\\\"so\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"核心原生函式庫位置；App 會下載到本機後載入。\\\"},{\\\"name\\\":\\\"key\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"目前保留於 Core 配置中的識別值；現行 Core 流程沒有公開讀取方法。\\\"},{\\\"name\\\":\\\"option\\\",\\\"type\\\":\\\"Core.Option[]\\\",\\\"description\\\":\\\"初始化核心前逐筆套用的額外選項。\\\"},{\\\"name\\\":\\\"option[].key\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"選項名稱。\\\"},{\\\"name\\\":\\\"option[].values\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"傳給該選項的值清單。\\\"}],\\\"label\\\":\\\"Core\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Live.core\\\",\\\"path\\\":\\\"lives[] 物件片段\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"特殊核心示意\\\\\\\",\\\\n  \\\\\\\"url\\\\\\\": \\\\\\\"./live.m3u\\\\\\\",\\\\n  \\\\\\\"core\\\\\\\": {\\\\n    \\\\\\\"auth\\\\\\\": \\\\\\\"https://example.com/core/auth\\\\\\\",\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"demo\\\\\\\",\\\\n    \\\\\\\"pass\\\\\\\": \\\\\\\"demo-pass\\\\\\\",\\\\n    \\\\\\\"broker\\\\\\\": \\\\\\\"https://example.com/core/broker\\\\\\\",\\\\n    \\\\\\\"domain\\\\\\\": \\\\\\\"example.com\\\\\\\",\\\\n    \\\\\\\"so\\\\\\\": \\\\\\\"https://example.com/core/libcore.so\\\\\\\",\\\\n    \\\\\\\"option\\\\\\\": []\\\\n  }\\\\n}\\\"}]]}]\\n11:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"common\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"網路、時移與顯示物件\\\"}],[\\\"$\\\",\\\"$L1a\\\",null,{\\\"fields\\\":[{\\\"name\\\":\\\"Doh.name\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"DoH 顯示名稱。\\\"},{\\\"name\\\":\\\"Doh.url\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"DoH 查詢端點。\\\"},{\\\"name\\\":\\\"Doh.ips\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"Bootstrap IP。\\\"},{\\\"name\\\":\\\"Proxy.name\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"代理規則名稱。\\\"},{\\\"name\\\":\\\"Proxy.hosts\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"適用 host，支援規則比對。\\\"},{\\\"name\\\":\\\"Proxy.urls\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"含主機與埠號的代理位置，例如 http://127.0.0.1:8080、socks5://127.0.0.1:1080；依 http 或 socks 前綴選擇 Java 代理類型。\\\"},{\\\"name\\\":\\\"Rule.name\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"規則顯示名稱。\\\"},{\\\"name\\\":\\\"Rule.hosts\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"觸發目標 host。\\\"},{\\\"name\\\":\\\"Rule.regex\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"有效媒體位置的擷取條件。\\\"},{\\\"name\\\":\\\"Rule.click\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"WebView 中要點擊的 CSS 選擇器清單；與 JavaScript script 分開設定。\\\"},{\\\"name\\\":\\\"Rule.script\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"WebView 中執行的腳本。\\\"},{\\\"name\\\":\\\"Rule.exclude\\\",\\\"type\\\":\\\"string[]\\\",\\\"description\\\":\\\"不應被擷取的排除條件。\\\"},{\\\"name\\\":\\\"Header.host\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"要處理的 host。\\\"},{\\\"name\\\":\\\"Header.header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"要注入或覆寫的 HTTP 請求標頭。\\\"},{\\\"name\\\":\\\"Catchup.type\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"default 完全替換；其他值附加於原位置。\\\",\\\"default\\\":\\\"空字串；行為為附加\\\"},{\\\"name\\\":\\\"Catchup.days\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"保留欄位；目前不限制可追看的天數。\\\"},{\\\"name\\\":\\\"Catchup.regex\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"判斷設定是否套用的字串或規則。\\\"},{\\\"name\\\":\\\"Catchup.source\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"追看／時移 URL 範本，請提供非空值；可含開始與結束時間 token。\\\"},{\\\"name\\\":\\\"Catchup.replace\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"附加模式使用 正規表示式,替換內容；default 模式不套用。\\\"},{\\\"name\\\":\\\"Drm.type\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"媒體 DRM 類型，例如 widevine、playready、clearkey。\\\"},{\\\"name\\\":\\\"Drm.key\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"DRM 請求位置或該類型接受的金鑰資料。\\\"},{\\\"name\\\":\\\"Drm.header\\\",\\\"type\\\":\\\"object\\\",\\\"description\\\":\\\"DRM 請求標頭。\\\"},{\\\"name\\\":\\\"Drm.forceKey\\\",\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"強制使用指定的 DRM 請求位置，不使用媒體內的預設位置；對應 forceDefaultLicenseUri。\\\",\\\"default\\\":\\\"false\\\"},{\\\"name\\\":\\\"Style.type\\\",\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"rect、oval 或 list。\\\",\\\"default\\\":\\\"rect\\\"},{\\\"name\\\":\\\"Style.ratio\\\",\\\"type\\\":\\\"float\\\",\\\"description\\\":\\\"寬／高；正值最大 4。未設或小於等於 0 時，oval 為 1，其餘為 0.75。\\\",\\\"default\\\":\\\"依 type\\\"}],\\\"label\\\":\\\"共用物件\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"schema-grid\\\",\\\"children\\\":[[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"DoH、Proxy、Hosts 與 Ads\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / shared\\\",\\\"path\\\":\\\"VodConfig 頂層欄位片段\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"doh\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"Example DoH\\\\\\\",\\\\n      \\\\\\\"url\\\\\\\": \\\\\\\"https://dns.example.com/dns-query\\\\\\\",\\\\n      \\\\\\\"ips\\\\\\\": [\\\\\\\"203.0.113.53\\\\\\\"]\\\\n    }\\\\n  ],\\\\n  \\\\\\\"proxy\\\\\\\": [\\\\n    {\\\\n      \\\\\\\"name\\\\\\\": \\\\\\\"本機代理範例\\\\\\\",\\\\n      \\\\\\\"hosts\\\\\\\": [\\\\\\\"media.example.com\\\\\\\"],\\\\n      \\\\\\\"urls\\\\\\\": [\\\\\\\"http://127.0.0.1:8080\\\\\\\", \\\\\\\"socks5://127.0.0.1:1080\\\\\\\"]\\\\n    }\\\\n  ],\\\\n  \\\\\\\"hosts\\\\\\\": [\\\\\\\"media.example.com=203.0.113.10\\\\\\\"],\\\\n  \\\\\\\"ads\\\\\\\": [\\\\\\\"ads.example.com\\\\\\\"]\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"代理位置必須包含 scheme、host 與 port；\\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"hosts\\\"}],\\\" 使用\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"原主機=目標主機或 IP\\\"}],\\\"。\\\"]}]]}],[\\\"$\\\",\\\"article\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"追看 / 時移 Catchup\\\"}],[\\\"$\\\",\\\"$L7\\\",null,{\\\"label\\\":\\\"JSON / Live.catchup\\\",\\\"path\\\":\\\"lives[] 物件片段\\\",\\\"children\\\":\\\"{\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"時移示意\\\\\\\",\\\\n  \\\\\\\"url\\\\\\\": \\\\\\\"./live.m3u\\\\\\\",\\\\n  \\\\\\\"catchup\\\\\\\": {\\\\n    \\\\\\\"type\\\\\\\": \\\\\\\"append\\\\\\\",\\\\n    \\\\\\\"days\\\\\\\": \\\\\\\"7\\\\\\\",\\\\n    \\\\\\\"regex\\\\\\\": \\\\\\\"example.com/live/\\\\\\\",\\\\n    \\\\\\\"source\\\\\\\": \\\\\\\"?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}\\\\\\\",\\\\n    \\\\\\\"replace\\\\\\\": \\\\\\\"live/,archive/\\\\\\\"\\\\n  }\\\\n}\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"$${(b)yyyyMMddHHmmss}\\\"}],\\\" 與\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"$${(e)yyyyMMddHHmmss}\\\"}],\\\" \\\",\\\"會分別替換為節目開始與結束時間，格式化使用裝置系統時區，不使用\\\",\\\" \\\",[\\\"$\\\",\\\"code\\\",null,{\\\"children\\\":\\\"Live.timeZone\\\"}],\\\"。\\\"]}]]}]]}]]}]\\n12:[\\\"$\\\",\\\"footer\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"wrap footer-inner\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/TV/logo.svg\\\",\\\"alt\\\":\\\"\\\",\\\"width\\\":26,\\\"height\\\":26}],[\\\"$\\\",\\\"b\\\",null,{\\\"children\\\":\\\"影視TV\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"App 本身不內建或提供任何內容來源。\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"#top\\\",\\\"children\\\":\\\"回到頂端 ↑\\\"}]]}]}]\\n13:[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/TV/_next/static/chunks/3l-8pz37_9p-7.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]\\n14:[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/TV/_next/static/chunks/3buayhsymod0q.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]\\n15:[\\\"$\\\",\\\"$L1b\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$1c\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@1d\\\"}]}]\\n17:[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L1e\\\",null,{\\\"children\\\":\\\"$L1f\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$L20\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$1c\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$L21\\\"}]}]}],[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"next-size-adjust\\\",\\\"content\\\":\\\"\\\"}]]}]\\n19:[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/TV/_next/static/chunks/2k292u2kjp11s.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]\\n16:C\\n1f:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n1d:null\\n21:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"配置字典 · 影視TV\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"VodConfig、LiveConfig 與相關物件的完整欄位說明。\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"2\\\",{\\\"property\\\":\\\"og:title\\\",\\\"content\\\":\\\"影視TV Developer Hub\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"property\\\":\\\"og:description\\\",\\\"content\\\":\\\"影視TV 的爬蟲介接、配置字典與 App 功能指南。\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"4\\\",{\\\"property\\\":\\\"og:image\\\",\\\"content\\\":\\\"https://fongmi.github.io/TV/og.png\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"5\\\",{\\\"property\\\":\\\"og:image:width\\\",\\\"content\\\":\\\"1730\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"6\\\",{\\\"property\\\":\\\"og:image:height\\\",\\\"content\\\":\\\"909\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"7\\\",{\\\"property\\\":\\\"og:image:alt\\\",\\\"content\\\":\\\"影視TV 使用與開發指南\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"8\\\",{\\\"property\\\":\\\"og:type\\\",\\\"content\\\":\\\"website\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"9\\\",{\\\"name\\\":\\\"twitter:card\\\",\\\"content\\\":\\\"summary_large_image\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"10\\\",{\\\"name\\\":\\\"twitter:title\\\",\\\"content\\\":\\\"影視TV Developer Hub\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"11\\\",{\\\"name\\\":\\\"twitter:description\\\",\\\"content\\\":\\\"影視TV 的爬蟲介接、配置字典與 App 功能指南。\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"12\\\",{\\\"name\\\":\\\"twitter:image\\\",\\\"content\\\":\\\"https://fongmi.github.io/TV/og.png\\\"}]]\\n\"])</script></body></html>",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "BDXI.m3u8",
@@ -1958,16 +2172,16 @@
         "https://github.com/Mrbotrx/BDXI_KB"
       ],
       "id": "de79527c171b02fc",
-      "checked_at": "2026-09-26T04:14:33+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 717,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:33+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "playback": {
         "status": "passed",
-        "checked_at": "2026-09-26T04:15:03+00:00",
+        "checked_at": "2026-09-26T04:46:42+00:00",
         "passed": 3,
         "sampled": 3,
         "total": 717,
@@ -1978,7 +2192,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:38+00:00"
           },
           {
             "name": "DD Tripura KB",
@@ -1986,7 +2200,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:01+00:00"
+            "checked_at": "2026-09-26T04:46:39+00:00"
           },
           {
             "name": "Shubh TV KB",
@@ -1994,7 +2208,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:03+00:00"
+            "checked_at": "2026-09-26T04:46:42+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2007,17 +2221,17 @@
         "https://github.com/Mrbotrx/BDXI_KB"
       ],
       "id": "eaed4a9bd443e0fb",
-      "checked_at": "2026-09-26T04:14:34+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 26,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:34+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:11+00:00",
-        "passed": 2,
+        "checked_at": "2026-09-26T04:46:50+00:00",
+        "passed": 1,
         "sampled": 3,
         "total": 26,
         "samples": [
@@ -2027,7 +2241,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:14:59+00:00"
+            "checked_at": "2026-09-26T04:46:42+00:00"
           },
           {
             "name": "Gazi TV KB",
@@ -2035,15 +2249,15 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:48+00:00"
           },
           {
             "name": "Nexus TV KB",
             "url": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8",
             "unsupported": "",
-            "status": "passed",
-            "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "status": "unverified",
+            "reason": "主播放列表未找到视频变体，可能只有音频",
+            "checked_at": "2026-09-26T04:46:50+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2055,17 +2269,17 @@
       "sources": [
         "https://github.com/sammy0101/hk-iptv-auto"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 32,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "8472ffd1c5d148db",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:00+00:00",
+        "checked_at": "2026-09-26T04:46:34+00:00",
         "passed": 2,
         "sampled": 3,
         "total": 32,
@@ -2076,7 +2290,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "返回网页或错误信息，不是视频数据",
-            "checked_at": "2026-09-26T04:14:57+00:00"
+            "checked_at": "2026-09-26T04:46:30+00:00"
           },
           {
             "name": "ViuTV",
@@ -2084,7 +2298,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:14:58+00:00"
+            "checked_at": "2026-09-26T04:46:31+00:00"
           },
           {
             "name": "有線新聞台",
@@ -2092,7 +2306,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2105,16 +2319,16 @@
         "https://github.com/Mrbotrx/BDXI_KB"
       ],
       "id": "87e5bf04b2f5ea98",
-      "checked_at": "2026-09-26T04:14:35+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 250,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:35+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "playback": {
         "status": "passed",
-        "checked_at": "2026-09-26T04:15:11+00:00",
+        "checked_at": "2026-09-26T04:46:53+00:00",
         "passed": 3,
         "sampled": 3,
         "total": 250,
@@ -2125,7 +2339,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:14:59+00:00"
+            "checked_at": "2026-09-26T04:46:42+00:00"
           },
           {
             "name": "Ultimate TV KB",
@@ -2133,7 +2347,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:06+00:00"
+            "checked_at": "2026-09-26T04:46:48+00:00"
           },
           {
             "name": "DD Kisan KB",
@@ -2141,7 +2355,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:53+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2202,17 +2416,17 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 67,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "a928cc1c1fbb1847",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:00+00:00",
+        "checked_at": "2026-09-26T04:46:34+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 57,
@@ -2223,7 +2437,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:14:59+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "Momo 1",
@@ -2231,7 +2445,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "返回网页或错误信息，不是视频数据",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "凤凰资讯",
@@ -2239,7 +2453,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2251,17 +2465,17 @@
       "sources": [
         "https://github.com/Supprise0901/TVBox_live"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 284,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "c2ed40dedcf040a1",
       "playback": {
         "status": "unverified",
-        "checked_at": "2026-09-26T04:15:00+00:00",
+        "checked_at": "2026-09-26T04:46:34+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 282,
@@ -2272,7 +2486,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "重庆卫视",
@@ -2280,7 +2494,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "东方卫视",
@@ -2288,7 +2502,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2300,17 +2514,17 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 138,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "02ac54c69c7adac2",
       "playback": {
         "status": "unverified",
-        "checked_at": "2026-09-26T04:15:00+00:00",
+        "checked_at": "2026-09-26T04:46:34+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 138,
@@ -2321,7 +2535,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "IPTV都市剧场",
@@ -2329,7 +2543,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "江苏卫视4K",
@@ -2337,7 +2551,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2349,18 +2563,18 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 398,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "b4fc6dfae71ab94d",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:11+00:00",
-        "passed": 1,
+        "checked_at": "2026-09-26T04:46:49+00:00",
+        "passed": 2,
         "sampled": 3,
         "total": 398,
         "samples": [
@@ -2370,15 +2584,15 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:40+00:00"
           },
           {
             "name": "浙江卫视",
             "url": "http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8",
             "unsupported": "",
-            "status": "failed",
-            "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:08+00:00"
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:46+00:00"
           },
           {
             "name": "新沂新闻",
@@ -2386,7 +2600,56 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:49+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
+    },
+    {
+      "name": "felixwang1987 · checked/live.m3u",
+      "url": "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/live.m3u",
+      "sources": [
+        "https://github.com/felixwang1987/tv-pocket"
+      ],
+      "checked_at": "2026-09-26T04:46:13+00:00",
+      "kind": "live",
+      "format": "M3U",
+      "count": 26,
+      "status": "ok",
+      "last_ok": "2026-09-26T04:46:13+00:00",
+      "error": "",
+      "id": "70f965386c1e1b54",
+      "playback": {
+        "status": "passed",
+        "checked_at": "2026-09-26T04:46:52+00:00",
+        "passed": 3,
+        "sampled": 3,
+        "total": 26,
+        "samples": [
+          {
+            "name": "Aadinath TV KB",
+            "url": "https://mumt01.tangotv.in/O5aw8Zn3AADINATHTV/index.m3u8",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:34+00:00"
+          },
+          {
+            "name": "Ultimate TV KB",
+            "url": "https://stream.ottlive.co.in/utvtamil/index.m3u8",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:41+00:00"
+          },
+          {
+            "name": "延边卫视",
+            "url": "https://srs.iyb983.cn:443/video/CYS/index.m3u8",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:52+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2447,14 +2710,48 @@
       "sources": [
         "https://github.com/hengge345666/tvbox-subs"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 61,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "faa986ea8e08766b"
+      "id": "faa986ea8e08766b",
+      "playback": {
+        "status": "unverified",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "passed": 0,
+        "sampled": 3,
+        "total": 61,
+        "samples": [
+          {
+            "name": "海南卫视",
+            "url": "http://106.46.169.202:9000/hls/40/index.m3u8",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "CCTV-2",
+            "url": "http://173.208.212.130:8181/1080p/cctv2.m3u8",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "云南卫视",
+            "url": "http://106.46.169.202:9000/hls/32/index.m3u8",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "hujingguang · Global.m3u8",
@@ -2462,17 +2759,17 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 60,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "ea591b0ed459b34d",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:05+00:00",
+        "checked_at": "2026-09-26T04:46:43+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 59,
@@ -2483,7 +2780,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:00+00:00"
+            "checked_at": "2026-09-26T04:46:34+00:00"
           },
           {
             "name": "RT News",
@@ -2491,7 +2788,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:04+00:00"
+            "checked_at": "2026-09-26T04:46:39+00:00"
           },
           {
             "name": "Tastemade",
@@ -2499,7 +2796,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "HTTP 404",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:43+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2511,17 +2808,17 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 12,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "c203c117dd72a2f6",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:19+00:00",
+        "checked_at": "2026-09-26T04:47:04+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 12,
@@ -2532,7 +2829,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:56+00:00"
           },
           {
             "name": "Thrill",
@@ -2540,7 +2837,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:17+00:00"
+            "checked_at": "2026-09-26T04:47:02+00:00"
           },
           {
             "name": "Pet Club TV",
@@ -2548,7 +2845,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:47:04+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2560,17 +2857,17 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 10,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "e1da610078744ed0",
       "playback": {
         "status": "failed",
-        "checked_at": "2026-09-26T04:15:05+00:00",
+        "checked_at": "2026-09-26T04:46:35+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 10,
@@ -2581,7 +2878,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "HTTP 403，服务器限制访问",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:35+00:00"
           },
           {
             "name": "湖南电视剧",
@@ -2589,7 +2886,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:35+00:00"
           },
           {
             "name": "湖南卫视",
@@ -2597,7 +2894,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:35+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2609,17 +2906,17 @@
       "sources": [
         "https://github.com/hujingguang/ChinaIPTV"
       ],
-      "checked_at": "2026-09-26T04:14:37+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 8,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:37+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "3f7ee4be63fae741",
       "playback": {
         "status": "failed",
-        "checked_at": "2026-09-26T04:15:13+00:00",
+        "checked_at": "2026-09-26T04:46:45+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 8,
@@ -2630,7 +2927,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:43+00:00"
           },
           {
             "name": "湖南经视",
@@ -2638,7 +2935,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "HTTP 410",
-            "checked_at": "2026-09-26T04:15:12+00:00"
+            "checked_at": "2026-09-26T04:46:44+00:00"
           },
           {
             "name": "金鹰卡通",
@@ -2646,7 +2943,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:13+00:00"
+            "checked_at": "2026-09-26T04:46:45+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2658,17 +2955,17 @@
       "sources": [
         "https://github.com/sammy0101/hk-iptv-auto"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:10+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 33,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:10+00:00",
       "error": "",
       "id": "d48c7b3c92b0e38c",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:10+00:00",
+        "checked_at": "2026-09-26T04:46:39+00:00",
         "passed": 2,
         "sampled": 3,
         "total": 33,
@@ -2679,7 +2976,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:05+00:00"
+            "checked_at": "2026-09-26T04:46:35+00:00"
           },
           {
             "name": "翡翠台",
@@ -2687,7 +2984,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:08+00:00"
+            "checked_at": "2026-09-26T04:46:36+00:00"
           },
           {
             "name": "TVB Plus",
@@ -2695,7 +2992,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:10+00:00"
+            "checked_at": "2026-09-26T04:46:39+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2707,17 +3004,17 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 141,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "4bb55dbc92ee11ac",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:16+00:00",
+        "checked_at": "2026-09-26T04:46:52+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 140,
@@ -2728,7 +3025,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:10+00:00"
+            "checked_at": "2026-09-26T04:46:44+00:00"
           },
           {
             "name": "陕西卫视",
@@ -2736,7 +3033,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:10+00:00"
+            "checked_at": "2026-09-26T04:46:44+00:00"
           },
           {
             "name": "延边卫视",
@@ -2744,7 +3041,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:16+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2756,17 +3053,17 @@
       "sources": [
         "https://github.com/Lightconer/TVBox-Sources"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 140,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "e9ff54b5c2de2d7e",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:16+00:00",
+        "checked_at": "2026-09-26T04:46:52+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 140,
@@ -2777,7 +3074,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:45+00:00"
           },
           {
             "name": "陕西卫视",
@@ -2785,7 +3082,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:45+00:00"
           },
           {
             "name": "延边卫视",
@@ -2793,7 +3090,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:16+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2805,17 +3102,17 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 42,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "c9ee79dd518126f7",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:16+00:00",
+        "checked_at": "2026-09-26T04:46:56+00:00",
         "passed": 2,
         "sampled": 3,
         "total": 42,
@@ -2826,7 +3123,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:49+00:00"
           },
           {
             "name": "浙江钱江都市 ·高清",
@@ -2834,7 +3131,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:15+00:00"
+            "checked_at": "2026-09-26T04:46:56+00:00"
           },
           {
             "name": "福建海峡卫视 ·高清",
@@ -2842,7 +3139,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:16+00:00"
+            "checked_at": "2026-09-26T04:46:56+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -2854,17 +3151,17 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:39+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 216,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:39+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "id": "26e997fdd5e4293a",
       "playback": {
         "status": "unverified",
-        "checked_at": "2026-09-26T04:15:11+00:00",
+        "checked_at": "2026-09-26T04:46:43+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 216,
@@ -2875,7 +3172,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:42+00:00"
           },
           {
             "name": "凤凰资讯",
@@ -2883,7 +3180,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:43+00:00"
           },
           {
             "name": "CCTV-12",
@@ -2891,7 +3188,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:11+00:00"
+            "checked_at": "2026-09-26T04:46:43+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3002,16 +3299,16 @@
         "https://github.com/mcp2016/TVBox"
       ],
       "id": "68ed72d7c9ecb7c0",
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 158,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:38+00:00",
+      "last_ok": "2026-09-26T04:46:11+00:00",
       "error": "",
       "playback": {
         "status": "failed",
-        "checked_at": "2026-09-26T04:15:15+00:00",
+        "checked_at": "2026-09-26T04:46:44+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 157,
@@ -3022,7 +3319,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:13+00:00"
+            "checked_at": "2026-09-26T04:46:43+00:00"
           },
           {
             "name": "CCTV12",
@@ -3030,7 +3327,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "HTTP 512",
-            "checked_at": "2026-09-26T04:15:14+00:00"
+            "checked_at": "2026-09-26T04:46:44+00:00"
           },
           {
             "name": "河北卫视",
@@ -3038,7 +3335,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:15+00:00"
+            "checked_at": "2026-09-26T04:46:44+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3255,14 +3552,48 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 3730,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "717d1845b27785ff"
+      "id": "717d1845b27785ff",
+      "playback": {
+        "status": "failed",
+        "checked_at": "2026-09-26T04:46:40+00:00",
+        "passed": 0,
+        "sampled": 3,
+        "total": 3667,
+        "samples": [
+          {
+            "name": "金鹰纪实",
+            "url": "https://stream1.freetv.fun/jin-ying-ji-shi-9.m3u8",
+            "unsupported": "",
+            "status": "failed",
+            "reason": "检测网络连接失败或超时",
+            "checked_at": "2026-09-26T04:46:35+00:00"
+          },
+          {
+            "name": "吉林乡村",
+            "url": "https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8",
+            "unsupported": "",
+            "status": "failed",
+            "reason": "未能从抽取数据解码视频帧（格式、数据或解码限制）",
+            "checked_at": "2026-09-26T04:46:40+00:00"
+          },
+          {
+            "name": "TVB星河",
+            "url": "https://o11.163189.xyz/stream/live/tvbxh/#https://cdn10.163189.xyz/stream/163189/xinghe/",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:40+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "songlees355-wq · live.txt",
@@ -3270,14 +3601,48 @@
       "sources": [
         "https://github.com/songlees355-wq/okay"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 4150,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "5054ff4746de2140"
+      "id": "5054ff4746de2140",
+      "playback": {
+        "status": "partial",
+        "checked_at": "2026-09-26T04:46:39+00:00",
+        "passed": 1,
+        "sampled": 3,
+        "total": 4088,
+        "samples": [
+          {
+            "name": "青海卫视",
+            "url": "https://stream1.freetv.fun/b5b07b167df730b58cf9a86c7cbfc510ed48a60dae25a97c9713a86d0f8076f7.m3u8",
+            "unsupported": "",
+            "status": "failed",
+            "reason": "检测网络连接失败或超时",
+            "checked_at": "2026-09-26T04:46:35+00:00"
+          },
+          {
+            "name": "纪实人文",
+            "url": "http://121.24.98.127:8090/hls/108/index.m3u8",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:35+00:00"
+          },
+          {
+            "name": "双辽综合",
+            "url": "http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:39+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "xiongjian83 · live.m3u",
@@ -3329,19 +3694,102 @@
       }
     },
     {
+      "name": "xiongjian83 · live.txt",
+      "url": "https://raw.githubusercontent.com/xiongjian83/TvBox/main/live.txt",
+      "sources": [
+        "https://github.com/xiongjian83/TvBox"
+      ],
+      "checked_at": "2026-09-26T04:46:14+00:00",
+      "kind": "live",
+      "format": "TXT",
+      "count": 663,
+      "status": "ok",
+      "last_ok": "2026-09-26T04:46:14+00:00",
+      "error": "",
+      "id": "76631366d8d2e071",
+      "playback": {
+        "status": "unverified",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "passed": 0,
+        "sampled": 3,
+        "total": 752,
+        "samples": [
+          {
+            "name": "刘德华",
+            "url": "http://live.nctv.top/huya.php?id=11342424$LR•IPV4『线路1』",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "剧集_士兵突击",
+            "url": "http://live.nctv.top/huya.php?id=11342430$LR•IPV4『线路1』",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "埋堆堆23",
+            "url": "http://www.xzbn.site:35455/huya/23829474$LR•IPV4『线路2』",
+            "unsupported": "地址含播放器专用参数，未自动验证",
+            "status": "unverified",
+            "reason": "地址含播放器专用参数，未自动验证",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
+    },
+    {
       "name": "zh-hd.m3u]( | 只保留实测 1080P 以上，42 条 | 只想看高清台。**主列表里每台已经默认播最好的线",
       "url": "https://macno1.github.io/cn-tv/zh-hd.m3u",
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-25T21:41:27+00:00",
+      "checked_at": "2026-09-26T04:46:08+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 42,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:27+00:00",
+      "last_ok": "2026-09-26T04:46:08+00:00",
       "error": "",
-      "id": "de46c5de8a60d2fd"
+      "id": "de46c5de8a60d2fd",
+      "playback": {
+        "status": "partial",
+        "checked_at": "2026-09-26T04:46:34+00:00",
+        "passed": 2,
+        "sampled": 3,
+        "total": 42,
+        "samples": [
+          {
+            "name": "TVB翡翠台 ·高清",
+            "url": "http://103.172.187.30:12000/stream/mytv/null-1/master.m3u8",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "浙江钱江都市 ·高清",
+            "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:34+00:00"
+          },
+          {
+            "name": "福建海峡卫视 ·高清",
+            "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8",
+            "unsupported": "",
+            "status": "passed",
+            "reason": "已取到视频数据并解码出 1 帧画面",
+            "checked_at": "2026-09-26T04:46:34+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "zh-lite.m3u]( | 只有 ①②③④ 组，201 条 | 只想要主流台、列表越短越好",
@@ -3349,17 +3797,17 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 216,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "bd7dc3d5f1626928",
       "playback": {
         "status": "unverified",
-        "checked_at": "2026-09-26T04:15:19+00:00",
+        "checked_at": "2026-09-26T04:46:52+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 216,
@@ -3370,7 +3818,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "凤凰资讯",
@@ -3378,7 +3826,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "CCTV-12",
@@ -3386,7 +3834,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3398,17 +3846,17 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 398,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "dd37852f5b33dc90",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:21+00:00",
+        "checked_at": "2026-09-26T04:46:55+00:00",
         "passed": 2,
         "sampled": 3,
         "total": 398,
@@ -3419,7 +3867,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "浙江卫视",
@@ -3427,7 +3875,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:20+00:00"
+            "checked_at": "2026-09-26T04:46:53+00:00"
           },
           {
             "name": "新沂新闻",
@@ -3435,7 +3883,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:21+00:00"
+            "checked_at": "2026-09-26T04:46:55+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3447,17 +3895,17 @@
       "sources": [
         "https://github.com/macno1/cn-tv"
       ],
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:09+00:00",
       "kind": "live",
       "format": "TXT",
       "count": 376,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:09+00:00",
       "error": "",
       "id": "cdcc1b6b982f6303",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:20+00:00",
+        "checked_at": "2026-09-26T04:46:52+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 376,
@@ -3468,7 +3916,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:19+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "辽宁都市",
@@ -3476,7 +3924,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:20+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "台视新闻",
@@ -3484,7 +3932,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:20+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3596,16 +4044,16 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "ca0f947bd15873fc",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 145,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "failed",
-        "checked_at": "2026-09-26T04:15:28+00:00",
+        "checked_at": "2026-09-26T04:46:58+00:00",
         "passed": 0,
         "sampled": 3,
         "total": 145,
@@ -3616,7 +4064,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:22+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "You Man Cartoon Channel (576p)",
@@ -3624,7 +4072,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:28+00:00"
+            "checked_at": "2026-09-26T04:46:58+00:00"
           },
           {
             "name": "CCTV-Women's Fashion SD (1080p)",
@@ -3632,7 +4080,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:28+00:00"
+            "checked_at": "2026-09-26T04:46:58+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3645,16 +4093,16 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "10ef0a8bb52deb09",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 214,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:25+00:00",
+        "checked_at": "2026-09-26T04:46:58+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 214,
@@ -3665,7 +4113,7 @@
             "unsupported": "",
             "status": "unverified",
             "reason": "只允许公共 HTTP(S) 地址",
-            "checked_at": "2026-09-26T04:15:22+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "like Gecko) Chrome/144.0.0.0 Safari/537.36\" group-title=\"General\",Lotus TV (720p)",
@@ -3673,7 +4121,7 @@
             "unsupported": "需要播放器专用请求头或选项，未自动验证",
             "status": "unverified",
             "reason": "需要播放器专用请求头或选项，未自动验证",
-            "checked_at": "2026-09-26T04:15:22+00:00"
+            "checked_at": "2026-09-26T04:46:52+00:00"
           },
           {
             "name": "Zhejiang International Channel",
@@ -3681,7 +4129,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:25+00:00"
+            "checked_at": "2026-09-26T04:46:58+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3694,16 +4142,16 @@
         "https://github.com/iptv-org/iptv"
       ],
       "id": "8b4da8b50a8d9c6f",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 10925,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "partial",
-        "checked_at": "2026-09-26T04:15:33+00:00",
+        "checked_at": "2026-09-26T04:46:56+00:00",
         "passed": 1,
         "sampled": 3,
         "total": 10925,
@@ -3714,7 +4162,7 @@
             "unsupported": "",
             "status": "passed",
             "reason": "已取到视频数据并解码出 1 帧画面",
-            "checked_at": "2026-09-26T04:15:25+00:00"
+            "checked_at": "2026-09-26T04:46:54+00:00"
           },
           {
             "name": "TVNZ 1 [Geo-blocked]",
@@ -3722,7 +4170,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "检测网络连接失败或超时",
-            "checked_at": "2026-09-26T04:15:25+00:00"
+            "checked_at": "2026-09-26T04:46:54+00:00"
           },
           {
             "name": "Dong Thap TV (720p)",
@@ -3730,7 +4178,7 @@
             "unsupported": "",
             "status": "failed",
             "reason": "HTTP 403，服务器限制访问",
-            "checked_at": "2026-09-26T04:15:33+00:00"
+            "checked_at": "2026-09-26T04:46:56+00:00"
           }
         ],
         "environment": "GitHub Actions 公网"
@@ -3742,14 +4190,48 @@
       "sources": [
         "https://github.com/Supprise0901/TVBox_live"
       ],
-      "checked_at": "2026-09-25T21:41:26+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "live",
       "format": "TXT",
-      "count": 311,
+      "count": 284,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:26+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
-      "id": "49cbf7073b47c71b"
+      "id": "49cbf7073b47c71b",
+      "playback": {
+        "status": "unverified",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "passed": 0,
+        "sampled": 3,
+        "total": 282,
+        "samples": [
+          {
+            "name": "凤凰卫视",
+            "url": "http://221.7.175.154:8445/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "重庆卫视",
+            "url": "http://hlsztemgsplive.miguvideo.com:8080/envivo_x/2018/SD/chongqing/1000/index.m3u8?msisdn=20260925220307522e14bc58df4f36be14586515668385&mdspid=&spid=600697&netType=0&sid=5910022305&pid=2028597139&timestamp=20260925220307&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=738910914&ParentNodeID=-99&assertID=5910022305&client_ip=171.8.79.254&SecurityKey=20260925220307&promotionId=&mvid=5900004329&mcid=500020&playurlVersion=WX-A1-9.9.2-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=cc9aa2637ed228d5221ec5922028558f",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          },
+          {
+            "name": "东方卫视",
+            "url": "http://hlsztemgsplive.miguvideo.com:8080/wd_r4/dfl/dongfangwshd/600/index.m3u8?msisdn=202609261003056dca3110ba3d448f9b83f520017b164b&mdspid=&spid=600697&netType=0&sid=5910022185&pid=2028597139&timestamp=20260926100305&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=651632648&ParentNodeID=-99&assertID=5910022185&client_ip=171.8.79.254&SecurityKey=20260926100305&promotionId=&mvid=5100043384&mcid=500020&playurlVersion=WX-A1-9.9.2-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=948a18227eab2d8fb0edd9902143ab0d",
+            "unsupported": "",
+            "status": "unverified",
+            "reason": "只允许公共 HTTP(S) 地址",
+            "checked_at": "2026-09-26T04:46:29+00:00"
+          }
+        ],
+        "environment": "GitHub Actions 公网"
+      }
     },
     {
       "name": "2.多仓版  他人整理`",
@@ -3757,14 +4239,42 @@
       "sources": [
         "https://github.com/xiongjian83/TvBox"
       ],
-      "checked_at": "2026-09-25T21:41:26+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 11,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:26+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
-      "id": "0efdde7aaff8e774"
+      "id": "0efdde7aaff8e774",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": [
+          {
+            "name": "🍑天微仓库",
+            "url": "https://tvkj.top/DC.txt",
+            "status": "failed",
+            "reason": "下级内容不是可识别配置"
+          },
+          {
+            "name": "🍎双龙主仓",
+            "url": "https://xn--aooa-mb1gy821b.v.nxog.top/nxog/oua.php?b=ao%E5%8F%8C%E9%BE%99oa",
+            "status": "failed",
+            "reason": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>"
+          },
+          {
+            "name": "🥭木鱼仓库",
+            "url": "https://d.kstore.dev/download/12020/ck.json",
+            "status": "failed",
+            "reason": "HTTP Error 404: "
+          }
+        ],
+        "sampled": 3,
+        "readable": 0
+      }
     },
     {
       "name": "hd9211 · duocang.json",
@@ -3816,16 +4326,16 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "5519341bebbd287d",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 1356,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": [
@@ -3859,19 +4369,40 @@
         "https://github.com/wxrjck/-YSC-"
       ],
       "id": "71542d796d5d6ce9",
-      "checked_at": "2026-09-26T04:14:32+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 3,
       "status": "ok",
-      "last_ok": "2026-09-26T04:14:32+00:00",
+      "last_ok": "2026-09-26T04:46:07+00:00",
       "error": "",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-09-26T04:14:55+00:00",
+        "checked_at": "2026-09-26T04:46:29+00:00",
         "environment": "GitHub Actions 公网",
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
-        "samples": []
+        "samples": [
+          {
+            "name": "💚无邪优选仓🍭热门推荐🍭",
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/yx.txt",
+            "status": "readable",
+            "reason": "下级文件可识别，尚未实播"
+          },
+          {
+            "name": "💛无邪聚合仓🍭聚合全网🍭",
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/main/jh.txt",
+            "status": "readable",
+            "reason": "下级文件可识别，尚未实播"
+          },
+          {
+            "name": "💜无邪🍭26.09.15测试🍭",
+            "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/main/%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4",
+            "status": "failed",
+            "reason": "HTTP Error 404: Not Found"
+          }
+        ],
+        "sampled": 3,
+        "readable": 2
       }
     },
     {
@@ -3903,13 +4434,41 @@
         "https://github.com/hd9211/Tvbox1"
       ],
       "id": "6ef12f9a2bb2f49d",
-      "checked_at": "2026-09-25T21:41:26+00:00",
+      "checked_at": "2026-09-26T04:46:07+00:00",
       "kind": "multi",
       "format": "JSON",
       "count": 5,
       "status": "ok",
-      "last_ok": "2026-09-25T21:41:26+00:00",
-      "error": ""
+      "last_ok": "2026-09-26T04:46:07+00:00",
+      "error": "",
+      "playback": {
+        "status": "config_only",
+        "checked_at": "2026-09-26T04:46:29+00:00",
+        "environment": "GitHub Actions 公网",
+        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
+        "samples": [
+          {
+            "name": "拾光单仓",
+            "url": "http://xmbjm.fh4u.org/dc.txt",
+            "status": "failed",
+            "reason": "下级内容不是可识别配置"
+          },
+          {
+            "name": "潇洒单仓",
+            "url": "https://9877.kstore.space/AnotherDS/api.json",
+            "status": "failed",
+            "reason": "HTTP Error 404: "
+          },
+          {
+            "name": "多多单仓",
+            "url": "https://cnb.cool/xduoapi/cool/-/git/raw/main/ck/%E5%A4%9A%E5%A4%9A%E5%BD%B1%E9%9F%B31.txt",
+            "status": "failed",
+            "reason": "HTTP Error 404: Not Found"
+          }
+        ],
+        "sampled": 3,
+        "readable": 0
+      }
     },
     {
       "name": "Wang963963 · m3u/上海联通.m3u",
@@ -3917,7 +4476,7 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 186,
@@ -3932,7 +4491,7 @@
       "sources": [
         "https://github.com/Wang963963/IPTV-4K-M3U"
       ],
-      "checked_at": "2026-09-26T04:14:38+00:00",
+      "checked_at": "2026-09-26T04:46:11+00:00",
       "kind": "live",
       "format": "M3U",
       "count": 376,

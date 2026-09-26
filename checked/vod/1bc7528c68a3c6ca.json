@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_1bc7528c68a3c6ca",
+      "name": "巨量",
+      "type": 1,
+      "api": "https://api.juliang.live/api/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

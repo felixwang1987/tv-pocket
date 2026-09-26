@@ -1,0 +1,1099 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-26T04:49:35+00:00",
+  "environment": "GitHub Actions 公网",
+  "discovery": {
+    "configs": 31,
+    "nested_documents": 50,
+    "unsupported_sites": 2745,
+    "issues": [
+      {
+        "url": "http://www.xn--sss604efuw.com/tv",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/main/%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://fastly.jsdelivr.net/gh/blackDawn-sun/tvbox@main/sgdc1129/sgdc-gitea.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://raw.gitmirror.com/ZTHA000/tvbox/main/flck.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://d.kstore.space/download/6600/%E9%A1%BA%E5%A4%9A%E4%BB%93.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://liucn.cc/bs/d4.txt",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--aooa-mb1gy821b.v.nxog.top/nxog/oua.php?b=ao%E5%8F%8C%E9%BE%99oa",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://d.kstore.dev/download/12020/ck.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://itvbox.cc/%E5%8F%AF%E8%A7%86TV/%E4%BA%91%E6%98%9F%E6%97%A5%E8%AE%B0/%E4%BB%93%E5%BA%93/api.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cnb.cool/xduoapi/cool/-/git/raw/main/ck/%E5%A4%9A%E5%A4%9A%E5%BD%B1%E9%9F%B31.txt",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://qixing.myhkw.com/%E8%87%AA%E7%94%A8%E6%B5%8B%E8%AF%95.txt",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://9877.kstore.space/AnotherDS/api.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--0lqv13avvo.ml/23424",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://raw.iqiq.io//tv-player/tvbox-line/main/tv/fj.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://download.kstore.space/download/3313/mao/ymz",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://gitee.com/ghzyw/cttv/raw/cttv-iptv/json/cttv.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://tv.nxog.top/api.php?mz=xb&id=1&b=%E7%99%BD%E5%AB%96%E5%B0%8F%E8%9A%82%E8%9A%81",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://xn--sss604efuw.top/tv",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://tvbox.cainisi.cf/",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cf.ghproxy.cc/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cf.ghproxy.cc/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://yydf.540734621.xyz/QQ/yydf2024.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cf.ghproxy.cc/https://raw.githubusercontent.com/Dong-learn9/TVBox-zyjk/main/tvbox2.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://www.xn--sss604efuw.com/tv/",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--evve-rp5imh.v.nxog.top/apitv.php?id=1",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cf.ghproxy.cc/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://74.120.175.78/JK/XYQTVBox/dj.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://2883.kstore.space/nzk/nzk0722.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://chuanshuo.77blog.cn/tv.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cnb.cool/fish2018/pg/-/git/raw/master/jsm.json",
+        "reason": "下级配置读取失败"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "id": "67a34ebefa7ad0d7",
+      "name": "鲨鱼资源",
+      "api": "https://shayuapi.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:06+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的普通节目列表"
+    },
+    {
+      "id": "80b195ca24b25e7a",
+      "name": "523资源(切)",
+      "api": "https://caiji.523zyw.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "07a1f5aafbcea98c",
+      "name": "JAV名优馆",
+      "api": "http://mygzycj.com/api.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:04+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "37fc49c28508e021",
+      "name": "小姐姐资源",
+      "api": "https://xjjzyapi.com/home/cjapi/askl/mc/vod/xml",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>"
+    },
+    {
+      "id": "45de1a4dd824c9b6",
+      "name": "艾旦",
+      "api": "https://lovedan.net/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "今日宜偏爱",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "莫欺枕边人",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "39e2baa3abfd47da",
+      "name": "麻豆視頻",
+      "api": "http://madouse.la/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "办公室服务女老板-银丝雀",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "第一次P联动中华娘旗袍希希被灌成泡芙了一共被内射了9次-不爱喝安慕希",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "c148715f58d7eb21",
+      "name": "葡萄",
+      "api": "http://api.putaozy.net/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "be1659a0c72548f6",
+      "name": "酷豆",
+      "api": "http://api.kdapi.info/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "6c28b0863dcd951c",
+      "name": "酷倫理",
+      "api": "http://api.kudian70.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "f922fe03ec788651",
+      "name": "❤花椒资源",
+      "api": "https://apihjzy.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:03+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "4dc5fecbf845bc14",
+      "name": "乐鱼资源(切)",
+      "api": "https://www.leyuzyapi.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:16+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "id": "0ab094e0697b0870",
+      "name": "影视 | 非凡[直连]",
+      "api": "http://ffzy.tv/api.php/provide/vod",
+      "sources": [
+        "https://szyyds.cn/tv/x.json"
+      ],
+      "checked_at": "2026-09-26T04:49:13+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "金牌调解2024",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "超级冰冰Show",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "aa147e8fef44397f",
+      "name": "量子资源(切)",
+      "api": "http://cj.lziapi.com/api.php/provide/vod",
+      "sources": [
+        "https://szyyds.cn/tv/x.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "partial",
+      "sampled": 2,
+      "passed": 1,
+      "samples": [
+        {
+          "name": "我独自生活",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "甲武神",
+          "status": "failed",
+          "reason": "HTTP 404"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，1 部出画面"
+    },
+    {
+      "id": "a98673317527368e",
+      "name": "91md",
+      "api": "https://91md.me/api.php/provide/vod/from/mdm3u8",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:15+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "办公室服务女老板-银丝雀",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "第一次P联动中华娘旗袍希希被灌成泡芙了一共被内射了9次-不爱喝安慕希",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "72515554b4a34ad9",
+      "name": "caomeiapi草莓资源",
+      "api": "https://caiji.caomeiapi.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "84c9249515dc6d88",
+      "name": "sewozyapi色窝",
+      "api": "https://sewozyapi.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "a6890f60e309fbd4",
+      "name": "ykapi影库资源",
+      "api": "https://api.ykapi.net/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "0eb97469aa5c97c4",
+      "name": "老鸭资源(切)",
+      "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "9f3f2bc5e417314d",
+      "name": "葡萄资源(切)",
+      "api": "https://caiji.putaozyw.net/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "ae5fa1f70716ce97",
+      "name": "辣椒资源",
+      "api": "https://apilj.com/api.php/provide/vod/at/xml",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:08+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "0389103fc327a8e5",
+      "name": "滴滴资源",
+      "api": "https://api.ddapi.cc/api.php/provide/vod/at/json",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "喜欢暴力深喉 抖M美少女【超敏感少女】深喉口交 舔B 骑乘位啪啪03 (4)",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        },
+        {
+          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (2)",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "bc1e927c3c933d18",
+      "name": "鸡霸资源",
+      "api": "https://api.jibaapi.cc/api.php/provide/vod/at/json",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "cfd096863fb73b75",
+      "name": "速看资源",
+      "api": "https://ziyuan.skm3u8.com/api.php/sea/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "cb24d629f9015717",
+      "name": "色南国资源",
+      "api": "https://api.sexnguon.com/api.php/provide/vod/at/json",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "<urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "id": "1cecacf788f10ca8",
+      "name": "色鸭资源",
+      "api": "https://api.seyavod.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "9e58e550b886c919",
+      "name": "森林资源",
+      "api": "https://senlinzy2.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:15+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "MOOC_009「这感觉比你姐姐的阴部好受多了，不是吗？」她妹妹是个变モッコ_妄想族",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        },
+        {
+          "name": "MMMB_155熟女酒吧妈妈的私人诱惑娱乐最佳4小时MellowMoon（メロウムーン）",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "3fc70f27497473fc",
+      "name": "好片资源",
+      "api": "https://haopianapi.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "896830f5303518b4",
+      "name": "开云资源",
+      "api": "https://kaiyunzy1.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:10+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "48ce51e9c9e37dd1",
+      "name": "155资源",
+      "api": "https://155api.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:17+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "被妈妈朋友邀请到交友APP，一起温柔驯服「推的年下」。藤浦惠玛丹娜真咲南朋藤浦惠,大槻响JUR-205",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "背叛丈夫的【妻子·香奈】以及【对象·美咲】，用鸡巴扭转她玛丹娜木村浩之水户香奈,美咲佳奈JUR-208",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "3f951e708e6ddcb8",
+      "name": "雪豹资源",
+      "api": "https://api.xbapi.cc/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:13+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "b1a841ae27a513d9",
+      "name": "KOK资源",
+      "api": "https://api.vodkok2.com/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
+      ],
+      "checked_at": "2026-09-26T04:49:13+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "2d78597042dea09d",
+      "name": "示例 CMS(JSON) 源",
+      "api": "https://your-cms.example.com/api.php/provide/vod",
+      "sources": [
+        "https://raw.githubusercontent.com/yagami-hue/Win-box/main/resources/config.example.json"
+      ],
+      "checked_at": "2026-09-26T04:49:14+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -5] No address associated with hostname"
+    },
+    {
+      "id": "9514f7ce7d7c6b2c",
+      "name": "豆瓣",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "喵喵奇妙屋",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        },
+        {
+          "name": "不白吃成语真好玩第一季",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "5ffb6e9a093b753f",
+      "name": "魔都",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ],
+      "checked_at": "2026-09-26T04:49:24+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "我被困在同一天一千年",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "明朝败家子",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "0cbc53f07e718c14",
+      "name": "🔞百货资源",
+      "api": "https://ckbh1.xyz/api.php/provide/vod",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ],
+      "checked_at": "2026-09-26T04:49:22+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "The read operation timed out"
+    },
+    {
+      "id": "86da29fdf273fdd4",
+      "name": "🔞豆豆",
+      "api": "https://api.douapi.cc/api.php/provide/vod",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ],
+      "checked_at": "2026-09-26T04:49:19+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (1)",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        },
+        {
+          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (4)",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "1bc7528c68a3c6ca",
+      "name": "巨量",
+      "api": "https://api.juliang.live/api/provide/vod",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json"
+      ],
+      "checked_at": "2026-09-26T04:49:35+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "我独自生活",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "今日宜偏爱",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "4fbff2f59f71a289",
+      "name": "🧡┃初恋┃官源",
+      "api": "https://video.adminqt.cn/api.php/provide/vod",
+      "sources": [
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json"
+      ],
+      "checked_at": "2026-09-26T04:49:21+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "790172e095caf7cc",
+      "name": "🎥┃红牛┃资源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "sources": [
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://szyyds.cn/tv/x.json"
+      ],
+      "checked_at": "2026-09-26T04:49:31+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "开标之战",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        },
+        {
+          "name": "独剑九天",
+          "status": "unverified",
+          "reason": "加密直播，需支持它的客户端验证"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "9e0145bd863328a1",
+      "name": "📱天堂网ᶜʲ┃采集",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "sources": [
+        "https://raw.githubusercontent.com/gclgg/box/main/ys.json"
+      ],
+      "checked_at": "2026-09-26T04:49:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "大哥小助理",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "甲武神",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "fd4648a913ae3343",
+      "name": "🕹️淘片┃采集",
+      "api": "https://taopianapi.com/cjapi/mc/vod/json.html",
+      "sources": [
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://raw.liucn.cc/box/m.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>"
+    },
+    {
+      "id": "6fc6c744af68bd10",
+      "name": "🐯┃奇虎┃采集",
+      "api": "https://caiji.qhzyapi.com/api.php/provide/vod",
+      "sources": [
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://raw.liucn.cc/box/m.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "f4d225c713651010",
+      "name": "🌪️暴风影音",
+      "api": "https://app.bfzyapi.com/api.php/provide/vod",
+      "sources": [
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://raw.liucn.cc/box/m.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "81f906d22adf7f16",
+      "name": "CK资源",
+      "api": "https://ckzy.me/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/19.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的普通节目列表"
+    },
+    {
+      "id": "cebab72ed80df2b1",
+      "name": "奶茶资源",
+      "api": "https://caiji.naichaapi.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/19.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "0a426841b3e545e0",
+      "name": "ASMR 19",
+      "api": "http://www.asmr19.in/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "c330eaca7ee497bf",
+      "name": "色猫资源",
+      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:23+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "HTTP Error 521: <none>"
+    },
+    {
+      "id": "6b2a67e88178fe2e",
+      "name": "91麻豆",
+      "api": "https://91md.me/api.php/provide/vod",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/18.json",
+        "https://fastly.jsdelivr.net/gh/Dong-learn9/TVBox-zyjk@main/vip.json",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/vip.json"
+      ],
+      "checked_at": "2026-09-26T04:49:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "办公室服务女老板-银丝雀",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "第一次P联动中华娘旗袍希希被灌成泡芙了一共被内射了9次-不爱喝安慕希",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    }
+  ],
+  "summary": {
+    "discovered_apis": 154,
+    "checked_apis": 48,
+    "verified_routes": 8,
+    "sampled_programs": 30,
+    "passed_programs": 15,
+    "elapsed_seconds": 129
+  }
+}
