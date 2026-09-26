@@ -76,6 +76,7 @@ class ParsingTests(unittest.TestCase):
             self.assertEqual(len(result['entries']), 1)
             self.assertEqual(result['entries'][0]['status'], 'error')
             self.assertEqual(result['entries'][0]['category'], 'adult')
+            self.assertEqual(result['entries'][0]['kind'], 'unknown')
 
     def test_collection_children_receive_reserved_checks(self):
         urls={

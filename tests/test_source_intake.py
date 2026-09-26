@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch
+from pathlib import Path
 
 from scripts.source_intake import parse_submission, apply_submission
 
@@ -100,6 +101,27 @@ class IntakeTests(unittest.TestCase):
                                                   for i in range(30)]}
         with self.assertRaises(ValueError):
             apply_submission(config, page)
+
+
+class WorkflowContractTests(unittest.TestCase):
+    def test_issue_submission_uses_same_collection_and_deployment_run(self):
+        workflow = Path('.github/workflows/update.yml').read_text()
+        self.assertIn('issues:', workflow)
+        self.assertIn('types: [opened]', workflow)
+        self.assertIn("cron: '23 10 * * *'", workflow)
+        self.assertLess(workflow.index('id: intake'), workflow.index('python scripts/collector.py'))
+        self.assertIn('python scripts/source_intake.py', workflow)
+        self.assertIn("steps.intake.outputs.status == 'accepted'", workflow)
+        self.assertIn('sources.config.json', workflow.split('name: 保存本轮快照')[1])
+        self.assertIn('actions/deploy-pages@v4', workflow)
+
+    def test_issue_feedback_is_owner_only_and_never_injects_body_into_shell(self):
+        workflow = Path('.github/workflows/update.yml').read_text()
+        self.assertIn('github.event.issue.user.login == github.repository_owner', workflow)
+        self.assertIn('issues: write', workflow)
+        self.assertIn('gh issue comment', workflow)
+        self.assertNotIn('${{ github.event.issue.body', workflow)
+        self.assertIn('GITHUB_EVENT_PATH', Path('scripts/source_intake.py').read_text())
 
 
 if __name__ == '__main__':

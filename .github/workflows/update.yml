@@ -2,6 +2,8 @@ name: 更新影视口袋
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
   schedule:
     - cron: '23 10 * * *'
   push:
@@ -22,8 +24,12 @@ permissions:
 
 jobs:
   collect:
+    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[添加来源]')
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      intake_status: ${{ steps.intake.outputs.status }}
+      intake_message: ${{ steps.intake.outputs.message }}
     permissions:
       contents: write
     steps:
@@ -31,7 +37,12 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: 接收仓库所有者添加的来源
+        id: intake
+        if: github.event_name == 'issues'
+        run: python scripts/source_intake.py
       - name: 准备视频解码器
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         run: |
           if ! command -v ffmpeg >/dev/null; then
             sudo apt-get update -qq
@@ -39,28 +50,34 @@ jobs:
           fi
           ffmpeg -version | head -1
       - name: 检查采集和打包逻辑
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         run: python -m unittest discover -s tests -v
       - name: 发现并检查来源
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/collector.py
       - name: 生成单文件网页与发布目录
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         run: python scripts/build.py --site
       - name: 保存本轮快照
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/sources.json data/routes.json
+          git add sources.config.json index.html data/sources.json data/routes.json
           git add -A checked
           if ! git diff --cached --quiet; then
             git commit -m "data: update source catalog [skip ci]"
             git push
           fi
       - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'issues' || steps.intake.outputs.status == 'accepted'
         with:
           path: _site
   deploy:
     needs: collect
+    if: github.event_name != 'issues' || needs.collect.outputs.intake_status == 'accepted'
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -72,3 +89,34 @@ jobs:
       - name: 发布到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  issue_feedback:
+    needs: [collect, deploy]
+    if: ${{ always() && github.event_name == 'issues' && github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[添加来源]') }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: 回告添加来源的检查结果
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          INTAKE_STATUS: ${{ needs.collect.outputs.intake_status }}
+          INTAKE_MESSAGE: ${{ needs.collect.outputs.intake_message }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          case "$INTAKE_STATUS" in
+            accepted)
+              if [ "$DEPLOY_RESULT" = 'success' ]; then
+                BODY="已加入每日检查并更新网页。是否进入点播或直播合集，以实播抽检结果为准。查看：$RUN_URL"
+              else
+                BODY="来源已通过提交校验，但本轮采集或发布未完成。请查看：$RUN_URL"
+              fi
+              ;;
+            duplicate) BODY="这个链接已在每日检查配置中，无需重复添加。" ;;
+            invalid) BODY="这次提交未被接受：$INTAKE_MESSAGE" ;;
+            *) BODY="这次提交未完成，请查看工作流：$RUN_URL" ;;
+          esac
+          printf '%s\n' "$BODY" > /tmp/source-issue-feedback.txt
+          gh issue comment "$ISSUE_NUMBER" --body-file /tmp/source-issue-feedback.txt

@@ -615,6 +615,7 @@ def collect(root=ROOT, discover=True, github_only=False):
                          for x in extract_links(text, final_url)[:40]]
             return row, child
         except Exception as error:
+            row.setdefault('kind', 'unknown')
             row.update(status='error', error=str(error)[:180])
             return row, []
     def check_batch(batch):
