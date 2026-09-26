@@ -17,8 +17,10 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandl
 
 try:
     from .playback import verify_catalog, verified_playlist
+    from .routes import collect_routes, fresh_routes
 except ImportError:
     from playback import verify_catalog, verified_playlist
+    from routes import collect_routes, fresh_routes
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
@@ -437,10 +439,17 @@ def collect(root=ROOT, discover=True, github_only=False):
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
     records = records[:500]
     playback_summary = {}
+    routes_document = {'routes':[], 'summary':{}}
     if not github_only:
         settings = config.get('playback', {})
         health_net = Network(settings.get('request_budget', 500))
         playback_summary = verify_catalog(records, documents, health_net, classify, extract_links, settings)
+        route_settings = config.get('routes', {})
+        if route_settings.get('base_url'):
+            config_urls = {r['url'] for r in records if r.get('status') == 'ok' and r.get('kind') in ('multi','collection','config')}
+            route_documents = {u:d for u,d in documents.items() if u in config_urls}
+            routes_document = collect_routes(root, route_documents, Network(route_settings.get('request_budget',800)),
+                                             parse_jsonc, normalize_url, route_settings)
     playlist, verified_count = verified_playlist(records)
     playback_summary['verified_streams'] = verified_count
     (root / 'checked').mkdir(exist_ok=True)
@@ -452,13 +461,18 @@ def collect(root=ROOT, discover=True, github_only=False):
         'discovery': {'enabled':discover, 'repositories':repos_count, 'issues':issues, 'github_only':github_only},
         'summary': {'checked':len(results), 'recognized':success, 'rejected_or_failed':len(results)-success},
         'playback_summary':playback_summary,
+        'routes_summary':{**routes_document['summary'], 'checked_at':routes_document.get('generated_at'),
+                          'environment':routes_document.get('environment')},
+        'verified_routes':[{k:r.get(k) for k in ('id','name','checked_at','status','sampled','passed','searchable','sources')}
+                           for r in fresh_routes(routes_document)],
         'entries':records,
     }
     target.parent.mkdir(exist_ok=True)
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')
     temp.replace(target)
-    print(json.dumps({'entries':len(records), **document['summary'], 'playback':playback_summary, 'discovery_issues':len(issues)}, ensure_ascii=False))
+    print(json.dumps({'entries':len(records), **document['summary'], 'playback':playback_summary,
+                      'routes':document['routes_summary'], 'discovery_issues':len(issues)}, ensure_ascii=False))
     return document
 
 

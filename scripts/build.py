@@ -7,8 +7,10 @@ import shutil
 
 try:
     from .playback import verified_playlist
+    from .routes import publish_routes
 except ImportError:
     from playback import verified_playlist
+    from routes import publish_routes
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,14 +31,21 @@ def build(site=False):
     playlist, _ = verified_playlist(data['entries'])
     (ROOT / 'checked').mkdir(exist_ok=True)
     (ROOT / 'checked/live.m3u').write_text(playlist)
+    routes_file = ROOT / 'data/routes.json'
+    routes = json.loads(routes_file.read_text()) if routes_file.exists() else {'routes':[]}
+    settings = json.loads((ROOT / 'sources.config.json').read_text())
+    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'))
     html_path.write_text(embed(html_path.read_text(), data))
     if site:
         out = ROOT / '_site'
         (out / 'data').mkdir(parents=True, exist_ok=True)
         shutil.copy2(html_path, out / 'index.html')
         shutil.copy2(ROOT / 'data/sources.json', out / 'data/sources.json')
-        (out / 'checked').mkdir(exist_ok=True)
-        shutil.copy2(ROOT / 'checked/live.m3u', out / 'checked/live.m3u')
+        if (out / 'checked').exists():
+            shutil.rmtree(out / 'checked')
+        shutil.copytree(ROOT / 'checked', out / 'checked')
+        if routes_file.exists():
+            shutil.copy2(routes_file, out / 'data/routes.json')
         for asset in ('apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon.svg', 'site.webmanifest'):
             shutil.copy2(ROOT / asset, out / asset)
         (out / '.nojekyll').touch()
