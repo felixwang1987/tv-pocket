@@ -178,6 +178,14 @@
       "sources": [
         "https://github.com/noimank/tvbox"
       ]
+    },
+    {
+      "name": "git上面",
+      "url": "https://github.com/wuxierj/TVBox",
+      "category": "ordinary",
+      "sources": [
+        "https://github.com/wuxierj/TVBox"
+      ]
     }
   ]
 }

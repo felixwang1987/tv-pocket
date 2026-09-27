@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_845e5ba10d71c5d4",
+      "name": "[590ms|5] 茅台影视",
+      "type": 1,
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ]
+}
