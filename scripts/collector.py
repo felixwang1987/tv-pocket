@@ -26,6 +26,10 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
 GITHUB_HOSTS = {'api.github.com', 'raw.githubusercontent.com', 'iptv-org.github.io', 'mcp2016.github.io'}
+# Exact public host/port reviewed for a user-supplied TVBox client config.
+# Every connection still validates and pins a public DNS address.
+CLIENT_CONFIG_HOST = 'hb.xn--yet24tmq1a.site'
+CLIENT_CONFIG_PORTS = {CLIENT_CONFIG_HOST: {25252}}
 VOD_MEDIA_PORTS = {
     'p.hhwenjian.com': {65},
     'hnts.ymuuy.com': {65},
@@ -54,7 +58,11 @@ def normalize_url(value, extra_ports=None):
                 return None
         except ValueError:
             pass
-        if p.port not in (None, 80, 443) and p.port not in (extra_ports or {}).get(host, ()):
+        ascii_host = host.encode('idna').decode().lower()
+        allowed_ports = (set(CLIENT_CONFIG_PORTS.get(ascii_host, ())) |
+                         set((extra_ports or {}).get(ascii_host, ())) |
+                         set((extra_ports or {}).get(host, ())))
+        if p.port not in (None, 80, 443) and p.port not in allowed_ports:
             return None
         path = p.path or '/'
         if host == 'github.com':
@@ -195,6 +203,9 @@ class Network:
     def _fetch_bytes(self, url, api, limit, partial, timeout):
         clean = self.validate(url)
         headers = {'User-Agent': 'TV-Pocket/1.0', 'Accept': 'application/json,text/plain,*/*'}
+        target = urlsplit(clean)
+        if target.hostname == CLIENT_CONFIG_HOST and target.port == 25252:
+            headers['User-Agent'] = 'okhttp/3.12.0'
         if api and urlsplit(clean).netloc == 'api.github.com' and clean.startswith('https://'):
             token = os.environ.get('GITHUB_TOKEN')
             if token:
@@ -290,6 +301,11 @@ def parse_jsonc(text):
 
 def classify(text, url):
     text = text.lstrip('\ufeff \r\n\t')
+    encoded = text.strip()
+    if (len(encoded) > 64 and len(encoded) % 2 == 0
+            and encoded[:22].lower() == '24236c696e746563682324'
+            and re.fullmatch(r'[0-9a-fA-F]+', encoded)):
+        return {'kind': 'config', 'format': '影视仓加密'}
     if text.startswith('#EXTM3U'):
         if '#EXT-X-TARGETDURATION:' in text or '#EXT-X-STREAM-INF:' in text:
             return {'kind': 'stream', 'format': 'HLS', 'count': 1}

@@ -65,6 +65,14 @@ class PlaybackTests(unittest.TestCase):
                                                          'adult_samples_per_list':24})
         self.assertEqual(called,[('https://example.com/adult',24)])
 
+    def test_client_encrypted_config_is_not_claimed_as_playback_verified(self):
+        url = 'https://example.com/client-config'
+        row = {'url':url, 'kind':'config', 'format':'影视仓加密', 'status':'ok'}
+        verify_catalog([row], {url:('24236c696e746563682324'+'ab'*40,url)},
+                       FakeNetwork({}), None, None, {})
+        self.assertEqual(row['playback']['status'], 'config_only')
+        self.assertIn('无法解析', row['playback']['reason'])
+
     def test_http_200_html_is_not_a_playable_stream(self):
         net = FakeNetwork({'https://example.com/live': '<html>login</html>'})
         result = probe_stream(net, 'https://example.com/live', decoder=lambda b: self.fail('HTML reached decoder'))

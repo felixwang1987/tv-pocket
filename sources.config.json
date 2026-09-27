@@ -154,6 +154,14 @@
       "sources": [
         "http://xmbjm.fh4u.org/dc.txt"
       ]
+    },
+    {
+      "name": "小虎斑 · 客户端加密配置",
+      "url": "http://hb.小虎斑.site:25252/仅供测试",
+      "category": "ordinary",
+      "sources": [
+        "http://xmbjm.fh4u.org/dc.txt"
+      ]
     }
   ]
 }

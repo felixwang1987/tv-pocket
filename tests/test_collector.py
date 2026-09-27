@@ -310,6 +310,41 @@ class ParsingTests(unittest.TestCase):
         for url in ['javascript:alert(1)', 'file:///tmp/x', 'https://user:pass@a.example/x', 'http://127.0.0.1/a', 'http://[::1]/a', 'https://localhost/x']:
             with self.subTest(url=url): self.assertIsNone(normalize_url(url))
 
+    def test_reviewed_idn_config_port_is_allowed_but_private_dns_is_not(self):
+        raw = 'http://hb.小虎斑.site:25252/仅供测试'
+        clean = 'http://hb.xn--yet24tmq1a.site:25252/%E4%BB%85%E4%BE%9B%E6%B5%8B%E8%AF%95'
+        self.assertEqual(normalize_url(raw), clean)
+        self.assertEqual(normalize_url(clean), clean)
+        self.assertIsNone(normalize_url('http://other.example:25252/config'))
+        public = lambda *args, **kwargs: [(2, 1, 6, '', ('93.184.216.34', 25252))]
+        private = lambda *args, **kwargs: [(2, 1, 6, '', ('10.0.0.1', 25252))]
+        self.assertEqual(check_public_url(raw, resolver=public), clean)
+        with self.assertRaises(ValueError): check_public_url(raw, resolver=private)
+
+    def test_client_cipher_marker_is_readable_config_without_exposed_routes(self):
+        payload = '24236c696e746563682324' + 'ab' * 40
+        result = classify(payload, 'http://hb.xn--yet24tmq1a.site:25252/config')
+        self.assertEqual((result['kind'], result['format']), ('config', '影视仓加密'))
+        self.assertNotIn('count', result)
+        self.assertEqual(extract_links(payload, 'http://hb.xn--yet24tmq1a.site:25252/config'), [])
+
+    def test_reviewed_client_config_uses_okhttp_user_agent(self):
+        url = 'http://hb.xn--yet24tmq1a.site:25252/config'
+        sent = []
+        class Response:
+            def __enter__(self): return self
+            def __exit__(self, *args): pass
+            def read1(self, size): return b''
+            def geturl(self): return url
+        class Opener:
+            def open(self, request, timeout):
+                sent.append(request.get_header('User-agent'))
+                return Response()
+        with patch.object(collector.Network, 'validate', return_value=url), \
+             patch.object(collector, 'build_opener', return_value=Opener()):
+            collector.Network().fetch_bytes(url)
+        self.assertEqual(sent, ['okhttp/3.12.0'])
+
     def test_dns_private_addresses_are_rejected(self):
         def resolver(*args, **kwargs): return [(2, 1, 6, '', ('10.0.0.1', 443))]
         with self.assertRaises(ValueError): check_public_url('https://a.example/x', resolver=resolver)

@@ -230,8 +230,11 @@ def verify_catalog(records, documents, net, classify, extract_links, settings):
     configs = [r for r in eligible if r.get('kind') not in ('live', 'stream')]
     # Config checks cannot emulate a TVBox plugin or a signed-in client.
     for row in configs:
+        reason = ('已收到影视仓加密配置；服务器无法解析内部线路，需在影视仓实播验证'
+                  if row.get('format') == '影视仓加密' else
+                  '配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证')
         row['playback'] = {'status':'config_only', 'checked_at':timestamp(), 'environment':environment,
-                           'reason':'配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证', 'samples':[]}
+                           'reason':reason, 'samples':[]}
 
     def check_config(row):
         text, base = documents[row['url']]
