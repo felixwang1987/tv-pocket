@@ -64,8 +64,6 @@ https://i.mjh.nz/.r/go-nsw.m3u8
 https://ms01.w24.at/R9/smil:liveeventR9.smil/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",oe24
 https://oe24.mdn.ors.at/live/eds/oe24tv_hd/hls_nodrm/oe24tv_hd-nodrm.m3u8
-#EXTINF:-1 group-title="普通直播",未命名频道
-https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",France 24 🇫🇷🇬🇧
 https://amg00106-france24-france24-samsungspain-n4tez.amagi.tv/playlist/amg00106-france24-france24-samsungspain/playlist.m3u8?wowzasessionid=@iprtlk
 #EXTINF:-1 group-title="普通直播",Star TVE 🇪🇸
@@ -170,8 +168,8 @@ https://live.ottiptv.cc/yy/1354930204
 https://live.ottiptv.cc/yy/1382745182
 #EXTINF:-1 group-title="普通直播",相亲时代真实到让当代年轻人头皮发麻
 https://live.ottiptv.cc/yy/1354936231
-#EXTINF:-1 group-title="普通直播",「虎牙」穿越火线
-https://cdn.ttvb.eu.org/huya/660101
+#EXTINF:-1 group-title="普通直播",宰相刘罗锅
+https://live.ottiptv.cc/yy/1353892468
 #EXTINF:-1 group-title="普通直播",兵团五师双河新闻综合
 https://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?zxinjd
 #EXTINF:-1 group-title="普通直播",荆门新闻综合
@@ -290,6 +288,8 @@ https://ldocctvwbcdbd.a.bdydns.com/ldocctvwbcd/cdrmldcctv8_1/index.m3u8?BR=hd
 https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
 #EXTINF:-1 group-title="普通直播",河北卫视
 http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
+#EXTINF:-1 group-title="普通直播",海峡卫视
+http://t.061899.xyz/tl/tl.php?id=hxws
 #EXTINF:-1 group-title="普通直播",CCTV10
 http://t.061899.xyz/tl/tl.php?id=cctv10
 #EXTINF:-1 group-title="普通直播",CCTV-2
@@ -318,10 +318,6 @@ https://dbmtv.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 https://puissancetelevision.vedge.infomaniak.com/livecast/ik:puissancetelevision/manifest.m3u8
 #EXTINF:-1 group-title="普通直播",RHT Radio Haute Tension Guadeloupe
 https://livehautetension.vedge.infomaniak.com/livecast/ik:livehautetension/manifest.m3u8
-#EXTINF:-1 group-title="普通直播",有線新聞台
-http://61.10.2.140/live_freedirect/freehd209_h.live/chunklist_w135209556.m3u8
-#EXTINF:-1 group-title="普通直播",無綫新聞台
-http://r.jdshipin.com/CkuBd
 #EXTINF:-1 group-title="普通直播",Tamilan TV (576p)
 https://mumt04.tangotv.in/m18aqlK4TAMILANTELEVISION/index.m3u8
 #EXTINF:-1 group-title="普通直播",24 Horas (Spain) (720p)
@@ -418,6 +414,10 @@ https://vod.youlai.cn/bb9f6b62f1c64c1f86a6b562cac30949/5a183478ec3f42df8ca40e380
 https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="普通直播",亳州农村
 http://zbbf2.ahbztv.com/live/418.m3u8
+#EXTINF:-1 group-title="普通直播",张掖新闻综合
+https://play.kankanlive.com/live/1720583434627241.m3u8
+#EXTINF:-1 group-title="普通直播",镇江新闻综合
+http://cm-wshls.homecdn.com/live/2aa50.m3u8
 #EXTINF:-1 group-title="普通直播",浙江舟山嵊泗县中心渔港
 https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
 #EXTINF:-1 group-title="普通直播",Ando TV (1080p)
@@ -432,8 +432,6 @@ https://ncdn.telewebion.ir/semnan/live/playlist.m3u8
 https://alpha.tv.online.tm/hls/ch006.m3u8
 #EXTINF:-1 group-title="普通直播",Dheeran TV (576p)
 https://live.we2live.in/dheerantv/dheerantv/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",张掖新闻综合
-https://play.kankanlive.com/live/1720583434627241.m3u8
 #EXTINF:-1 group-title="普通直播",Good 2 (720p)
 https://live.streamingfast.net/osmflivech2.m3u8
 #EXTINF:-1 group-title="普通直播",NTD TV Asia-Pacific
@@ -486,16 +484,12 @@ http://cdn.adultiptv.net/blonde.m3u8
 http://cdn.adultiptv.net/gay.m3u8
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Asian
 http://cdn.adultiptv.net/asian.m3u8
-#EXTINF:-1 group-title="普通直播",少女娜娜酱
-https://live.ottiptv.cc/douyu/9445557
 #EXTINF:-1 group-title="普通直播",喜人电影
 https://live.ottiptv.cc/douyu/10348735
 #EXTINF:-1 group-title="普通直播",猫记丶
 https://live.ottiptv.cc/douyu/9242659
 #EXTINF:-1 group-title="普通直播",电影黑匣子
 https://live.ottiptv.cc/douyu/8706652
-#EXTINF:-1 group-title="普通直播",永无叙V
-https://live.ottiptv.cc/douyu/9442980
 #EXTINF:-1 group-title="普通直播",VTV News (576p)
 https://live1.ottlive.co.in/vtvgujarati/vtvgujarati/index.m3u8
 #EXTINF:-1 group-title="普通直播",Arirang TV HD (720p)

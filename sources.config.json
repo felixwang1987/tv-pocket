@@ -186,6 +186,14 @@
       "sources": [
         "https://github.com/wuxierj/TVBox"
       ]
+    },
+    {
+      "name": "tvbox",
+      "url": "https://m.7po.com/article/3175.html",
+      "category": "ordinary",
+      "sources": [
+        "https://m.7po.com/article/3175.html"
+      ]
     }
   ]
 }
