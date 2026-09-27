@@ -162,6 +162,14 @@
       "sources": [
         "http://xmbjm.fh4u.org/dc.txt"
       ]
+    },
+    {
+      "name": "gitlab",
+      "url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json",
+      "category": "ordinary",
+      "sources": [
+        "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
+      ]
     }
   ]
 }

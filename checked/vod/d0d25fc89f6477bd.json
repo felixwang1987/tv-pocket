@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_d0d25fc89f6477bd",
+      "name": "️天堂┃采集",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

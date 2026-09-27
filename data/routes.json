@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T01:25:50+00:00",
+  "generated_at": "2026-09-27T06:31:58+00:00",
   "environment": "GitHub Actions 公网",
   "discovery": {
-    "configs": 87,
-    "nested_documents": 82,
-    "unsupported_sites": 34248,
+    "configs": 138,
+    "nested_documents": 163,
+    "unsupported_sites": 39570,
     "issues": [
       {
         "url": "http://www.xn--sss604efuw.com/tv",
@@ -16,15 +16,11 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://fastly.jsdelivr.net/gh/rrzt/tvbox_collect@main/wzxxcz/xczdz.json",
+        "url": "https://cnb.cool/xduoapi/cool/-/git/raw/main/ck/%E5%A4%9A%E5%A4%9A%E5%BD%B1%E9%9F%B31.txt",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://fastly.jsdelivr.net/gh/xoman9/tvbox@main/DC.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://fastly.jsdelivr.net/gh/serein2494/TVBOX@main/link.json",
+        "url": "https://fastly.jsdelivr.net/gh/woshishiq1/hipy-drpy2@main/yjl/DC.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -32,11 +28,47 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://fastly.jsdelivr.net/gh/tianya7981/jiekou@main/cangku20241224",
+        "url": "https://pan.miaogongzi.net/f/95Hw/%E8%9A%82%E8%9A%81%E7%AA%9D4.txt",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://11405.kstore.space/xiaye/duocang.json",
+        "url": "https://6492.kstore.space/xnf/xnf.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://xn--z7x900a.com/",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://tv.laohu.cool/tvbox.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://fmys.top/fmys.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--8owq8u.com/tv/",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://cnb.cool/fish2018/zx/-/git/raw/master/FongMi.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://xn--b9w.l5.ca/",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://d.kstore.dev/download/8975/%E5%88%BA%E5%88%BA%E4%B8%93%E7%94%A8%E9%9F%B3%E4%B9%90%E6%8E%A5%E5%8F%A3.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--biib-rp5imh.v.nxog.top/apitv.php",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://jiekou.netlify.app/svip.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -44,19 +76,27 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://git.acwing.com/999/tvbox/-/raw/main/%E5%BD%B1%E8%A7%86.json",
+        "url": "http://pandown.pro/tvbox/tvbox.json",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://xn--fjq53n.xyz/dj.json",
+        "url": "http://tv.nxog.top/m/",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
+        "url": "http://www.lyyytv.cn/yt/yt.json",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "http://miqk.cc/%E5%B0%8F%E7%B1%B3/DEMO.json",
+        "url": "https://www.wya6.cn/tv/yc.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://hb.xyyh.online/tvbox",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "http://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -64,11 +104,11 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://xn--fjq53n.xyz/TV/Zy.json",
+        "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "http://ok321.top/ok",
+        "url": "https://4708.kstore.space/svip/svip.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -80,51 +120,11 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://gitlab.com/duomv/dzhipy/-/raw/main/index.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "http://tv.nxog.top/m",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://git.acwing.com/lkq0379/zjys/-/raw/main/zjys.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "http://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://6492.kstore.space/xnf/xnf.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "http://fmys.top/fmys.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://xn--8owq8u.com/tv/",
-        "reason": "下级配置读取失败"
-      },
-      {
         "url": "https://zthaa.top/th/api.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://gitee.com/yiwu369/6758/raw/master/%E9%9D%92%E9%BE%99/1.json",
         "reason": "下级配置读取失败"
       }
     ]
@@ -142,26 +142,25 @@
         "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json"
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json"
       ],
-      "checked_at": "2026-09-27T01:24:46+00:00",
+      "checked_at": "2026-09-27T06:31:02+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "极品反差少女黑丝JK床上缠绵肥臀上位高潮疯狂潮吹.全程被干到神志不清在大鸡巴爸爸的鸡巴下变成淫荡的骚母狗",
+          "name": "极品丰臀淫妻美杜莎绿帽来到KTV最后被两男带到洗.手间里抱着大屁股轮流内射",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "户外勾搭反差婊黛西老师首次大胆露脸极品骚少妇小逼.逼一天都离不开男人",
+          "name": "JUR_412紧贴性爱～在家庭内交缠的吐息、和岳父培养浓密不贞之爱～玛丹娜三島六三郎瑶真由香",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
       ],
-      "searchable": 1,
+      "searchable": 0,
       "reason": "抽检 2 部节目，2 部出画面"
     },
     {
@@ -171,21 +170,20 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json"
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:45+00:00",
+      "checked_at": "2026-09-27T06:30:57+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "MMUS-091-C MJOI 最高の変態手淫指導 絶対的挑発淫語オナニーコントロール",
+          "name": "CEMD-879 完熟合コン4～酒酔い熟女がザーメンまみれの中出し8P大乱交 ～豊永映美 姫川礼子 美ノ辺さやか",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "CEMD-854 恥辱、陵●、とびっこ装着·繁華街デート！41 ももの真利奈",
+          "name": "CHUC-174 アプリで見つけたヤリ●ン看護師セフレ ゆめ（27）",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -202,7 +200,7 @@
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
         "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -219,7 +217,7 @@
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
         "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -234,32 +232,31 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
+        "https://raw.githubusercontent.com/child9527/tvbox/main/json/99188.json",
         "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
         "https://gh-proxy.org/https://github.com/520ad/tvbox/raw/refs/heads/main/hs.json",
         "https://raw.githubusercontent.com/520ad/tvbox/main/hs.json",
         "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:24:44+00:00",
+      "checked_at": "2026-09-27T06:30:57+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (4)",
+          "name": "喜欢暴力深喉 抖M美少女【超敏感少女】深喉口交 舔B 骑乘位啪啪03(5V)",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "喜欢暴力深喉 抖M美少女【超敏感少女】深喉口交 舔B 骑乘位啪啪03 (2)",
+          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (1)",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -275,7 +272,7 @@
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -292,7 +289,7 @@
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
         "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -308,7 +305,7 @@
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -323,11 +320,31 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt",
+        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "0caaa2356676bf94",
+      "name": "老鸭资源(切)",
+      "api": "https://api.apilyzy.com/api.php/provide/vod/at/json",
+      "category": "adult",
+      "sources": [
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx0.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/00tvx1c.txt",
+        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
+      ],
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -343,7 +360,7 @@
       "sources": [
         "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
       ],
-      "checked_at": "2026-09-27T01:24:39+00:00",
+      "checked_at": "2026-09-27T06:30:52+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -359,25 +376,25 @@
       "sources": [
         "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod/0389103fc327a8e5.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:24:44+00:00",
+      "checked_at": "2026-09-27T06:30:56+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (4)",
+          "name": "喜欢暴力深喉 抖M美少女【超敏感少女】深喉口交 舔B 骑乘位啪啪03(5V)",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "喜欢暴力深喉 抖M美少女【超敏感少女】深喉口交 舔B 骑乘位啪啪03 (2)",
+          "name": "四川爆乳女神【炸土豆】夸张F奶 粉屄~扒逼道具自慰1 (1)",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -386,36 +403,119 @@
       "reason": "抽检 2 部节目，2 部出画面"
     },
     {
-      "id": "9e0145bd863328a1",
-      "name": "📱天堂网ᶜʲ┃采集",
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "id": "cc855a82f44a962d",
+      "name": "影视 • 电影天堂",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/gclgg/box/main/ys.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/Lettte/tvbox-custom/main/jsm-plus.json",
+        "https://qist.tycng.com/jsm.json",
         "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://szyyds.cn/tv/x.json",
+        "https://clun.top/box.json"
       ],
-      "checked_at": "2026-09-27T01:24:51+00:00",
+      "checked_at": "2026-09-27T06:31:04+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "心动的信号第9季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "被家族抛弃，我觉醒九亿属性点第二季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "80e01e4f6eeaa2cc",
+      "name": "影视 • 天涯",
+      "api": "http://tyyszy.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/Lettte/tvbox-custom/main/jsm-plus.json",
+        "https://qist.tycng.com/jsm.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+      ],
+      "checked_at": "2026-09-27T06:30:54+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "四手联弹，两首奏鸣曲",
+          "name": "非你之物",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "你的天空～晴转恋～",
+          "name": "数码兽BEATBREAK",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "检测网络连接失败或超时"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "c95160479ba0bb3b",
+      "name": "影视 • 量子[直连]",
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/Lettte/tvbox-custom/main/jsm-plus.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://qist.tycng.com/jsm.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://clun.top/box.json",
+        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+        "http://xhztv.top/4k.json",
+        "https://www.252035.xyz/z/FongMi.json",
+        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json"
+      ],
+      "checked_at": "2026-09-27T06:31:00+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "百家讲坛",
+          "status": "failed",
+          "reason": "HTTP 404"
+        },
+        {
+          "name": "规则怪谈：开局无限诡币动态漫",
+          "status": "failed",
+          "reason": "HTTP 404"
         }
       ],
       "searchable": 0,
@@ -423,44 +523,46 @@
     },
     {
       "id": "3c340030770c0794",
-      "name": "索尼",
+      "name": "影视 • 率率[直连]",
       "api": "https://suoniapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
+        "https://raw.githubusercontent.com/Lettte/tvbox-custom/main/jsm-plus.json",
+        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://raw.liucn.cc/box/m.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
         "https://qist.tycng.com/jsm.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
         "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/zy.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://qist.wyfc.qzz.io/jsm.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
         "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://raw.liucn.cc/box/m.json",
-        "http://xhztv.top/4k.json"
+        "https://clun.top/box.json",
+        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+        "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+        "http://xhztv.top/4k.json",
+        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0821.json",
+        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json"
       ],
-      "checked_at": "2026-09-27T01:24:43+00:00",
+      "checked_at": "2026-09-27T06:31:00+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "请记主我地名字",
+          "name": "一家人的账",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "暹罗四虎：虎胆悍匪",
+          "name": "武神主宰",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -469,88 +571,249 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "51320fd4570a9bb1",
-      "name": "快车",
-      "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
+      "id": "8e529b20899aa1c4",
+      "name": "影视 • 暴風[直连]",
+      "api": "https://bfzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
+        "https://raw.githubusercontent.com/Lettte/tvbox-custom/main/jsm-plus.json",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://qist.tycng.com/jsm.json",
         "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/zy.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://clun.top/box.json",
+        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+        "https://dxawi.github.io/0/0.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/adminouyang/231006/refs/heads/main/tvbox/%E7%82%B9%E6%92%AD%E6%BA%90/dxawi.txt",
+        "https://play.iptv365.org/%E9%AA%9A%E9%9B%B6/api.json",
+        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0821.json",
+        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json"
       ],
-      "checked_at": "2026-09-27T01:24:47+00:00",
+      "checked_at": "2026-09-27T06:31:03+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "小书痴的下克上：为了成为图书管理员不择手段！第四季",
+          "name": "长生契",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "HTTP 404"
         },
         {
-          "name": "名侦探柯南",
+          "name": "摩绪 MAO",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "HTTP 404"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "5ffb6e9a093b753f",
-      "name": "魔都",
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "id": "3c1204193dd947c7",
+      "name": "IK",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
         "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/zy.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://dxawi.github.io/0/0.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/adminouyang/231006/refs/heads/main/tvbox/%E7%82%B9%E6%92%AD%E6%BA%90/dxawi.txt"
       ],
-      "checked_at": "2026-09-27T01:24:51+00:00",
+      "checked_at": "2026-09-27T06:31:00+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "深渊之上",
+          "status": "failed",
+          "reason": "HTTP 502"
+        },
+        {
+          "name": "第三者",
+          "status": "failed",
+          "reason": "HTTP 502"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "8d82ffa7f9899260",
+      "name": "TV-金鹰资源",
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://clun.top/box.json"
+      ],
+      "checked_at": "2026-09-27T06:31:24+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "乐可音乐合集",
+          "status": "failed",
+          "reason": "检测网络连接失败或超时"
+        },
+        {
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "检测网络连接失败或超时"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "159d37437573275f",
+      "name": "[137ms|zy] 🍏火狐",
+      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:08+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "特战英雄榜",
+          "name": "乐可音乐合集",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "四手联弹，两首奏鸣曲",
+          "name": "假面良人",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "304e2e6a898f6a58",
+      "name": "[590ms|5] 猫眼影视",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+      ],
+      "checked_at": "2026-09-27T06:31:14+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "入间同学入魔了第四季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "天道第一序列",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "9a8a6fa39c3f2d4c",
+      "name": "❤光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
+      ],
+      "checked_at": "2026-09-27T06:31:08+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "魔道重生的女武神",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "乐可音乐合集",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "77be1653869536c7",
+      "name": "光速资源",
+      "api": "http://api.guangsuapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+      ],
+      "checked_at": "2026-09-27T06:31:09+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "魔道重生的女武神",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "乐可音乐合集",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -564,6 +827,7 @@
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
         "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
@@ -572,83 +836,26 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/fqu2003/tvbox/main/dj2.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
       ],
-      "checked_at": "2026-09-27T01:24:59+00:00",
+      "checked_at": "2026-09-27T06:31:15+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "小书痴的下克上为了成为图书管理员不择手段第四季",
+          "name": "入间同学入魔了第四季",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "致亲爱的千夏小姐",
+          "name": "天道第一序列",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
       ],
       "searchable": 1,
       "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "8e529b20899aa1c4",
-      "name": "暴风",
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://qist.wyfc.qzz.io/jsm.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
-      ],
-      "checked_at": "2026-09-27T01:24:56+00:00",
-      "status": "partial",
-      "sampled": 2,
-      "passed": 1,
-      "samples": [
-        {
-          "name": "非你之物",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "花织同学转生后还是想干架",
-          "status": "failed",
-          "reason": "HTTP 404"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，1 部出画面"
     },
     {
       "id": "af8e085c7f2740c4",
@@ -656,6 +863,7 @@
       "api": "https://hongniuzy2.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
@@ -663,18 +871,18 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json"
       ],
-      "checked_at": "2026-09-27T01:25:07+00:00",
+      "checked_at": "2026-09-27T06:31:18+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "彼得温西爵爷探案烈性毒药篇",
+          "name": "一路向海的少年",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "潜入你心",
+          "name": "乐可音乐合集",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -683,50 +891,544 @@
       "reason": "抽检 2 部节目，2 部出画面"
     },
     {
-      "id": "c95160479ba0bb3b",
-      "name": "量子资源",
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "id": "827db570d348ff49",
+      "name": "非凡影视",
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://qist.wyfc.qzz.io/jsm.json",
         "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://www.252035.xyz/z/FongMi.json",
-        "http://xhztv.top/4k.json"
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:24:52+00:00",
+      "checked_at": "2026-09-27T06:31:20+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "朱丽叶与朱丽叶",
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "林间鸽踪",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "060324185727f0c8",
+      "name": "非凡资源",
+      "api": "https://ffzy5.tv/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod/060324185727f0c8.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json"
+      ],
+      "checked_at": "2026-09-27T06:31:21+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "林间鸽踪",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "5ffb6e9a093b753f",
+      "name": "魔都",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+      ],
+      "checked_at": "2026-09-27T06:31:21+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "掀桌退婚：保安男友身份藏不住了",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "重生之嫡女归来",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "790172e095caf7cc",
+      "name": "🎥┃红牛┃资源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "http://xhztv.top/4k.json"
+      ],
+      "checked_at": "2026-09-27T06:31:27+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "一路向海的少年",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "乐可音乐合集",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "10ee9009c31aca81",
+      "name": "🐓┃爱坤┃资源",
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod/10ee9009c31aca81.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://clun.top/box.json",
+        "http://xhztv.top/4k.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/adminouyang/231006/refs/heads/main/tvbox/%E7%82%B9%E6%92%AD%E6%BA%90/%E7%8E%8B%E4%BA%8C%E5%B0%8F%E6%94%BE%E7%89%9B%E5%A8%83.txt"
+      ],
+      "checked_at": "2026-09-27T06:31:22+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "深渊之上",
+          "status": "failed",
+          "reason": "HTTP 502"
+        },
+        {
+          "name": "第三者",
+          "status": "failed",
+          "reason": "HTTP 502"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "dd3e59bd879f1515",
+      "name": "💝分享猫眼",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "入间同学入魔了第四季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "天道第一序列",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "fc4bc5d92b095f5a",
+      "name": "💯光速切片",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "http://xhztv.top/4k.json"
+      ],
+      "checked_at": "2026-09-27T06:31:27+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "魔道重生的女武神",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "乐可音乐合集",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "bd3c0500399a3397",
+      "name": "📛火焰狐妖",
+      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
+        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://raw.liucn.cc/box/m.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+        "http://xhztv.top/4k.json"
+      ],
+      "checked_at": "2026-09-27T06:31:26+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "乐可音乐合集",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "假面良人",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "63d28ec1f8e7b9b2",
+      "name": "[137ms|zy] 🍏茅台",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:24+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的节目列表"
+    },
+    {
+      "id": "f0ca5356c3d6e280",
+      "name": "[193ms|apple] 茅台资源",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:26+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的节目列表"
+    },
+    {
+      "id": "845e5ba10d71c5d4",
+      "name": "[590ms|5] 茅台影视",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:26+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的节目列表"
+    },
+    {
+      "id": "361de0f46352c47d",
+      "name": "茅台资源",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+      ],
+      "checked_at": "2026-09-27T06:31:28+00:00",
+      "status": "unverified",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "未返回可识别的节目列表"
+    },
+    {
+      "id": "8564f7d21cc1fe64",
+      "name": "短剧大全(1.2万)⚡直连",
+      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:32+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "长生契",
           "status": "failed",
           "reason": "HTTP 404"
         },
         {
-          "name": "非你之物",
+          "name": "摩绪 MAO",
           "status": "failed",
           "reason": "HTTP 404"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "ffb12753653057e9",
+      "name": "💖分享金鹰",
+      "api": "https://jyzyapi.com/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:49+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "乐可音乐合集",
+          "status": "failed",
+          "reason": "检测网络连接失败或超时"
+        },
+        {
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "检测网络连接失败或超时"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "1332a849cbebd1cd",
+      "name": "闪电",
+      "api": "https://sdzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/abu168888/tvbox-config/main/abu-config.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+      ],
+      "checked_at": "2026-09-27T06:31:31+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "朱丽叶与朱丽叶",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "9e0145bd863328a1",
+      "name": "📱天堂网ᶜʲ┃采集",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/gclgg/box/main/ys.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
+      ],
+      "checked_at": "2026-09-27T06:31:36+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "心动的信号第9季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "被家族抛弃，我觉醒九亿属性点第二季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "51320fd4570a9bb1",
+      "name": "快车",
+      "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+      ],
+      "checked_at": "2026-09-27T06:31:32+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "假面良人",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "朱丽叶与朱丽叶",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
         }
       ],
       "searchable": 0,
@@ -744,21 +1446,20 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
       ],
-      "checked_at": "2026-09-27T01:25:11+00:00",
+      "checked_at": "2026-09-27T06:31:58+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "野生的大魔王出现了第二季",
+          "name": "你的天空～晴转恋～",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "你好星期六",
+          "name": "天道第一序列",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
@@ -779,60 +1480,24 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json"
       ],
-      "checked_at": "2026-09-27T01:25:23+00:00",
+      "checked_at": "2026-09-27T06:31:56+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "鬼宿舍",
+          "name": "乐可音乐合集",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "朱丽叶与朱丽叶",
+          "name": "假面良人",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "77be1653869536c7",
-      "name": "光速资源",
-      "api": "http://api.guangsuapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
-      ],
-      "checked_at": "2026-09-27T01:24:58+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "你好，星期六 2022",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
     },
     {
       "id": "a6570b60682e64ba",
@@ -846,22 +1511,21 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://szyyds.cn/tv/x.json"
       ],
-      "checked_at": "2026-09-27T01:24:59+00:00",
+      "checked_at": "2026-09-27T06:31:34+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "请记主我地名字",
+          "name": "假面良人",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "暹罗四虎：虎胆悍匪",
+          "name": "朱丽叶与朱丽叶",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -881,98 +1545,26 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
       ],
-      "checked_at": "2026-09-27T01:25:01+00:00",
+      "checked_at": "2026-09-27T06:31:34+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "征途2026",
+          "name": "非你之物",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "名侦探柯南",
+          "name": "数码兽BEATBREAK",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "361de0f46352c47d",
-      "name": "茅台资源",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:20+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "百分百娱乐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "告白：第25年的秘密",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "060324185727f0c8",
-      "name": "非凡资源",
-      "api": "https://ffzy5.tv/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
-        "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json"
-      ],
-      "checked_at": "2026-09-27T01:25:12+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "Project XY",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "潜入你心",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
     },
     {
       "id": "1e24f6974f6446c1",
@@ -986,257 +1578,24 @@
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self-cdn.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-pure.json",
         "https://raw.githubusercontent.com/xiaohuya520/tvbox-dc/main/mybox-self.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "http://550.3vcn.work/wdjyys.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json"
-      ],
-      "checked_at": "2026-09-27T01:25:02+00:00",
-      "status": "unverified",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "钱塘老娘舅",
-          "status": "unverified",
-          "reason": "拒绝内网或特殊网络地址"
-        },
-        {
-          "name": "体能之巅百人大挑战意大利篇",
-          "status": "unverified",
-          "reason": "拒绝内网或特殊网络地址"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "dd3e59bd879f1515",
-      "name": "💝分享猫眼",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:14+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "小书痴的下克上为了成为图书管理员不择手段第四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "致亲爱的千夏小姐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "ffb12753653057e9",
-      "name": "💖分享金鹰",
-      "api": "https://jyzyapi.com/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "http://550.3vcn.work/wdjyys.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json"
-      ],
-      "checked_at": "2026-09-27T01:25:28+00:00",
-      "status": "partial",
-      "sampled": 2,
-      "passed": 1,
-      "samples": [
-        {
-          "name": "鬼宿舍",
-          "status": "failed",
-          "reason": "检测网络连接失败或超时"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，1 部出画面"
-    },
-    {
-      "id": "1f40ddd28e59a630",
-      "name": "️✈️极速采集",
-      "api": "https://jszyapi.com/api.php/provide/vod/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:12+00:00",
-      "status": "unverified",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "钱塘老娘舅",
-          "status": "unverified",
-          "reason": "拒绝内网或特殊网络地址"
-        },
-        {
-          "name": "体能之巅百人大挑战意大利篇",
-          "status": "unverified",
-          "reason": "拒绝内网或特殊网络地址"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "bd3c0500399a3397",
-      "name": "📛火焰狐妖",
-      "api": "https://hhzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "http://550.3vcn.work/wdjyys.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json",
-        "https://raw.liucn.cc/box/m.json",
-        "http://xhztv.top/4k.json"
-      ],
-      "checked_at": "2026-09-27T01:25:17+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "鬼宿舍",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "fc4bc5d92b095f5a",
-      "name": "💯光速切片",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "http://xhztv.top/4k.json"
-      ],
-      "checked_at": "2026-09-27T01:25:16+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "你好，星期六 2022",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "cc855a82f44a962d",
-      "name": "影视 • 电影天堂",
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://qist.tycng.com/jsm.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://qist.wyfc.qzz.io/jsm.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:23+00:00",
-      "status": "failed",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "四手联弹，两首奏鸣曲",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
-        },
-        {
-          "name": "你的天空～晴转恋～",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "80e01e4f6eeaa2cc",
-      "name": "影视 • 天涯",
-      "api": "http://tyyszy.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://qist.tycng.com/jsm.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
         "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://qist.wyfc.qzz.io/jsm.json"
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
       ],
-      "checked_at": "2026-09-27T01:25:19+00:00",
-      "status": "failed",
+      "checked_at": "2026-09-27T06:31:35+00:00",
+      "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "征途2026",
-          "status": "failed",
-          "reason": "检测网络连接失败或超时"
+          "name": "一路向海的少年",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
         },
         {
-          "name": "名侦探柯南",
-          "status": "failed",
-          "reason": "检测网络连接失败或超时"
+          "name": "财神窦占龙",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
         }
       ],
       "searchable": 0,
@@ -1249,23 +1608,21 @@
       "category": "ordinary",
       "sources": [
         "https://www.252035.xyz/p/jsm.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://g.3344550.xyz/https://raw.githubusercontent.com/jigedos/1024/master/jsm.json",
-        "http://550.3vcn.work/wdjyys.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://play.iptv365.org/PG/api.json"
       ],
-      "checked_at": "2026-09-27T01:25:20+00:00",
+      "checked_at": "2026-09-27T06:31:37+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "请记主我地名字",
+          "name": "一家人的账",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "暹罗四虎：虎胆悍匪",
+          "name": "武神主宰",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1274,178 +1631,28 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "10ee9009c31aca81",
-      "name": "🐓┃爱坤┃资源",
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "id": "1f40ddd28e59a630",
+      "name": "️✈️极速采集",
+      "api": "https://jszyapi.com/api.php/provide/vod/at/json",
       "category": "ordinary",
       "sources": [
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod/10ee9009c31aca81.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "http://xhztv.top/4k.json"
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
       ],
-      "checked_at": "2026-09-27T01:25:25+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "特战英雄榜",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "四手联弹，两首奏鸣曲",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "790172e095caf7cc",
-      "name": "🎥┃红牛┃资源",
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://g.3344550.xyz/https://raw.githubusercontent.com/jigedos/1024/master/jsm.json",
-        "http://550.3vcn.work/wdjyys.json",
-        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
-        "http://xhztv.top/4k.json"
-      ],
-      "checked_at": "2026-09-27T01:25:29+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "彼得温西爵爷探案烈性毒药篇",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "潜入你心",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "9a8a6fa39c3f2d4c",
-      "name": "❤光速资源",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
-      ],
-      "checked_at": "2026-09-27T01:25:26+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "你好，星期六 2022",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "304e2e6a898f6a58",
-      "name": "[590ms|5] 猫眼影视",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:34+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "小书痴的下克上为了成为图书管理员不择手段第四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "致亲爱的千夏小姐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "d0d25fc89f6477bd",
-      "name": "️天堂┃采集",
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
-        "https://raw.giteeusercontent.com/junge8888/little-second-brother-999/raw/master/aiwex.json"
-      ],
-      "checked_at": "2026-09-27T01:25:34+00:00",
-      "status": "failed",
+      "checked_at": "2026-09-27T06:31:36+00:00",
+      "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "四手联弹，两首奏鸣曲",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "一路向海的少年",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
         },
         {
-          "name": "你的天空～晴转恋～",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "财神窦占龙",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
         }
       ],
       "searchable": 0,
@@ -1453,320 +1660,34 @@
     },
     {
       "id": "aa147e8fef44397f",
-      "name": "量子资源(切)",
+      "name": "[367ms|直播] 🐝量子资源",
       "api": "http://cj.lziapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://szyyds.cn/tv/x.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://szyyds.cn/tv/x.json",
         "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
         "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
       ],
-      "checked_at": "2026-09-27T01:25:29+00:00",
+      "checked_at": "2026-09-27T06:31:41+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "朱丽叶与朱丽叶",
+          "name": "百家讲坛",
           "status": "failed",
           "reason": "HTTP 404"
         },
         {
-          "name": "非你之物",
+          "name": "规则怪谈：开局无限诡币动态漫",
           "status": "failed",
           "reason": "HTTP 404"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "8564f7d21cc1fe64",
-      "name": "短剧大全(1.2万)⚡直连",
-      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/short.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:37+00:00",
-      "status": "partial",
-      "sampled": 2,
-      "passed": 1,
-      "samples": [
-        {
-          "name": "成长秀～向日葵马戏团～",
-          "status": "failed",
-          "reason": "HTTP 404"
-        },
-        {
-          "name": "今天也不知悔改的我们",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，1 部出画面"
-    },
-    {
-      "id": "8014a71db8dace1a",
-      "name": "🎬金鹰点播",
-      "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:29+00:00",
-      "status": "unverified",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "鬼宿舍",
-          "status": "unverified",
-          "reason": "节目详情未提供直接视频地址，可能需要解析插件"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "unverified",
-          "reason": "节目详情未提供直接视频地址，可能需要解析插件"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "8d82ffa7f9899260",
-      "name": "TV-金鹰资源",
-      "api": "https://jyzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:38+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "鬼宿舍",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "159d37437573275f",
-      "name": "[137ms|zy] 🍏火狐",
-      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:34+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "鬼宿舍",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "朱丽叶与朱丽叶",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "3c1204193dd947c7",
-      "name": "IK",
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:35+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "特战英雄榜",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "四手联弹，两首奏鸣曲",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "827db570d348ff49",
-      "name": "非凡影视",
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:45+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "Project XY",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "潜入你心",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "63d28ec1f8e7b9b2",
-      "name": "[137ms|zy] 🍏茅台",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:47+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "百分百娱乐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "告白：第25年的秘密",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "f0ca5356c3d6e280",
-      "name": "[193ms|apple] 茅台资源",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:47+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "百分百娱乐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "告白：第25年的秘密",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "845e5ba10d71c5d4",
-      "name": "[590ms|5] 茅台影视",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:48+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "百分百娱乐",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "告白：第25年的秘密",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "844abbae184cff08",
-      "name": "77-电影天堂*",
-      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
-      ],
-      "checked_at": "2026-09-27T01:25:46+00:00",
-      "status": "failed",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "四手联弹，两首奏鸣曲",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
-        },
-        {
-          "name": "你的天空～晴转恋～",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
         }
       ],
       "searchable": 0,
@@ -1779,23 +1700,24 @@
       "category": "ordinary",
       "sources": [
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:25:42+00:00",
+      "checked_at": "2026-09-27T06:31:41+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "朱丽叶与朱丽叶",
+          "name": "百家讲坛",
           "status": "failed",
           "reason": "HTTP 404"
         },
         {
-          "name": "非你之物",
+          "name": "规则怪谈：开局无限诡币动态漫",
           "status": "failed",
           "reason": "HTTP 404"
         }
@@ -1810,23 +1732,24 @@
       "category": "ordinary",
       "sources": [
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:25:45+00:00",
+      "checked_at": "2026-09-27T06:31:40+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "请记主我地名字",
+          "name": "一家人的账",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "暹罗四虎：虎胆悍匪",
+          "name": "武神主宰",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1841,23 +1764,25 @@
       "category": "ordinary",
       "sources": [
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
         "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json"
       ],
-      "checked_at": "2026-09-27T01:25:50+00:00",
+      "checked_at": "2026-09-27T06:31:46+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "朱丽叶与朱丽叶",
+          "name": "百家讲坛",
           "status": "failed",
           "reason": "HTTP 404"
         },
         {
-          "name": "非你之物",
+          "name": "规则怪谈：开局无限诡币动态漫",
           "status": "failed",
           "reason": "HTTP 404"
         }
@@ -1866,47 +1791,123 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "1332a849cbebd1cd",
-      "name": "70-闪电",
-      "api": "https://sdzyapi.com/api.php/provide/vod",
+      "id": "8014a71db8dace1a",
+      "name": "🎬金鹰点播",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://ghproxy.net/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh.jasonzeng.dev/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
       ],
-      "checked_at": "2026-09-27T01:25:47+00:00",
-      "status": "failed",
+      "checked_at": "2026-09-27T06:31:43+00:00",
+      "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "请记主我地名字",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "乐可音乐合集",
+          "status": "unverified",
+          "reason": "节目详情未提供直接视频地址，可能需要解析插件"
         },
         {
-          "name": "暹罗四虎：虎胆悍匪",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "假面良人",
+          "status": "unverified",
+          "reason": "节目详情未提供直接视频地址，可能需要解析插件"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "d0d25fc89f6477bd",
+      "name": "️天堂┃采集",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://play.iptv365.org/OK/api.json"
+      ],
+      "checked_at": "2026-09-27T06:31:49+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "心动的信号第9季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "被家族抛弃，我觉醒九亿属性点第二季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "653ea81b6a618ba6",
+      "name": "极速┃影视",
+      "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:44+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "一路向海的少年",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
+        },
+        {
+          "name": "财神窦占龙",
+          "status": "unverified",
+          "reason": "拒绝内网或特殊网络地址"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "844abbae184cff08",
+      "name": "77-电影天堂*",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+      ],
+      "checked_at": "2026-09-27T06:31:52+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "心动的信号第9季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "被家族抛弃，我觉醒九亿属性点第二季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
     }
   ],
   "summary": {
-    "discovered_apis": 55,
-    "checked_apis": 55,
-    "verified_routes": 27,
+    "discovered_apis": 57,
+    "checked_apis": 57,
+    "verified_routes": 19,
     "verified_adult_routes": 4,
-    "sampled_programs": 96,
-    "passed_programs": 51,
-    "elapsed_seconds": 311
+    "sampled_programs": 90,
+    "passed_programs": 38,
+    "elapsed_seconds": 308
   }
 }
