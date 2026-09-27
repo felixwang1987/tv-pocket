@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_8e529b20899aa1c4",
+      "name": "暴风",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

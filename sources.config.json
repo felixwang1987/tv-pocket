@@ -170,6 +170,14 @@
       "sources": [
         "https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json"
       ]
+    },
+    {
+      "name": "iptv",
+      "url": "https://github.com/noimank/tvbox",
+      "category": "ordinary",
+      "sources": [
+        "https://github.com/noimank/tvbox"
+      ]
     }
   ]
 }
