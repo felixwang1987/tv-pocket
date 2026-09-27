@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_3c1204193dd947c7",
+      "name": "IK",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
