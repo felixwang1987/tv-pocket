@@ -12,10 +12,10 @@ https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
 https://cdn15.live-tv.cloud/ua_infinitas_tv/news24-abr/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",春晚2005
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMzhfMF8z_b_B35ad7cc86aec8fc9e5ddfb31fc7bed63.mp4
-#EXTINF:-1 group-title="普通直播",春晚2024
-https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 #EXTINF:-1 group-title="普通直播",Russia-K HD (1080p)
 https://stream.smotrim.ru/hls2/russia_k/playlist_5.m3u8
+#EXTINF:-1 group-title="普通直播",City Eden Recepty Gurmana [Not 24/7]
+https://cityeden.catcast.tv/content/47516/index.m3u8
 #EXTINF:-1 group-title="普通直播",News 11 KB
 https://mumt07.tangotv.in/zHjX9OFlNEWS11BHARAT/index.m3u8
 #EXTINF:-1 group-title="普通直播",Aastha Kannada KB
@@ -48,10 +48,6 @@ https://albportal.net/albkanalemusic.m3u8
 https://live.apollon.tv/Apollon-Web/video.m3u8?token=tnt9u76reF0d1
 #EXTINF:-1 group-title="普通直播",Andorra TV
 https://livesg1.rtva.hiway.media/11a6d6f4-ee13-47c7-9c27-7313cf5424e2/manifest.m3u8
-#EXTINF:-1 group-title="普通直播",Kentron TV Ⓢ
-http://stream.mcquack.net/39/index.m3u8
-#EXTINF:-1 group-title="普通直播",Armenia TV Ⓢ
-http://stream.mcquack.net/175/index.m3u8
 #EXTINF:-1 group-title="普通直播",9Go! Ⓖ
 https://i.mjh.nz/.r/go-nsw.m3u8
 #EXTINF:-1 group-title="普通直播",R9
@@ -146,18 +142,16 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00861-terninternation-inwonderhd-xi
 https://live.metshop.top/huya/21059585
 #EXTINF:-1 group-title="普通直播",浙江卫视
 http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
-#EXTINF:-1 group-title="普通直播",易中天品三国
-https://live.ottiptv.cc/yy/1354931498
-#EXTINF:-1 group-title="普通直播",院线动作大片
-https://live.ottiptv.cc/yy/1382736900
-#EXTINF:-1 group-title="普通直播",永远的经典系列
-https://live.ottiptv.cc/yy/1354930204
-#EXTINF:-1 group-title="普通直播",YY用户
-https://live.ottiptv.cc/yy/1382745182
-#EXTINF:-1 group-title="普通直播",相亲时代真实到让当代年轻人头皮发麻
-https://live.ottiptv.cc/yy/1354936231
-#EXTINF:-1 group-title="普通直播",宰相刘罗锅
-https://live.ottiptv.cc/yy/1353892468
+#EXTINF:-1 group-title="普通直播",抗日神片，燃爆抗战热血魂
+https://live.ottiptv.cc/yy/1354926600
+#EXTINF:-1 group-title="普通直播",熊出没之探险日记-森林探险记
+https://live.ottiptv.cc/yy/1382745122
+#EXTINF:-1 group-title="普通直播",中华英雄之风云再起
+https://live.ottiptv.cc/yy/1354932402
+#EXTINF:-1 group-title="普通直播",地下交通站
+https://live.ottiptv.cc/yy/1352227227
+#EXTINF:-1 group-title="普通直播",0
+https://live.ottiptv.cc/yy/1382851580
 #EXTINF:-1 group-title="普通直播",兵团五师双河新闻综合
 https://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?zxinjd
 #EXTINF:-1 group-title="普通直播",荆门新闻综合
@@ -322,12 +316,6 @@ https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
 https://0472.org/hls/cgtna.m3u8
 #EXTINF:-1 group-title="普通直播",凤凰香港
 https://epg.pw/stream/8770e89223a086eb1b8a0c931e42296d772a8069ad3eb72540e0c434e7cb3e93.m3u8
-#EXTINF:-1 group-title="普通直播",CCTV-13 ·高清
-http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
-#EXTINF:-1 group-title="普通直播",浙江经济 ·高清
-http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-#EXTINF:-1 group-title="普通直播",中国蓝新闻 ·高清
-http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 #EXTINF:-1 group-title="普通直播",CCTV-14
 https://event.pull.hebtv.com/jishi/cp2.m3u8
 #EXTINF:-1 group-title="普通直播",永昌综合
@@ -470,14 +458,16 @@ http://cdn.adultiptv.net/blonde.m3u8
 http://cdn.adultiptv.net/gay.m3u8
 #EXTINF:-1 group-title="成人直播",AdultIPTV.net Asian
 http://cdn.adultiptv.net/asian.m3u8
-#EXTINF:-1 group-title="普通直播",喜人电影
-https://live.ottiptv.cc/douyu/10348735
-#EXTINF:-1 group-title="普通直播",猫记丶
-https://live.ottiptv.cc/douyu/9242659
-#EXTINF:-1 group-title="普通直播",芙芙家的洗碗君
-https://live.ottiptv.cc/douyu/9446706
 #EXTINF:-1 group-title="普通直播",电影黑匣子
 https://live.ottiptv.cc/douyu/8706652
+#EXTINF:-1 group-title="普通直播",暴走兄弟v
+https://live.ottiptv.cc/douyu/9350960
+#EXTINF:-1 group-title="普通直播",可乐家的老骑士
+https://live.ottiptv.cc/douyu/9958943
+#EXTINF:-1 group-title="普通直播",笑点组长
+https://live.ottiptv.cc/douyu/9535757
+#EXTINF:-1 group-title="普通直播",历史经典烩
+https://live.ottiptv.cc/douyu/9487003
 #EXTINF:-1 group-title="普通直播",VTV News (576p)
 https://live1.ottlive.co.in/vtvgujarati/vtvgujarati/index.m3u8
 #EXTINF:-1 group-title="普通直播",Arirang TV HD (720p)
@@ -490,18 +480,18 @@ https://live1.ottlive.co.in/newsmarathi/newsmarathi/index.m3u8
 https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8
 #EXTINF:-1 group-title="普通直播",之江纪录
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-#EXTINF:-1 group-title="普通直播",我还是不骄傲
-https://live.ottiptv.cc/huya/30080245
-#EXTINF:-1 group-title="普通直播",放松轻音乐
-https://live.ottiptv.cc/huya/21241813
-#EXTINF:-1 group-title="普通直播",彪哥的日常
-https://live.ottiptv.cc/huya/23650804
-#EXTINF:-1 group-title="普通直播",小虎牙-95tgIDoBHS
-https://live.ottiptv.cc/huya/23863787
-#EXTINF:-1 group-title="普通直播",素素爱哭
-https://live.ottiptv.cc/huya/31125346
-#EXTINF:-1 group-title="普通直播",喜剧电影放映厅
-https://live.ottiptv.cc/huya/11602031
+#EXTINF:-1 group-title="普通直播",二次元控
+https://live.ottiptv.cc/huya/11352912
+#EXTINF:-1 group-title="普通直播",米饭何首乌粉
+https://live.ottiptv.cc/huya/30378185
+#EXTINF:-1 group-title="普通直播",硬汉影探
+https://live.ottiptv.cc/huya/24614407
+#EXTINF:-1 group-title="普通直播",沉默的孤狼啊
+https://live.ottiptv.cc/huya/21059598
+#EXTINF:-1 group-title="普通直播",蛮多的功夫
+https://live.ottiptv.cc/huya/23740156
+#EXTINF:-1 group-title="普通直播",柚柚
+https://live.ottiptv.cc/huya/30080197
 #EXTINF:-1 group-title="普通直播",直播流
 https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/CNN_Portugal.m3u8
 #EXTINF:-1 group-title="普通直播",直播流
