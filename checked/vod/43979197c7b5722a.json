@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_43979197c7b5722a",
+      "name": "速优",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
