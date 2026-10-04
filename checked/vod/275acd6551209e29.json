@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_275acd6551209e29",
+      "name": "魔都动漫资源",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
