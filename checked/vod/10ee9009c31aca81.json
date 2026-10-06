@@ -2,11 +2,11 @@
   "sites": [
     {
       "key": "pocket_10ee9009c31aca81",
-      "name": "iKun资源",
+      "name": "影视🔰ikun[直连]",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0
     }
   ]
