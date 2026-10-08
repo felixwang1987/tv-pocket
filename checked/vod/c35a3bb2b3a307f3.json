@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_c35a3bb2b3a307f3",
+      "name": "光速",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod?from=gsm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_9a8a6fa39c3f2d4c",
+      "name": "❤光速资源",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

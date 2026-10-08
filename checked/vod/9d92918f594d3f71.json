@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_9d92918f594d3f71",
+      "name": "云播火狐电影",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

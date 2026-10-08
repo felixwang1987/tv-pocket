@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_1b08e6b49b6d2dc6",
+      "name": "火狐",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
