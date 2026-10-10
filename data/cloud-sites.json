@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
   "source_name": "网盘 · 潇洒多站配置（需自行登录）",
-  "checked_at": "2026-10-10T04:33:01+00:00",
+  "checked_at": "2026-10-10T05:16:27+00:00",
   "config": {
     "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "https://pic7.fukit.cn/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20251224/dJkT/1080X1080/logo.jpg/webp",

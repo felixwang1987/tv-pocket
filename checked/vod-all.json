@@ -245,15 +245,6 @@
   "spider": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/spider.jar;md5;ad23768671c972bdb881ec4398268dd2",
   "sites": [
     {
-      "key": "pocket_3c1204193dd947c7",
-      "name": "IK",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_159d37437573275f",
       "name": "[137ms|zy] 🍏火狐",
       "type": 1,
@@ -276,6 +267,15 @@
       "name": "⚡红牛┃11万部",
       "type": 1,
       "api": "https://hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_790172e095caf7cc",
+      "name": "✅红牛┃资源",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -317,10 +317,28 @@
       "filterable": 0
     },
     {
-      "key": "pocket_8e529b20899aa1c4",
-      "name": "暴风",
+      "key": "pocket_fc4bc5d92b095f5a",
+      "name": "影视•光速[直连]",
       "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_dd3e59bd879f1515",
+      "name": "影视•猫眼[直连]",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_10ee9009c31aca81",
+      "name": "影视🔰ikun[直连]",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -339,6 +357,15 @@
       "name": "火狐",
       "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "猫眼",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -425,26 +452,8 @@
       "filterable": 0
     },
     {
-      "key": "pocket_fc4bc5d92b095f5a",
-      "name": "🎥┃光速┃资源",
-      "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🎥┃红牛┃资源",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_ffb12753653057e9",
-      "name": "💖分享金鹰",
+      "name": "🔰金鹰┃影视",
       "type": 1,
       "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
@@ -452,46 +461,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_dd3e59bd879f1515",
-      "name": "💝分享猫眼",
+      "key": "pocket_f2806f888d3386a5",
+      "name": "🦬红牛资源",
       "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/josn",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_f0ca5356c3d6e280",
-      "name": "[193ms|apple] 茅台资源",
+      "key": "pocket_827db570d348ff49",
+      "name": "🍀┃非凡┃资源",
       "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_d6abf09efcd48c6d",
-      "name": "猫眼",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_361de0f46352c47d",
-      "name": "茅台资源",
-      "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_10ee9009c31aca81",
-      "name": "🐓┃爱坤┃资源",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
