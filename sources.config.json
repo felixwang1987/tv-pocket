@@ -38,7 +38,8 @@
     "request_budget": 1800
   },
   "cloud_merge": {
-    "source_url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json"
+    "source_url": "http://hb.小虎斑.site:25252/仅供测试",
+    "mode": "family"
   },
   "adult_live_pin": "9317",
   "source_pages": [
@@ -53,13 +54,17 @@
       "name": "潇洒多站配置",
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
       "role": "cloud",
-      "sources": ["https://github.com/qist/tvbox"]
+      "sources": [
+        "https://github.com/qist/tvbox"
+      ]
     },
     {
       "name": "饭太硬多站配置",
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/fty.json",
       "role": "cloud",
-      "sources": ["https://github.com/qist/tvbox"]
+      "sources": [
+        "https://github.com/qist/tvbox"
+      ]
     },
     {
       "name": "GYCK 线路合集",
@@ -172,12 +177,13 @@
       ]
     },
     {
-      "name": "小虎斑 · 客户端加密配置",
+      "name": "小虎斑完整配置（普通与网盘）",
       "url": "http://hb.小虎斑.site:25252/仅供测试",
       "category": "ordinary",
       "sources": [
         "http://xmbjm.fh4u.org/dc.txt"
-      ]
+      ],
+      "role": "cloud"
     },
     {
       "name": "gitlab",

@@ -247,7 +247,24 @@ def fresh_routes(document):
     return sorted(result,key=lambda r:(-r.get('passed',0),-r.get('searchable',0),r['name']))
 
 
-def publish_routes(root, document, base_url, cloud_config=None):
+def _published_api_identity(value):
+    def normalize(value):
+        try:
+            parsed=urlsplit(value)
+            if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username or parsed.password:
+                return None
+            host=parsed.hostname.encode('idna').decode().lower()
+            host='['+host+']' if ':' in host else host
+            port=parsed.port
+            if port and (parsed.scheme,port) not in {('http',80),('https',443)}:
+                host+=':'+str(port)
+            return urlunsplit((parsed.scheme,host,parsed.path or '/',parsed.query,''))
+        except (ValueError,UnicodeError):
+            return None
+    return canonical_api(value,'',normalize)
+
+
+def publish_routes(root, document, base_url, cloud_config=None, mode='selective'):
     rows=fresh_routes(document)
     checked=Path(root)/'checked'
     folder=checked/'vod'
@@ -262,13 +279,30 @@ def publish_routes(root, document, base_url, cloud_config=None):
               'searchable':row.get('searchable',0),'quickSearch':row.get('searchable',0),'filterable':0}
         sites[row.get('category','ordinary')].append(site)
         (folder/(row['id']+'.json')).write_text(json.dumps({'sites':[site]},ensure_ascii=False,indent=2)+'\n')
-    combined={**(cloud_config or {}),'sites':sites['ordinary']+(cloud_config or {}).get('sites',[])}
+    original=(cloud_config or {}).get('sites',[])
+    if mode=='family':
+        combined_sites=list(original)
+        keys={site.get('key') for site in original}
+        apis={identity for site in original if site.get('type') in (0,1)
+              and (identity:=_published_api_identity(site.get('api')))}
+        for site in sites['ordinary']:
+            identity=_published_api_identity(site['api'])
+            if site['key'] in keys or identity in apis:
+                continue
+            combined_sites.append(site)
+            keys.add(site['key'])
+            if identity:
+                apis.add(identity)
+    else:
+        combined_sites=sites['ordinary']+original
+    combined={**(cloud_config or {}),'sites':combined_sites}
     (checked/'vod-all.json').write_text(json.dumps(combined,ensure_ascii=False,indent=2)+'\n')
     (checked/'vod-adult.json').write_text(json.dumps({'sites':sites['adult']},ensure_ascii=False,indent=2)+'\n')
     groups=[]
     ordinary_groups=[]
     if combined['sites']:
-        groups.append({'name':'普通点播','url':urljoin(base_url,'checked/vod-all.json')})
+        profile='?profile=family' if mode=='family' else ''
+        groups.append({'name':'普通点播','url':urljoin(base_url,'checked/vod-all.json'+profile)})
         ordinary_groups.extend(groups)
     if sites['adult']:
         groups.append({'name':'成人点播','url':urljoin(base_url,'checked/vod-adult.json')})

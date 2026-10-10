@@ -20,10 +20,12 @@ try:
     from .playback import verify_catalog, publish_playlists
     from .routes import collect_routes, fresh_routes, publish_routes
     from .cloud import describe_cloud_config, fresh_cloud_configs, save_cloud_snapshot, fresh_cloud_merge
+    from .config_codec import decode_public_config
 except ImportError:
     from playback import verify_catalog, publish_playlists
     from routes import collect_routes, fresh_routes, publish_routes
     from cloud import describe_cloud_config, fresh_cloud_configs, save_cloud_snapshot, fresh_cloud_merge
+    from config_codec import decode_public_config
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
@@ -31,7 +33,7 @@ GITHUB_HOSTS = {'api.github.com', 'raw.githubusercontent.com', 'iptv-org.github.
 # Exact public host/port reviewed for a user-supplied TVBox client config.
 # Every connection still validates and pins a public DNS address.
 CLIENT_CONFIG_HOST = 'hb.xn--yet24tmq1a.site'
-CLIENT_CONFIG_PORTS = {CLIENT_CONFIG_HOST: {25252}}
+CLIENT_CONFIG_PORTS = {CLIENT_CONFIG_HOST: {25252}, '43.248.128.118': {25252}}
 VOD_MEDIA_PORTS = {
     'p.hhwenjian.com': {65},
     'hnts.ymuuy.com': {65},
@@ -241,6 +243,7 @@ class Network:
 
 
 def parse_jsonc(text):
+    text = decode_public_config(text)
     # Lex the comments/trailing commas, preserving every character inside strings.
     out, i, quoted = [], 0, False
     while i < len(text):
@@ -307,7 +310,16 @@ def classify(text, url):
     if (len(encoded) > 64 and len(encoded) % 2 == 0
             and encoded[:22].lower() == '24236c696e746563682324'
             and re.fullmatch(r'[0-9a-fA-F]+', encoded)):
-        return {'kind': 'config', 'format': '影视仓加密'}
+        info = {'kind': 'config', 'format': '影视仓加密'}
+        try:
+            obj = parse_jsonc(encoded)
+            sites = obj.get('sites', []) if isinstance(obj,dict) else []
+            count = sum(isinstance(site,dict) and bool(site.get('api')) for site in sites) if isinstance(sites,list) else 0
+            if count:
+                info['count'] = count
+        except (ValueError,RecursionError):
+            pass
+        return info
     if text.startswith('#EXTM3U'):
         if '#EXT-X-TARGETDURATION:' in text or '#EXT-X-STREAM-INF:' in text:
             return {'kind': 'stream', 'format': 'HLS', 'count': 1}
@@ -662,7 +674,7 @@ def collect(root=ROOT, discover=True, github_only=False):
                 raise ValueError('内容不是可识别的配置或播放列表')
             row.update(info, status='ok', last_ok=row['checked_at'], error='')
             row['cloud']={}
-            if info['kind']=='config' and info['format']=='JSON':
+            if info['kind']=='config' and info.get('count',0):
                 row['cloud']=describe_cloud_config(parse_jsonc(text))
             documents[item['url']] = (text, final_url)
             child = []
@@ -749,13 +761,14 @@ def collect(root=ROOT, discover=True, github_only=False):
                           'environment':routes_document.get('environment')},
         'verified_routes':[{k:r.get(k) for k in ('id','name','category','checked_at','status','sampled','passed','searchable','sources')}
                            for r in fresh_routes(routes_document)],
-        'cloud_routes':fresh_cloud_configs(records,normalize_url,has_secret_query),
+        'cloud_routes':fresh_cloud_configs(records,normalize_url,has_secret_query,config.get('cloud_merge',{})),
         'entries':records,
     }
     cloud_config,document['cloud_merge']=fresh_cloud_merge(root,document['cloud_routes'],normalize_url,
                                                           has_secret_query,config.get('cloud_merge',{}))
     if not github_only and config.get('routes',{}).get('base_url'):
-        publish_routes(root,routes_document,config['routes']['base_url'],cloud_config)
+        publish_routes(root,routes_document,config['routes']['base_url'],cloud_config,
+                       mode=config.get('cloud_merge',{}).get('mode','selective'))
     target.parent.mkdir(exist_ok=True)
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')

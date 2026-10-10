@@ -24,7 +24,7 @@ class Element {
 const els={},el=id=>els[id]||(els[id]=new Element());el('status').value='all';
 el('catalog-data').textContent=JSON.stringify({schema_version:1,entries:[],verified_routes:options.ordinary?[{id:'b'.repeat(16),name:'普通接口',category:'ordinary',checked_at:now,status:'passed',passed:1,sampled:1,searchable:true}]:[],generated_at:now,last_success_at:now,
 cloud_routes:[{id:'a'.repeat(16),name:'备用网盘原配置',url:'https://example.com/cloud.json',checked_at:now,total_sites:107,site_count:11,providers:['夸克'],login_names:['配置中心']}],
-cloud_merge:{site_count:count,searchable_count:count?11:0,source_name:'潇洒多站配置',source_url:'https://example.com/cloud.json',login_names:['配置中心'],checked_at:mergedAt}});
+cloud_merge:options.family?{mode:'family',site_count:count,cloud_site_count:count,total_sites:60,searchable_count:42,source_name:'小虎斑完整配置（普通与网盘）',source_url:'https://example.com/cloud.json',login_names:['我的云盘'],checked_at:mergedAt,skipped_sites:[{index:4,reason:'依赖客户端本地文件'}]}:{site_count:count,searchable_count:count?11:0,source_name:'潇洒多站配置',source_url:'https://example.com/cloud.json',login_names:['配置中心'],checked_at:mergedAt}});
 vm.runInNewContext(source,{document:{getElementById:el,createElement:()=>new Element(),createElementNS:()=>new Element(),querySelectorAll:()=>[]},
 sessionStorage:{getItem:()=>null},localStorage:{getItem:()=>null},URL,Date,Intl,AbortController,
 location:{href:'https://example.com/tv-pocket/',protocol:'https:'},setTimeout:()=>1,clearTimeout(){},fetch:async()=>{throw Error('fixture offline');}});
@@ -49,6 +49,16 @@ process.stdout.write(JSON.stringify({summary:el('routes-summary').textContent,de
         self.assertFalse(ordinary_only['disabled'])
         self.assertIn('普通 1 个站点',ordinary_only['summary'])
         self.assertIn('合入 0 个网盘站点',ordinary_only['summary'])
+        family=inspect(1,family=True)
+        self.assertFalse(family['disabled'])
+        self.assertIn('原配置 60 个站点',family['summary'])
+        self.assertIn('42 个声明支持搜索',family['summary'])
+        self.assertIn('小虎斑完整配置（普通与网盘）',family['details'])
+        self.assertIn('来源第 5 个站点',family['details'])
+        self.assertIn('未验证插件搜索',family['details'])
+        self.assertNotIn('已合入网盘',family['details'])
+        self.assertFalse(inspect(0,family=True)['disabled'])
+        self.assertTrue(inspect(1,family=True,stale=True)['disabled'])
 
     def test_live_copy_uses_native_password_txt_format_and_vod_copy_stays_the_same(self):
         source=re.search(r'<script>\s*(.*?)</script>',Path('index.html').read_text(),re.S).group(1)

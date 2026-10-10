@@ -36,10 +36,12 @@ def build(site=False):
     publish_playlists(ROOT, data['entries'],settings.get('adult_live_pin',''))
     routes_file = ROOT / 'data/routes.json'
     routes = json.loads(routes_file.read_text()) if routes_file.exists() else {'routes':[]}
-    data['cloud_routes']=fresh_cloud_configs(data['entries'],normalize_url,has_secret_query)
+    data['cloud_routes']=fresh_cloud_configs(data['entries'],normalize_url,has_secret_query,
+                                            settings.get('cloud_merge',{}))
     cloud_config,data['cloud_merge']=fresh_cloud_merge(ROOT,data['cloud_routes'],normalize_url,
                                                       has_secret_query,settings.get('cloud_merge',{}))
-    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'),cloud_config)
+    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'),cloud_config,
+                   mode=settings.get('cloud_merge',{}).get('mode','selective'))
     (ROOT / 'data/sources.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     html_path.write_text(embed(html_path.read_text(), data))
     if site:
