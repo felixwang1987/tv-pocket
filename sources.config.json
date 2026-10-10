@@ -37,6 +37,10 @@
     "max_seconds": 720,
     "request_budget": 1800
   },
+  "cloud_merge": {
+    "source_url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json"
+  },
+  "adult_live_pin": "9317",
   "source_pages": [
     {
       "url": "https://bbs.qiqiv.cn/thread-5210-1-1.html",

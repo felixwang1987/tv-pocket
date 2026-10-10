@@ -6,14 +6,14 @@ import re
 import shutil
 
 try:
-    from .playback import verified_playlist
+    from .playback import publish_playlists
     from .routes import publish_routes
-    from .cloud import fresh_cloud_configs
+    from .cloud import fresh_cloud_configs, fresh_cloud_merge
     from .collector import normalize_url, has_secret_query
 except ImportError:
-    from playback import verified_playlist
+    from playback import publish_playlists
     from routes import publish_routes
-    from cloud import fresh_cloud_configs
+    from cloud import fresh_cloud_configs, fresh_cloud_merge
     from collector import normalize_url, has_secret_query
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,14 +32,14 @@ def embed(html, data):
 def build(site=False):
     html_path = ROOT / 'index.html'
     data = json.loads((ROOT / 'data/sources.json').read_text())
-    playlist, _ = verified_playlist(data['entries'])
-    (ROOT / 'checked').mkdir(exist_ok=True)
-    (ROOT / 'checked/live.m3u').write_text(playlist)
+    settings = json.loads((ROOT / 'sources.config.json').read_text())
+    publish_playlists(ROOT, data['entries'],settings.get('adult_live_pin',''))
     routes_file = ROOT / 'data/routes.json'
     routes = json.loads(routes_file.read_text()) if routes_file.exists() else {'routes':[]}
-    settings = json.loads((ROOT / 'sources.config.json').read_text())
     data['cloud_routes']=fresh_cloud_configs(data['entries'],normalize_url,has_secret_query)
-    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'),data['cloud_routes'])
+    cloud_config,data['cloud_merge']=fresh_cloud_merge(ROOT,data['cloud_routes'],normalize_url,
+                                                      has_secret_query,settings.get('cloud_merge',{}))
+    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'),cloud_config)
     (ROOT / 'data/sources.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     html_path.write_text(embed(html_path.read_text(), data))
     if site:

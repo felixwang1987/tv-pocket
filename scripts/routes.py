@@ -247,7 +247,7 @@ def fresh_routes(document):
     return sorted(result,key=lambda r:(-r.get('passed',0),-r.get('searchable',0),r['name']))
 
 
-def publish_routes(root, document, base_url, cloud_configs=()):
+def publish_routes(root, document, base_url, cloud_config=None):
     rows=fresh_routes(document)
     checked=Path(root)/'checked'
     folder=checked/'vod'
@@ -262,15 +262,18 @@ def publish_routes(root, document, base_url, cloud_configs=()):
               'searchable':row.get('searchable',0),'quickSearch':row.get('searchable',0),'filterable':0}
         sites[row.get('category','ordinary')].append(site)
         (folder/(row['id']+'.json')).write_text(json.dumps({'sites':[site]},ensure_ascii=False,indent=2)+'\n')
-    (checked/'vod-all.json').write_text(json.dumps({'sites':sites['ordinary']},ensure_ascii=False,indent=2)+'\n')
+    combined={**(cloud_config or {}),'sites':sites['ordinary']+(cloud_config or {}).get('sites',[])}
+    (checked/'vod-all.json').write_text(json.dumps(combined,ensure_ascii=False,indent=2)+'\n')
     (checked/'vod-adult.json').write_text(json.dumps({'sites':sites['adult']},ensure_ascii=False,indent=2)+'\n')
     groups=[]
-    if sites['ordinary']:
+    ordinary_groups=[]
+    if combined['sites']:
         groups.append({'name':'普通点播','url':urljoin(base_url,'checked/vod-all.json')})
+        ordinary_groups.extend(groups)
     if sites['adult']:
         groups.append({'name':'成人点播','url':urljoin(base_url,'checked/vod-adult.json')})
-    groups.extend({'name':row['name'],'url':row['url']} for row in cloud_configs)
     (checked/'routes.json').write_text(json.dumps({'urls':groups},ensure_ascii=False,indent=2)+'\n')
+    (checked/'routes-ordinary.json').write_text(json.dumps({'urls':ordinary_groups},ensure_ascii=False,indent=2)+'\n')
     return len(rows)
 
 

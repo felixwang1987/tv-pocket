@@ -10,6 +10,22 @@ from scripts.routes import publish_routes
 
 
 class CloudTests(unittest.TestCase):
+    def test_cloud_categories_default_to_ordinary_and_keep_adult_priority(self):
+        stamp=datetime.now(timezone.utc)
+        ordinary={'id':'a'*16,'name':'网盘多站','url':'https://example.com/shared.json',
+                  'role':'cloud','kind':'config','status':'ok','count':8,'checked_at':stamp.isoformat(),
+                  'cloud':{'site_count':3,'providers':['夸克'],'login_names':['配置中心']}}
+        adult={**ordinary,'category':'adult'}
+        default={**ordinary,'id':'b'*16,'url':'https://example.com/ordinary.json'}
+        for duplicates in ([ordinary,adult],[adult,ordinary],
+                           [ordinary,{**adult,'status':'error'}],
+                           [ordinary,{**adult,'checked_at':(stamp-timedelta(hours=37)).isoformat()}]):
+            with self.subTest(duplicates=duplicates):
+                configs=fresh_cloud_configs([*duplicates,default],normalize_url,has_secret_query)
+                self.assertEqual({r['url']:r.get('category') for r in configs},{
+                    'https://example.com/shared.json':'adult',
+                    'https://example.com/ordinary.json':'ordinary'})
+
     def test_cloud_identity_is_read_without_auth_files_or_plugin_execution(self):
         config={'spider':'./spider.jar','sites':[
             {'key':'login','name':'配置中心','type':3,'api':'csp_Config'},
@@ -28,7 +44,7 @@ class CloudTests(unittest.TestCase):
         self.assertNotIn('private-token',json.dumps(info))
         self.assertEqual(describe_cloud_config({'sites':[config['sites'][-1]]})['site_count'],0)
 
-    def test_same_vod_import_keeps_original_cloud_configs_and_requires_fresh_multisite_sources(self):
+    def test_cloud_metadata_requires_fresh_multisite_sources_and_separate_configs_are_not_exported(self):
         stamp=datetime.now(timezone.utc)
         def row(url,**overrides):
             value={'id':'a'*16,'name':'网盘多站','url':url,'role':'cloud','kind':'config',
@@ -50,10 +66,9 @@ class CloudTests(unittest.TestCase):
             root=Path(directory)
             vod={'id':'ordinary','name':'电影站','api':'https://cj.lziapi.com/api',
                  'status':'passed','passed':1,'checked_at':stamp.isoformat()}
-            publish_routes(root,{'routes':[vod]},'https://user.github.io/project/',configs)
+            publish_routes(root,{'routes':[vod]},'https://user.github.io/project/')
             exported=json.loads((root/'checked/routes.json').read_text())['urls']
             self.assertEqual(exported,[
-                {'name':'普通点播','url':'https://user.github.io/project/checked/vod-all.json'},
-                {'name':'网盘 · 网盘多站（需自行登录）','url':url}])
+                {'name':'普通点播','url':'https://user.github.io/project/checked/vod-all.json'}])
             self.assertEqual(len(json.loads((root/'checked/vod-all.json').read_text())['sites']),1)
             self.assertEqual(list((root/'checked/vod').glob('*.json')),[root/'checked/vod/ordinary.json'])

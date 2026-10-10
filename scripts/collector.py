@@ -17,13 +17,13 @@ from urllib.parse import urlsplit, urlunsplit, urljoin, quote, urlencode, parse_
 from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandler, HTTPSHandler, ProxyHandler
 
 try:
-    from .playback import verify_catalog, verified_playlist
+    from .playback import verify_catalog, publish_playlists
     from .routes import collect_routes, fresh_routes, publish_routes
-    from .cloud import describe_cloud_config, fresh_cloud_configs
+    from .cloud import describe_cloud_config, fresh_cloud_configs, save_cloud_snapshot, fresh_cloud_merge
 except ImportError:
-    from playback import verify_catalog, verified_playlist
+    from playback import verify_catalog, publish_playlists
     from routes import collect_routes, fresh_routes, publish_routes
-    from cloud import describe_cloud_config, fresh_cloud_configs
+    from cloud import describe_cloud_config, fresh_cloud_configs, save_cloud_snapshot, fresh_cloud_merge
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
@@ -718,6 +718,8 @@ def collect(root=ROOT, discover=True, github_only=False):
     records = merge_records(old['entries'], accepted)
     records.sort(key=lambda r: (r.get('status') != 'ok', r.get('kind',''), r.get('name','')))
     records = records[:500]
+    save_cloud_snapshot(root,records,documents,parse_jsonc,normalize_url,has_secret_query,
+                        config.get('cloud_merge',{}))
     playback_summary = {}
     routes_document = {'routes':[], 'summary':{}}
     if not github_only:
@@ -731,10 +733,8 @@ def collect(root=ROOT, discover=True, github_only=False):
             routes_document = collect_routes(root, route_documents,
                                              Network(route_settings.get('request_budget',800), extra_ports=VOD_MEDIA_PORTS),
                                              parse_jsonc, normalize_url, route_settings)
-    playlist, verified_count = verified_playlist(records)
+    _, verified_count = publish_playlists(root, records,config.get('adult_live_pin',''))
     playback_summary['verified_streams'] = verified_count
-    (root / 'checked').mkdir(exist_ok=True)
-    (root / 'checked/live.m3u').write_text(playlist)
     success = sum(r['status'] == 'ok' for r in results)
     document = {
         'schema_version':1, 'generated_at':now(), 'checked_at':checked_at,
@@ -752,8 +752,10 @@ def collect(root=ROOT, discover=True, github_only=False):
         'cloud_routes':fresh_cloud_configs(records,normalize_url,has_secret_query),
         'entries':records,
     }
+    cloud_config,document['cloud_merge']=fresh_cloud_merge(root,document['cloud_routes'],normalize_url,
+                                                          has_secret_query,config.get('cloud_merge',{}))
     if not github_only and config.get('routes',{}).get('base_url'):
-        publish_routes(root,routes_document,config['routes']['base_url'],document['cloud_routes'])
+        publish_routes(root,routes_document,config['routes']['base_url'],cloud_config)
     target.parent.mkdir(exist_ok=True)
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')

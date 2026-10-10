@@ -3,10 +3,6 @@
     {
       "name": "普通点播",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json"
-    },
-    {
-      "name": "成人点播",
-      "url": "https://felixwang1987.github.io/tv-pocket/checked/vod-adult.json"
     }
   ]
 }

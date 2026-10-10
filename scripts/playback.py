@@ -2,6 +2,7 @@
 import concurrent.futures
 from datetime import datetime, timezone
 import os
+from pathlib import Path
 import re
 import shutil
 import subprocess
@@ -19,7 +20,7 @@ def timestamp():
 
 
 def parse_channels(text, base):
-    channels, seen = [], set()
+    channels, seen = [], {}
     m3u = text.lstrip('\ufeff\r\n ').startswith('#EXTM3U')
     name, unsupported, group = '', '', ''
     for raw in text.splitlines():
@@ -54,10 +55,15 @@ def parse_channels(text, base):
                 continue
             if url not in seen:
                 if not MINOR_RISK.search(name+' '+group):
-                    seen.add(url)
-                    channels.append({'name':name[:120] or '未命名频道', 'url':url, 'unsupported':unsupported,
-                                     'category':'adult' if ADULT_LABEL.search(group) or not group and ADULT_LABEL.search(name) else 'ordinary'})
-            name, unsupported, group = '', '', ''
+                    channel={'name':name[:120] or '未命名频道', 'url':url, 'unsupported':unsupported,
+                             'category':'adult' if ADULT_LABEL.search(group) or not group and ADULT_LABEL.search(name) else 'ordinary'}
+                    seen[url]=channel
+                    channels.append(channel)
+            elif not MINOR_RISK.search(name+' '+group) and (ADULT_LABEL.search(group) or not group and ADULT_LABEL.search(name)):
+                seen[url]['category']='adult'
+            name, unsupported = '', ''
+            if m3u:
+                group=''
     return channels
 
 
@@ -271,9 +277,13 @@ def verify_catalog(records, documents, net, classify, extract_links, settings):
             'elapsed_seconds':round(time.monotonic()-started)}
 
 
-def verified_playlist(records):
+def verified_playlist(records, include_adult=True):
+    records = list(records)
+    adult_urls = {sample['url'] for row in records for sample in row.get('playback', {}).get('samples', [])
+                  if isinstance(sample, dict) and isinstance(sample.get('url'), str)
+                  and (row.get('category') == 'adult' or sample.get('category') == 'adult')}
     current = datetime.now(timezone.utc)
-    output, seen = ['#EXTM3U', f'# 仅含最近 {FRESH_SECONDS // 3600} 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。'], set()
+    output, channels = ['#EXTM3U', f'# 仅含最近 {FRESH_SECONDS // 3600} 小时解码出画面的抽检频道；检测网络不同，播放仍可能受限。'], {}
     for row in records:
         if row.get('status') != 'ok' or row.get('kind') not in ('live', 'stream'):
             continue
@@ -285,12 +295,45 @@ def verified_playlist(records):
                     continue
             except (KeyError, ValueError, TypeError):
                 continue
-            if sample['url'] in seen or any(c in sample['url'] for c in '\r\n'):
+            if any(c in sample['url'] for c in '\r\n'):
                 continue
             name = re.sub(r'[\r\n\x00-\x1f]+', ' ', sample.get('name', '直播')).strip()
             if MINOR_RISK.search(name):
                 continue
-            seen.add(sample['url'])
-            category='成人直播' if sample.get('category')=='adult' else '普通直播'
-            output.extend(['#EXTINF:-1 group-title="' + category + '",' + name, sample['url']])
-    return '\n'.join(output) + '\n', len(seen)
+            adult = sample['url'] in adult_urls
+            channel = channels.setdefault(sample['url'], {'name':name, 'adult':False})
+            channel['adult'] = channel['adult'] or adult
+    count = 0
+    for url, channel in channels.items():
+        if channel['adult'] and not include_adult:
+            continue
+        category = '成人直播' if channel['adult'] else '普通直播'
+        output.extend(['#EXTINF:-1 group-title="' + category + '",' + channel['name'], url])
+        count += 1
+    return '\n'.join(output) + '\n', count
+
+
+def publish_playlists(root, records, adult_pin=''):
+    if adult_pin and (not isinstance(adult_pin,str) or not re.fullmatch(r'[0-9]{4,8}',adult_pin)):
+        raise ValueError('成人直播分组密码必须为4至8位数字')
+    checked = Path(root)/'checked'
+    checked.mkdir(parents=True, exist_ok=True)
+    playlist, count = verified_playlist(records)
+    ordinary, _ = verified_playlist(records, include_adult=False)
+    (checked/'live.m3u').write_text(playlist)
+    (checked/'live-ordinary.m3u').write_text(ordinary)
+    channels=parse_channels(playlist,'')
+    text=[]
+    for category,label in [('ordinary','普通直播'),('adult','成人直播')]:
+        selected=[channel for channel in channels if channel['category']==category]
+        if not selected:
+            continue
+        group=label+'_'+adult_pin if category=='adult' and adult_pin else label
+        text.append(group+',#genre#')
+        for channel in selected:
+            name=channel['name'].replace(',','，')
+            if name.startswith('#'):
+                name='＃'+name[1:]
+            text.append(name+','+channel['url'])
+    (checked/'live.txt').write_text('\n'.join(text)+'\n')
+    return playlist, count

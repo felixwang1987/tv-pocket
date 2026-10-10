@@ -24,6 +24,11 @@ class FakeNetwork:
 
 
 class PlaybackTests(unittest.TestCase):
+    def test_txt_group_category_applies_to_every_channel_until_next_group(self):
+        text='成人直播_testpin,#genre#\n甲,https://example.com/a.m3u8\n乙,https://example.com/b.m3u8\n普通直播,#genre#\n新闻,https://example.com/c.m3u8\n'
+        channels=parse_channels(text,'https://example.com/list.txt')
+        self.assertEqual([channel['category'] for channel in channels],['adult','adult','ordinary'])
+
     def test_playlist_parsing_keeps_header_requirements_and_deduplicates(self):
         text = '#EXTM3U\n#EXTINF:-1,一台\na.m3u8\n#EXTINF:-1,重复\na.m3u8\n#EXTINF:-1,二台\n#EXTVLCOPT:http-referrer=https://example.com\nb.m3u8'
         channels = parse_channels(text, 'https://example.com/list.m3u')
@@ -55,10 +60,69 @@ class PlaybackTests(unittest.TestCase):
         self.assertIn('group-title="成人直播",成人频道',playlist)
         self.assertIn('group-title="普通直播",普通频道',playlist)
 
+    def test_adult_source_samples_export_as_adult_even_without_adult_group(self):
+        now=datetime.now(timezone.utc).isoformat()
+        records=[{'kind':'live','status':'ok','category':'adult','playback':{'samples':[
+            {'name':'未分组频道','url':'https://example.com/ungrouped.m3u8',
+             'status':'passed','checked_at':now},
+            {'name':'普通分组频道','url':'https://example.com/ordinary-group.m3u8',
+             'category':'ordinary','status':'passed','checked_at':now}]}}]
+        playlist,count=verified_playlist(records)
+        self.assertEqual(count,2)
+        self.assertIn('group-title="成人直播",未分组频道',playlist)
+        self.assertIn('group-title="成人直播",普通分组频道',playlist)
+        self.assertNotIn('group-title="普通直播"',playlist)
+
+    def test_duplicate_url_adult_classification_wins_in_either_source_order(self):
+        now=datetime.now(timezone.utc).isoformat()
+        sample={'name':'重复频道','url':'https://example.com/shared.m3u8',
+                'category':'ordinary','status':'passed','checked_at':now}
+        ordinary={'kind':'live','status':'ok','playback':{'samples':[sample]}}
+        adult_records=[
+            {'kind':'live','status':'ok','category':'adult','playback':{'samples':[sample]}},
+            {'kind':'live','status':'ok','playback':{'samples':[{**sample,'category':'adult'}]}},
+        ]
+        for adult in adult_records:
+            for records in ([ordinary,adult],[adult,ordinary]):
+                with self.subTest(adult_source=adult.get('category')=='adult',
+                                  adult_first=records[0] is adult):
+                    playlist,count=verified_playlist(records)
+                    self.assertEqual(count,1)
+                    self.assertEqual(playlist.count(sample['url']),1)
+                    self.assertIn('group-title="成人直播",重复频道',playlist)
+                    self.assertNotIn('group-title="普通直播"',playlist)
+
     def test_explicit_ordinary_group_overrides_ambiguous_channel_name(self):
         text='#EXTM3U\n#EXTINF:-1 group-title="动画",Adult Swim\nhttps://example.com/cartoon.m3u8'
         channels=parse_channels(text,'https://example.com/list.m3u')
         self.assertEqual(channels[0]['category'],'ordinary')
+
+    def test_duplicate_playlist_entries_keep_adult_classification_in_either_order(self):
+        for groups in [('新闻','XXX'),('XXX','新闻')]:
+            with self.subTest(groups=groups):
+                text='#EXTM3U\n'+''.join('#EXTINF:-1 group-title="'+group+'",重复频道\n'
+                    'https://example.com/shared.m3u8\n' for group in groups)
+                channels=parse_channels(text,'https://example.com/list.m3u')
+                self.assertEqual(len(channels),1)
+                self.assertEqual(channels[0]['category'],'adult')
+
+    def test_failed_or_stale_adult_metadata_still_excludes_shared_url_from_normal_export(self):
+        now=datetime.now(timezone.utc).isoformat()
+        sample={'name':'共享频道','url':'https://example.com/shared.m3u8',
+                'category':'ordinary','status':'passed','checked_at':now}
+        normal={'kind':'live','status':'ok','playback':{'samples':[sample]}}
+        cases=[('failed', 'ok', {**sample,'status':'failed'}),
+               ('stale', 'ok', {**sample,'checked_at':(datetime.now(timezone.utc)-timedelta(hours=37)).isoformat()}),
+               ('source_error', 'error', sample)]
+        for case, status, adult_sample in cases:
+            with self.subTest(case=case):
+                adult={'kind':'live','status':status,'category':'adult','playback':{'samples':[adult_sample]}}
+                playlist,count=verified_playlist([normal,adult],include_adult=False)
+                self.assertEqual(count,0)
+                self.assertNotIn(sample['url'],playlist)
+                full,count=verified_playlist([normal,adult])
+                self.assertEqual(count,1)
+                self.assertIn('group-title="成人直播"',full)
 
     def test_adult_seed_keeps_a_daily_sampling_slot(self):
         old=(datetime.now(timezone.utc)-timedelta(hours=20)).isoformat()
