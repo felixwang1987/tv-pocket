@@ -923,15 +923,6 @@
       "api": "csp_HBxLei8CAT"
     },
     {
-      "key": "pocket_3c1204193dd947c7",
-      "name": "IK",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_159d37437573275f",
       "name": "[137ms|zy] 🍏火狐",
       "type": 1,
@@ -995,6 +986,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_fc4bc5d92b095f5a",
+      "name": "光速资源(切)",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_77be1653869536c7",
       "name": "光速｜采集",
       "type": 1,
@@ -1005,18 +1005,9 @@
     },
     {
       "key": "pocket_8e529b20899aa1c4",
-      "name": "暴风",
+      "name": "影视 • 暴風[直连]",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "海豚资源",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1026,15 +1017,6 @@
       "name": "火狐",
       "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_d6abf09efcd48c6d",
-      "name": "猫眼",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1053,15 +1035,6 @@
       "name": "红牛影视②",
       "type": 1,
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_790172e095caf7cc",
-      "name": "红牛资源(切)",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1130,10 +1103,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_ffb12753653057e9",
-      "name": "💖分享金鹰",
+      "key": "pocket_790172e095caf7cc",
+      "name": "🐂┃红牛┃采集",
       "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1148,10 +1121,37 @@
       "filterable": 0
     },
     {
-      "key": "pocket_fc4bc5d92b095f5a",
-      "name": "💯光速切片",
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "🔶老张丨猫眼[短]",
       "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🦊火狐采集",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_3c1204193dd947c7",
+      "name": "IK",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_ffb12753653057e9",
+      "name": "🔰金鹰┃影视",
+      "type": 1,
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
