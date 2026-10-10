@@ -31,6 +31,18 @@ class PlaybackTests(unittest.TestCase):
         self.assertEqual(channels[0]['url'], 'https://example.com/a.m3u8')
         self.assertTrue(channels[1]['unsupported'])
 
+    def test_malformed_channel_urls_are_skipped_without_leaking_metadata(self):
+        playlists = [
+            ('M3U', '#EXTM3U\n#EXTINF:-1 group-title="XXX",坏频道\n'
+             '#EXTVLCOPT:http-referrer=https://example.com\nhttp://[broken/live\ngood.m3u8', '未命名频道'),
+            ('TXT', '成人直播,#genre#\n坏频道,http://[broken/live\n好频道,good.m3u8', '好频道'),
+        ]
+        for format_name, text, name in playlists:
+            with self.subTest(format=format_name):
+                self.assertEqual(parse_channels(text, 'https://example.com/list.m3u'), [
+                    {'name':name, 'url':'https://example.com/good.m3u8',
+                     'unsupported':'', 'category':'ordinary'}])
+
     def test_explicit_adult_group_survives_verified_export(self):
         text='#EXTM3U\n#EXTINF:-1 group-title="XXX",成人频道\nhttps://example.com/a.m3u8\n#EXTINF:-1 group-title="新闻",普通频道\nhttps://example.com/b.m3u8'
         channels=parse_channels(text,'https://example.com/list.m3u')

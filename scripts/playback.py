@@ -47,7 +47,11 @@ def parse_channels(text, base):
                 continue
             if '|' in value or '#' in value or '$' in value:
                 unsupported = '地址含播放器专用参数，未自动验证'
-            url = urljoin(base, value.strip())
+            try:
+                url = urljoin(base, value.strip())
+            except ValueError:
+                name, unsupported, group = '', '', ''
+                continue
             if url not in seen:
                 if not MINOR_RISK.search(name+' '+group):
                     seen.add(url)
