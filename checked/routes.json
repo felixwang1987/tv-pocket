@@ -7,6 +7,14 @@
     {
       "name": "成人点播",
       "url": "https://felixwang1987.github.io/tv-pocket/checked/vod-adult.json"
+    },
+    {
+      "name": "网盘 · 潇洒多站配置（需自行登录）",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json"
+    },
+    {
+      "name": "网盘 · 饭太硬多站配置（需自行登录）",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/fty.json"
     }
   ]
 }

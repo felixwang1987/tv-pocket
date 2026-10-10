@@ -18,10 +18,12 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPHandl
 
 try:
     from .playback import verify_catalog, verified_playlist
-    from .routes import collect_routes, fresh_routes
+    from .routes import collect_routes, fresh_routes, publish_routes
+    from .cloud import describe_cloud_config, fresh_cloud_configs
 except ImportError:
     from playback import verify_catalog, verified_playlist
-    from routes import collect_routes, fresh_routes
+    from routes import collect_routes, fresh_routes, publish_routes
+    from cloud import describe_cloud_config, fresh_cloud_configs
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 3_000_000
@@ -659,6 +661,9 @@ def collect(root=ROOT, discover=True, github_only=False):
             if not info:
                 raise ValueError('内容不是可识别的配置或播放列表')
             row.update(info, status='ok', last_ok=row['checked_at'], error='')
+            row['cloud']={}
+            if info['kind']=='config' and info['format']=='JSON':
+                row['cloud']=describe_cloud_config(parse_jsonc(text))
             documents[item['url']] = (text, final_url)
             child = []
             if info['kind'] in ('multi', 'collection', 'config'):
@@ -744,8 +749,11 @@ def collect(root=ROOT, discover=True, github_only=False):
                           'environment':routes_document.get('environment')},
         'verified_routes':[{k:r.get(k) for k in ('id','name','category','checked_at','status','sampled','passed','searchable','sources')}
                            for r in fresh_routes(routes_document)],
+        'cloud_routes':fresh_cloud_configs(records,normalize_url,has_secret_query),
         'entries':records,
     }
+    if not github_only and config.get('routes',{}).get('base_url'):
+        publish_routes(root,routes_document,config['routes']['base_url'],document['cloud_routes'])
     target.parent.mkdir(exist_ok=True)
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')

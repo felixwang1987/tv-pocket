@@ -8,9 +8,13 @@ import shutil
 try:
     from .playback import verified_playlist
     from .routes import publish_routes
+    from .cloud import fresh_cloud_configs
+    from .collector import normalize_url, has_secret_query
 except ImportError:
     from playback import verified_playlist
     from routes import publish_routes
+    from cloud import fresh_cloud_configs
+    from collector import normalize_url, has_secret_query
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -34,7 +38,9 @@ def build(site=False):
     routes_file = ROOT / 'data/routes.json'
     routes = json.loads(routes_file.read_text()) if routes_file.exists() else {'routes':[]}
     settings = json.loads((ROOT / 'sources.config.json').read_text())
-    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'))
+    data['cloud_routes']=fresh_cloud_configs(data['entries'],normalize_url,has_secret_query)
+    publish_routes(ROOT, routes, settings.get('routes', {}).get('base_url', './'),data['cloud_routes'])
+    (ROOT / 'data/sources.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     html_path.write_text(embed(html_path.read_text(), data))
     if site:
         out = ROOT / '_site'

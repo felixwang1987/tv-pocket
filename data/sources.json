@@ -4449,27 +4449,39 @@
       }
     },
     {
-      "name": "（16） 添加潇洒 接口：  或者",
+      "name": "潇洒多站配置",
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
       "sources": [
         "https://github.com/qist/tvbox",
         "https://github.com/vampireisoves/tvbox-config",
         "https://github.com/xuguoyan/tvbox"
       ],
-      "checked_at": "2026-10-10T03:10:00+00:00",
+      "checked_at": "2026-10-10T04:17:54+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 107,
       "status": "ok",
-      "last_ok": "2026-10-10T03:10:00+00:00",
+      "last_ok": "2026-10-10T04:17:54+00:00",
       "error": "",
       "id": "b8c0784c4bdb3f77",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-10-10T03:11:05+00:00",
-        "environment": "GitHub Actions 公网",
-        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
-        "samples": []
+        "checked_at": "2026-10-10T04:17:54+00:00",
+        "environment": "GitHub connector（仅配置读取）",
+        "reason": "原始多站配置可读，需在影视仓登录网盘并验证播放"
+      },
+      "role": "cloud",
+      "cloud": {
+        "site_count": 11,
+        "providers": [
+          "阿里云盘",
+          "百度网盘",
+          "夸克",
+          "UC"
+        ],
+        "login_names": [
+          "配置 • 中心"
+        ]
       }
     },
     {
@@ -4495,27 +4507,34 @@
       }
     },
     {
-      "name": "（17）添加饭太硬 接口  或者",
+      "name": "饭太硬多站配置",
       "url": "https://raw.githubusercontent.com/qist/tvbox/master/fty.json",
       "sources": [
         "https://github.com/qist/tvbox",
         "https://github.com/vampireisoves/tvbox-config",
         "https://github.com/xuguoyan/tvbox"
       ],
-      "checked_at": "2026-10-10T03:10:01+00:00",
+      "checked_at": "2026-10-10T04:17:54+00:00",
       "kind": "config",
       "format": "JSON",
       "count": 48,
       "status": "ok",
-      "last_ok": "2026-10-10T03:10:01+00:00",
+      "last_ok": "2026-10-10T04:17:54+00:00",
       "error": "",
       "id": "88b03a40bb5a836e",
       "playback": {
         "status": "config_only",
-        "checked_at": "2026-10-10T03:11:05+00:00",
-        "environment": "GitHub Actions 公网",
-        "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
-        "samples": []
+        "checked_at": "2026-10-10T04:17:54+00:00",
+        "environment": "GitHub connector（仅配置读取）",
+        "reason": "原始多站配置可读，需在影视仓登录网盘并验证播放"
+      },
+      "role": "cloud",
+      "cloud": {
+        "site_count": 4,
+        "providers": [],
+        "login_names": [
+          "🗂我的云盘┃配置"
+        ]
       }
     },
     {
@@ -21871,6 +21890,37 @@
         "reason": "配置可读；点播解析、网盘登录和会员权限需在影视仓实播验证",
         "samples": []
       }
+    }
+  ],
+  "cloud_routes": [
+    {
+      "id": "b8c0784c4bdb3f77",
+      "name": "网盘 · 潇洒多站配置（需自行登录）",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json",
+      "checked_at": "2026-10-10T04:17:54+00:00",
+      "total_sites": 107,
+      "site_count": 11,
+      "providers": [
+        "阿里云盘",
+        "百度网盘",
+        "夸克",
+        "UC"
+      ],
+      "login_names": [
+        "配置 • 中心"
+      ]
+    },
+    {
+      "id": "88b03a40bb5a836e",
+      "name": "网盘 · 饭太硬多站配置（需自行登录）",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/fty.json",
+      "checked_at": "2026-10-10T04:17:54+00:00",
+      "total_sites": 48,
+      "site_count": 4,
+      "providers": [],
+      "login_names": [
+        "🗂我的云盘┃配置"
+      ]
     }
   ]
 }

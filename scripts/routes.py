@@ -247,7 +247,7 @@ def fresh_routes(document):
     return sorted(result,key=lambda r:(-r.get('passed',0),-r.get('searchable',0),r['name']))
 
 
-def publish_routes(root, document, base_url):
+def publish_routes(root, document, base_url, cloud_configs=()):
     rows=fresh_routes(document)
     checked=Path(root)/'checked'
     folder=checked/'vod'
@@ -269,6 +269,7 @@ def publish_routes(root, document, base_url):
         groups.append({'name':'普通点播','url':urljoin(base_url,'checked/vod-all.json')})
     if sites['adult']:
         groups.append({'name':'成人点播','url':urljoin(base_url,'checked/vod-adult.json')})
+    groups.extend({'name':row['name'],'url':row['url']} for row in cloud_configs)
     (checked/'routes.json').write_text(json.dumps({'urls':groups},ensure_ascii=False,indent=2)+'\n')
     return len(rows)
 
