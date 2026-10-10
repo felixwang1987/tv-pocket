@@ -33,7 +33,7 @@
 
 ## 日常使用
 
-- **复制点播合集**：复制 `checked/routes.json`，放入影视仓的线路合集入口。里面分别列出「普通点播」和「成人点播」，并保留通过抽检的单条线路。只检查文件可读的配置不会进入。
+- **复制点播合集**：复制 `checked/routes.json`，放入影视仓的线路合集入口。里面只列出「普通点播」和「成人点播」，各自汇总该类别通过抽检的站点；选择普通点播后，将搜索范围设为全站／全部来源。网页可查看合集中的站点及抽检结果。只检查文件可读的配置不会进入。
 - **复制直播合集**：首页按钮会复制 `checked/live.m3u` 的线上地址，直接放入影视仓「直播配置」。通过抽检的频道按 `group-title` 分为「普通直播」和「成人直播」；只收录近 36 小时成功解码画面的频道，按地址去重。
 - **查看待验证来源**：首页第三、第四类分别打开点播配置与直播来源目录。这里的链接需要在你的影视仓和网络环境中尝试，不能因为配置可读就当作已播出画面。
 - **检测明细**：展开卡片可看每个抽检频道的结果、原因和检测时间。多仓显示下级配置的可读情况，不假定点播可用。
@@ -78,7 +78,7 @@ python3 scripts/build.py --site
 
 本机若使用代理的 Fake-IP DNS，可加 `--github-only`，此模式只允许四个固定 GitHub HTTPS 域名，不检查第三方域名，也不运行实播抽检。Actions 不需要这个参数。普通模式拒绝私有/本地地址，并在重定向时重新检查目标；请在 GitHub 托管 runner 或隔离环境运行第三方来源采集。
 
-`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`checked/live.m3u` 是实播抽检通过并带分类的频道列表；`checked/routes.json` 是统一点播线路合集，引用 `checked/vod-all.json`、`checked/vod-adult.json` 和 `checked/vod/*.json`；`data/routes.json` 保存点播检查明细；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
+`data/sources.json` 保存结构化数据；`index.html` 内嵌同一份数据；`checked/live.m3u` 是实播抽检通过并带分类的频道列表；`checked/routes.json` 是统一点播线路合集，只引用 `checked/vod-all.json` 和 `checked/vod-adult.json`；`checked/vod/*.json` 保留旧单站地址兼容，但不再列入合集或提供网页复制入口；`data/routes.json` 保存点播检查明细；`_site/` 是生成的发布目录。工作流只发布网页与清单，不发布脚本或设计文档。
 
 ## 验证范围
 

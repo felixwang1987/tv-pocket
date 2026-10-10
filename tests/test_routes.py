@@ -135,14 +135,15 @@ class RouteTests(unittest.TestCase):
             self.assertEqual(count,2)
             self.assertEqual({site['api'] for site in merged['sites']},
                              {'https://cj.lziapi.com/good','https://cj.lziapi.com/yesterday'})
-            self.assertEqual({entry['url'] for entry in collection['urls'][1:]},
-                             {'https://user.github.io/project/checked/vod/good.json',
-                              'https://user.github.io/project/checked/vod/yesterday.json'})
+            self.assertEqual(collection['urls'],[
+                {'name':'普通点播','url':'https://user.github.io/project/checked/vod-all.json'}])
+            self.assertEqual(json.loads((root/'checked/vod/good.json').read_text())['sites'][0]['api'],
+                             'https://cj.lziapi.com/good')
             self.assertNotIn('spider',merged)
             document['routes'][0]['status']='failed'
             publish_routes(root,document,'https://user.github.io/project/')
             self.assertFalse((root/'checked/vod/good.json').exists())
-            self.assertEqual(len(json.loads((root/'checked/routes.json').read_text())['urls']),2)
+            self.assertEqual(len(json.loads((root/'checked/routes.json').read_text())['urls']),1)
 
     def test_adult_routes_have_their_own_collection_in_same_import(self):
         stamp=datetime.now(timezone.utc).isoformat()
@@ -154,8 +155,9 @@ class RouteTests(unittest.TestCase):
             root=Path(directory)
             publish_routes(root,{'routes':routes},'https://user.github.io/project/')
             urls=json.loads((root/'checked/routes.json').read_text())['urls']
-            self.assertEqual(urls[0]['name'],'普通点播')
-            self.assertEqual(urls[1]['name'],'成人点播')
+            self.assertEqual(urls,[
+                {'name':'普通点播','url':'https://user.github.io/project/checked/vod-all.json'},
+                {'name':'成人点播','url':'https://user.github.io/project/checked/vod-adult.json'}])
             ordinary=json.loads((root/'checked/vod-all.json').read_text())['sites']
             adult=json.loads((root/'checked/vod-adult.json').read_text())['sites']
             self.assertEqual([s['name'] for s in ordinary],['普通'])

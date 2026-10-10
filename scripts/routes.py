@@ -256,15 +256,12 @@ def publish_routes(root, document, base_url):
     for old in folder.glob('*.json'):
         if old.stem not in ids:
             old.unlink()
-    urls=[]
     sites={'ordinary':[],'adult':[]}
     for row in rows:
         site={'key':'pocket_'+row['id'],'name':row['name'],'type':1,'api':row['api'],
               'searchable':row.get('searchable',0),'quickSearch':row.get('searchable',0),'filterable':0}
         sites[row.get('category','ordinary')].append(site)
         (folder/(row['id']+'.json')).write_text(json.dumps({'sites':[site]},ensure_ascii=False,indent=2)+'\n')
-        urls.append({'name':('成人 · ' if row.get('category')=='adult' else '普通 · ')+row['name'],
-                     'url':urljoin(base_url,'checked/vod/'+row['id']+'.json')})
     (checked/'vod-all.json').write_text(json.dumps({'sites':sites['ordinary']},ensure_ascii=False,indent=2)+'\n')
     (checked/'vod-adult.json').write_text(json.dumps({'sites':sites['adult']},ensure_ascii=False,indent=2)+'\n')
     groups=[]
@@ -272,8 +269,7 @@ def publish_routes(root, document, base_url):
         groups.append({'name':'普通点播','url':urljoin(base_url,'checked/vod-all.json')})
     if sites['adult']:
         groups.append({'name':'成人点播','url':urljoin(base_url,'checked/vod-adult.json')})
-    urls=groups+urls
-    (checked/'routes.json').write_text(json.dumps({'urls':urls},ensure_ascii=False,indent=2)+'\n')
+    (checked/'routes.json').write_text(json.dumps({'urls':groups},ensure_ascii=False,indent=2)+'\n')
     return len(rows)
 
 
