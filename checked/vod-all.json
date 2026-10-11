@@ -923,6 +923,24 @@
       "api": "csp_HBxLei8CAT"
     },
     {
+      "key": "pocket_3c1204193dd947c7",
+      "name": "IK",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_8d82ffa7f9899260",
+      "name": "TV-金鹰资源",
+      "type": 1,
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_159d37437573275f",
       "name": "[137ms|zy] 🍏火狐",
       "type": 1,
@@ -995,15 +1013,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_77be1653869536c7",
-      "name": "光速｜采集",
-      "type": 1,
-      "api": "http://api.guangsuapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_8e529b20899aa1c4",
       "name": "影视 • 暴風[直连]",
       "type": 1,
@@ -1017,6 +1026,15 @@
       "name": "火狐",
       "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "猫眼",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1040,6 +1058,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_790172e095caf7cc",
+      "name": "红牛资源(切)",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_cc611d7a1de5c292",
       "name": "豪华资源",
       "type": 1,
@@ -1053,15 +1080,6 @@
       "name": "金鹰",
       "type": 1,
       "api": "https://jyzyapi.com/provide/vod?from=jinyingm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_8d82ffa7f9899260",
-      "name": "金鹰 | 采集",
-      "type": 1,
-      "api": "https://jyzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1103,10 +1121,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🐂┃红牛┃采集",
+      "key": "pocket_77be1653869536c7",
+      "name": "🍀光速HTTP",
       "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "api": "http://api.guangsuapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1121,10 +1139,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_d6abf09efcd48c6d",
-      "name": "🔶老张丨猫眼[短]",
+      "key": "pocket_ffb12753653057e9",
+      "name": "🔰金鹰┃影视",
       "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -1139,33 +1157,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_3c1204193dd947c7",
-      "name": "IK",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_ffb12753653057e9",
-      "name": "🔰金鹰┃影视",
-      "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_f0ca5356c3d6e280",
-      "name": "[193ms|apple] 茅台资源",
-      "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
       "key": "pocket_845e5ba10d71c5d4",
       "name": "茅台影视",
       "type": 1,
@@ -1175,10 +1166,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_361de0f46352c47d",
-      "name": "茅台资源",
+      "key": "pocket_f0ca5356c3d6e280",
+      "name": "茅台资源站",
       "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
