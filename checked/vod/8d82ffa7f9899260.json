@@ -2,7 +2,7 @@
   "sites": [
     {
       "key": "pocket_8d82ffa7f9899260",
-      "name": "TV-金鹰资源",
+      "name": "金鹰 | 采集",
       "type": 1,
       "api": "https://jyzyapi.com/api.php/provide/vod",
       "searchable": 1,
