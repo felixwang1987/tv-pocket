@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_ab24f4094db661d7",
+      "name": "金鹰",
+      "type": 1,
+      "api": "https://jyzyapi.com/provide/vod?from=jinyingm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

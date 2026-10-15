@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_dde5731b42ad3d47",
+      "name": "奥斯卡",
+      "type": 1,
+      "api": "https://aosikazy.com/api.php/provide/vod",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ]
+}
