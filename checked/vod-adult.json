@@ -28,15 +28,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_fc5eb1fe682cbf69",
-      "name": "🔞玉兔资源",
-      "type": 1,
-      "api": "https://apiyutu.com/api.php/providedao/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_dde5731b42ad3d47",
       "name": "奥斯卡",
       "type": 1,
