@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_d6abf09efcd48c6d",
+      "name": "🔶老张丨猫眼[短]",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
