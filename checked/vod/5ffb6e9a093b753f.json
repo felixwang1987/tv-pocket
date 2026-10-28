@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_5ffb6e9a093b753f",
+      "name": "魔都",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
