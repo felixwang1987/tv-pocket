@@ -1,16 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T17:08:59+00:00",
+  "generated_at": "2026-10-30T16:52:58+00:00",
   "environment": "GitHub Actions 公网",
   "discovery": {
-    "configs": 108,
+    "configs": 117,
     "nested_documents": 180,
-    "unsupported_sites": 28170,
+    "unsupported_sites": 14870,
     "issues": [
-      {
-        "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/main/%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4",
-        "reason": "下级配置读取失败"
-      },
       {
         "url": "http://www.xn--sss604efuw.com/tv",
         "reason": "下级配置读取失败"
@@ -20,15 +16,23 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://xn--yeto36i.v.xn--dkw.xn--6qq986b3xl/",
+        "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/main/%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://gitee.com/arlen29/blplay/raw/master/DC2.json",
+        "url": "https://fastly.jsdelivr.net/gh/KAN314go/drpy@master/wzxxcz/xczdz.json",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "http://150.158.112.123/dc.json",
+        "url": "https://fastly.jsdelivr.net/gh/rootoooo/tvbox@main/dc.txt",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://fastly.jsdelivr.net/gh/qq1719248506/Video-interface@main/json/duocang.txt",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://fastly.jsdelivr.net/gh/jixiejishu/tvboxinformation@main/tvboxtools/jk/dxl/T&SD.txt",
         "reason": "下级配置读取失败"
       },
       {
@@ -52,23 +56,11 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://git.acwing.com/lkq0379/zjys/-/raw/main/zjys.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://hb.xyyh.online/tvbox",
+        "url": "http://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
         "reason": "下级配置读取失败"
       },
       {
         "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://9877.kstore.space/AnotherD/api.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -84,11 +76,7 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
-        "reason": "下级配置读取失败"
-      },
-      {
-        "url": "https://gitee.com/lukei7/lib/raw/Luck/%E8%87%AA%E5%BB%BA.json",
+        "url": "https://chuanshuo.77blog.cn/tv.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -104,15 +92,19 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "http://tv.nxog.top/m",
+        "url": "http://74.120.175.78/JK/XYQTVBox/dj.json",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://yydsys.top/duo",
+        "url": "http://hb.xn--yet24tmq1a.site:25252/%E4%BB%85%E4%BE%9B%E6%B5%8B%E8%AF%95",
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://xn--fjq53n.xyz/dj.json",
+        "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://git.acwing.com/lw0704/66/-/raw/master/jjzx.json",
         "reason": "下级配置读取失败"
       },
       {
@@ -124,7 +116,15 @@
         "reason": "下级配置读取失败"
       },
       {
-        "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+        "url": "http://miqk.cc/%E5%B0%8F%E7%B1%B3/DEMO.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://9877.kstore.space/AnotherD/api.json",
+        "reason": "下级配置读取失败"
+      },
+      {
+        "url": "https://xn--fjq53n.xyz/TV/Zy.json",
         "reason": "下级配置读取失败"
       }
     ]
@@ -137,22 +137,21 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json",
-        "https://raw.githubusercontent.com/baoyj297245831-cpu/tvboxbyj/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://raw.githubusercontent.com/felixiao/TVBoxSource/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json"
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-adult.json"
       ],
-      "checked_at": "2026-10-29T17:08:13+00:00",
+      "checked_at": "2026-10-30T16:52:15+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "EKDV-798[4K]一个害羞顺从的女孩一时兴起尝试了一些成クリスタル映像パールライス坂上藍瀬ミナ",
+          "name": "FERA-206命运般的重逢搬到新家后，隔壁邻居竟然是学生时代交往センタービレッジマツニセコ柏木舞子",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "酒店偷拍乐橙酒店白色大床清晰偷拍小哥约炮空姐制服.开档黑丝美女各种体位做爱",
+          "name": "忍不住了哥哥慢点受不了了.",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -167,21 +166,25 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-adult.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-adult.json"
       ],
-      "checked_at": "2026-10-29T17:08:12+00:00",
+      "checked_at": "2026-10-30T16:52:17+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "妮可美女自己自慰_但被我发现并且全身射精",
+          "name": "GOJI-108 「もう壊れちゃいなさい…」純真な18歳の黒髪美少女2人がオチ〇ポ大好きな変態オナペットへと堕ち",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "快手17万粉热门网红欣妹妹裸舞抖奶最全合集泄密",
+          "name": "GS-2139 令和最新版 実録立ちんぼ実態潜入捜査 3名収録ver.001",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -196,10 +199,9 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -213,11 +215,9 @@
       "api": "https://api.yirenziyuan.com/api.php/provide/vod",
       "category": "adult",
       "sources": [
-        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -232,34 +232,29 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://gh-proxy.org/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/9918.json",
-        "https://feigeys.pages.dev/index_all.json"
+        "https://raw.githubusercontent.com/520ad/tvbox/main/hs.json",
+        "https://gh-proxy.org/https://github.com/520ad/tvbox/raw/refs/heads/main/hs.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
       ],
-      "checked_at": "2026-10-29T17:08:06+00:00",
+      "checked_at": "2026-10-30T16:52:11+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "【小鱼要抱抱】完胜明星脸美乳长腿玉足干净粉嫩无毛嫩穴十足淫女搔首弄姿超淫荡深喉口鸡无套狠操 操她千遍不厌倦",
+          "name": "极品身材颜值女神【熙颜】粉嫩小穴自慰4 (5)",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "23岁平面模特【MiSSLee01】跳蛋自慰~表情真骚03 (10)",
+          "name": "极度淫乱系列【每天约新妹子】3P4P轮流操酒店疯狂最强尺度淫乱超强啪啪合集15(5V)",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
@@ -273,10 +268,9 @@
       "api": "https://api.huasezy.xyz/api.php/provide/vod",
       "category": "adult",
       "sources": [
-        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -290,11 +284,9 @@
       "api": "https://api.xbapi.cc/api.php/provide/vod",
       "category": "adult",
       "sources": [
-        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -309,9 +301,9 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json"
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -326,45 +318,13 @@
       "category": "adult",
       "sources": [
         "https://raw.githubusercontent.com/scovis/TVBox/main/R18.json",
-        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt",
-        "https://fastly.jsdelivr.net/gh/qaz1371041/tvbox@main/18.json",
-        "https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox/R18.json",
-        "https://raw.githubusercontent.com/baoyj297245831-cpu/tvboxbyj/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://raw.githubusercontent.com/felixiao/TVBoxSource/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json"
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://fastly.jsdelivr.net/gh/bingshuihan/SHHSH@main/ku18tv.json"
       ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
-      "status": "failed",
-      "sampled": 0,
-      "passed": 0,
-      "samples": [],
-      "searchable": 0,
-      "reason": "[Errno -2] Name or service not known"
-    },
-    {
-      "id": "0caaa2356676bf94",
-      "name": "apilyzy老鸭资源",
-      "api": "https://api.apilyzy.com/api.php/provide/vod/at/json",
-      "category": "adult",
-      "sources": [
-        "https://fastly.jsdelivr.net/gh/c120487/00@main/05155.txt"
-      ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
-      "status": "failed",
-      "sampled": 0,
-      "passed": 0,
-      "samples": [],
-      "searchable": 0,
-      "reason": "[Errno -2] Name or service not known"
-    },
-    {
-      "id": "0eb97469aa5c97c4",
-      "name": "老鸭资源(切)",
-      "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
-      "category": "adult",
-      "sources": [
-        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
-      ],
-      "checked_at": "2026-10-29T17:08:04+00:00",
+      "checked_at": "2026-10-30T16:52:09+00:00",
       "status": "failed",
       "sampled": 0,
       "passed": 0,
@@ -378,20 +338,20 @@
       "api": "https://api.ddapi.cc/api.php/provide/vod/at/json",
       "category": "adult",
       "sources": [
-        "https://fastly.jsdelivr.net/gh/jessic01/box1@main/18.json"
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt"
       ],
-      "checked_at": "2026-10-29T17:08:05+00:00",
+      "checked_at": "2026-10-30T16:52:10+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "【小鱼要抱抱】完胜明星脸美乳长腿玉足干净粉嫩无毛嫩穴十足淫女搔首弄姿超淫荡深喉口鸡无套狠操 操她千遍不厌倦",
+          "name": "极品身材颜值女神【熙颜】粉嫩小穴自慰4 (5)",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "23岁平面模特【MiSSLee01】跳蛋自慰~表情真骚03 (10)",
+          "name": "极度淫乱系列【每天约新妹子】3P4P轮流操酒店疯狂最强尺度淫乱超强啪啪合集15(5V)",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
@@ -400,29 +360,49 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "3c1204193dd947c7",
-      "name": "IK",
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "id": "488f6b951dfc39c4",
+      "name": "雪豹资源",
+      "api": "https://api.xbapi.cc/api.php/provide/vod/at/json",
+      "category": "adult",
+      "sources": [
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt"
+      ],
+      "checked_at": "2026-10-30T16:52:09+00:00",
+      "status": "failed",
+      "sampled": 0,
+      "passed": 0,
+      "samples": [],
+      "searchable": 0,
+      "reason": "[Errno -2] Name or service not known"
+    },
+    {
+      "id": "827db570d348ff49",
+      "name": "🍀┃非凡┃资源",
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://dxawi.github.io/0/0.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+        "https://raw.githubusercontent.com/fswws/tvbox-source/main/tvbox_fast.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://larry-biu.github.io/tvbox-config/fongmi-pages.json",
+        "https://larry-biu.github.io/tvbox-config/tvbox-pages.json",
+        "https://larry-biu.github.io/tvbox-config/config-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/tvbox-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://700sjro44343.vicp.fun/eggp/qzku/tv.json",
+        "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json"
       ],
-      "checked_at": "2026-10-29T17:08:10+00:00",
-      "status": "passed",
+      "checked_at": "2026-10-30T16:52:18+00:00",
+      "status": "partial",
       "sampled": 2,
-      "passed": 2,
+      "passed": 1,
       "samples": [
         {
-          "name": "微妙关系",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
+          "name": "可以爱吗",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
         },
         {
           "name": "璀璨之城粤语",
@@ -431,603 +411,7 @@
         }
       ],
       "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "304e2e6a898f6a58",
-      "name": "[590ms|5] 猫眼影视",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:26+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "予苍龙",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "是姐姐呀",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "9a8a6fa39c3f2d4c",
-      "name": "❤光速资源",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:10+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "c35a3bb2b3a307f3",
-      "name": "光速",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod?from=gsm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:10+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "fc4bc5d92b095f5a",
-      "name": "光速资源(切)",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/baoyj297245831-cpu/tvboxbyj/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json",
-        "https://raw.githubusercontent.com/felixiao/TVBoxSource/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
-      ],
-      "checked_at": "2026-10-29T17:08:13+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "77be1653869536c7",
-      "name": "光速｜采集",
-      "api": "http://api.guangsuapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:13+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "dd3e59bd879f1515",
-      "name": "影视•猫眼[直连]",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:26+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "予苍龙",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "是姐姐呀",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "1b08e6b49b6d2dc6",
-      "name": "火狐",
-      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:17+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "d07fd45d8b04f9e2",
-      "name": "红牛",
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod?from=hnm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:24+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "我们好一点",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "790172e095caf7cc",
-      "name": "红牛资源(切)",
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/baoyj297245831-cpu/tvboxbyj/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
-        "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json",
-        "https://raw.githubusercontent.com/felixiao/TVBoxSource/main/%E7%9B%B4%E6%92%AD%E6%BA%90/yyfx.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
-      ],
-      "checked_at": "2026-10-29T17:08:25+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "我们好一点",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "cc611d7a1de5c292",
-      "name": "豪华资源",
-      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
-      ],
-      "checked_at": "2026-10-29T17:08:17+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "ab24f4094db661d7",
-      "name": "金鹰",
-      "api": "https://jyzyapi.com/provide/vod?from=jinyingm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:25+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "8d82ffa7f9899260",
-      "name": "金鹰 | 采集",
-      "api": "https://jyzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://clun.top/box.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:26+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "4115fcb4063430eb",
-      "name": "金鹰资源",
-      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
-      ],
-      "checked_at": "2026-10-29T17:08:34+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "5ffb6e9a093b753f",
-      "name": "魔都",
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:32+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "微妙关系",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "Ali G： 我系水？",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "10ee9009c31aca81",
-      "name": "📺 爱坤",
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod/10ee9009c31aca81.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://clun.top/box.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json"
-      ],
-      "checked_at": "2026-10-29T17:08:31+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "微妙关系",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "璀璨之城粤语",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "ffb12753653057e9",
-      "name": "🔰金鹰┃影视",
-      "api": "https://jyzyapi.com/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:35+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "芝加哥警署第十四季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "诛仙最终季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "d6abf09efcd48c6d",
-      "name": "🤖爬虫┃龙门动漫",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:37+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "予苍龙",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "是姐姐呀",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 1,
-      "reason": "抽检 2 部节目，2 部出画面"
+      "reason": "抽检 2 部节目，1 部出画面"
     },
     {
       "id": "bd3c0500399a3397",
@@ -1035,40 +419,38 @@
       "api": "https://hhzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://raw.liucn.cc/box/m.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://raw.githubusercontent.com/fswws/tvbox-source/main/tvbox_fast.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "http://550.3vcn.work/wdjyys.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+        "https://raw.liucn.cc/box/m.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "http://xhztv.top/4k.json",
         "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/bc23394efac6.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json"
+        "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
       ],
-      "checked_at": "2026-10-29T17:08:30+00:00",
+      "checked_at": "2026-10-30T16:52:13+00:00",
       "status": "passed",
       "sampled": 2,
       "passed": 2,
       "samples": [
         {
-          "name": "芝加哥警署第十四季",
+          "name": "你最后留下的歌",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "诛仙最终季",
+          "name": "末路兼职",
           "status": "passed",
           "reason": "已取到视频数据并解码出 1 帧画面"
         }
@@ -1077,181 +459,35 @@
       "reason": "抽检 2 部节目，2 部出画面"
     },
     {
-      "id": "845e5ba10d71c5d4",
-      "name": "茅台影视",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
+      "id": "1e24f6974f6446c1",
+      "name": "🎀极速┃采集",
+      "api": "https://jszyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+        "https://raw.githubusercontent.com/fswws/tvbox-source/main/tvbox_fast.json",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "http://550.3vcn.work/wdjyys.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
       ],
-      "checked_at": "2026-10-29T17:08:45+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "你好湖南​",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "杀死你的旅途 第二季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "361de0f46352c47d",
-      "name": "茅台资源",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/felixwang1987/tv-pocket/main/checked/vod-all.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
-      ],
-      "checked_at": "2026-10-29T17:08:45+00:00",
-      "status": "passed",
-      "sampled": 2,
-      "passed": 2,
-      "samples": [
-        {
-          "name": "你好湖南​",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        },
-        {
-          "name": "杀死你的旅途 第二季",
-          "status": "passed",
-          "reason": "已取到视频数据并解码出 1 帧画面"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，2 部出画面"
-    },
-    {
-      "id": "0ff34d5dd1a9baf0",
-      "name": "索尼┃资源",
-      "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8",
-      "category": "ordinary",
-      "sources": [
-        "https://www.252035.xyz/p/jsm.json"
-      ],
-      "checked_at": "2026-10-29T17:08:36+00:00",
-      "status": "failed",
+      "checked_at": "2026-10-30T16:52:12+00:00",
+      "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "娱乐百分百",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "可以爱你吗",
+          "status": "unverified",
+          "reason": "只允许公共 HTTP(S) 地址"
         },
         {
-          "name": "田园恋曲",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "嗜血法医：杀魔复生第二季",
+          "status": "unverified",
+          "reason": "只允许公共 HTTP(S) 地址"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "3c340030770c0794",
-      "name": "🥬索尼资源",
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/leonardoliu91/tvbox/main/tvbox.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://raw.liucn.cc/box/m.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://clun.top/box.json",
-        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
-        "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
-        "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0821.json",
-        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/bc23394efac6.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json"
-      ],
-      "checked_at": "2026-10-29T17:08:36+00:00",
-      "status": "failed",
-      "sampled": 2,
-      "passed": 0,
-      "samples": [
-        {
-          "name": "娱乐百分百",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
-        },
-        {
-          "name": "田园恋曲",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
-        }
-      ],
-      "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
-    },
-    {
-      "id": "c95160479ba0bb3b",
-      "name": "🎥┃量子┃资源",
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json",
-        "http://xhztv.top/4k.json",
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://clun.top/box.json",
-        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
-        "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/967b6b2257a7.json",
-        "https://www.252035.xyz/z/FongMi.json"
-      ],
-      "checked_at": "2026-10-29T17:08:44+00:00",
-      "status": "failed",
-      "sampled": 0,
-      "passed": 0,
-      "samples": [],
-      "searchable": 0,
-      "reason": "The read operation timed out"
     },
     {
       "id": "cc855a82f44a962d",
@@ -1259,34 +495,26 @@
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://clun.top/box.json",
         "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://feigeys.pages.dev/index.json"
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+        "https://qist.wyfc.qzz.io/jsm.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://clun.top/box.json",
+        "http://szyyds.cn/tv/x.json"
       ],
-      "checked_at": "2026-10-29T17:08:45+00:00",
+      "checked_at": "2026-10-30T16:52:18+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "芝加哥急救第十二季",
+          "name": "京城十二时辰第6季​",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "恋爱的正确标记法第二季",
+          "name": "打歌2026",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1300,33 +528,129 @@
       "api": "http://tyyszy.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://qist.tycng.com/jsm.json",
         "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+        "https://qist.wyfc.qzz.io/jsm.json",
+        "http://szyyds.cn/tv/x.json"
       ],
-      "checked_at": "2026-10-29T17:08:38+00:00",
+      "checked_at": "2026-10-30T16:52:13+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "方糖之声",
+          "name": "小城良方",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "璀璨之城国语",
+          "name": "辛普森一家第三十八季",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "c95160479ba0bb3b",
+      "name": "影视 | 量子[直连]",
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/muyuewang/VisiBox/main/app/src/main/assets/local/%E4%B8%9C%E7%AF%B1/index.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://qist.wyfc.qzz.io/jsm.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://clun.top/box.json",
+        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+        "http://szyyds.cn/tv/x.json",
+        "https://www.252035.xyz/z/FongMi.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "https://xn--i8sz35d1yr.top/%E7%A6%81%E6%AD%A2%E8%B4%A9%E5%8D%96",
+        "https://gh-proxy.org/https://github.com/Supprise0901/api/blob/main/api.json",
+        "http://xhztv.top/4k.json",
+        "https://gh-proxy.org/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+      ],
+      "checked_at": "2026-10-30T16:52:21+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "末路兼职",
+          "status": "failed",
+          "reason": "HTTP 404"
+        },
+        {
+          "name": "新宝可梦",
+          "status": "failed",
+          "reason": "HTTP 404"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "3c340030770c0794",
+      "name": "影视 | 率率[直连]",
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+        "https://qist.wyfc.qzz.io/jsm.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://clun.top/box.json",
+        "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+        "http://szyyds.cn/tv/x.json",
+        "https://raw.liucn.cc/box/m.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "http://xhztv.top/4k.json",
+        "https://gh-proxy.org/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+      ],
+      "checked_at": "2026-10-30T16:52:15+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "后门",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "怒火交织第二季",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
         }
       ],
       "searchable": 0,
@@ -1338,34 +662,50 @@
       "api": "https://bfzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://dxawi.github.io/0/0.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://qist.tycng.com/jsm.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
+        "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://qist.wyfc.qzz.io/jsm.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
         "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
         "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
         "https://clun.top/box.json",
         "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
-        "https://szyyds.cn/tv/x.json",
         "http://szyyds.cn/tv/x.json",
-        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0821.json",
-        "https://fastly.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json"
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://dxawi.github.io/0/0.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "https://gh-proxy.org/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
+        "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
       ],
-      "checked_at": "2026-10-29T17:08:45+00:00",
-      "status": "failed",
-      "sampled": 0,
-      "passed": 0,
-      "samples": [],
+      "checked_at": "2026-10-30T16:52:22+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "苍蓝传承",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "某暗部的少女共栖",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
       "searchable": 0,
-      "reason": "读取超过本次检查时限"
+      "reason": "抽检 2 部节目，2 部出画面"
     },
     {
       "id": "d0d25fc89f6477bd",
@@ -1373,28 +713,23 @@
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
         "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/muyuewang/VisiBox/main/app/src/main/assets/local/%E4%B8%9C%E7%AF%B1/index.json",
         "http://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
+        "https://play.iptv365.org/OK/api.json"
       ],
-      "checked_at": "2026-10-29T17:08:47+00:00",
+      "checked_at": "2026-10-30T16:52:22+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "芝加哥急救第十二季",
+          "name": "京城十二时辰第6季​",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "恋爱的正确标记法第二季",
+          "name": "打歌2026",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1408,23 +743,77 @@
       "api": "http://cj.lziapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
         "https://szyyds.cn/tv/x.json",
+        "https://larry-biu.github.io/tvbox-config/fongmi-pages.json",
+        "https://larry-biu.github.io/tvbox-config/tvbox-pages.json",
+        "https://larry-biu.github.io/tvbox-config/config-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/tvbox-pages.json",
+        "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/tvbox.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
         "http://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json"
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xzwei528/qixia/main/qixia.json"
       ],
-      "checked_at": "2026-10-29T17:08:52+00:00",
+      "checked_at": "2026-10-30T16:52:22+00:00",
       "status": "failed",
-      "sampled": 0,
+      "sampled": 2,
       "passed": 0,
-      "samples": [],
+      "samples": [
+        {
+          "name": "末路兼职",
+          "status": "failed",
+          "reason": "HTTP 404"
+        },
+        {
+          "name": "新宝可梦",
+          "status": "failed",
+          "reason": "HTTP 404"
+        }
+      ],
       "searchable": 0,
-      "reason": "timed out"
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "790172e095caf7cc",
+      "name": "红牛资源(切)",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://g.3344550.xyz/https://raw.githubusercontent.com/jigedos/1024/master/jsm.json",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "http://550.3vcn.work/wdjyys.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+        "http://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "http://xhztv.top/4k.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:31+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "你最后留下的歌",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "经验派护士～数字化到底是什么啊",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
     },
     {
       "id": "a6570b60682e64ba",
@@ -1432,25 +821,21 @@
       "api": "http://sdzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
         "https://szyyds.cn/tv/x.json",
-        "http://szyyds.cn/tv/x.json",
-        "https://raw.githubusercontent.com/Lpaipai/home-tv-subscription/main/public/vod/acacee3d6ab4.json"
+        "http://szyyds.cn/tv/x.json"
       ],
-      "checked_at": "2026-10-29T17:08:47+00:00",
+      "checked_at": "2026-10-30T16:52:20+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "分手代理",
+          "name": "谎言",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "诛仙第四季",
+          "name": "深夜加班 ~肉食后辈的暗恋实习~",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1459,30 +844,160 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "9e0145bd863328a1",
-      "name": "📱天堂网ᶜʲ┃采集",
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "id": "fc4bc5d92b095f5a",
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/gclgg/box/main/ys.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://szyyds.cn/tv/x.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "http://szyyds.cn/tv/x.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "http://xhztv.top/4k.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
       ],
-      "checked_at": "2026-10-29T17:08:52+00:00",
+      "checked_at": "2026-10-30T16:52:24+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "d6abf09efcd48c6d",
+      "name": "🤖爬虫┃龙门动漫",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://raw.githubusercontent.com/fqu2003/tvbox/main/dj2.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:30+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "寻宝侦探第四季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "小城良方",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "653ea81b6a618ba6",
+      "name": "极速资源",
+      "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1.txt"
+      ],
+      "checked_at": "2026-10-30T16:52:24+00:00",
+      "status": "unverified",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "unverified",
+          "reason": "只允许公共 HTTP(S) 地址"
+        },
+        {
+          "name": "嗜血法医：杀魔复生第二季",
+          "status": "unverified",
+          "reason": "只允许公共 HTTP(S) 地址"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "10ee9009c31aca81",
+      "name": "📺 爱坤",
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config13.txt",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_config1246.txt",
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://raw.githubusercontent.com/nzsm/tvbox-server/main/merged_configa.txt",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://clun.top/box.json",
+        "http://xhztv.top/4k.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
+      ],
+      "checked_at": "2026-10-30T16:52:26+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "Doctor X：白色黑手党时代",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "极速：伪装者",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "0ff34d5dd1a9baf0",
+      "name": "✅索尼┃影视",
+      "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://g.3344550.xyz/https://raw.githubusercontent.com/jigedos/1024/master/jsm.json",
+        "http://550.3vcn.work/wdjyys.json",
+        "https://www.252035.xyz/p/jsm.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xnftv/xnf/main/hyxuan.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xzwei528/qixia/main/qixia.json"
+      ],
+      "checked_at": "2026-10-30T16:52:24+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "芝加哥急救第十二季",
+          "name": "谎言",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "恋爱的正确标记法第二季",
+          "name": "璀璨之城粤语",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1496,22 +1011,22 @@
       "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json"
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json"
       ],
-      "checked_at": "2026-10-29T17:08:47+00:00",
+      "checked_at": "2026-10-30T16:52:25+00:00",
       "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "芝加哥警署第十四季",
+          "name": "可以爱你吗",
           "status": "unverified",
           "reason": "节目详情未提供直接视频地址，可能需要解析插件"
         },
         {
-          "name": "诛仙最终季",
+          "name": "末路兼职",
           "status": "unverified",
           "reason": "节目详情未提供直接视频地址，可能需要解析插件"
         }
@@ -1525,28 +1040,25 @@
       "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/free.txt",
-        "https://raw.githubusercontent.com/songlees355-wq/okay/main/tvbox.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/laosj.json",
-        "https://gh-proxy.org/https://github.com/songlees355-wq/okay/blob/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
       ],
-      "checked_at": "2026-10-29T17:08:48+00:00",
+      "checked_at": "2026-10-30T16:52:25+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "恋爱的正确标记法第二季",
+          "name": "谎言",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "诛仙第四季",
+          "name": "深夜加班 ~肉食后辈的暗恋实习~",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
@@ -1555,31 +1067,150 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "35992a676bbbc002",
-      "name": "极速资源",
-      "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8/at/json",
+      "id": "5ffb6e9a093b753f",
+      "name": "魔都",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://feigeys.pages.dev/index_full.json",
-        "https://feigeys.pages.dev/index_cn.json",
-        "https://feigeys.pages.dev/index_min.json",
-        "https://feigeys.pages.dev/index.json",
-        "https://feigeys.pages.dev/index_all.json"
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/free.txt",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/laosj.json",
+        "https://raw.githubusercontent.com/songlees355-wq/okay/main/%E7%A6%8F%E5%88%A9%E6%8E%A5%E5%8F%A3.json",
+        "https://raw.bgithub.xyz/hanhan8127/TVBox/main/hanXC.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
       ],
-      "checked_at": "2026-10-29T17:08:50+00:00",
-      "status": "unverified",
+      "checked_at": "2026-10-30T16:52:28+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "Doctor X：白色黑手党时代",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "库比蒂诺",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "dd3e59bd879f1515",
+      "name": "影视•猫眼[直连]",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.githubusercontent.com/Bensonliu666/tvbox-config/main/config.json",
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+      ],
+      "checked_at": "2026-10-30T16:52:33+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "寻宝侦探第四季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "小城良方",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "ffb12753653057e9",
+      "name": "🔰金鹰┃影视",
+      "api": "https://jyzyapi.com/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "http://550.3vcn.work/wdjyys.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+      ],
+      "checked_at": "2026-10-30T16:52:34+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "9a8a6fa39c3f2d4c",
+      "name": "❤光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://raw.githubusercontent.com/niubihu1/tvbox/main/1.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:29+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "9e0145bd863328a1",
+      "name": "🧞无广┃[采集]",
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
+      ],
+      "checked_at": "2026-10-30T16:52:34+00:00",
+      "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "爱情盲选第十一季",
-          "status": "unverified",
-          "reason": "只允许公共 HTTP(S) 地址"
+          "name": "京城十二时辰第6季​",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "福星小子",
-          "status": "unverified",
-          "reason": "只允许公共 HTTP(S) 地址"
+          "name": "打歌2026",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
         }
       ],
       "searchable": 0,
@@ -1591,81 +1222,80 @@
       "api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
       ],
-      "checked_at": "2026-10-29T17:08:56+00:00",
-      "status": "failed",
-      "sampled": 0,
-      "passed": 0,
-      "samples": [],
-      "searchable": 0,
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "827db570d348ff49",
-      "name": "🍀┃非凡┃资源",
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "category": "ordinary",
-      "sources": [
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
-      ],
-      "checked_at": "2026-10-29T17:08:56+00:00",
+      "checked_at": "2026-10-30T16:52:36+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "伤痕累累的圣女的复仇第二季",
+          "name": "末路兼职",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "HTTP 404"
         },
         {
-          "name": "费城永远阳光灿烂第十七季",
+          "name": "新宝可梦",
           "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "reason": "HTTP 404"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "1332a849cbebd1cd",
-      "name": "❤闪电资源",
-      "api": "https://sdzyapi.com/api.php/provide/vod",
+      "id": "304e2e6a898f6a58",
+      "name": "[590ms|5] 猫眼影视",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/zhuzhuyule/juhe-subhub/main/docs/tvbox.json",
-        "https://ofind.cn/juhe-subhub/tvbox.json",
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
-        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
       ],
-      "checked_at": "2026-10-29T17:08:50+00:00",
-      "status": "failed",
+      "checked_at": "2026-10-30T16:52:38+00:00",
+      "status": "passed",
       "sampled": 2,
-      "passed": 0,
+      "passed": 2,
       "samples": [
         {
-          "name": "分手代理",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "寻宝侦探第四季",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
         },
         {
-          "name": "诛仙第四季",
-          "status": "failed",
-          "reason": "HTTP 403，服务器限制访问"
+          "name": "小城良方",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "361de0f46352c47d",
+      "name": "茅台资源",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
+      ],
+      "checked_at": "2026-10-30T16:52:45+00:00",
+      "status": "passed",
+      "sampled": 1,
+      "passed": 1,
+      "samples": [
+        {
+          "name": "开局圣体：修炼十倍返还",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
         }
       ],
       "searchable": 0,
-      "reason": "抽检 2 部节目，0 部出画面"
+      "reason": "抽检 1 部节目，1 部出画面"
     },
     {
       "id": "fb18c630bd6e2a18",
@@ -1673,23 +1303,20 @@
       "api": "https://tyyszy.com/api.php/provide/vod",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
       ],
-      "checked_at": "2026-10-29T17:08:52+00:00",
+      "checked_at": "2026-10-30T16:52:34+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "方糖之声",
+          "name": "小城良方",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         },
         {
-          "name": "璀璨之城国语",
+          "name": "辛普森一家第三十八季",
           "status": "failed",
           "reason": "检测网络连接失败或超时"
         }
@@ -1703,29 +1330,110 @@
       "api": "https://caiji.dyttzyapi.com/api.php/provide/vod?from=dyttm3u8",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
       ],
-      "checked_at": "2026-10-29T17:08:58+00:00",
+      "checked_at": "2026-10-30T16:52:39+00:00",
       "status": "failed",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "芝加哥急救第十二季",
+          "name": "京城十二时辰第6季​",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         },
         {
-          "name": "恋爱的正确标记法第二季",
+          "name": "打歌2026",
           "status": "failed",
           "reason": "HTTP 403，服务器限制访问"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "1b08e6b49b6d2dc6",
+      "name": "火狐",
+      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:38+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "你最后留下的歌",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "d07fd45d8b04f9e2",
+      "name": "红牛",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod?from=hnm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:42+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "你最后留下的歌",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "经验派护士～数字化到底是什么啊",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "cc611d7a1de5c292",
+      "name": "豪华资源",
+      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:40+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "你最后留下的歌",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
     },
     {
       "id": "c13e2d4b1600e43b",
@@ -1733,18 +1441,26 @@
       "api": "https://cj.lziapi.com/api.php/provide/vod?from=lzm3u8",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
       ],
-      "checked_at": "2026-10-29T17:08:59+00:00",
+      "checked_at": "2026-10-30T16:52:45+00:00",
       "status": "failed",
-      "sampled": 0,
+      "sampled": 2,
       "passed": 0,
-      "samples": [],
+      "samples": [
+        {
+          "name": "末路兼职",
+          "status": "failed",
+          "reason": "HTTP 404"
+        },
+        {
+          "name": "新宝可梦",
+          "status": "failed",
+          "reason": "HTTP 404"
+        }
+      ],
       "searchable": 0,
-      "reason": "The read operation timed out"
+      "reason": "抽检 2 部节目，0 部出画面"
     },
     {
       "id": "40286bb34a46f298",
@@ -1752,23 +1468,20 @@
       "api": "https://jszyapi.com/api.php/provide/vod?from=jsm3u8",
       "category": "ordinary",
       "sources": [
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
-        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/tvbox.json",
-        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/vod.json",
-        "https://github.com/hebijunge/tvbox-config/releases/download/latest/tvbox.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json"
       ],
-      "checked_at": "2026-10-29T17:08:54+00:00",
+      "checked_at": "2026-10-30T16:52:40+00:00",
       "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "爱情盲选第十一季",
+          "name": "可以爱你吗",
           "status": "unverified",
           "reason": "只允许公共 HTTP(S) 地址"
         },
         {
-          "name": "福星小子",
+          "name": "嗜血法医：杀魔复生第二季",
           "status": "unverified",
           "reason": "只允许公共 HTTP(S) 地址"
         }
@@ -1777,40 +1490,291 @@
       "reason": "抽检 2 部节目，0 部出画面"
     },
     {
-      "id": "1e24f6974f6446c1",
-      "name": "极速｜采集",
-      "api": "https://jszyapi.com/api.php/provide/vod",
+      "id": "c35a3bb2b3a307f3",
+      "name": "光速",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod?from=gsm3u8",
       "category": "ordinary",
       "sources": [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
       ],
-      "checked_at": "2026-10-29T17:08:54+00:00",
+      "checked_at": "2026-10-30T16:52:43+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "ab24f4094db661d7",
+      "name": "金鹰",
+      "api": "https://jyzyapi.com/provide/vod?from=jinyingm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:48+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "3c1204193dd947c7",
+      "name": "IK",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://dxawi.github.io/0/0.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family",
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
+      ],
+      "checked_at": "2026-10-30T16:52:43+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "Doctor X：白色黑手党时代",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "极速：伪装者",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "4115fcb4063430eb",
+      "name": "金鹰资源",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/hebijunge/tvbox-config@main/vod.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:52+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "77be1653869536c7",
+      "name": "光速｜采集",
+      "api": "http://api.guangsuapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:46+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "1332a849cbebd1cd",
+      "name": "闪电｜采集",
+      "api": "https://sdzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+        "https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+      ],
+      "checked_at": "2026-10-30T16:52:45+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "谎言",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "深夜加班 ~肉食后辈的暗恋实习~",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "8d82ffa7f9899260",
+      "name": "金鹰 | 采集",
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://clun.top/box.json",
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:52+00:00",
+      "status": "passed",
+      "sampled": 2,
+      "passed": 2,
+      "samples": [
+        {
+          "name": "可以爱你吗",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        },
+        {
+          "name": "末路兼职",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 1,
+      "reason": "抽检 2 部节目，2 部出画面"
+    },
+    {
+      "id": "844abbae184cff08",
+      "name": "电影天堂",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.bgithub.xyz/hanhan8127/TVBox/main/hanXC.json"
+      ],
+      "checked_at": "2026-10-30T16:52:52+00:00",
+      "status": "failed",
+      "sampled": 2,
+      "passed": 0,
+      "samples": [
+        {
+          "name": "京城十二时辰第6季​",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        },
+        {
+          "name": "打歌2026",
+          "status": "failed",
+          "reason": "HTTP 403，服务器限制访问"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "1f40ddd28e59a630",
+      "name": "极速影院",
+      "api": "https://jszyapi.com/api.php/provide/vod/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://raw.bgithub.xyz/hanhan8127/TVBox/main/hanXC.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/001.json",
+        "https://ghproxy.net/https://raw.githubusercontent.com/maoystv/6/main/001.json"
+      ],
+      "checked_at": "2026-10-30T16:52:47+00:00",
       "status": "unverified",
       "sampled": 2,
       "passed": 0,
       "samples": [
         {
-          "name": "爱情盲选第十一季",
+          "name": "可以爱你吗",
           "status": "unverified",
           "reason": "只允许公共 HTTP(S) 地址"
         },
         {
-          "name": "福星小子",
+          "name": "嗜血法医：杀魔复生第二季",
           "status": "unverified",
           "reason": "只允许公共 HTTP(S) 地址"
         }
       ],
       "searchable": 0,
       "reason": "抽检 2 部节目，0 部出画面"
+    },
+    {
+      "id": "845e5ba10d71c5d4",
+      "name": "茅台影视",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
+      "category": "ordinary",
+      "sources": [
+        "https://felixwang1987.github.io/tv-pocket/checked/vod-all.json?profile=family"
+      ],
+      "checked_at": "2026-10-30T16:52:58+00:00",
+      "status": "passed",
+      "sampled": 1,
+      "passed": 1,
+      "samples": [
+        {
+          "name": "开局圣体：修炼十倍返还",
+          "status": "passed",
+          "reason": "已取到视频数据并解码出 1 帧画面"
+        }
+      ],
+      "searchable": 0,
+      "reason": "抽检 1 部节目，1 部出画面"
     }
   ],
   "summary": {
-    "discovered_apis": 54,
-    "checked_apis": 54,
-    "verified_routes": 23,
+    "discovered_apis": 55,
+    "checked_apis": 55,
+    "verified_routes": 25,
     "verified_adult_routes": 2,
-    "sampled_programs": 82,
-    "passed_programs": 46,
-    "elapsed_seconds": 281
+    "sampled_programs": 94,
+    "passed_programs": 47,
+    "elapsed_seconds": 259
   }
 }
