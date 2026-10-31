@@ -163,28 +163,19 @@
       "filterable": 0
     },
     {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "🦊火狐采集",
+      "key": "pocket_c732045a4d3583f3",
+      "name": "🥣爱坤┃影视",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_8e529b20899aa1c4",
-      "name": "影视 | 暴風[直连]",
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🦊火狐采集",
       "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_827db570d348ff49",
-      "name": "🍀┃非凡┃资源",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "api": "https://hhzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -203,6 +194,15 @@
       "name": "茅台资源",
       "type": 1,
       "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_8e529b20899aa1c4",
+      "name": "影视 • 暴風[直连]",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
