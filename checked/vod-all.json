@@ -91,15 +91,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "红牛资源(切)",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_cc611d7a1de5c292",
       "name": "豪华资源",
       "type": 1,
@@ -137,7 +128,7 @@
     },
     {
       "key": "pocket_5ffb6e9a093b753f",
-      "name": "魔都",
+      "name": "魔都资源",
       "type": 1,
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "searchable": 1,
@@ -145,10 +136,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_827db570d348ff49",
-      "name": "🍀┃非凡┃资源",
+      "key": "pocket_790172e095caf7cc",
+      "name": "🐂┃红牛┃采集",
       "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -164,7 +155,7 @@
     },
     {
       "key": "pocket_d6abf09efcd48c6d",
-      "name": "🤖爬虫┃龙门动漫",
+      "name": "🔶老张丨猫眼[短]",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
@@ -191,27 +182,9 @@
     },
     {
       "key": "pocket_8e529b20899aa1c4",
-      "name": "影视 | 暴風[直连]",
+      "name": "🌪️┃暴风┃采集",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_845e5ba10d71c5d4",
-      "name": "茅台影视",
-      "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/json",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_361de0f46352c47d",
-      "name": "茅台资源",
-      "type": 1,
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
