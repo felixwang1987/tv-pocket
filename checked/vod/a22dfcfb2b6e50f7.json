@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_a22dfcfb2b6e50f7",
+      "name": "滴滴资源",
+      "type": 1,
+      "api": "https://api.ddapi.cc/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
