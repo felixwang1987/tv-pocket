@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_f7f97fb78f7df8e4",
+      "name": "360资源",
+      "type": 1,
+      "api": "https://360zyzz.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

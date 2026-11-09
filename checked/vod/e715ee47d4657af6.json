@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_e715ee47d4657af6",
+      "name": "光速",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/josn",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

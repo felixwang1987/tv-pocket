@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_af17c24f69960950",
+      "name": "🎬光速资源┃高清画质",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
