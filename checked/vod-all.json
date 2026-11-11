@@ -55,15 +55,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_9d92918f594d3f71",
-      "name": "云播火狐电影",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_c35a3bb2b3a307f3",
       "name": "光速",
       "type": 1,
@@ -118,15 +109,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_1b08e6b49b6d2dc6",
-      "name": "火狐",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_d07fd45d8b04f9e2",
       "name": "红牛",
       "type": 1,
@@ -158,15 +140,6 @@
       "name": "红牛资源(切)",
       "type": 1,
       "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_cc611d7a1de5c292",
-      "name": "豪华资源",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -298,21 +271,12 @@
       "filterable": 0
     },
     {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "🦊火狐采集",
+      "key": "pocket_9d92918f594d3f71",
+      "name": "云播火狐电影",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_827db570d348ff49",
-      "name": "🍀┃非凡┃资源",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8",
+      "searchable": 0,
+      "quickSearch": 0,
       "filterable": 0
     },
     {
@@ -329,6 +293,33 @@
       "name": "暴风m3u8",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/at/m3u8",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_1b08e6b49b6d2dc6",
+      "name": "火狐",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_cc611d7a1de5c292",
+      "name": "豪华资源",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_bd3c0500399a3397",
+      "name": "🦊火狐采集",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
