@@ -109,6 +109,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_dd3e59bd879f1515",
+      "name": "影视•猫眼[直连]",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_1b08e6b49b6d2dc6",
       "name": "火狐",
       "type": 1,
@@ -199,24 +208,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_5ffb6e9a093b753f",
-      "name": "魔都",
-      "type": 1,
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_275acd6551209e29",
-      "name": "魔都动漫资源",
-      "type": 1,
-      "api": "https://www.mdzyapi.com/api.php/provide/vod/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_84e8ae98e25aa061",
       "name": "🎬360 资源",
       "type": 1,
@@ -298,10 +289,46 @@
       "filterable": 0
     },
     {
-      "key": "pocket_dd3e59bd879f1515",
-      "name": "影视•猫眼[直连]",
+      "key": "pocket_8e529b20899aa1c4",
+      "name": "影视 • 暴風[直连]",
       "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_db506285334f5b5c",
+      "name": "暴风m3u8",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/at/m3u8",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_5ffb6e9a093b753f",
+      "name": "魔都",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_275acd6551209e29",
+      "name": "魔都动漫资源",
+      "type": 1,
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_827db570d348ff49",
+      "name": "🍀┃非凡┃资源",
+      "type": 1,
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
