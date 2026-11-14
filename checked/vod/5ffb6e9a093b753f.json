@@ -5,8 +5,8 @@
       "name": "魔都",
       "type": 1,
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
-      "searchable": 0,
-      "quickSearch": 0,
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0
     }
   ]
