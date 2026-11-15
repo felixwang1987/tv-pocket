@@ -41,7 +41,14 @@ Rai World Premium 🇮🇹,https://d3k8wzt41aflvx.cloudfront.net/RAIP/Live.m3u8
 Total Music,https://cdn.global.elektamedia.com/live/c7eds/Totalmusic/SA_LIVE_hls_enc/master.m3u8
 TV Zimbo 🇦🇴,https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
 NHK World 🇬🇧,https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+龙华偶像,https://cdn.qd.je/163189/lhox
+日本-MBS新闻,https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news5-cmaf-rakutenjp/playlist.m3u8
+Qello Concerts,https://lotus.stingray.com/manifest/qello-qello001-montreal/samsungtvplus/master.m3u8
+国学频道,https://outlivecloud-cdn.ysp.cctv.cn/9150A2556888D6D5DEA62AC3A63AD80264210D814E2EBD790C98A0B167C3DF3E31C52A5335FBD2638BE8DF406E61D8562BFDA5882E8E5650029B5C7FF588AFD3B748DB5106AC616B272BC5118309BBCD5BF7CBE59214A99BD8DDCC457FB46DCE1B133275D6F47DD7B4839ABB143470C6DE446CAE41204A8F57482027591C4CBD1AF6F611CF208FF32A6EBB8F7AAFAA901BB9F319D7CFD1493F6658FF46DB3518/2029360403.m3u8?from=player&svrtime=1794760128&pid=600213139&cdn=5401
 CCTV4·WCETV海外转播 [高清1080p],https://h5cul1yar48um3t.wcetv.com/hls/cctv4.m3u8
+有線新聞台,http://61.10.2.141:80/live_freedirect/freehd209_h.live/chunklist.m3u8
+ViuTV,http://r.jdshipin.com/vSJvl
+HOY TV,http://uc6.i-cable.com/live_freedirect/opentvhd001_h.live/playlist.m3u8
 479 Brat TV,https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00350-bratstudio-brattv-lgit/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&givn=[NONCE]
 QVC,https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
 Mr Bean Animated,https://amg00627-amg00627c29-rakuten-it-3989.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanitcc-rakutenit/playlist.m3u8
@@ -56,6 +63,11 @@ FIFA+,https://d2w9q46ikgrcwx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b
 DD Sports,https://fta.ektv.in/live/64/64_0.m3u8
 RTV,https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/index.m3u8
 龙井综合,http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild
+Mahua Play KB,https://cdn.ottlive.co.in/mahuaplay/index.m3u8
+News18 Tamil Nadu KB,https://n18syndication.akamaized.net/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/master.m3u8
+Sana TV KB,https://vglivessai.akamaized.net/us/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b6d9e864-ec16-410a-804d-ccf8f720bfaa/index.m3u8
+India TV KB,https://vg-indiatv-waves.vgcdn.net/vglive-sk-394591/playlist.m3u8
+Big TV 24x7 KB,https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
 BTV HD,https://cdn3.glebul.com/hls/hd-btv-hd/index.m3u8?e=1794729560&hash=OORiQ8vLv1o87h-CBzgaKA
 Diema Sport HD,https://cdn11.glebul.com/hlsfhd/hd-diema-sport-hd.m3u8?e=1794729710&hash=w56EXFl82bxL9Ugi8kyICw
 Euronews Bulgaria HD,https://cdn3.glebul.com/hls/hd-euronews-bulgaria-hd/index.m3u8?e=1794729861&hash=KAqjjrvmmPHys41adcC7WA
@@ -67,6 +79,9 @@ ID Xtra HD,https://cdn3.glebul.com/hls/hd-id-xtra-hd/index.m3u8?e=1794730268&has
 飞碟之谜01,https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8
 珲春新闻,http://stream8.jlntv.cn/hctv/sd/live.m3u8?zjild
 哈尔滨资讯,http://stream.hrbtv.net/zxpd/sd/live.m3u8
+CGTN英语,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
+春晚2025,https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
+CCTV-9 纪录 (105ms),https://xykt-fix.github.io/Y77.m3u8
 CCTV-4 中文国际,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1794726000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-2544bde658d158202517dae26ccfbe63&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 Good 2,https://live.streamingfast.net/osmflivech2.m3u8
 Fashion TV,https://amg01546-amg01546c1-rakuten-gb-9592.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01546-fashiontv-fashiontv-rakutengb/playlist.m3u8
@@ -80,6 +95,11 @@ ACI Sport TV (1080p),https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b
 FITE 24/7 (1080p),https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 Monterrico TV (1080p) [Not 24/7],https://www.opencaster.com/resources/hls_stream/hipodromojcp2.m3u8
 ☆ NatureVision 🇺🇸,https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992106&ads.xumo_streamId=99992106&ads.channelId=99992106&ads.ad_tag_id=9320&ads.csid=lgchannels_us_naturevision_ssai&ads.channelName=naturevision_us&ads.xumo_contentName=NatureVisionTV&ads.xumo_contentId=133&ads.xumo_providerName=NatureVisionTV&ads.xumo_providerId=133&ads.content_category=IAB1-7&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
+二胖影视,https://www.goodiptv.club/douyu/10064260
+哈利影视,https://www.goodiptv.club/douyu/8475821
+爱星影视,https://www.goodiptv.club/douyu/9476806
+Darcizzle电视,http://30a-tv.com/darcizzle.m3u8
+亚洲新闻,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 日本女子摔角,https://live.ottiptv.cc/douyu/425809
 我爱我家,https://live.ottiptv.cc/yy/1382735557
 YY用户,https://live.ottiptv.cc/yy/1382851602
@@ -92,6 +112,8 @@ Xinjiang TV 2,https://hls.quklive.com/live/play-sh-21.quklive.com/17775116151890
 Pet Club TV (1080p),https://petclub-samsungaus.amagi.tv/playlist.m3u8
 TV BRICS Chinese (1080p),https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8
 Love Nature,https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
+24 Horas,https://ztnr.rtve.es/ztnr/1694255.m3u8
+Canal Sur Andalucía,https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
 My TV,https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8?e=1784102573&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=ae3f9c12e1d065b5ae78d27fb2e192fc
 RTV,https://tvsen5.aynaott.com/RtvHD/index.m3u8?e=1784102560&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=341d28b0504fc6b2cb3fd78fafa0a854
 Weather SPY,https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
@@ -115,6 +137,18 @@ Zerouno Tv News,https://5f22d76e220e1.streamlock.net/01news/01news/playlist.m3u8
 73,https://d862cp.cdnedge.live/file/avple-images/hls/61ce1082b418404e15c81300/playlist.m3u8
 196,https://je40u.cdnedge.live/file/avple-images/hls/6183354d86d3713512d4ddae/playlist.m3u8
 粤语剧场版27,https://sns-video-default.xhscdn.com/stream/1/110/258/01e8c31c8d071f9801037001993a28db08_258.mp4
+国产乱伦强奸@,http://xbo.xn--ypzw80d.com/live/cx_31.flv?wsSecret=f447babb22f05c4f7af0baca588dd539&wsTime=1794713030
+职场身体上位@,http://xbo.xn--ypzw80d.com/live/cx_15604.flv?wsSecret=891824d5bc52ef212df673dd794ab225&wsTime=1794712640
+气泡芝士,http://xbo.xn--ypzw80d.com/live/cx_16400.flv?wsSecret=c5f2d0a9f12ad493c9cf56d9e79f61ed&wsTime=1794758477
+丹丹,http://3jadpaigaisewenroula.cwhhome.com/live/cx_388047.flv?wsSecret=a4d5fc8896a57160e96093e16f8d5151&wsTime=1794754908
+缺爱好孤独,http://s01ladnznnermt.mtkeji66.com/live/cx_374539.flv?wsSecret=282eb3c65d4b8c3ffa60fbd95e4e5326&wsTime=1794758563
+淫荡小妲己@,http://xbo.xn--kcrp02i.com/live/cx_16921.flv?wsSecret=09bce6a3982217410b6bfbb764c3662b&wsTime=1794753928
+李圣杰-痴心绝对,http://vodcdn.video.taobao.com/oss/ali-video/f2b27944f9960f3dbb2c6dd6c4679747/video.m3u8
+航拍中国第一季,http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/8edf3fb6a69148ea9a7dc0b5a9d99fdb/4000.m3u8
+草原之王上战场,http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/bfb6917b29ea413c89e8ed8fa6e2a6ab/1200.m3u8
+Arvan TV,https://arvhls.wns.live/hls/stream.m3u8
+福州少儿,http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
+Balle Balle,https://mcncdndigital.com/balleballetv/index.m3u8
 梅河口综合,http://stream4.jlntv.cn/mhk/sd/live.m3u8?zjild
 新沂新闻频道,http://live.xysrmt.cn/xwzh/sd/live.m3u8
 东辽综合,http://stream5.jlntv.cn/dl/sd/live.m3u8
@@ -125,6 +159,8 @@ Vod572,https://vod.mycamtv.net/572.m3u8
 🐨12传媒28,https://zo3921.cdnedge.live/file/avple-asserts/hls/638c19fc6541306d1d399de0/playlist.m3u8
 🐨12传媒17,https://10j991.cdnedge.live/file/avple-asserts/hls/638d90925ed41a1a399ace04/playlist.m3u8
 Vod574,https://vod.mycamtv.net/574.m3u8
+CCTV10,http://t.061899.xyz/tl/tl.php?id=cctv10
+东南卫视,http://t.061899.xyz/tl/tl.php?id=dnws
 CCTV-12,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv12_mhd.m3u8?auth_key=1794699900-1-522b787903f8711b91b28916a288278f7f49452b686526c41027394adba5a444-221890cc340d80f9fbe57adfde58b725
 CCTV-13,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv13_mhd.m3u8?auth_key=1794699900-1-522b787903f8711b91b28916a288278f7f49452b686526c41027394adba5a444-9f8e5080203ee4d78713bea6197ba404
 CCTV-4K,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mhd.m3u8?auth_key=1794699900-1-522b787903f8711b91b28916a288278f7f49452b686526c41027394adba5a444-41a2abd4d4bcbdd245517ad478b8ab18
@@ -132,22 +168,40 @@ CCTV-2,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv2_mhd.m3u
 CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mhd.m3u8?auth_key=1794699900-1-522b787903f8711b91b28916a288278f7f49452b686526c41027394adba5a444-13a06a3895f50bd4d88dda33107e926e
 CCTV-9,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv9_mhd.m3u8?auth_key=1794699900-1-522b787903f8711b91b28916a288278f7f49452b686526c41027394adba5a444-f67ce7e3f0c6b6b8a850638623411b65
 Wild Earth,https://wildearth-plex.amagi.tv/masterR1080p.m3u8
+Bloomberg TV Asia Live Event,https://bloomberg.com/media-manifest/streams/asia-event.m3u8
+TVB News Channel,http://r.jdshipin.com/CkuBd
+Pet Club TV,https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
 HTO,https://cdn-5.nxplay.com.br/HTO_TV/tracks-v1a1/mono.m3u8
 HELLO TV,https://cdn-5.nxplay.com.br/HELLO/tracks-v1a1/mono.m3u8
 TV EVANGELIZAR,https://cdn-5.nxplay.com.br/EVANGELIZAR/tracks-v2a1/mono.m3u8
 SONY,https://cdn-5.nxplay.com.br/SONY_CHANNEL/tracks-v2a1/mono.m3u8
-無綫新聞台,http://r.jdshipin.com/CkuBd
+Fashion TV HD,https://edge-fast3.evrideo.tv/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/manifest.m3u8
 OnTV4U (1080p),https://ontv4u-orka.b-cdn.net/ONTV4U-ORKA/index.m3u8
 RTV SLOS (720p),https://d3b6teev8t7bb2.cloudfront.net/nlpo/clr-nlpo/rtvslos/index.m3u8
-Arvan TV,https://arvhls.wns.live/hls/stream.m3u8
 Emocion TV (720p),https://v1.tustreaming.cl/emociontv/index.m3u8
 LLBN TV Arabic (480p),https://brightstar-arabic-pull-secure.akamaized.net/brightstararabic/stream.m3u8
 湖州公共民生,http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
+Big Buck Bunny,https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+Tears of Steel,https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+Apple BipBop,https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
 Beyaz Tv,https://beyaztv.daioncdn.net/beyaztv/beyaztv_1080p.m3u8?=&sid=5ycze02og8jy&app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3&dfp_paln=AQzzBGQEykY8pruWqyuh83klikIL7h25FdwAN4mmgSspaC8m84-Y2434d0YpNVWIIe7gMddQA0e9Gg8MG8rXu3-MN7H6rlbNdAZu5A-UCb2WAgWH1ntuJ5SLdQ97JAq39Ox4yLVSpEl6HNC13Q_PK3gvh8l4eGNshTbgS72gyNKLtP5WrNFfZHOO25C9Nl9dEywobD0QwBOjQh_n4RoVrqVjFQtDW1EW1zqiN8HBeRIfk_K3OqzJNjbxoweQvYcGzyEuXyfhPzdBCkIKI0l920hExvAyztM0P34jBPDP4uiH1Ymc75TKROpFNJDEIA8DrUSejmir866Cfdp7gp1KZD97pER0hM0cYY9QKb7TCGaWMGfwtng3Ewb08yzitrmxjp7Dcuy04rBO7yhs53ypdL91S-LWZld1C1Ypsn6B6xic-IZ6S9Wji0MxwAZTGYln5cREtvjm5fRsQtbKmluwnyxPRv0GlPMbWWtd61jO3UrZ14YZFB8WkeazBS_VKB6NbML4cvPT4UVDkgATZ43UlI-nQSfBUehvbay3Mmf3RzdOKMAioRUHNXiDmezIqsUsieEBerx3KQ05dSUunbNx2iiOf8XFXQfOaYKfFheWULb69ph6KT4bq38twpjxuq36A12spAgnehyNTvSSsvt6GG59DAsjHMLX6z1QQEjSY2Lb-ioHukaK-Ht8S3dTUqnGKQWkFXcjS7G8KCj7_M0aFy97txYRFxQvpICpuZ4Yk2b1uXP2lEY_iqJh9MxPajNAroumzJ_jwM-AwXkPwwb8i28LMOoo_Y0DUdJfcyvxHQCGyjffBgCuUcsILznoJAkz9fDhtqS8AqmRZxkmMJDhUGTyCghx5IqCt21ZCENwNAPB-_rTgEWieDPmHjzr0lUFYb5b6oIle1FXeAvtmuGQ7V8V9GWquktZEfvmxfXweCqVi4AOAuZtjxfvQ-WzmuLwAzTuL-hYeE7iQai7ev06h9WpRbzxMfg-gvn_HzxxkegJk20YjnR9NqBjCJyssEtlULa_ZLbvG04d5BT9TJ3cAR2mEOcfhEbFQMgSvxc4-TnMTleVgNl2Xz_7WlRMRpI.
 Hebei TV (2160p),https://event.pull.hebtv.com/live/live101.m3u8
+河南卫视,https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=985ebb910dd1e9ad9603ffd7670bd155&wsTime=1791183481
 动感DJ《苦了累了听听歌》,https://vd4.bdstatic.com/mda-mhqekuf2r91v08dt/1080p/cae_h264/1629888246186602728/mda-mhqekuf2r91v08dt.mp4
 天映经典,http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463
 冬日雪鸮,http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1a7b439474b6439c91dc5d5b2cb736d4/1200.m3u8
+浙江教科影视 ·高清,https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+浙江卫视 ·高清,http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+CGTN Global Biz ·高清,https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+Good TV ·高清,https://live.streamingfast.net/osmflivech1.m3u8
+有线新闻,http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3u8
+CCTV+ 1,https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+CNA Originals (1080p),https://amg01082-cna-amg01082c1-rlaxx-us-11304.playouts.now.amagi.tv/playlist.m3u8
+兰州文旅频道,https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8
+邯郸新闻,https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8
+名山综合,https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8
+兴隆综合,https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
+东阳影视生活,http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8
 Dry Bar Comedy+,https://drybar-drybarcomedy-1-us.samsung.wurl.tv/playlist.m3u8
 NBC KSBW,https://aegis-cloudfront-1.tubi.video/8e6af50d-76df-4208-ab8d-3ff8f512cd38/playlist.m3u8
 ＃9976,https://vod.mycamtv.net/9976.m3u8
@@ -156,28 +210,42 @@ NBC KSBW,https://aegis-cloudfront-1.tubi.video/8e6af50d-76df-4208-ab8d-3ff8f512c
 ＃2540,https://vod.mycamtv.net/2540.m3u8
 ＃5027,https://vod.mycamtv.net/5027.m3u8
 ＃7500,https://vod.mycamtv.net/7500.m3u8
+熊大熊二,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1733da751de64e6e910abda889d87a26/1200.m3u8
+万载综合频道,http://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8
+酒吧舞女,https://vd2.bdstatic.com/mda-mkpe42g9za18xetn/sc/cae_h264/1637798968815645031/mda-mkpe42g9za18xetn.mp4
+往后余生,https://vd3.bdstatic.com/mda-jatub6sb1pzwxfnb/hd/mda-jatub6sb1pzwxfnb.mp4?pd=19&vt=1
+4K车载DJ舞曲祁隆《爱的期限》加动感美女舞蹈 让您耳目一新,https://vd3.bdstatic.com/mda-kidgcmu48wms4wwj/sc/mda-kidgcmu48wms4wwj.mp4
+Проникновение в Принцессу,https://video1.tizam.cc/films/proniknovenie_v_princessu1988.mp4
+韩国女团090,https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239894180409.mp4
+一本72[720*480],https://vip4.ddyunbo.com/20210213/CQB35BQP/index.m3u8?skipl=1
+欧阳俊《世上还有多少痴情的人》车载DJ版加美女MV背景 让人陶醉,https://vd2.bdstatic.com/mda-kekxxsy8deufjn8n/sc/mda-kekxxsy8deufjn8n.mp4
 Bollywood Masala,https://sofast-lg.vgcdn.net/sofastplayout/751631cf-7a0d-356e-676e-b84cfec03391_0_HLS/manifest.m3u8
 Parranda Vallenata,https://backupmaxmedia.hvmultiplay.com/hls/stream3/parrandavallenata.m3u8
 Duck Dynasty,https://aegis-cloudfront-1.tubi.video/ae3cd8ce-3c41-452b-92a0-78fdb3c5b855/playlist.m3u8
 Fox Sports News,https://skynewsau-live-premium.akamaized.net/hls/live/2105307/foxsportsnews/live_1080p.m3u8
 Mňau TV,https://5ca49f2417d90.streamlock.net/mnau/livestream/playlist.m3u8
+南宁影视娱乐,http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 余姚新闻综合,http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
 浙江经济生活,https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 Nickelodeon CIS,https://stream8.cinerama.uz/1500/playlist.m3u8
-Balle Balle,https://mcncdndigital.com/balleballetv/index.m3u8
 Mozi+,http://88.212.7.14/live/mozi_plusz/index.m3u8
+龙井综合,http://stream8.jlntv.cn/ljtv/sd/live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd
 С1 (Сургут),https://sitv.ru/hls/stv1024.m3u8
 [土库曼斯坦]Türkmenistan TV,https://alpha.tv.online.tm/legacyhls/ch007_720/index.m3u8
 [美国]PAC 12 Insider (1080p),https://pac12-samsungus.amagi.tv/playlist.m3u8
 TV7 Benevento,http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
 2M Monde,https://d2qh3gh0k5vp3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n6pess5lwbghr/2M_ES.m3u8
 FILMBOX+ Festival,https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
-福州少儿,http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 Muzhskoe kino,http://stream.mcquack.net/107/index.m3u8
 Al Wilayah,https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
 DJ最烈的酒最猛的烟,https://vd4.bdstatic.com/mda-nd3eicnw62x3z3j0/hd/cae_h264_delogo/1649067794176996768/mda-nd3eicnw62x3z3j0.mp4
 内蒙古卫视,https://66-b41.pages.dev/play?id=nmgws
+井研综合,http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8
+开化国家公园,http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed
+海宁新闻综合,https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8
 CGTN (1080p),https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+WXTV (480p),https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
 Retro TV,https://freecast-lukentvlive.vgcdn.net/out/v1/665e9f91614b43b0a0654e9317f1d9f3/index.m3u8
 Estrella News,https://estrellanews-plex.amagi.tv/playlist.m3u8
 MRVTV Channel 45,https://livestream.telvue.com/madrivervalleytv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
@@ -198,8 +266,12 @@ CGTN英语,https://0472.org/hls/cgtn.m3u8
 直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/CNN_Portugal.m3u8
 直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/TVI.m3u8
 直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/TVI_Ficcao.m3u8
+直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/TVI_Internacional.m3u8
+直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/TVI_Reality.m3u8
+直播流,https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/Vmais_TVI.m3u8
 成人直播_9317,#genre#
 959 Stingray Pop Adult,https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992427&ads.xumo_streamId=99992427&ads.channelId=99992427&ads.ad_tag_id=15716&ads.csid=lgchannels_it_stingraypopadult_ssai&ads.channelName=stingraypopadult_es&ads.xumo_contentName=StingrayPopAdult&ads.xumo_contentId=3197&ads.xumo_providerName=StingrayPopAdult&ads.xumo_providerId=3197&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
+AdultIPTV.net Asian,http://cdn.adultiptv.net/asian.m3u8
 Vod2557,https://vod.mycamtv.net/2557.m3u8
 Vod91,https://vod.mycamtv.net/91.m3u8
 Vod1308,https://vod.mycamtv.net/1308.m3u8
@@ -236,4 +308,3 @@ AdultIPTV.net Compilation,http://cdn.adultiptv.net/compilation.m3u8
 AdultIPTV.net Brunette,http://cdn.adultiptv.net/brunette.m3u8
 AdultIPTV.net Blonde,http://cdn.adultiptv.net/blonde.m3u8
 AdultIPTV.net Gay,http://cdn.adultiptv.net/gay.m3u8
-AdultIPTV.net Asian,http://cdn.adultiptv.net/asian.m3u8

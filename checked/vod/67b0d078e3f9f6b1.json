@@ -5,8 +5,8 @@
       "name": "玉兔",
       "type": 1,
       "api": "https://apiyutu.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "filterable": 0
     }
   ]
