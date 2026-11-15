@@ -19,28 +19,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_3c1204193dd947c7",
-      "name": "IK",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_304e2e6a898f6a58",
       "name": "[590ms|5] 猫眼影视",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod/from/mym3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_10ee9009c31aca81",
-      "name": "iKun",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -59,15 +41,6 @@
       "name": "❤ikun资源",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_9a8a6fa39c3f2d4c",
-      "name": "❤光速资源",
-      "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -172,15 +145,6 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "红牛资源(切)",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_cc611d7a1de5c292",
       "name": "豪华资源",
       "type": 1,
@@ -226,6 +190,15 @@
       "filterable": 0
     },
     {
+      "key": "pocket_9a8a6fa39c3f2d4c",
+      "name": "雷蒙影视 | 🚀光速",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_5ffb6e9a093b753f",
       "name": "魔都",
       "type": 1,
@@ -239,6 +212,15 @@
       "name": "魔都动漫资源",
       "type": 1,
       "api": "https://www.mdzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_ffb12753653057e9",
+      "name": "🍁金鹰采集🍁|cdn2020",
+      "type": 1,
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -271,26 +253,17 @@
       "filterable": 0
     },
     {
-      "key": "pocket_159d37437573275f",
-      "name": "💎豪华资源【CMS】",
+      "key": "pocket_790172e095caf7cc",
+      "name": "🐂┃红牛┃采集",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_ffb12753653057e9",
-      "name": "🔰金鹰┃影视",
-      "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
       "key": "pocket_d6abf09efcd48c6d",
-      "name": "🤖爬虫┃龙门动漫",
+      "name": "🔶老张丨猫眼[短]",
       "type": 1,
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
@@ -307,19 +280,55 @@
       "filterable": 0
     },
     {
-      "key": "pocket_db506285334f5b5c",
-      "name": "暴风m3u8",
+      "key": "pocket_3c1204193dd947c7",
+      "name": "IK",
       "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/at/m3u8",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_10ee9009c31aca81",
+      "name": "iKun",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_827db570d348ff49",
+      "name": "非凡影视",
+      "type": 1,
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_159d37437573275f",
+      "name": "💎豪华资源【CMS】",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_8e529b20899aa1c4",
+      "name": "影视 • 暴風[直连]",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
     },
     {
-      "key": "pocket_8e529b20899aa1c4",
-      "name": "🔥 暴风",
+      "key": "pocket_db506285334f5b5c",
+      "name": "暴风m3u8",
       "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/at/m3u8",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0
