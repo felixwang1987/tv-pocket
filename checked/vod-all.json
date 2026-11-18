@@ -1,64 +1,28 @@
 {
   "sites": [
     {
-      "key": "pocket_9a8a6fa39c3f2d4c",
-      "name": "❤光速资源",
+      "key": "pocket_3c1204193dd947c7",
+      "name": "IK",
       "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_c35a3bb2b3a307f3",
-      "name": "光速",
+      "key": "pocket_c732045a4d3583f3",
+      "name": "❤ikun资源",
       "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod?from=gsm3u8",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_77be1653869536c7",
-      "name": "光速｜采集",
+      "key": "pocket_10ee9009c31aca81",
+      "name": "影视🔰ikun[直连]",
       "type": 1,
-      "api": "http://api.guangsuapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_1b08e6b49b6d2dc6",
-      "name": "火狐",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod?from=hhm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_cc611d7a1de5c292",
-      "name": "豪华资源",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_8d82ffa7f9899260",
-      "name": "金鹰 | 采集",
-      "type": 1,
-      "api": "https://jyzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_4115fcb4063430eb",
-      "name": "金鹰资源",
-      "type": 1,
-      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -73,44 +37,8 @@
       "filterable": 0
     },
     {
-      "key": "pocket_827db570d348ff49",
-      "name": "🍀┃非凡┃资源",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_ffb12753653057e9",
-      "name": "🍁金鹰采集🍁|cdn2020",
-      "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_fc4bc5d92b095f5a",
-      "name": "🎥┃光速┃资源",
-      "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_bd3c0500399a3397",
-      "name": "🎥┃豪华┃资源",
-      "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "pocket_8e529b20899aa1c4",
-      "name": "影视 | 暴風[直连]",
+      "name": "影视•暴風[直连]",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod",
       "searchable": 0,
@@ -118,19 +46,10 @@
       "filterable": 0
     },
     {
-      "key": "pocket_3c1204193dd947c7",
-      "name": "IK",
+      "key": "pocket_790172e095caf7cc",
+      "name": "✅红牛┃资源",
       "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "pocket_c732045a4d3583f3",
-      "name": "❤ikun资源",
-      "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -154,19 +73,28 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🎥┃红牛┃资源",
+      "key": "pocket_8d82ffa7f9899260",
+      "name": "金鹰 | 采集",
       "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "api": "https://jyzyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "pocket_10ee9009c31aca81",
-      "name": "🐓┃爱坤┃资源",
+      "key": "pocket_4115fcb4063430eb",
+      "name": "金鹰资源",
       "type": 1,
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_ffb12753653057e9",
+      "name": "🍁金鹰采集🍁|cdn2020",
+      "type": 1,
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
