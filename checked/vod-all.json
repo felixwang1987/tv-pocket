@@ -1,10 +1,37 @@
 {
   "sites": [
     {
+      "key": "pocket_f7f97fb78f7df8e4",
+      "name": "360资源",
+      "type": 1,
+      "api": "https://360zyzz.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_c877822c317a95d1",
+      "name": "360资源",
+      "type": 1,
+      "api": "https://360zyzz.com/api.php/provide/vod/from/360m3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_3c1204193dd947c7",
       "name": "IK",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_af8e085c7f2740c4",
+      "name": "⚡红牛┃11万部",
+      "type": 1,
+      "api": "https://hongniuzy2.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -28,6 +55,33 @@
       "filterable": 0
     },
     {
+      "key": "pocket_f6f48376be187c5a",
+      "name": "红牛",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/josn",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_d1748edcb3696c8c",
+      "name": "红牛影视②",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_790172e095caf7cc",
+      "name": "红牛资源(切)",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "pocket_ab24f4094db661d7",
       "name": "金鹰",
       "type": 1,
@@ -41,6 +95,15 @@
       "name": "金鹰 | 采集",
       "type": 1,
       "api": "https://jyzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_6124d4709cbefc30",
+      "name": "金鹰影视",
+      "type": 1,
+      "api": "http://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -73,17 +136,35 @@
       "filterable": 0
     },
     {
-      "key": "pocket_ffb12753653057e9",
-      "name": "🍁金鹰采集🍁|cdn2020",
+      "key": "pocket_275acd6551209e29",
+      "name": "魔都动漫资源",
       "type": 1,
-      "api": "https://jyzyapi.com/provide/vod",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_84e8ae98e25aa061",
+      "name": "🎬360 资源",
+      "type": 1,
+      "api": "https://360zyzz.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "pocket_406dadf6af626fed",
+      "name": "🎬红牛资源┃超清极速",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
       "key": "pocket_10ee9009c31aca81",
-      "name": "📺 爱坤",
+      "name": "🐓┃爱坤┃资源",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod",
       "searchable": 1,
@@ -91,17 +172,17 @@
       "filterable": 0
     },
     {
-      "key": "pocket_790172e095caf7cc",
-      "name": "🦄红牛资源",
+      "key": "pocket_ffb12753653057e9",
+      "name": "🔰金鹰┃影视",
       "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "api": "https://jyzyapi.com/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
       "key": "pocket_8e529b20899aa1c4",
-      "name": "🦔暴風┃采集·荐片",
+      "name": "影视 | 暴風[直连]",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod",
       "searchable": 0,
@@ -109,8 +190,17 @@
       "filterable": 0
     },
     {
+      "key": "pocket_db506285334f5b5c",
+      "name": "暴风m3u8",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/at/m3u8",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
       "key": "pocket_827db570d348ff49",
-      "name": "🍀┃非凡┃资源·1号VIP源",
+      "name": "🍀┃非凡┃资源",
       "type": 1,
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "searchable": 1,

@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_f6f48376be187c5a",
+      "name": "红牛",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/josn",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
