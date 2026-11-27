@@ -26,10 +26,6 @@ https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 https://0472.org/hls/cgtnx.m3u8
 #EXTINF:-1 group-title="普通直播",2026-11-27 00:12:22
 https://vd2.bdstatic.com/mda-sctj0f6r4u1bpebc/1080p/cae_h264/1774706523506678171/mda-sctj0f6r4u1bpebc.mp4
-#EXTINF:-1 group-title="普通直播",Alfred Hitchcock Presents
-https://d4whmvwm0rdvi.cloudfront.net/10007/99993023/hls/master.m3u8?ads.xumo_channelId=99993023
-#EXTINF:-1 group-title="普通直播",Stingray Music Easy Listening
-https://lotus.stingray.com/manifest/ose-137ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="普通直播",Manoranjan Grand KB
 https://cdn.pishow.tv/ott/live/1011/master.m3u8
 #EXTINF:-1 group-title="普通直播",Astroscience KB
@@ -40,118 +36,106 @@ https://cdn.pishow.tv/ott/live/273/master.m3u8
 https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8
 #EXTINF:-1 group-title="普通直播",Thanima KB
 https://live.skystream.in/live/thanimatvtvm/index.m3u8
-#EXTINF:-1 group-title="普通直播",陈倩倩婴儿
-http://vodcdn.video.taobao.com/oss/ali-video/4fc8d043456c092c392483bd293d0ee3/video.m3u8
-#EXTINF:-1 group-title="普通直播",Shop Channel
-http://stream1.shopch.jp/HLS/out2/prog_index.m3u8
+#EXTINF:-1 group-title="普通直播",陈瑞一生的等待
+http://antiserver.kuwo.cn/anti.s?rid=MUSIC_1583215&response=res&format=mp4&type=convert_url
 #EXTINF:-1 group-title="普通直播",Kutonen
 https://live-fi.tvkaista.net/kutonen/live.m3u8?src=freetv
 #EXTINF:-1 group-title="普通直播",Telecity Valle D'Aosta
 https://64b16f23efbee.streamlock.net/telecityvda/telecityvda/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",People Are Awesome Poland (720p)
 https://3ab76e42.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1Blb3BsZUFyZUF3ZXNvbWVfSExT/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Syri
+https://stream.syritv.al/live/syritv/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",TV 7 Albania
+https://rpn3.bozztv.com/albaniatv/Med7-TV7Tirana/index.m3u8
 #EXTINF:-1 group-title="普通直播",AlbKanale Music TV Ⓢ
 https://albportal.net/albkanalemusic.m3u8
-#EXTINF:-1 group-title="普通直播",TV Apollon Ⓢ
-https://live.apollon.tv/Apollon-Web/video.m3u8?token=tnt9u76reF0d1
 #EXTINF:-1 group-title="普通直播",Andorra TV
 https://livesg1.rtva.hiway.media/11a6d6f4-ee13-47c7-9c27-7313cf5424e2/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",El Trece
+https://livetrx01.vodgc.net/eltrecetv/index.m3u8
+#EXTINF:-1 group-title="普通直播",Canal 26
+https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
+#EXTINF:-1 group-title="普通直播",C31 Melbourne
+https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
 #EXTINF:-1 group-title="普通直播",Tirol TV Ⓖ
 https://streaming14.huberwebmedia.at/LiveApp/streams/livestream.m3u8
-#EXTINF:-1 group-title="普通直播",R9
-https://ms01.w24.at/R9/smil:liveeventR9.smil/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",oe24
-https://oe24.mdn.ors.at/live/eds/oe24tv_hd/hls_nodrm/oe24tv_hd-nodrm.m3u8
-#EXTINF:-1 group-title="普通直播",RTV
-http://iptv.rtv-ooe.at/stream.m3u8
+#EXTINF:-1 group-title="普通直播",ORF III Ⓖ
+https://orf3.mdn.ors.at/orf/orf3/qxa/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",W24
+https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",民视新闻
 https://hami.gxdx.org/hami/1533.m3u8?key=0a91c689988e5000119015531abd677ea1ecaf0b674350d7&direct=1
 #EXTINF:-1 group-title="普通直播",东方卫视
 https://mursor.ottiptv.cc/mcp/dongfang.m3u8?userid=625559087&sign=3ef8f3b71f5f844e51c344aa19d0ea1a26d67d8d6fea8a2993b792be8ede99412b46d04f7f404977593128fced8f5d695fee50faab93637dceee2bf0888aa68e7039984346a3073c2facd06c3a3353&auth_token=b53cabde7cf057c80eee65d5c77f0978
+#EXTINF:-1 group-title="普通直播",CCTV4欧洲 [高清720p]
+https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",ViuTV
 http://r.jdshipin.com/vSJvl
 #EXTINF:-1 group-title="普通直播",HOY TV
 http://uc6.i-cable.com/live_freedirect/opentvhd001_h.live/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",有線新聞台
 http://61.10.2.141:80/live_freedirect/freehd209_h.live/chunklist.m3u8
-#EXTINF:-1 group-title="普通直播",730 FUEL TV
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01074-fueltv-fueltvemeaen-lgit/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
-#EXTINF:-1 group-title="普通直播",Rete 8
-https://64b16f23efbee.streamlock.net/rete8/rete8/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Sony Movies.......44
-https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8
-#EXTINF:-1 group-title="普通直播",FB | Oman Sports TV
-https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="普通直播",RTV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/index.m3u8
-#EXTINF:-1 group-title="普通直播",Makkah Live........80
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="普通直播",Aaj Tak HD
-https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_720p/chunks.m3u8
-#EXTINF:-1 group-title="普通直播",ZB Cartun TV.......55
-https://server.zillarbarta.com/zbcatun/video.m3u8
-#EXTINF:-1 group-title="普通直播",Z Cinema
-http://markethelp1.com:80/live/sree1602/9196sree/230.ts
-#EXTINF:-1 group-title="普通直播",Zee Bangla HD
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBanglaHD.m3u8
-#EXTINF:-1 group-title="普通直播",Quran TV.......96
-https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpublish/shqurantv_source/chunks.m3u8
-#EXTINF:-1 group-title="普通直播",Adventure Earth ENG
-https://autentic-adventure-earth-1-gb.lg.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",EN | Vevo Pop
-https://d2n3779oy6efpi.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5rxuagztow0k3/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",My Tv
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/mytv-up-off.stream/live-orgin/mytv-up-off.stream/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Makkah Live
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",劲爆体育
-http://t.061899.xyz/tl/dq.php?id=jbty
-#EXTINF:-1 group-title="普通直播",三立新闻台
-https://epg.pw/stream/6b49e3faa38adda85abab446f032dc1e686baa0760a9cfa66e2df8fd6fe3b445.m3u8
-#EXTINF:-1 group-title="普通直播",eKids
-https://us.glebul.com/hls/e-kids/index.m3u8?e=1795642274&hash=TrnehmYM88lUCf65WKGbvQ
-#EXTINF:-1 group-title="普通直播",Rodina TV
-https://us.glebul.com/hls/rodina-tv/index.m3u8?e=1795642408&hash=fFpxnu5fM0fUQD0ZZtyiMg
-#EXTINF:-1 group-title="普通直播",Travel Channel HD
-https://us.glebul.com/hls/hd-travel-channel-hd/index.m3u8?e=1795642541&hash=PI5qDqkXncNIHwV8Dp7lkw
-#EXTINF:-1 group-title="普通直播",Kino Nova
-https://uk.glebul.com/hls/hd-kino-nova-hd/index.m3u8?e=1795641844&hash=sUIDNGE4_ywNOIxdUvPkHQ
-#EXTINF:-1 group-title="普通直播",VTK
-https://us.glebul.com/hls/vtk/index.m3u8?e=1795642140&hash=Xi8oRG0r6EXFuT1TaejS9Q
-#EXTINF:-1 group-title="普通直播",CGTN纪录
-https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
+#EXTINF:-1 group-title="普通直播",743 TRACE SPORT STARS
+https://trace-sportstars-lg-it.amagi.tv/hls/amagi_hls_data_tracetvAA-trace-sportstars-lg-it/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&givn=[NONCE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
+#EXTINF:-1 group-title="普通直播",Virgin Radio TV Ⓖ
+https://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8
+#EXTINF:-1 group-title="普通直播",Cine Thriller
+https://amg02512-nexodigital-amg02512c2-samsung-it-765.playouts.now.amagi.tv/playlist/amg02512-nexodigital-levitedeglialtri-samsungit/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Canale 2
+https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Video Calabria
+https://a8a02dd9a49a4fc9810743615c65ab73.msvdn.net/live/S76734991/i6NeNqLYaspb/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Iqraa TV
+https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv1/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",MIXER | FUEL TV
+https://amg01074-fueltv-fueltvemeaen-sportstribal-n7krp.amagi.tv/ts-eu-w1-n2/playlist/amg01074-fueltv-fueltvemeaen-sportstribal/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",News 24
+https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
+#EXTINF:-1 group-title="普通直播",Channel 1
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel1bd.stream/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Star Gold 2 HD
+http://vca.easy747.com:80/live/0578694/1295K6K/1020178.ts
+#EXTINF:-1 group-title="普通直播",Channel 16
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="普通直播",Bangla Tv
+https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+#EXTINF:-1 group-title="普通直播",Channel Fight
+https://d15wqvt0xm15k4.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/ChannelFight-Nuestra/266.m3u8
+#EXTINF:-1 group-title="普通直播",Dangal
+https://fta.ektv.in/live/17/master.m3u8
+#EXTINF:-1 group-title="普通直播",Pitaara
+https://vg-pitaaratvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-583798/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Channel 24
+https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8
+#EXTINF:-1 group-title="普通直播",SGCN Music
+https://ethersoftwaresolution.com/live/sgcnmusic/index.m3u8
+#EXTINF:-1 group-title="普通直播",Cinevault Westerns
+https://gsn-cinevault-westerns-2-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",磐石
+http://stream5.jlntv.cn/ps/sd/live.m3u8?zjild
+#EXTINF:-1 group-title="普通直播",辉南新闻
+http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild
+#EXTINF:-1 group-title="普通直播",靖宇
+http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild
+#EXTINF:-1 group-title="普通直播",人间卫视
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+#EXTINF:-1 group-title="普通直播",桦甸
+http://stream10.jlntv.cn/huadian/sd/live.m3u8?zjild
 #EXTINF:-1 group-title="普通直播",CCTV-10 科教 (879ms)
 https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
-#EXTINF:-1 group-title="普通直播",Eixo do Mal - 28/9/2023
-https://videos.impresa.pt/videos/hls/sicnot/2023/09/28/9a669c35-b8f7-448c-bcf5-4690494e4909/video.m3u8
-#EXTINF:-1 group-title="普通直播",PCNELID - 20/12/2024
-https://videos.impresa.pt/videos/hls/sicnot/2024/12/20/5b4e5ad3-d138-4f52-bddc-8c0733fb1ad4/video.m3u8
-#EXTINF:-1 group-title="普通直播",Figueira da Foz | Buarcos | Estática
-https://video-auth1.iol.pt/beachcam/bcbuarcos/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Redbull TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
-#EXTINF:-1 group-title="普通直播",KTV Sport Plus
-https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="普通直播",Game+ (720p)
-https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",PGA Tour (1080p)
-https://d11k1mnrgfposz.cloudfront.net/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",TVS Sports Bureau (720p)
-https://rpn.bozztv.com/gusa/gusa-tvssportsbureau/index.m3u8
-#EXTINF:-1 group-title="普通直播",┃AL┃ Theeb
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=559214.mp4&play_token=WfXkyWx5Lq&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃ Song of the Assassins
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=643623.mp4&play_token=TqBm06iLMd&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃ Commitment
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=613530.mp4&play_token=VQHdOz8B95&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃  Ride On
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=578565.mp4&play_token=O1mTiPYSFg&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃ RE:BORN
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=851682.mp4&play_token=bB4GpsVtd5&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃ One-Percenter
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=794432.mp4&play_token=tVjM4VdBKQ&type=movie
-#EXTINF:-1 group-title="普通直播",┃AL┃ Fight Against Evil
-http://nexusconnects.org:80/play/movie.php?mac=A0:BB:3E:03:BA:6C&stream=699714.mp4&play_token=9xqUvv4pcu&type=movie
+#EXTINF:-1 group-title="普通直播",Hunt Fish TV
+https://amg00585-sportstribal-amg00585c3-sportstribal-emea-2177.playouts.now.amagi.tv/playlist/amg00585-sportstribaltvfast-huntfishtv-sportstribalemea/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Xtrem Sports
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",Cricket Gold (1080p)
+https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",IRIB3
+https://ncdn.telewebion.ir/tv3/live/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Sky Racing 2 (720p)
+https://636ffd31f0e12.streamlock.net/RacingStream2/RacingStream2/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Willow Sports (1080p)
+https://d36r8jifhgsk5j.cloudfront.net/Willow_TV.m3u8
 #EXTINF:-1 group-title="普通直播",南宁影视娱乐
 http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 #EXTINF:-1 group-title="普通直播",特种兵之火凤凰
@@ -160,20 +144,12 @@ https://live.metshop.top/huya/29982636
 https://live.metshop.top/huya/11342435
 #EXTINF:-1 group-title="普通直播",Darcizzle电视
 http://30a-tv.com/darcizzle.m3u8
-#EXTINF:-1 group-title="普通直播",亚洲新闻
-http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 group-title="普通直播",Univision
+https://streaming-live-fcdn.api.prd.univisionnow.com/unieast/unieast.isml/hls/unieast.m3u8
 #EXTINF:-1 group-title="普通直播",孟庭苇-过冬
 http://bizcommon.alicdn.com/l2nDqpMmn6DGHnWzZQA/U9QKnKK2RpKMElnSS07%40%40hd.m3u8
 #EXTINF:-1 group-title="普通直播",浙江新闻
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-#EXTINF:-1 group-title="普通直播",四平电视台
-http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
-#EXTINF:-1 group-title="普通直播",WXTV 电视
-https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
-#EXTINF:-1 group-title="普通直播",安徽卫视
-https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8
-#EXTINF:-1 group-title="普通直播",天使电视中文台
-https://cdn.pishow.tv/ott/live/453/master.m3u8
 #EXTINF:-1 group-title="普通直播",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 group-title="普通直播",TVG
@@ -182,22 +158,24 @@ https://crtvg-europa.flumotion.cloud/playlist.m3u8
 https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8
 #EXTINF:-1 group-title="普通直播",Popeye - S01E01 - Let's Sing With Popeye
 https://archive.org/download/lets-sing-with-popeye-1934_202511/Let%27s%20Sing%20with%20Popeye%20%281934%29.mp4
-#EXTINF:-1 group-title="普通直播",Sports Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
-#EXTINF:-1 group-title="普通直播",Discover Pikstan
-https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",NTV
-https://tvsen5.aynaott.com/JHPxHAWonztVucyc4GzF/index.m3u8?e=1784102559&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=d26add1c49d848c9199b708427134979
-#EXTINF:-1 group-title="普通直播",Canale 2
-https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Lombardia Tv
-https://5db313b643fd8.streamlock.net/lmbiatv/lmbiatv/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Rete Oro Tv
-https://5926fc9c7c5b2.streamlock.net/9094/9094/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Tennis+
-https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",RTL 102.5 TRAFFIC
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
+#EXTINF:-1 group-title="普通直播",Boishakhi TV
+https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
+#EXTINF:-1 group-title="普通直播",Ekattor TV
+https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b9afdda2bd5332e8f49ed7dfa321a06
+#EXTINF:-1 group-title="普通直播",Maasranga TV
+https://tvsen5.aynaott.com/maasrangatv/index.m3u8?e=1784102562&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=2044540ee613d44b1175f2885b2ab1ee
+#EXTINF:-1 group-title="普通直播",Persiana Travel
+https://ptravelhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 group-title="普通直播",T Sports 7 (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6) (6)
+https://live-us1.thaimomo.com/live-as/chtsport-1/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Tele Radio Pace 3
+https://932y4273djv8-hls-live.mariatvcdn.it/teleradiopace3/d2274c22e9ee09eb2eda01ed0496f8f5.sdp/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",985 YTN
+https://amg01614-amg01614c1-amgplt0033.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01614-amg01614c1-amgplt0033/playlist.m3u8?ads.appname=[APP_NAME]&ads.appstoreurl=[APP_STOREURL]&ads.appversion=[APP_VERSION]&ads.bundleid=[APP_BUNDLE]&ads.country=[COUNTRY]&ads.deviceid=[DEVICE_ID]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.devicetype=[DEVICE_TYPE]&ads.dmake=[DEVICE_MAKE]&ads.donotsell=[DNS]&ads.fck=[FCK]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.givn=[NONCE]&ads.hoteltype=[HOTEL_TYPE]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.ip=[IP]&ads.lat=[LMT]&ads.targetad=[TARGETAD_ALLOWED]&ads.ua=[UA]&ads.usprivacy=[US_PRIVACY]&ads.viewsize=[VIEWSIZE]&channel_name=REPLACE_ME&coppa=0&network_name=REPLACE_ME
+#EXTINF:-1 group-title="普通直播",220 Alta Tensione
+https://c8069e1e41d04027a6c1ebfcdfe920a1.mediatailor.us-east-1.amazonaws.com/v1/master/f4e8c53a8367a5b58e20ce054ea3ce25a3e904d3/LG-it_AltaTensione/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Rai test2
+https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test2/hls/playlist_mo.m3u8
 #EXTINF:-1 group-title="普通直播",日本剧情无码.@
 http://xbo.xn--kcrp02i.com/live/cx_29.flv?wsSecret=395fc213115c14d8722b51e4ad2397fb&wsTime=1795606631
 #EXTINF:-1 group-title="普通直播",毛不易 Ⅰ 牧马城市
@@ -220,22 +198,24 @@ https://d2iclbsmm559pr.cloudfront.net/7dda7e8e5e4a49ff9ac6e6e78a5e6ae0/etv0NXKE.
 https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8
 #EXTINF:-1 group-title="普通直播",Di TV (1080p)
 https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx4/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",荆门文旅
-http://stream.jmtv.com.cn/ggsh/sd/live.m3u8
-#EXTINF:-1 group-title="普通直播",BRTV 北京卫视 (1080p)
-http://go.bkpcp.top/mg/bjws
-#EXTINF:-1 group-title="普通直播",Vod386
-https://vod.mycamtv.net/386.m3u8
-#EXTINF:-1 group-title="普通直播",Vod444
-https://vod.mycamtv.net/444.m3u8
-#EXTINF:-1 group-title="普通直播",🐨12传媒27
-https://1xp601.cdnedge.live/file/avple-asserts/hls/638c658cbedf3f4473b60491/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",💃传媒23
-https://1xp60.cdnedge.live/file/avple-images/hls/63283e0d8ad37673010a692c/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Vod1721
-https://vod.mycamtv.net/1721.m3u8
-#EXTINF:-1 group-title="普通直播",Vod1821
-https://vod.mycamtv.net/1821.m3u8
+#EXTINF:-1 group-title="普通直播",DJ《心在跳情在烧》
+https://vd4.bdstatic.com/mda-mhwf07t27w3gi1y7/1080p/cae_h264/1630406994590156367/mda-mhwf07t27w3gi1y7.mp4
+#EXTINF:-1 group-title="普通直播",CCTV-1
+https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
+#EXTINF:-1 group-title="普通直播",Eurosport
+http://myott.top/stream/DT6QU63K5VX/176.m3u8
+#EXTINF:-1 group-title="普通直播",Vod1772
+https://vod.mycamtv.net/1772.m3u8
+#EXTINF:-1 group-title="普通直播",🍻9传媒11
+https://e2fa6.cdnedge.live/file/avple-images/hls/631c6bdb1326542bf2813780/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",🐨12传媒08
+https://zo3921.cdnedge.live/file/avple-asserts/hls/638d98125ed41a1a399ace0e/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Vod1985
+https://vod.mycamtv.net/1985.m3u8
+#EXTINF:-1 group-title="普通直播",1传媒11
+https://u89ey.cdnedge.live/file/avple-images/hls/630a8f6107a4b05da7f900f5/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",Vod42
+https://vod.mycamtv.net/42.m3u8
 #EXTINF:-1 group-title="普通直播",CCTV2
 http://t.061899.xyz/tl/tl.php?id=cctv2
 #EXTINF:-1 group-title="普通直播",CCTV-1
@@ -252,20 +232,52 @@ https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv17_mhd.m3u8?auth
 https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mhd.m3u8?auth_key=1795743000-1-530f2550063bcce0f1737f9f1c2d22621b02a10829b7ec1737d5372a3bd271ad-feef48faeb1bfa166b6672b95c80f6dd
 #EXTINF:-1 group-title="普通直播",Shop Channel
 https://stream3.shopch.jp/HLS/master.m3u8
+#EXTINF:-1 group-title="普通直播",BB BLACK! Classik HD
+https://bblackclassik.vedge.infomaniak.com/livecast/ik:bblackclassik/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",carac3 FHD
+https://lfmhd.vedge.infomaniak.com/livecast/ik:lfmhd/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",Africa24 Sport
+https://africa24sport.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 group-title="普通直播",东方卫视4K
+https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 group-title="普通直播",电影蜘蛛侠
+http://live.metshop.top/huya/21059599?cdn=alicdn
+#EXTINF:-1 group-title="普通直播",南京教科
+http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
+#EXTINF:-1 group-title="普通直播",苏州新闻综合
+https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+#EXTINF:-1 group-title="普通直播",贺岁电影
+https://live.metshop.top/huya/11601986
+#EXTINF:-1 group-title="普通直播",哈尔滨都市咨询
+http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
+#EXTINF:-1 group-title="普通直播",永昌综合
+https://play.kankanlive.com/live/1652755738635915.m3u8
+#EXTINF:-1 group-title="普通直播",笑看风云
+https://live.metshop.top/huya/29465858
 #EXTINF:-1 group-title="普通直播",黑龙江卫视
 http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
-#EXTINF:-1 group-title="普通直播",荥经综合
-https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",西藏卫视(藏语)
-https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8
-#EXTINF:-1 group-title="普通直播",好消息电视
-https://live.streamingfast.net/osmflivech1.m3u8
-#EXTINF:-1 group-title="普通直播",WCETV 数字31.8频道
-https://h5cul1yar48um3t.wcetv.com/hls/wcetv318.m3u8
+#EXTINF:-1 group-title="普通直播",梨园
+https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549
+#EXTINF:-1 group-title="普通直播",Big Buck Bunny
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 group-title="普通直播",Tears of Steel
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+#EXTINF:-1 group-title="普通直播",Apple BipBop
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
+#EXTINF:-1 group-title="普通直播",春晚2025
+https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
+#EXTINF:-1 group-title="普通直播",France 24 Français
+https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 group-title="普通直播",Tennis Channel International
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",CGTN Documentary
+https://english-livebkali.cgtn.com/live/doccgtn.m3u8
+#EXTINF:-1 group-title="普通直播",赤峰综合新闻频道
+http://play1-qk.nmtv.cn/live/1735546697341033.m3u8
+#EXTINF:-1 group-title="普通直播",SALON PREMIUM 2
+https://catcast.ismailturret.workers.dev/playercinema-premium2.m3u8
 #EXTINF:-1 group-title="普通直播",CGTN英语
 https://0472.org/hls/cgtn.m3u8
-#EXTINF:-1 group-title="普通直播",狮族迷踪3
-http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5e01c3ff2a5844ab80643ce67ba29026/1200.m3u8
 #EXTINF:-1 group-title="普通直播",中国蓝新闻 ·高清
 http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 #EXTINF:-1 group-title="普通直播",浙江经济生活 ·高清
@@ -278,12 +290,18 @@ https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8
 #EXTINF:-1 group-title="普通直播",哈尔滨影视
 https://stream.hrbtv.net/yspd/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",CGTN 纪录
+https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 #EXTINF:-1 group-title="普通直播",浙江国际频道
 https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
 #EXTINF:-1 group-title="普通直播",Channel 5 (Singapore) (720p)
 https://cdn.qd.je/163189/ch5
 #EXTINF:-1 group-title="普通直播",新沂生活
 http://live.xysrmt.cn/shpd/sd/live.m3u8?zjiangsd
+#EXTINF:-1 group-title="普通直播",野性美洲3
+http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1156d95bcf554d0e9df1688e8a6fd55d/1200.m3u8
+#EXTINF:-1 group-title="普通直播",EBS2
+http://ebsonairios.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",消愁
 https://vd3.bdstatic.com/mda-ifkj2zwdscwthsfj/logo/hd/mda-ifkj2zwdscwthsfj.mp4?pd=20
 #EXTINF:-1 group-title="普通直播",新沂新闻
@@ -296,43 +314,53 @@ https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240008036293.mp4
 https://vip4.ddyunbo.com/20210203/1PVXgBlv/index.m3u8?skipl=1
 #EXTINF:-1 group-title="普通直播",小阿洋《午夜流浪的姑娘》高音质车载DJ版加炫舞背景 太好听了
 https://vd3.bdstatic.com/mda-kebszq3qmn3nsc9q/v1-cae/sc/mda-kebszq3qmn3nsc9q.mp4
-#EXTINF:-1 group-title="普通直播",龙游新闻综合
-https://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8
-#EXTINF:-1 group-title="普通直播",福建海峡卫视
-http://r.jdshipin.com/WtYt3
-#EXTINF:-1 group-title="普通直播",冰冰影剧
-http://www.goodiptv.club/douyu/74374
-#EXTINF:-1 group-title="普通直播",鬼吹灯之云南虫谷
-https://live.ottiptv.cc/huya/11352898
-#EXTINF:-1 group-title="普通直播",Tennis Channel 2
-https://mumbai-edge.smartplaytv.in/Tennis2/index.m3u8
-#EXTINF:-1 group-title="普通直播",Euronews English
-https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",News11
-https://live1.ottlive.co.in/news11/news11/index.m3u8
 #EXTINF:-1 group-title="普通直播",无线星河
 http://r.jdshipin.com/Voac4
-#EXTINF:-1 group-title="普通直播",ACC Digital Network
-https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",STARTV
-http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",德国 KulturMD
-http://58bd5b7a98e04.streamlock.net/medienasa-live/kulturmd_high/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",RT Français
-https://rt-fra.rttv.com/live/rtfrance/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",延边卫视
+https://srs.iyb983.cn:443/video/CYS/index.m3u8
+#EXTINF:-1 group-title="普通直播",Pitaara TV
+https://d2lk5u59tns74c.cloudfront.net/out/v1/500a6b45f5ae41dda445d912b59eaa09/index.m3u8
+#EXTINF:-1 group-title="普通直播",V2BEAT
+https://de1se01.v2beat.live/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",FashionTV Secrets
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=67c0c39764ad6f7dab07aa0b&AV_APPNAME=[ADS.APP_NAME]&AV_APPPKGNAME=[ADS.APP_BUNDLE]&AV_APPSTOREURL=[ADS.APP_STORE_URL]&AV_CCPA=[ADS.US_PRIVACY]&AV_CLIENT_SECTION=ftv_secrets&AV_CONSENT=[ADS.GDPR_CONSENT]&AV_CONTENT_CAT=IAB7&AV_CONTENT_CHANNEL=&AV_CONTENT_CONTEXT=&AV_CONTENT_EPISODE=&AV_CONTENT_GENRE=fashion+and+lifestyle&AV_CONTENT_ID=[ADS.VIDAA_ADS_CONTENTID]&AV_CONTENT_KEYWORDS=&AV_CONTENT_LANGUAGE=en&AV_CONTENT_LENGTH=&AV_CONTENT_NETWORK=&AV_CONTENT_PROVIDER=FTV&AV_CONTENT_RATING=R&AV_CONTENT_SEASON=&AV_CONTENT_SERIES=&AV_CONTENT_TITLE=&AV_CONTENT_URL=&AV_DNT=[ADS.DNT]&AV_GDPR=[ADS.GDPR]&AV_HEIGHT=[ADS.H]&AV_IDFA=[ADS.IFA]&AV_IFA_TYPE=[ADS.IFA_TYPE]&AV_LANGUAGE=[ADS.DEVICE_LANGUAGE]&AV_OSVERS=[ADS.DEVICE_OSV]&AV_RTB_DEVICE_TYPE=[ADS.DEVICE_TYPE]&AV_VAUTH=[ADS.VAUTH]&AV_WIDTH=[ADS.W]&Content_Id=[ADS.ADS_CONTENTID]&ads.vidaa_ads_param=1191723366&cb=[CACHEBUSTER]&content_channel_name=ftv+-fashiontv+Secrets&content_livestream=1
+#EXTINF:-1 group-title="普通直播",TVB Plus
+http://r.jdshipin.com/Nr5jq
+#EXTINF:-1 group-title="普通直播",有線新聞台
+http://61.10.2.141/live_freedirect/freehd209_h.live/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",翡翠台
+http://r.jdshipin.com/GeWKr
+#EXTINF:-1 group-title="普通直播",德国 OK Wernigerode
+http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-wernigerode_high/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",[NZ;AU]Wairarapa TV
+http://stream.wairarapatv.co.nz/Cellular_High/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",dj舞曲合集
+https://vd2.bdstatic.com/mda-mkmeak5hsf7hmguz/sc/cae_h264/1637579072201459045/mda-mkmeak5hsf7hmguz.mp4
 #EXTINF:-1 group-title="普通直播",广西国际
 https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
-#EXTINF:-1 group-title="普通直播",TR Sport (480p)
-https://livetr.teleromagna.it/mia/live/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",TAP Sports (1080p) [Geo-blocked]
-https://amg19223-amg19223c2-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c2-amgplt0351/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",5Sport 4K (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_4k_avc/live.livx/playlist.m3u8
-#EXTINF:-1 group-title="普通直播",Lanzhou Comprehensive News Channel
-https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8
-#EXTINF:-1 group-title="普通直播",China Travel (1080p)
-https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+#EXTINF:-1 group-title="普通直播",河北卫视
+https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1854721069&k=ca557faf4d869ca5959ee951a3da2817
+#EXTINF:-1 group-title="普通直播",句容新闻综合
+http://jrlive.jrntv.com/live/_definst_/jrxwzhs/playlist.m3u8
+#EXTINF:-1 group-title="普通直播",林正英电影
+https://live.metshop.top/huya/11342421
+#EXTINF:-1 group-title="普通直播",Beijing Satellite TV HD (1080p)
+http://go.bkpcp.top/mg/bjws
+#EXTINF:-1 group-title="普通直播",福建海峡卫视
+http://r.jdshipin.com/WtYt3
+#EXTINF:-1 group-title="普通直播",Rede Familia (720p)
+http://186.219.52.187/rede_familia/index.m3u8
+#EXTINF:-1 group-title="普通直播",ABTelevision (720p)
+https://live-evg8.tv360.bitel.com.pe/bitel/abctelevisionSRT/playlist.m3u8
 #EXTINF:-1 group-title="普通直播",上虞文化影院
 http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
 #EXTINF:-1 group-title="普通直播",Supreme Master TV (720p)
 https://lbs-us1.suprememastertv.com/720p.m3u8
+#EXTINF:-1 group-title="普通直播",WXTV (480p)
+https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
+#EXTINF:-1 group-title="普通直播",河北4K
+https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 group-title="普通直播",浙江民生休闲
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 group-title="普通直播",余姚新闻综合
+http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed

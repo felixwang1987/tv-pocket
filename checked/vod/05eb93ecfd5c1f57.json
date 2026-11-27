@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_05eb93ecfd5c1f57",
+      "name": "金鹰采集",
+      "type": 1,
+      "api": "http://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}

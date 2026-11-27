@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "pocket_1083a4da6ad60b4b",
+      "name": "红牛采集",
+      "type": 1,
+      "api": "http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ]
+}
